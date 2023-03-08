@@ -1,4 +1,6 @@
 # Dinogen Online: Multiplayer Server
+© 2023 Wilkin Games
+
 Read the full guide: https://steamcommunity.com/sharedfiles/filedetails/?id=2906260771
 
 ## Quick Start
