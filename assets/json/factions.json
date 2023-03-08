@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dinogen",
+    "name": "STR_FACTION_DINOGEN"
+  },
+  {
+    "id": "militia",
+    "name": "STR_FACTION_MILITIA"
+  },
+  {
+    "id": "dinosaurs",
+    "name": "STR_FACTION_DINOSAURS"
+  }
+]

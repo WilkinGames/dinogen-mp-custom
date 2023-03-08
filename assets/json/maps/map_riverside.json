@@ -1,0 +1,1526 @@
+{
+	"id": "map_riverside",
+	"width": 4000,
+	"height": 2600,
+	"ambience": "amb_forest",
+	"emitter": "forest",
+	"teamSpawns": [
+		{
+			"x": 52,
+			"y": 944,
+			"w": 420,
+			"h": 260
+		},
+		{
+
+			"x": 3444,
+			"y": 1000,
+			"w": 420,
+			"h": 260
+		}
+	],
+	"spawns": [
+		[ 164, 1052 ],
+		[ 3753, 1122 ],
+		[ 1620, 2423 ],
+		[ 472, 1582 ],
+		[ 472, 1582 ],
+		[ 472, 1582 ],
+		[ 3069, 1815 ],
+		[ 2045, 94 ],
+		[ 1760, 834 ],
+		[ 984, 194 ],
+		[ 2949, 310 ],
+		[ 2045, 654 ],
+		[ 2373, 2195 ],
+		[ 1056, 2087 ],
+		[ 2317, 834 ]
+	],
+	"storeSpawn": [
+		2000,
+		1200
+	],
+	"bombs": {
+		"destruction": [
+			[
+				[ 1109, 230 ],
+				[ 1300, 2100 ]
+			],
+			[
+				[ 2896, 385 ],
+				[ 3039, 1875 ]
+			]
+		]
+	},
+	"objects": [
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -39.8055710922652,
+			"position": [
+				1792,
+				2008
+			],
+			"id": "w9w5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -119.29136217098429,
+			"position": [
+				1736,
+				2076
+			],
+			"id": "odko"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "map_riverside",
+			"position": [
+				2000,
+				1300
+			],
+			"id": "ahzo",
+			"rotation": 0,
+			"bFixedPosition": true,
+			"tint": null
+		},
+		{
+			"type": "car",
+			"position": [
+				928,
+				226
+			],
+			"vehicleId": "growler",
+			"rotation": 90,
+			"bRespawn": true,
+			"id": "5zmo",
+			"bDisabled": false,
+			"bAutomated": false,
+			"team": 0,
+			"tint": null,
+			"bUntargetable": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"position": [
+				1928,
+				2132
+			],
+			"vehicleId": "quad",
+			"rotation": -78,
+			"bRespawn": true,
+			"id": "jzpx",
+			"bDisabled": false,
+			"bAutomated": false,
+			"team": 0,
+			"tint": null,
+			"bUntargetable": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "droppedWeapon",
+			"position": [
+				2050,
+				742
+			],
+			"weaponId": "m82",
+			"bRespawn": true,
+			"id": "lois",
+			"rotation": 0,
+			"bRandomVelocity": false,
+			"name": null,
+			"mag": null,
+			"ammo": null,
+			"mods": null
+		},
+		{
+			"type": "droppedWeapon",
+			"position": [
+				2050,
+				80
+			],
+			"weaponId": "tac50",
+			"bRespawn": true,
+			"id": "iqe3",
+			"rotation": 0,
+			"bRandomVelocity": false,
+			"name": null,
+			"mag": null,
+			"ammo": null,
+			"mods": null
+		},
+		{
+			"type": "mountedWeapon",
+			"vehicleId": "m2",
+			"position": [
+				464,
+				1648
+			],
+			"bRespawn": true,
+			"id": "2ju0",
+			"rotation": -50,
+			"bDisabled": false,
+			"bAutomated": false,
+			"team": 0,
+			"bUntargetable": null,
+			"bDisableAutomatedLaser": null,
+			"bUnlimitedAmmo": null,
+			"ammo": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "mountedWeapon",
+			"vehicleId": "m2",
+			"position": [
+				3360,
+				1417
+			],
+			"bRespawn": true,
+			"id": "1edz",
+			"rotation": 132,
+			"bDisabled": false,
+			"bAutomated": false,
+			"team": 0,
+			"bUntargetable": null,
+			"bDisableAutomatedLaser": null,
+			"bUnlimitedAmmo": null,
+			"ammo": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "door",
+			"position": [
+				862.05,
+				484
+			],
+			"doorType": "wood",
+			"rotation": 0,
+			"size": 90,
+			"bClosed": true,
+			"id": "usdi",
+			"bDisabled": false,
+			"material": null
+		},
+		{
+			"type": "door",
+			"position": [
+				2830.8,
+				753.75
+			],
+			"doorType": "wood",
+			"rotation": 90,
+			"size": 90,
+			"bClosed": true,
+			"id": "20r9",
+			"bDisabled": false,
+			"material": null
+		},
+		{
+			"type": "door",
+			"position": [
+				1007,
+				693
+			],
+			"doorType": "garage",
+			"material": "metal",
+			"rotation": 90,
+			"size": 125,
+			"bClosed": true,
+			"id": "qipb",
+			"bDisabled": false
+		},
+		{
+			"type": "door",
+			"position": [
+				3059,
+				490
+			],
+			"doorType": "garage",
+			"material": "metal",
+			"rotation": 180,
+			"size": 138,
+			"bClosed": true,
+			"id": "ymam",
+			"bDisabled": false
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				345.45,
+				1729.85
+			],
+			"id": "jx5i",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				1792.35,
+				824.5
+			],
+			"id": "eyip",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"position": [
+				2293.85,
+				824.5
+			],
+			"id": "fjwf",
+			"rotation": 0,
+			"treeType": "tree"
+		},
+		{
+			"type": "tree",
+			"position": [
+				3155.3,
+				1957.4
+			],
+			"id": "pv28",
+			"rotation": 0,
+			"treeType": "tree"
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				2048,
+				405
+			],
+			"obstacleId": "box",
+			"id": "cy6v",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				1622,
+				2173
+			],
+			"obstacleId": "barrel_explosive",
+			"rotation": 0,
+			"id": "8vhn",
+			"health": null,
+			"items": null,
+			"indicatorData": null,
+			"objectScale": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				1879,
+				1979
+			],
+			"obstacleId": "barrel_explosive",
+			"rotation": 0,
+			"id": "5yng",
+			"health": null,
+			"items": null,
+			"indicatorData": null,
+			"objectScale": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				2344,
+				1740
+			],
+			"id": "ajoh",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				2718,
+				1036
+			],
+			"id": "7v43",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				2540,
+				1436
+			],
+			"id": "66i2",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1712,
+				1642
+			],
+			"id": "kebf",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1386,
+				1484
+			],
+			"id": "a052",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1380,
+				986
+			],
+			"id": "w3ux",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1138,
+				1296
+			],
+			"id": "4m4p",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				3112,
+				1548
+			],
+			"id": "0f7n",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				794,
+				926
+			],
+			"id": "4avn",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				728,
+				1396
+			],
+			"id": "33ir",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1774,
+				2088
+			],
+			"id": "k3k7",
+			"rotation": 0
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 250,
+			"position": [
+				1774,
+				412
+			],
+			"id": "2qfz4",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 250,
+			"position": [
+				2320,
+				412
+			],
+			"id": "knsgw",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 26,
+			"position": [
+				1312,
+				642
+			],
+			"id": "n8hrc",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -67,
+			"position": [
+				1328,
+				604
+			],
+			"id": "1s3cw",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 64,
+			"position": [
+				1350,
+				650
+			],
+			"id": "xrg3x",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -23,
+			"position": [
+				2650,
+				72
+			],
+			"id": "oh370",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 92,
+			"position": [
+				2648,
+				118
+			],
+			"id": "r25j7",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -138,
+			"position": [
+				2612,
+				86
+			],
+			"id": "xu3ig",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"tint": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -125.94211187138235,
+			"position": [
+				1342,
+				1128
+			],
+			"id": "hr19"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 115.6154843206422,
+			"position": [
+				1272,
+				1274
+			],
+			"id": "pwdj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 95.44033203100551,
+			"position": [
+				1260,
+				1400
+			],
+			"id": "ihbh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -24.734302529052496,
+			"position": [
+				1438,
+				1318
+			],
+			"id": "c5xh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -95.96448710125313,
+			"position": [
+				1424,
+				1184
+			],
+			"id": "1lk6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 169.21570213243743,
+			"position": [
+				752,
+				1312
+			],
+			"id": "lhet"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -158.96248897457818,
+			"position": [
+				664,
+				1300
+			],
+			"id": "w6uh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -69.47489202336732,
+			"position": [
+				800,
+				866
+			],
+			"id": "44ce"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -71.93952806380082,
+			"position": [
+				830,
+				774
+			],
+			"id": "hlx9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 39.31507701289437,
+			"position": [
+				1802,
+				1570
+			],
+			"id": "zlib"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -46.8476102659946,
+			"position": [
+				1892,
+				1474
+			],
+			"id": "vfn9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 29.39605285494326,
+			"position": [
+				2034,
+				1554
+			],
+			"id": "5rxg"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 43.66778014613036,
+			"position": [
+				2166,
+				1680
+			],
+			"id": "e97y"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 22.16634582208246,
+			"position": [
+				2274,
+				1724
+			],
+			"id": "ko7x"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -158.31770838675507,
+			"position": [
+				1942,
+				1592
+			],
+			"id": "ytnz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -37.43857157233304,
+			"position": [
+				2070,
+				1494
+			],
+			"id": "olig"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -37.34229030628612,
+			"position": [
+				2610,
+				1082
+			],
+			"id": "fp9t"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 109.82246457036523,
+			"position": [
+				2548,
+				1254
+			],
+			"id": "nl5a"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 114.65589874408161,
+			"position": [
+				2492,
+				1376
+			],
+			"id": "xijw"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -17.77132082290876,
+			"position": [
+				2648,
+				1326
+			],
+			"id": "63j5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -62.24145939893998,
+			"position": [
+				2708,
+				1212
+			],
+			"id": "g0yl"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -77.9052429229879,
+			"position": [
+				2726,
+				1128
+			],
+			"id": "55as"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 74.76459088664058,
+			"position": [
+				2860,
+				1620
+			],
+			"id": "clok"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -37.0730733173104,
+			"position": [
+				2950,
+				1552
+			],
+			"id": "m67j"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -38.659808254090095,
+			"position": [
+				3030,
+				1488
+			],
+			"id": "c1a6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -59.153412587851406,
+			"position": [
+				3116,
+				1344
+			],
+			"id": "0u30"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -68.4985656759521,
+			"position": [
+				3142,
+				1278
+			],
+			"id": "8qr9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -160.5472129397813,
+			"position": [
+				2672,
+				1112
+			],
+			"id": "oelk"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 116.77492488864554,
+			"position": [
+				2562,
+				1330
+			],
+			"id": "5nrp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -6.766174822553061,
+			"position": [
+				2680,
+				1316
+			],
+			"id": "pddr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 38.44078875700546,
+			"position": [
+				3000,
+				1570
+			],
+			"id": "tfyk"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -52.85331330197822,
+			"position": [
+				3100,
+				1438
+			],
+			"id": "j9yr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -60.60394714505674,
+			"position": [
+				3180,
+				1296
+			],
+			"id": "hkvt"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 153.434948822922,
+			"position": [
+				2316,
+				1728
+			],
+			"id": "3lxo"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -136.01697803071917,
+			"position": [
+				2144,
+				1562
+			],
+			"id": "kr2g"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -163.3007557660064,
+			"position": [
+				1964,
+				1508
+			],
+			"id": "r92g"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -169.21570213243743,
+			"position": [
+				1418,
+				1404
+			],
+			"id": "hz42"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -86.8697551377809,
+			"position": [
+				1432,
+				1148
+			],
+			"id": "z022"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -108.67670173219012,
+			"position": [
+				1384,
+				1006
+			],
+			"id": "amkg"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 136.7357045889284,
+			"position": [
+				1214,
+				1166
+			],
+			"id": "3ppe"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 96.17017509502962,
+			"position": [
+				1190,
+				1388
+			],
+			"id": "s82k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -120.33976776269863,
+			"position": [
+				840,
+				790
+			],
+			"id": "55re"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 89.58331076820643,
+			"position": [
+				844,
+				1340
+			],
+			"id": "5yv4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 42.02197934805025,
+			"position": [
+				1764,
+				2152
+			],
+			"id": "b66i"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 44.04515874612782,
+			"position": [
+				1342,
+				1298
+			],
+			"id": "v9sh"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"position": [
+				3941,
+				1218
+			],
+			"id": "09ab",
+			"rotation": 0,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -6.151568542475284,
+			"position": [
+				3810,
+				1032
+			],
+			"id": "5g2q",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -145.84030545433058,
+			"position": [
+				3698,
+				956
+			],
+			"id": "7uow",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 81.67434966957316,
+			"position": [
+				3746,
+				1284
+			],
+			"id": "qaeq",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -49.18491612511842,
+			"position": [
+				3936,
+				1064
+			],
+			"id": "r97b",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -178.41384507730103,
+			"position": [
+				108,
+				958
+			],
+			"id": "utn2",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 111.39981013208224,
+			"position": [
+				50,
+				1106
+			],
+			"id": "ovv6",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 68.80594351845772,
+			"position": [
+				88,
+				1204
+			],
+			"id": "xn66",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 50.98984562619012,
+			"position": [
+				506,
+				1720
+			],
+			"id": "2t6n",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -125.4905207824471,
+			"position": [
+				342,
+				1490
+			],
+			"id": "n4mh",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -83.75808565258495,
+			"position": [
+				356,
+				1362
+			],
+			"id": "t1v9",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 41.725066063050775,
+			"position": [
+				744,
+				1708
+			],
+			"id": "bejf",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				1989,
+				1702
+			],
+			"id": "cnv1",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbag",
+			"position": [
+				486,
+				1695
+			],
+			"id": "8xu9",
+			"rotation": 11,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbag",
+			"position": [
+				430,
+				1602
+			],
+			"id": "f6qc",
+			"rotation": 80,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbag",
+			"position": [
+				423,
+				1615
+			],
+			"id": "p3uv",
+			"rotation": 117,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				433,
+				1635
+			],
+			"id": "7hsm",
+			"rotation": 0,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				422,
+				1636
+			],
+			"id": "6w6d",
+			"rotation": -23,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				406,
+				1624
+			],
+			"id": "q1gj",
+			"rotation": -73,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				408,
+				1602
+			],
+			"id": "zgrc",
+			"rotation": 27,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_4",
+			"position": [
+				1315,
+				1966
+			],
+			"id": "l4xy",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_6",
+			"position": [
+				2253,
+				2037
+			],
+			"id": "2spp",
+			"rotation": -8,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 42,
+			"position": [
+				1315,
+				1965
+			],
+			"id": "gfgu"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -175,
+			"position": [
+				2243,
+				2033
+			],
+			"id": "qn7a"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbag",
+			"position": [
+				3338,
+				1388
+			],
+			"id": "bkkj",
+			"rotation": -7,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbag",
+			"position": [
+				3374,
+				1468
+			],
+			"id": "hut5",
+			"rotation": -88,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbag",
+			"position": [
+				3392,
+				1452
+			],
+			"id": "xvzl",
+			"rotation": -41,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				3389,
+				1416
+			],
+			"id": "1jxn",
+			"rotation": -126,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				3399,
+				1423
+			],
+			"id": "hwwj",
+			"rotation": -145,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				3405,
+				1445
+			],
+			"id": "frxs",
+			"rotation": 147,
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "shell_762mm",
+			"position": [
+				3410,
+				1430
+			],
+			"id": "k7yh",
+			"rotation": 80,
+			"objectScale": null
+		}
+	],
+	"flags": {
+		"capture_the_flag": [
+			[ 150, 1084.15 ],
+			[ 3808.4, 1141.65 ]
+		],
+		"domination": [
+			[ 975.55, 1118.6 ],
+			[ 1993.95, 1188.7 ],
+			[ 2971.75, 1038.5 ]
+		],
+		"conquest": [
+			[ 975.55, 1118.6 ],
+			[ 1678.45, 2400.1 ],
+			[ 1993.95, 1188.7 ],
+			[ 2060.5, 386.4 ],
+			[ 2971.75, 1038.5 ]
+		]
+	},
+	"tiles": [
+		[ 0, 0, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0 ],
+		[ 0, 0, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0 ],
+		[ 0, 0, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 7, 3, 3, 3, 3, 7, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 7, 7, 7, 7, 7, 7, 0, 0, 0, 0, 0 ]
+	],
+	"ai": {
+		"threshold": 50,
+		"nodes": [
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+		]
+	}
+}

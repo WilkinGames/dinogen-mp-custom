@@ -1,0 +1,55 @@
+[
+  {
+    "id": "map_riverside",
+    "name": "STR_MAP_RIVERSIDE"
+  },
+  {
+    "id": "map_complex",
+    "name": "STR_MAP_COMPLEX"
+  },
+  {
+    "id": "map_district",
+    "name": "STR_MAP_DISTRICT"
+  },
+  {
+    "id": "map_sandstorm",
+    "name": "STR_MAP_SANDSTORM"
+  },
+  {
+    "id": "map_firing_range",
+    "name": "STR_MAP_FIRING_RANGE"
+  },
+  {
+    "id": "map_hexagon",
+    "name": "STR_MAP_HEXAGON"
+  },
+  {
+    "id": "map_campsite",
+    "name": "STR_MAP_CAMPSITE",
+    "bCustom": true
+  },
+  {
+    "id": "map_oasis",
+    "name": "STR_MAP_OASIS",
+    "bCustom": true
+  },
+  {
+    "id": "map_villa",
+    "name": "STR_MAP_VILLA",
+    "bCustom": true
+  },
+  {
+    "id": "map_compound",
+    "name": "STR_MAP_COMPOUND",
+    "bCustom": true
+  },
+  {
+    "id": "map_field",
+    "name": "STR_MAP_FIELD"
+  },
+  {
+    "id": "map_custom",
+    "name": "STR_MAP_CUSTOM",
+    "bHidden": true
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": 0,
+    "bDefault": true,
+    "name": "Human FFA",
+    "data": {
+      "gameModeId": "deathmatch",
+      "mapId": "random",
+      "settings": {
+        "allowFactions": "humans"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "bDefault": true,
+    "name": "Humans vs Dinosaurs TDM",
+    "data": {
+      "gameModeId": "team_deathmatch",
+      "mapId": "random",
+      "settings": {
+        "allowFactions": "humans_dinosaurs"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "bDefault": true,
+    "name": "Dinosaur CTF",
+    "data": {
+      "gameModeId": "capture_the_flag",
+      "mapId": "random",
+      "settings": {
+        "allowFactions": "dinosaurs"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "bDefault": true,
+    "name": "Raptor Hide and Seek",
+    "data": {
+      "gameModeId": "raptor_hunt",
+      "mapId": "random",
+      "settings": {
+        "bHardcore": true,
+        "forest": 200,
+        "worldType": "night"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "bDefault": true,
+    "name": "Orchard Domination",
+    "data": {
+      "gameModeId": "domination",
+      "mapId": "map_field",
+      "settings": {
+        "forest": 400,
+        "boxes": 800
+      }
+    }
+  },
+  {
+    "id": 5,
+    "bDefault": true,
+    "name": "Jungle Destruction",
+    "data": {
+      "gameModeId": "destruction",
+      "mapId": "map_complex",
+      "settings": {
+        "forest": 600,
+        "boxes": 600,
+        "bRandomAirdrops": true,
+        "worldType": "jungle"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "bDefault": true,
+    "name": "OG Survival",
+    "data": {
+      "gameModeId": "survival_dino",
+      "mapId": "map_field",
+      "settings": {
+        "bots": 0
+      }
+    }
+  },
+  {
+    "id": 7,
+    "bDefault": true,
+    "name": "Firing Range Chaos",
+    "data": {
+      "gameModeId": "survival_chaos",
+      "mapId": "map_firing_range",
+      "settings": {
+        "bots": 0
+      }
+    }
+  }
+]

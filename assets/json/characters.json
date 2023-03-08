@@ -1,0 +1,1283 @@
+[
+  {
+    "id": "eyewear0000",
+    "name": "STR_NONE",
+    "type": "eyewear",
+    "cost": 0
+  },
+  {
+    "id": "eyewear0002",
+    "name": "STR_EYEWEAR_GLASSES",
+    "type": "eyewear",
+    "cost": 1
+  },
+  {
+    "id": "eyewear0001",
+    "name": "STR_EYEWEAR_SHADES",
+    "type": "eyewear",
+    "cost": 2
+  },
+  {
+    "id": "eyewear0005",
+    "name": "STR_EYEWEAR_GOGGLES_WHITE",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "eyewear0006",
+    "name": "STR_EYEWEAR_GOGGLES_BLACK",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "eyewear0003",
+    "name": "STR_EYEWEAR_GOGGLES_YELLOW",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "eyewear0004",
+    "name": "STR_EYEWEAR_GOGGLES_ORANGE",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "eyewear0007",
+    "name": "STR_EYEWEAR_GOGGLES_RED",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "eyewear0008",
+    "name": "STR_EYEWEAR_GOGGLES_GREEN",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "eyewear0009",
+    "name": "STR_EYEWEAR_GOGGLES_BLUE",
+    "type": "eyewear",
+    "cost": 3
+  },
+  {
+    "id": "facewear0000",
+    "name": "STR_NONE",
+    "type": "facewear",
+    "cost": 0
+  },
+  {
+    "id": "facewear0001",
+    "name": "STR_FACEWEAR_MASK",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 1
+  },
+  {
+    "id": "facewear0010",
+    "name": "STR_FACEWEAR_GAITER",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 1
+  },
+  {
+    "id": "facewear0011",
+    "name": "STR_FACEWEAR_GAITER_MILITIA",
+    "type": "facewear",
+    "bHideBeard": true,
+    "factions": [],
+    "cost": 2
+  },
+  {
+    "id": "facewear0002",
+    "name": "STR_FACEWEAR_SKULL_BANDANA",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "facewear0004",
+    "name": "STR_FACEWEAR_HEAD_SCARF",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "factions": [ "opfor" ],
+    "cost": 2
+  },
+  {
+    "id": "facewear0005",
+    "name": "STR_FACEWEAR_BALACLAVA",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 2
+  },
+  {
+    "id": "facewear0006",
+    "name": "STR_FACEWEAR_SOVIET_SCARF",
+    "type": "facewear",
+    "factions": [ "ru" ],
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 2
+  },
+  {
+    "id": "facewear0027",
+    "name": "STR_FACEWEAR_RED_SCARF",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 5,
+    "factions": []
+  },
+  {
+    "id": "facewear0007",
+    "name": "STR_FACEWEAR_BANDANA_MILITIA",
+    "type": "facewear",
+    "bHideBeard": true,
+    "factions": [],
+    "cost": 2
+  },
+  {
+    "id": "facewear0008",
+    "name": "STR_FACEWEAR_GAS_MASK",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 5,
+    "factions": []
+  },
+  {
+    "id": "facewear0009",
+    "name": "STR_FACEWEAR_BANDANA",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 2
+  },
+  {
+    "id": "facewear0012",
+    "name": "STR_FACEWEAR_GAITER_WHITE",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": []
+  },
+  {
+    "id": "facewear0013",
+    "name": "STR_FACEWEAR_BANDANA_GREY",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": []
+  },
+  {
+    "id": "facewear0014",
+    "name": "STR_FACEWEAR_BANDANA_WHITE",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": []
+  },
+  {
+    "id": "facewear0021",
+    "name": "STR_FACEWEAR_BANDANA_GREEN",
+    "type": "facewear",
+    "bHideBeard": true,
+    "bPremium": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 40
+  },
+  {
+    "id": "facewear0022",
+    "name": "STR_FACEWEAR_BANDANA_BLUE",
+    "type": "facewear",
+    "bHideBeard": true,
+    "bPremium": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 40
+  },
+  {
+    "id": "facewear0023",
+    "name": "STR_FACEWEAR_BANDANA_PINK",
+    "type": "facewear",
+    "bHideBeard": true,
+    "bPremium": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 40
+  },
+  {
+    "id": "facewear0024",
+    "name": "STR_FACEWEAR_BANDANA_PURPLE",
+    "type": "facewear",
+    "bHideBeard": true,
+    "bPremium": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 40
+  },
+  {
+    "id": "facewear0025",
+    "name": "STR_FACEWEAR_BANDANA_YELLOW",
+    "type": "facewear",
+    "bHideBeard": true,
+    "bPremium": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 40
+  },
+  {
+    "id": "facewear0026",
+    "name": "STR_FACEWEAR_BANDANA_ORANGE",
+    "type": "facewear",
+    "bHideBeard": true,
+    "bPremium": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 40
+  },
+  {
+    "id": "facewear0015",
+    "name": "STR_FACEWEAR_BANDANA_GREY",
+    "type": "facewear",
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 36
+  },
+  {
+    "id": "facewear0016",
+    "name": "STR_FACEWEAR_BALACLAVA_GREY",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 34
+  },
+  {
+    "id": "facewear0017",
+    "name": "STR_FACEWEAR_MASK_GREY",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 2,
+    "factions": [],
+    "DELETE": 31
+  },
+  {
+    "id": "facewear0018",
+    "name": "STR_FACEWEAR_GAS_MASK_PMK3",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 10,
+    "bPremium": true,
+    "DELETE": 46,
+    "factions": []
+  },
+  {
+    "id": "facewear0019",
+    "name": "STR_FACEWEAR_ARACHNID",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "facewear0028",
+    "name": "STR_FACEWEAR_ARACHNID_RED",
+    "type": "facewear",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "facewear0020",
+    "name": "STR_FACEWEAR_RESPIRATOR",
+    "type": "facewear",
+    "cost": 2,
+    "bPremium": true,
+    "factions": [],
+    "DELETE": 15
+  },
+  {
+    "id": "face0000",
+    "name": "STR_MALE",
+    "type": "face",
+    "cost": 0
+  },
+  {
+    "id": "face0001",
+    "name": "STR_TONED_1",
+    "type": "face",
+    "cost": 0
+  },
+  {
+    "id": "face0002",
+    "name": "STR_TONED_2",
+    "type": "face",
+    "cost": 0
+  },
+  {
+    "id": "face0003",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 20
+  },
+  {
+    "id": "face0004",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 20
+  },
+  {
+    "id": "face0005",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 20
+  },
+  {
+    "id": "face0006",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 20
+  },
+  {
+    "id": "face0007",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 20
+  },
+  {
+    "id": "face0008",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 20
+  },
+  {
+    "id": "face0010",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 30
+  },
+  {
+    "id": "face0011",
+    "name": "STR_ZOMBIE",
+    "type": "face",
+    "cost": 30
+  },
+  {
+    "id": "HAIR_COLOUR_BROWN",
+    "name": "STR_COLOUR_BROWN",
+    "type": "hairColour",
+    "tint": 4405552,
+    "cost": 0
+  },
+  {
+    "id": "HAIR_COLOUR_BROWN_LIGHT",
+    "name": "STR_COLOUR_LIGHT_BROWN",
+    "type": "hairColour",
+    "tint": 7364432,
+    "cost": 0
+  },
+  {
+    "id": "HAIR_COLOUR_BLACK",
+    "name": "STR_COLOUR_BLACK",
+    "type": "hairColour",
+    "tint": 2302755,
+    "cost": 0
+  },
+  {
+    "id": "HAIR_COLOUR_BLONDE",
+    "name": "STR_COLOUR_BLONDE",
+    "type": "hairColour",
+    "tint": 11382153,
+    "cost": 0
+  },
+  {
+    "id": "HAIR_COLOUR_GINGER",
+    "name": "STR_COLOUR_GINGER",
+    "type": "hairColour",
+    "tint": 9068106,
+    "cost": 0
+  },
+  {
+    "id": "HAIR_COLOUR_GREY",
+    "name": "STR_COLOUR_GREY",
+    "type": "hairColour",
+    "tint": 9999506,
+    "cost": 1,
+    "DELETE": 25
+  },
+  {
+    "id": "HAIR_COLOUR_WHITE",
+    "name": "STR_COLOUR_WHITE",
+    "type": "hairColour",
+    "tint": 12763842,
+    "cost": 1
+  },
+  {
+    "id": "HAIR_COLOUR_RED",
+    "name": "STR_COLOUR_RED",
+    "type": "hairColour",
+    "tint": 11218221,
+    "cost": 10
+  },
+  {
+    "id": "HAIR_COLOUR_GREEN",
+    "name": "STR_COLOUR_GREEN",
+    "type": "hairColour",
+    "tint": 8441203,
+    "cost": 10
+  },
+  {
+    "id": "HAIR_COLOUR_BLUE",
+    "name": "STR_COLOUR_BLUE",
+    "type": "hairColour",
+    "tint": 3767483,
+    "cost": 10,
+    "bPremium": true
+  },
+  {
+    "id": "HAIR_COLOUR_PURPLE",
+    "name": "STR_COLOUR_PURPLE",
+    "type": "hairColour",
+    "tint": 8999380,
+    "cost": 10,
+    "bPremium": true,
+    "DELETE": 30
+  },
+  {
+    "id": "HAIR_COLOUR_PINK",
+    "name": "STR_COLOUR_PINK",
+    "type": "hairColour",
+    "tint": 13914526,
+    "cost": 10,
+    "bPremium": true,
+    "DELETE": 30
+  },
+  {
+    "id": "hair0000",
+    "name": "STR_HAIR_SHORT",
+    "type": "hair",
+    "cost": 0
+  },
+  {
+    "id": "hair0002",
+    "name": "STR_HAIR_LONG",
+    "type": "hair",
+    "cost": 0
+  },
+  {
+    "id": "hair0008",
+    "name": "STR_HAIR_BALD",
+    "type": "hair",
+    "cost": 0
+  },
+  {
+    "id": "hair0001",
+    "name": "STR_HAIR_FLAT_TOP",
+    "type": "hair",
+    "cost": 1,
+    "DELETE": 4
+  },
+  {
+    "id": "hair0003",
+    "name": "STR_HAIR_PONYTAIL",
+    "type": "hair",
+    "cost": 1,
+    "DELETE": 15
+  },
+  {
+    "id": "hair0004",
+    "name": "STR_HAIR_BUZZED",
+    "type": "hair",
+    "cost": 1,
+    "DELETE": 20
+  },
+  {
+    "id": "hair0010",
+    "name": "STR_HAIR_HORSHOE",
+    "type": "hair",
+    "cost": 1
+  },
+  {
+    "id": "hair0007",
+    "name": "STR_HAIR_STYLED",
+    "type": "hair",
+    "cost": 2
+  },
+  {
+    "id": "hair0011",
+    "name": "STR_HAIR_BUN",
+    "type": "hair",
+    "cost": 2
+  },
+  {
+    "id": "hair0009",
+    "name": "STR_HAIR_DREADS",
+    "type": "hair",
+    "cost": 3
+  },
+  {
+    "id": "hair0006",
+    "name": "STR_HAIR_UNDERCUT",
+    "type": "hair",
+    "cost": 3
+  },
+  {
+    "id": "hair0005",
+    "name": "STR_HAIR_SPIKES",
+    "type": "hair",
+    "cost": 3
+  },
+  {
+    "id": "beard0000",
+    "name": "STR_NONE",
+    "type": "beard",
+    "cost": 0
+  },
+  {
+    "id": "beard0001",
+    "name": "STR_BEARD_STUBBLE",
+    "type": "beard",
+    "cost": 1
+  },
+  {
+    "id": "beard0002",
+    "name": "STR_BEARD_FULL",
+    "type": "beard",
+    "cost": 1
+  },
+  {
+    "id": "beard0003",
+    "name": "STR_BEARD_CIRCLE",
+    "type": "beard",
+    "cost": 1
+  },
+  {
+    "id": "beard0004",
+    "name": "STR_BEARD_GOATEE",
+    "type": "beard",
+    "cost": 1
+  },
+  {
+    "id": "beard0005",
+    "name": "STR_BEARD_MOUSTACHE",
+    "type": "beard",
+    "cost": 1
+  },
+  {
+    "id": "beard0006",
+    "name": "STR_BEARD_SIDEBURNS",
+    "type": "beard",
+    "cost": 1
+  },
+  {
+    "id": "head0000",
+    "name": "STR_NONE",
+    "type": "head"
+  },
+  {
+    "id": "head0040",
+    "name": "STR_HEAD_SANTA_HAT",
+    "type": "head",
+    "cost": 20,
+    "factions": []
+  },
+  {
+    "id": "head0041",
+    "name": "STR_HEAD_SANTA_HAT_STRIPED",
+    "type": "head",
+    "cost": 25,
+    "factions": [],
+    "DELETE": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0085",
+    "name": "STR_HEAD_SANTA_HAT_GOLD",
+    "type": "head",
+    "cost": 50,
+    "factions": [],
+    "DELETE": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0039",
+    "name": "STR_RADIO",
+    "type": "head",
+    "cost": 1
+  },
+  {
+    "id": "head0005",
+    "name": "STR_HEAD_CAP",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 1
+  },
+  {
+    "id": "head0006",
+    "name": "STR_HEAD_CAP_BACKWARDS",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 1
+  },
+  {
+    "id": "head0010",
+    "name": "STR_HEAD_BOONIE",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 1
+  },
+  {
+    "id": "head0008",
+    "name": "STR_HEAD_DELTA_HELMET",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 0
+  },
+  {
+    "id": "head0009",
+    "name": "STR_HEAD_TACTICAL_DELTA_HELMET",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 2
+  },
+  {
+    "id": "head0011",
+    "name": "STR_GHILLIE",
+    "type": "head",
+    "cost": 3
+  },
+  {
+    "id": "head0007",
+    "name": "STR_SPEC_OPS",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 1
+  },
+  {
+    "id": "head0014",
+    "name": "STR_HEAD_GIGN_CAP",
+    "type": "head",
+    "factions": [ "gign" ],
+    "cost": 2
+  },
+  {
+    "id": "head0052",
+    "name": "STR_HEAD_GIGN_CAP_BACKWARDS",
+    "type": "head",
+    "factions": [ "gign" ],
+    "cost": 2,
+    "bPremium": true
+  },
+  {
+    "id": "head0053",
+    "name": "STR_HEAD_GSG9_CAP",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 1,
+    "bPremium": true
+  },
+  {
+    "id": "head0054",
+    "name": "STR_HEAD_GSG9_CAP_BACKWARDS",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 1,
+    "bPremium": true
+  },
+  {
+    "id": "head0055",
+    "name": "STR_HEAD_RIOT_HELMET",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 5
+  },
+  {
+    "id": "head0056",
+    "name": "STR_HEAD_RIOT_HELMET_VISOR_UP",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 5
+  },
+  {
+    "id": "head0012",
+    "name": "STR_HEAD_GIGN_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gign" ],
+    "cost": 0
+  },
+  {
+    "id": "head0013",
+    "name": "STR_HEAD_GIGN_HELMET_VISOR_UP",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gign" ],
+    "cost": 2
+  },
+  {
+    "id": "head0050",
+    "name": "STR_HEAD_TACTICAL_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gign" ],
+    "cost": 3,
+    "DELETE": 14
+  },
+  {
+    "id": "head0015",
+    "name": "STR_HEAD_GSG9_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gsg9" ],
+    "cost": 0
+  },
+  {
+    "id": "head0016",
+    "name": "STR_HEAD_GSG9_HELMET_VISOR_DOWN",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gsg9" ],
+    "cost": 2,
+    "DELETE": 15
+  },
+  {
+    "id": "head0017",
+    "name": "STR_HEAD_GSG9_HELMET_VISOR_UP",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gsg9" ],
+    "cost": 2,
+    "DELETE": 15
+  },
+  {
+    "id": "head0051",
+    "name": "STR_HEAD_TACTICAL_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "gsg9" ],
+    "cost": 3
+  },
+  {
+    "id": "head0019",
+    "name": "STR_HEAD_BASIC_HELMET",
+    "type": "head",
+    "factions": [ "militia" ]
+  },
+  {
+    "id": "head0020",
+    "name": "STR_HEAD_BASIC_HELMET_HEADSET",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 2
+  },
+  {
+    "id": "head0049",
+    "name": "STR_HEAD_BASIC_TACTICAL_HELMET",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 3
+  },
+  {
+    "id": "head0021",
+    "name": "STR_HEAD_BERET",
+    "type": "head",
+    "cost": 3
+  },
+  {
+    "id": "head0057",
+    "name": "STR_HEAD_PEACEKEEPER_BERET",
+    "type": "head",
+    "cost": 5
+  },
+  {
+    "id": "head0058",
+    "name": "STR_HEAD_PEACEKEEPER_HELMET",
+    "type": "head",
+    "cost": 5
+  },
+  {
+    "id": "head0083",
+    "name": "STR_HEAD_RED_HELMET",
+    "type": "head",
+    "cost": 5
+  },
+  {
+    "id": "head0059",
+    "name": "STR_HEAD_NIGHTVISION",
+    "type": "head",
+    "cost": 3
+  },
+  {
+    "id": "head0060",
+    "name": "STR_HEAD_ALTYN_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "militia" ],
+    "cost": 10
+  },
+  {
+    "id": "head0061",
+    "name": "STR_HEAD_ALTYN_HELMET_VISOR_UP",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "militia" ],
+    "cost": 10
+  },
+  {
+    "id": "head0087",
+    "name": "STR_HEAD_ALTYN_HELMET_TAN",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "dinogen" ],
+    "cost": 10,
+    "bPremium": true
+  },
+  {
+    "id": "head0088",
+    "name": "STR_HEAD_ALTYN_HELMET_VISOR_UP_TAN",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "dinogen" ],
+    "cost": 10,
+    "bPremium": true
+  },
+  {
+    "id": "head0089",
+    "name": "STR_AETIC",
+    "type": "head",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 40,
+    "factions": [],
+    "DELETE": 25,
+    "bPremium": true
+  },
+  {
+    "id": "head0090",
+    "name": "STR_HEAD_RANGER_NIGHTVISION_1",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 12,
+    "factions": [ "dinogen" ]
+  },
+  {
+    "id": "head0091",
+    "name": "STR_HEAD_RANGER",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 10,
+    "factions": [ "dinogen" ]
+  },
+  {
+    "id": "head0092",
+    "name": "STR_HEAD_RANGER_NIGHTVISION_2",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 12,
+    "factions": [ "dinogen" ]
+  },
+  {
+    "id": "head0093",
+    "name": "STR_HEAD_RANGER_MASK",
+    "type": "head",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "cost": 12,
+    "factions": [ "dinogen" ]
+  },
+  {
+    "id": "head0094",
+    "name": "STR_HEAD_BRUISER",
+    "type": "head",
+    "bHideHair": true,
+    "bHideBeard": true,
+    "factions": [ "militia" ],
+    "cost": 25,
+    "bPremium": true
+  },
+  {
+    "id": "head0062",
+    "name": "STR_HEAD_HOOD",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 6,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "head0063",
+    "name": "STR_HEAD_PMC",
+    "type": "head",
+    "cost": 5,
+    "DELETE": 35,
+    "bPremium": true
+  },
+  {
+    "id": "head0064",
+    "name": "STR_HEAD_MEDIC_HELMET",
+    "type": "head",
+    "cost": 5,
+    "factions": [ "dinogen" ],
+    "bPremium": true
+  },
+  {
+    "id": "head0065",
+    "name": "STR_HEAD_MEDIC_HELMET",
+    "type": "head",
+    "cost": 5,
+    "factions": [ "gign" ],
+    "DELETE": 20,
+    "bPremium": true
+  },
+  {
+    "id": "head0066",
+    "name": "STR_HEAD_MEDIC_HELMET",
+    "type": "head",
+    "cost": 5,
+    "factions": [ "gsg9" ],
+    "DELETE": 20,
+    "bPremium": true
+  },
+  {
+    "id": "head0067",
+    "name": "STR_HEAD_MEDIC_HELMET_MILITIA",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0068",
+    "name": "STR_HEAD_MEDIC_CAP",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 2,
+    "bPremium": true
+  },
+  {
+    "id": "head0069",
+    "name": "STR_HEAD_MEDIC_RADIO_CAP",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 3,
+    "bPremium": true
+  },
+  {
+    "id": "head0071",
+    "name": "STR_HEAD_ALTYN_HELMET_STRIPED",
+    "type": "head",
+    "cost": 10,
+    "DELETE": 40,
+    "bPremium": true
+  },
+  {
+    "id": "head0070",
+    "name": "STR_HEAD_BLAST_HELMET_TAN",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0072",
+    "name": "STR_HEAD_SQUAD_HELMET_TAN",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0074",
+    "name": "STR_HEAD_AIRFRAME_HELMET",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 10,
+    "bPremium": true
+  },
+  {
+    "id": "head0075",
+    "name": "STR_HEAD_AIRFRAME_HELMET_RADIO",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 12,
+    "bPremium": true
+  },
+  {
+    "id": "head0073",
+    "name": "STR_HEAD_AIRFRAME_HELMET_MASK",
+    "type": "head",
+    "factions": [ "dinogen" ],
+    "cost": 13,
+    "bPremium": true
+  },
+  {
+    "id": "head0076",
+    "name": "STR_HEAD_BLAST_HELMET_BLACK",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0077",
+    "name": "STR_HEAD_SQUAD_HELMET_BLACK",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0080",
+    "name": "STR_HEAD_AIRFRAME_HELMET_RADIO_BLACK",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 12,
+    "bPremium": true
+  },
+  {
+    "id": "head0079",
+    "name": "STR_HEAD_AIRFRAME_HELMET_BLACK",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 10,
+    "DELETE": 40,
+    "bPremium": true
+  },
+  {
+    "id": "head0078",
+    "name": "STR_HEAD_AIRFRAME_HELMET_MASK_BLACK",
+    "type": "head",
+    "factions": [ "militia" ],
+    "cost": 15,
+    "bPremium": true
+  },
+  {
+    "id": "head0081",
+    "name": "STR_HEAD_SKY_RONIN_HELMET",
+    "type": "head",
+    "cost": 15,
+    "bPremium": true
+  },
+  {
+    "id": "head0082",
+    "name": "STR_HEAD_ERIC_DST",
+    "type": "head",
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "head0086",
+    "name": "STR_HEAD_ERIC_DST_GREEN",
+    "type": "head",
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "head0023",
+    "name": "STR_HEAD_COMMANDER",
+    "type": "head",
+    "cost": 5,
+    "bPremium": true
+  },
+  {
+    "id": "head0025",
+    "name": "STR_HEAD_USHANKA",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "militia" ],
+    "cost": 5
+  },
+  {
+    "id": "head0027",
+    "name": "STR_HEAD_TOQUE",
+    "type": "head",
+    "factions": [ "militia" ]
+  },
+  {
+    "id": "head0029",
+    "name": "STR_HEAD_CAP_MILITARY",
+    "type": "head",
+    "factions": [ "militia" ]
+  },
+  {
+    "id": "head0031",
+    "name": "STR_HEAD_SOVIET_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "factions": [ "ru" ]
+  },
+  {
+    "id": "head0030",
+    "name": "STR_RECON",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 5
+  },
+  {
+    "id": "head0037",
+    "name": "STR_HEAD_JUGGERNAUT_HELMET",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 10,
+    "bHidden": true
+  },
+  {
+    "id": "head0042",
+    "name": "STR_HEAD_ELITE_HELMET_RED",
+    "type": "head",
+    "bHideHair": true,
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "head0043",
+    "name": "STR_HEAD_ELITE_HELMET_YELLOW",
+    "type": "head",
+    "bHideHair": true,
+    "DELETE": 35,
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "head0044",
+    "name": "STR_HEAD_ELITE_HELMET_BLUE",
+    "type": "head",
+    "bHideHair": true,
+    "DELETE": 35,
+    "cost": 15,
+    "factions": [],
+    "bPremium": true
+  },
+  {
+    "id": "head0045",
+    "name": "STR_HEAD_BALLISTIC_MASK_BLACK",
+    "type": "head",
+    "cost": 5
+  },
+  {
+    "id": "head0046",
+    "name": "STR_HEAD_BALLISTIC_MASK_WHITE",
+    "type": "head",
+    "cost": 6
+  },
+  {
+    "id": "head0084",
+    "name": "STR_HEAD_BALLISTIC_MASK_RED",
+    "type": "head",
+    "factions": [],
+    "cost": 7,
+    "bPremium": true
+  },
+  {
+    "id": "head0033",
+    "name": "STR_HEAD_HEADBAND",
+    "type": "head",
+    "factions": [],
+    "cost": 2
+  },
+  {
+    "id": "head0036",
+    "name": "STR_HEAD_SNIPER",
+    "type": "head",
+    "cost": 5
+  },
+  {
+    "id": "body0000",
+    "name": "STR_STANDARD",
+    "type": "body",
+    "factions": [ "dinogen" ]
+  },
+  {
+    "id": "body0003",
+    "name": "STR_OPERATOR",
+    "type": "body",
+    "factions": [ "dinogen" ],
+    "cost": 5
+  },
+  {
+    "id": "body0006",
+    "name": "STR_HEAVY",
+    "type": "body",
+    "factions": [ "dinogen" ],
+    "cost": 10
+  },
+  {
+    "id": "body0001",
+    "name": "STR_STANDARD",
+    "type": "body",
+    "factions": [ "militia" ]
+  },
+  {
+    "id": "body0004",
+    "name": "STR_OPERATOR",
+    "type": "body",
+    "factions": [ "militia" ],
+    "cost": 5
+  },
+  {
+    "id": "body0007",
+    "name": "STR_HEAVY",
+    "factions": [ "militia" ],
+    "type": "body",
+    "cost": 10
+  },
+  {
+    "id": "body0005",
+    "name": "STR_SHIRTLESS",
+    "type": "body",
+    "cost": 25
+  },
+  {
+    "id": "body0010",
+    "name": "STR_ZOMBIE",
+    "type": "body",
+    "cost": 50
+  },
+  {
+    "id": "body0002",
+    "name": "STR_JUGGERNAUT",
+    "type": "body",
+    "cost": 100
+  },
+  {
+    "id": "boots",
+    "name": "STR_DEFAULT",
+    "type": "legs",
+    "cost": 0
+  },
+  {
+    "id": "shorts",
+    "name": "STR_LEGS_SHORTS",
+    "type": "legs",
+    "cost": 5
+  },
+  {
+    "id": "barefoot",
+    "name": "STR_LEGS_BAREFOOT",
+    "type": "legs",
+    "cost": 10
+  },
+  {
+    "id": "juggernaut",
+    "name": "STR_JUGGERNAUT",
+    "type": "legs",
+    "cost": 25
+  }
+]

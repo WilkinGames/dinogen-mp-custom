@@ -1,0 +1,108 @@
+[
+  {
+    "id": "ribbon_kills",
+    "stat": "kills",
+    "xp": 250
+  },
+  {
+    "id": "ribbon_assists",
+    "stat": "assists"
+  },
+  {
+    "id": "ribbon_melee",
+    "stat": "melees"
+  },
+  {
+    "id": "ribbon_avenger",
+    "stat": "avengers"
+  },
+  {
+    "id": "ribbon_mcom",
+    "stat": "firstBloods",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_pistol",
+    "stat": "kills_pistol",
+    "weaponType": "TYPE_PISTOL"
+  },
+  {
+    "id": "ribbon_smg",
+    "stat": "kills_smg",
+    "weaponType": "TYPE_SMG"
+  },
+  {
+    "id": "ribbon_rifle",
+    "stat": "kills_rifle",
+    "weaponType": "TYPE_RIFLE"
+  },
+  {
+    "id": "ribbon_dmr",
+    "stat": "kills_dmr",
+    "weaponType": "TYPE_DMR"
+  },
+  {
+    "id": "ribbon_lmg",
+    "stat": "kills_lmg",
+    "weaponType": "TYPE_LMG"
+  },
+  {
+    "id": "ribbon_carbine",
+    "stat": "kills_carbine",
+    "weaponType": "TYPE_CARBINE"
+  },
+  {
+    "id": "ribbon_sniper",
+    "stat": "kills_sniper",
+    "weaponType": "TYPE_SNIPER"
+  },
+  {
+    "id": "ribbon_tank",
+    "stat": "tanksKilled",
+    "threshold": 5
+  },
+  {
+    "id": "ribbon_heli",
+    "stat": "helisKilled",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_captures",
+    "stat": "captures",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_ctf",
+    "stat": "returns",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_bombs",
+    "stat": "plants",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_defuses",
+    "stat": "defuses",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_repair",
+    "stat": "repairs"
+  },
+  {
+    "id": "ribbon_defib",
+    "stat": "revives",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_obliteration",
+    "stat": "multiKills",
+    "threshold": 10
+  },
+  {
+    "id": "ribbon_carrier",
+    "stat": "flagCarrierKills",
+    "threshold": 5
+  }
+]

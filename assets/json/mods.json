@@ -1,0 +1,279 @@
+[
+  {
+    "id": "reflex",
+    "type": "optic",
+    "name": "STR_MOD_REFLEX",
+    "desc": "STR_MOD_REFLEX_DESC",
+    "score": 1000,
+    "moneyCost": 100,
+    "cost": 1
+  },
+  {
+    "id": "eotech",
+    "type": "optic",
+    "name": "STR_MOD_EOTECH",
+    "desc": "STR_MOD_EOTECH_DESC",
+    "score": 7500,
+    "moneyCost": 250,
+    "cost": 2
+  },
+  {
+    "id": "acog",
+    "type": "optic",
+    "name": "STR_MOD_ACOG",
+    "desc": "STR_MOD_ACOG_DESC",
+    "score": 15000,
+    "moneyCost": 500,
+    "cost": 5
+  },
+  {
+    "id": "scope",
+    "type": "optic",
+    "name": "STR_MOD_SCOPE",
+    "desc": "STR_MOD_SCOPE_DESC",
+    "score": 0
+  },
+  {
+    "id": "scope_dmr",
+    "type": "optic",
+    "name": "STR_MOD_SCOPE",
+    "desc": "STR_MOD_SCOPE_DESC",
+    "score": 20000,
+    "moneyCost": 1000,
+    "cost": 10
+  },
+  {
+    "id": "ammo_fmj",
+    "type": "ammo",
+    "name": "STR_MOD_FMJ",
+    "desc": "STR_MOD_FMJ_DESC",
+    "score": 5000,
+    "moneyCost": 1000,
+    "cost": 2
+  },
+  {
+    "id": "ammo_ap",
+    "type": "ammo",
+    "name": "STR_MOD_PIERCING",
+    "desc": "STR_MOD_PIERCING_DESC",
+    "score": 2500,
+    "moneyCost": 500,
+    "cost": 1
+  },
+  {
+    "id": "ammo_magpull",
+    "type": "accessory",
+    "name": "STR_MOD_MAGPULL",
+    "desc": "STR_MOD_MAGPULL_DESC",
+    "score": 7000,
+    "moneyCost": 1000,
+    "cost": 3
+  },
+  {
+    "id": "ammo_extended",
+    "type": "ammo",
+    "name": "STR_MOD_EXTENDED",
+    "desc": "STR_MOD_EXTENDED_DESC",
+    "score": 10000,
+    "moneyCost": 1500,
+    "cost": 2
+  },
+  {
+    "id": "ammo_slug",
+    "type": "ammo",
+    "name": "STR_MOD_SLUG",
+    "desc": "STR_MOD_SLUG_DESC",
+    "score": 15000,
+    "moneyCost": 3000,
+    "cost": 3
+  },
+  {
+    "id": "ammo_fire",
+    "type": "ammo",
+    "name": "STR_MOD_DRAGONS_BREATH",
+    "desc": "STR_MOD_DRAGONS_BREATH_DESC",
+    "score": 25000,
+    "moneyCost": 5000,
+    "cost": 5
+  },
+  {
+    "id": "arrow_poison",
+    "type": "ammo",
+    "name": "STR_MOD_ARROW_POISON",
+    "desc": "STR_MOD_ARROW_POISON_DESC",
+    "score": 10000,
+    "moneyCost": 5000,
+    "cost": 10
+  },
+  {
+    "id": "ammo_hollow_point",
+    "type": "ammo",
+    "name": "STR_MOD_HOLLOW_POINT",
+    "desc": "STR_MOD_HOLLOW_POINT_DESC",
+    "score": 12500,
+    "moneyCost": 2500,
+    "cost": 5
+  },
+  {
+    "id": "ammo_explosive",
+    "type": "ammo",
+    "name": "STR_MOD_EXPLOSIVE",
+    "desc": "STR_MOD_EXPLOSIVE_DESC",
+    "score": 30000,
+    "moneyCost": 10000,
+    "cost": 10
+  },
+  {
+    "id": "arrow_explosive",
+    "type": "ammo",
+    "name": "STR_MOD_ARROW_EXPLOSIVE",
+    "desc": "STR_MOD_ARROW_EXPLOSIVE_DESC",
+    "score": 30000,
+    "moneyCost": 10000,
+    "cost": 20
+  },
+  {
+    "id": "grenade_smoke",
+    "type": "ammo",
+    "name": "STR_MOD_GRENADE_SMOKE",
+    "desc": "STR_MOD_GRENADE_SMOKE_DESC",
+    "score": 2500,
+    "cost": 1
+  },
+  {
+    "id": "grenade_stun",
+    "type": "ammo",
+    "name": "STR_MOD_GRENADE_STUN",
+    "desc": "STR_WPN_DESC_STUN",
+    "score": 5000,
+    "cost": 5,
+    "moneyCost": 2000
+  },
+  {
+    "id": "grenade_flash",
+    "type": "ammo",
+    "name": "STR_MOD_GRENADE_FLASH",
+    "desc": "STR_WPN_DESC_FLASHBANG",
+    "score": 7500,
+    "cost": 5,
+    "moneyCost": 2500
+  },
+  {
+    "id": "grenade_he",
+    "type": "ammo",
+    "name": "STR_MOD_GRENADE_HE",
+    "desc": "STR_MOD_GRENADE_HE_DESC",
+    "score": 10000,
+    "cost": 10,
+    "moneyCost": 3000
+  },
+  {
+    "id": "grenade_fire",
+    "type": "ammo",
+    "name": "STR_MOD_GRENADE_FIRE",
+    "desc": "STR_MOD_GRENADE_FIRE_DESC",
+    "score": 15000,
+    "cost": 10,
+    "moneyCost": 5000
+  },
+  {
+    "id": "acc_laser",
+    "type": "accessory",
+    "name": "STR_MOD_LASER",
+    "desc": "STR_MOD_LASER_DESC",
+    "score": 1500,
+    "moneyCost": 250,
+    "cost": 1
+  },
+  {
+    "id": "acc_flashlight",
+    "type": "accessory",
+    "name": "STR_MOD_FLASHLIGHT",
+    "desc": "STR_MOD_FLASHLIGHT_DESC",
+    "score": 1000,
+    "cost": 1
+  },
+  {
+    "id": "acc_masterkey",
+    "type": "accessory",
+    "name": "STR_MOD_MASTERKEY",
+    "desc": "STR_MOD_MASTERKEY_DESC",
+    "score": 5000,
+    "cost": 5
+  },
+  {
+    "id": "barrel_silencer",
+    "type": "barrel",
+    "name": "STR_MOD_SUPPRESSOR",
+    "desc": "STR_MOD_SUPPRESSOR_DESC",
+    "score": 3000,
+    "cost": 1
+  },
+  {
+    "id": "acc_grip",
+    "type": "accessory",
+    "name": "STR_MOD_GRIP",
+    "desc": "STR_MOD_GRIP_DESC",
+    "score": 3000,
+    "moneyCost": 500,
+    "cost": 2
+  },
+  {
+    "id": "acc_grip_angled",
+    "type": "accessory",
+    "name": "STR_MOD_GRIP_ANGLED",
+    "desc": "STR_MOD_GRIP_ANGLED_DESC",
+    "score": 7500,
+    "moneyCost": 500,
+    "cost": 5
+  },
+  {
+    "id": "acc_m203",
+    "type": "accessory",
+    "name": "STR_MOD_M203",
+    "desc": "STR_MOD_M203_DESC",
+    "score": 10000,
+    "cost": 10
+  },
+  {
+    "id": "acc_m320",
+    "type": "accessory",
+    "name": "STR_MOD_M320",
+    "desc": "STR_MOD_M203_DESC",
+    "score": 10000,
+    "cost": 10,
+    "moneyCost": 2500
+  },
+  {
+    "id": "acc_gp25",
+    "type": "accessory",
+    "name": "STR_MOD_GP25",
+    "desc": "STR_MOD_M203_DESC",
+    "score": 10000,
+    "cost": 10
+  },
+  {
+    "id": "barrel_compensator",
+    "type": "barrel",
+    "name": "STR_MOD_COMPENSATOR",
+    "desc": "STR_MOD_COMPENSATOR_DESC",
+    "score": 5000,
+    "cost": 2
+  },
+  {
+    "id": "barrel_booster",
+    "type": "barrel",
+    "name": "STR_MOD_BRAKE",
+    "desc": "STR_MOD_BRAKE_DESC",
+    "score": 10000,
+    "cost": 3
+  },
+  {
+    "id": "barrel_range",
+    "type": "barrel",
+    "name": "STR_MOD_HEAVY",
+    "desc": "STR_MOD_HEAVY_DESC",
+    "score": 15000,
+    "cost": 5
+  }
+]

@@ -1,0 +1,5919 @@
+{
+	"id": "testRoom",
+	"name": "Test Room",
+	"desc": "Test every weapon, dinosaur and vehicle against any enemy.",
+	"mapId": "map_custom",
+	"gameModeId": "scenario",
+	"settings": {
+		"bUseDefaultMapObjects": false,
+		"bDebug": false,
+		"bFriendlyFire": false,
+		"bMapObjects": true,
+		"bMapVehicles": true,
+		"bMapWeapons": true,
+		"bAllowRespawns": true,
+		"preGameTimer": 0,
+		"width": 3328,
+		"height": 1280,
+		"bAllowGameModeSelection": false,
+		"bAllowClassSelection": false,
+		"money": 100000,
+		"weaponRespawnTime": 1,
+		"bUseKillfeed": false,
+		"bAllowSpectators": true,
+		"bDisableRespawnTimer": false,
+		"worldType": null,
+		"playerDamageMultipliers": {
+			"1": null,
+			"2": null,
+			"3": null,
+			"4": null,
+			"5": null
+		},
+		"respawnTime": 1
+	},
+	"functions": [],
+	"triggers": [
+		{
+			"id": "trigger_gameInit",
+			"event": "gameInit",
+			"actions": [
+				{
+					"action": "setVariable",
+					"delay": 0,
+					"name": "Dummyhealth",
+					"value": 0
+				},
+				{
+					"action": "setHUDElement",
+					"delay": 0,
+					"id": null,
+					"label": "DummyHealth",
+					"value": null,
+					"variableName": "DummyHealth"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_playerJoined",
+			"event": "playerJoined",
+			"actions": [
+				{
+					"action": "respawn",
+					"playerIndex": "{playerIndex}",
+					"data": {
+						"currentFaction": "human",
+						"position": [
+							1664,
+							640
+						],
+						"inventory": [
+							{
+								"id": "jackhammer",
+								"name": null,
+								"mag": 999,
+								"ammo": 999,
+								"mods": {
+									"optic": "scope",
+									"accessory": "acc_laser",
+									"barrel": "barrel_booster",
+									"ammo": "arrow_poison"
+								}
+							},
+							{
+								"id": "railgun",
+								"name": null,
+								"mag": 999,
+								"ammo": 999,
+								"mods": {
+									"optic": "reflex",
+									"accessory": "acc_laser",
+									"barrel": "barrel_booster",
+									"ammo": "ammo_slug"
+								}
+							}
+						],
+						"melee": "melee_knife",
+						"equipment": "ammo_box",
+						"grenade": "frag",
+						"dinoType": null
+					},
+					"delay": 0
+				}
+			],
+			"repeats": null,
+			"playerIndex": null
+		},
+		{
+			"id": "trigger_spawnHandguns1-7",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "g17",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "usp45",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "fiveseven",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m1911",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "magnum",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "deagle",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnHandguns8-14",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "p320",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "rhino",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "snub",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "luger",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "mk22",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "maxim9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "rsh12",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnMachinePistols2-13",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m93r",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mp9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mpa57",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "fmg9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "kard",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "skorpion",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "mac11",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "cz75",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "vp70",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "micro_uzi",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "mp1911",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "tec9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnSMGs1-10",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mp5",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "ump45",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mp7",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "vector",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "p90",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "evo3",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "honeybadger",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "bizon",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "uzi",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "mpx",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnCarbines1-10",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m4a1",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "g36c",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "pdr",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "ak74u",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mcx",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "arp",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "asval",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "k1a",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "lvoa",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "rdb",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnAssaultRifles1-8",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m16a4",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "tar21",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "ak47",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "hk416",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "famas",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "scarh",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "acr",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "aug",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnAssaultRifles9-16",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "fal",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "an94",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "par4",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "sks",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "l85a3",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "g3",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "g11",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "oicw",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnShotguns1-8",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m3",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m1014",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "striker",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "spas12",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m47",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "aa12",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "ksg",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "m1216",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnShotguns9-15",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "db",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "saiga12",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "dp12",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "jackhammer",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "origin12",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "sawed_off",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m1187",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnSnipers1-10",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m40a3",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "r700",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "l115a3",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "msr",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "steyr",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "dsr1",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "pgm",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "intervention",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "m82",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "tac50",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnDMRs1-7",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "samr",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "msg90",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "rsass",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "sr25",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "dragunov",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "sg550",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "fal_osw",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnLMGs1-9",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mg4",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m60e4",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "aughbar",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m249",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "pecheneg",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "hamr",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "rpk",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "qbb95",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "bren",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnLMGs10-17",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "ultimax",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "m240",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "mg42",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "ameli",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "rpk16",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "l86lsw",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "minigun",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m2",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnLaunchers1-12",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "thumper",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "smaw",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "rpg",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "mgl",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "xm25",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "m202",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1344,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "m320",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "matador",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "gm94",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "stinger",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "javelin",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						512
+					],
+					"rotation": 0,
+					"weaponId": "m203",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnTacticals1-6",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1334,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "flamethrower",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1472,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "tazer",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1600,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "riot_shield",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1728,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "crossbow",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1856,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "bow",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						1984,
+						384
+					],
+					"rotation": 0,
+					"weaponId": "railgun",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": 999,
+					"mods": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "character",
+					"position": [
+						1664,
+						1089
+					],
+					"rotation": 0,
+					"avatarId": null,
+					"avatar": null,
+					"bRegenHealth": false,
+					"bJuggernaut": false,
+					"bZombie": false,
+					"bBot": false,
+					"botSkill": 0,
+					"team": -1,
+					"speedMultiplier": 1,
+					"inventory": [
+						{
+							"id": "{special:randomFirearmId}"
+						}
+					],
+					"melee": null,
+					"equipment": null,
+					"grenade": null,
+					"pawnName": "Dummy",
+					"health": "{var:DummyHealth}",
+					"bUnlimitedAmmo": null,
+					"bIgnoreOutOfSight": null,
+					"bInvestigate": null,
+					"bInteract": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bDropWeapons": false,
+					"bUntargetable": null,
+					"bCamp": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Remove1HealthfromDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": -1
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Add1HealthtoDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": 1
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Remove10HealthfromDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": -10
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Add10HealthtoDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": 10
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Remove100HealthfromDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": -100
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Add100HealthtoDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": 100
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Remove1000HealthDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": -1000
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Add1000HealthDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": 1000
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Remove10000HealthDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": -10000
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_Add10000HealthDummy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "DummyHealth",
+					"value": 10000
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_spawnSandbagBarrier",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb1",
+					"type": "obstacle",
+					"position": [
+						128,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb2",
+					"type": "obstacle",
+					"position": [
+						256,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb3",
+					"type": "obstacle",
+					"position": [
+						384,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb4",
+					"type": "obstacle",
+					"position": [
+						512,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb5",
+					"type": "obstacle",
+					"position": [
+						640,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb6",
+					"type": "obstacle",
+					"position": [
+						768,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb7",
+					"type": "obstacle",
+					"position": [
+						896,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb8",
+					"type": "obstacle",
+					"position": [
+						1024,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb9",
+					"type": "obstacle",
+					"position": [
+						1152,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb10",
+					"type": "obstacle",
+					"position": [
+						1280,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb11",
+					"type": "obstacle",
+					"position": [
+						1408,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb12",
+					"type": "obstacle",
+					"position": [
+						1536,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb13",
+					"type": "obstacle",
+					"position": [
+						1664,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb14",
+					"type": "obstacle",
+					"position": [
+						1792,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb15",
+					"type": "obstacle",
+					"position": [
+						1920,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb16",
+					"type": "obstacle",
+					"position": [
+						2048,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb17",
+					"type": "obstacle",
+					"position": [
+						2176,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb18",
+					"type": "obstacle",
+					"position": [
+						2304,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb19",
+					"type": "obstacle",
+					"position": [
+						2432,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb20",
+					"type": "obstacle",
+					"position": [
+						2560,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb21",
+					"type": "obstacle",
+					"position": [
+						2688,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb22",
+					"type": "obstacle",
+					"position": [
+						2816,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb23",
+					"type": "obstacle",
+					"position": [
+						2944,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb24",
+					"type": "obstacle",
+					"position": [
+						3072,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb25",
+					"type": "obstacle",
+					"position": [
+						3200,
+						256
+					],
+					"rotation": -90,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb26",
+					"type": "obstacle",
+					"position": [
+						3072,
+						384
+					],
+					"rotation": 0,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb27",
+					"type": "obstacle",
+					"position": [
+						3072,
+						640
+					],
+					"rotation": 0,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb28",
+					"type": "obstacle",
+					"position": [
+						3072,
+						832
+					],
+					"rotation": 0,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "sb29",
+					"type": "obstacle",
+					"position": [
+						3072,
+						960
+					],
+					"rotation": 0,
+					"health": null,
+					"mass": null,
+					"obstacleId": "sandbags_large",
+					"items": null,
+					"indicatorData": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "removeSandbagButton",
+					"type": "lever",
+					"position": [
+						1664,
+						320
+					],
+					"rotation": 0,
+					"leverType": "lever",
+					"bDisabled": false,
+					"targetId": null,
+					"triggerId": "trigger_removeSandbagBarrier",
+					"indicatorData": null
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "spawnSandbagButton"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_removeSandbagBarrier",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb1"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb2"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb3"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb4"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb5"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb6"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb7"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb8"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb9"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb10"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb11"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb12"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb13"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb14"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb15"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb16"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb17"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb18"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb19"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb20"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb21"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb22"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb23"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb24"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb25"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb26"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb27"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb28"
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "sb29"
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "spawnSandbagButton",
+					"type": "lever",
+					"position": [
+						1664,
+						320
+					],
+					"rotation": 0,
+					"leverType": "lever",
+					"bDisabled": false,
+					"targetId": null,
+					"triggerId": "trigger_spawnSandbagBarrier",
+					"indicatorData": null
+				},
+				{
+					"action": "removeObject",
+					"delay": 0,
+					"objectId": "removeSandbagButton"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurCompy",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "compy"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurDilo",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "dilo"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurRaptor",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "raptor"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurNeedler",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "needler"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurStegosaurus",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "stegosaurus"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurCarnotaurus",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "carnotaurus"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurAllosaurus",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "allosaurus"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurSpinosaurus",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "spinosaurus"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurTrex",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "trex"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setDinosaurLizard",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentDinosaur",
+					"delay": 0,
+					"playerId": null,
+					"dinoId": "lizard"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_setInventory",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCurrentClass",
+					"delay": 0,
+					"playerId": null,
+					"inventory": [
+						{
+							"id": "minigun",
+							"name": null,
+							"mag": 999,
+							"ammo": 999,
+							"mods": {
+								"optic": "scope",
+								"accessory": "acc_laser",
+								"barrel": "barrel_booster",
+								"ammo": "arrow_poison"
+							}
+						},
+						{
+							"id": "javelin",
+							"name": null,
+							"mag": null,
+							"ammo": 999,
+							"mods": {
+								"optic": "scope",
+								"accessory": "ammo_magpull",
+								"barrel": null,
+								"ammo": "grenade_fire"
+							}
+						}
+					],
+					"melee": null,
+					"equipment": null,
+					"grenade": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_\"remove\"Weapons",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": null,
+					"type": "droppedWeapon",
+					"position": [
+						3228,
+						1180
+					],
+					"rotation": 0,
+					"weaponId": "m9",
+					"bRandomVelocity": false,
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"repeats": null
+		}
+	],
+	"tiles": [
+		[
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			352,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			314,
+			310,
+			315,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			313,
+			7,
+			312,
+			0,
+			0,
+			0,
+			0,
+			0
+		]
+	],
+	"objects": [
+		{
+			"type": "spawner",
+			"position": [
+				1664,
+				428
+			],
+			"id": "gbg1",
+			"rotation": 0,
+			"objectType": "money",
+			"timer": 1,
+			"numObjects": 1,
+			"value": 100000
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "apache",
+			"position": [
+				1054,
+				1213
+			],
+			"id": "u8jf",
+			"rotation": 0,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"mass": 1,
+			"team": 0,
+			"bRespawn": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tank",
+			"vehicleId": "abrams",
+			"position": [
+				118,
+				855
+			],
+			"id": "abr",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"bGodMode": true,
+			"tint": null,
+			"bUntargetable": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				128,
+				128
+			],
+			"id": "NoArmor",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "character",
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"inventory": [
+				{
+					"id": "{special:randomFirearmId}"
+				}
+			],
+			"avatar": {
+				"body": "body0005",
+				"head": null,
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BROWN",
+				"beard": null,
+				"face": null
+			},
+			"pawnName": "NoArmor",
+			"avatarId": null,
+			"melee": null,
+			"equipment": null,
+			"grenade": null,
+			"health": null,
+			"bHideHealthBar": null,
+			"bUnlimitedAmmo": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"bSwitchToMelee": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				768,
+				128
+			],
+			"id": "Compy",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "compy",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Compy",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				384,
+				128
+			],
+			"id": "BlastVest",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "character",
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"inventory": [
+				{
+					"id": "{special:randomFirearmId}"
+				}
+			],
+			"equipment": "blast_vest",
+			"pawnName": "BlastVest",
+			"avatarId": null,
+			"avatar": null,
+			"melee": null,
+			"grenade": null,
+			"health": null,
+			"bHideHealthBar": null,
+			"bUnlimitedAmmo": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"bSwitchToMelee": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				256,
+				128
+			],
+			"id": "Kevlar",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "character",
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"inventory": [
+				{
+					"id": "{special:randomFirearmId}"
+				}
+			],
+			"equipment": "kevlar",
+			"pawnName": "Kevlar",
+			"avatarId": null,
+			"avatar": null,
+			"melee": null,
+			"grenade": null,
+			"health": null,
+			"bHideHealthBar": null,
+			"bUnlimitedAmmo": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"bSwitchToMelee": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				512,
+				128
+			],
+			"id": "DinoVest",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "character",
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"inventory": [
+				{
+					"id": "{special:randomFirearmId}"
+				}
+			],
+			"equipment": "dino_vest",
+			"pawnName": "DinoVest",
+			"avatarId": null,
+			"avatar": null,
+			"melee": null,
+			"grenade": null,
+			"health": null,
+			"bHideHealthBar": null,
+			"bUnlimitedAmmo": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"bSwitchToMelee": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				640,
+				128
+			],
+			"id": "Juggernaut",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "character",
+			"bRegenHealth": true,
+			"bJuggernaut": true,
+			"bZombie": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"inventory": [
+				{
+					"id": "{special:randomFirearmId}"
+				}
+			],
+			"pawnName": "Juggernaut",
+			"avatar": {
+				"body": "body0002",
+				"head": null,
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BROWN",
+				"beard": null,
+				"face": null
+			},
+			"avatarId": null,
+			"melee": null,
+			"equipment": null,
+			"grenade": null,
+			"health": null,
+			"bHideHealthBar": null,
+			"bUnlimitedAmmo": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"bSwitchToMelee": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				896,
+				128
+			],
+			"id": "Dilo",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "dilo",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Dilo",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1024,
+				128
+			],
+			"id": "Raptor",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "raptor",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Raptor",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1152,
+				128
+			],
+			"id": "Needler",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "needler",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Needler",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1280,
+				128
+			],
+			"id": "Stego",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "stegosaurus",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Stegosaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1408,
+				128
+			],
+			"id": "Carno",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "carnotaurus",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Carnotaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1536,
+				128
+			],
+			"id": "Allo",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "allosaurus",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Allosaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1664,
+				128
+			],
+			"id": "Spino",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "spinosaurus",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Spinosaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1792,
+				128
+			],
+			"id": "Trex",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "trex",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "T-Rex",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1920,
+				128
+			],
+			"id": "Lizard",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "lizard",
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Lizard",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2048,
+				128
+			],
+			"id": "SavageCompy",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "compy",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Compy",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2176,
+				128
+			],
+			"id": "SavageDilo",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "dilo",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Dilo",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2304,
+				128
+			],
+			"id": "SavageRaptor",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "raptor",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Raptor",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2432,
+				128
+			],
+			"id": "SavageNeedler",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "needler",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Needler",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2560,
+				128
+			],
+			"id": "SavageStego",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "stegosaurus",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Stegosaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2688,
+				128
+			],
+			"id": "SavageCarno",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "carnotaurus",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Carnotaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2816,
+				128
+			],
+			"id": "SavageAllo",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "allosaurus",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Allosaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				2944,
+				128
+			],
+			"id": "SavageSpino",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "spinosaurus",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Spinosaurus",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				3072,
+				128
+			],
+			"id": "SavageTrex",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "trex",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage T-Rex",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				3200,
+				128
+			],
+			"id": "SavageLizard",
+			"rotation": 0,
+			"timer": 0.001,
+			"numObjects": 1,
+			"objectType": "dinosaur",
+			"dinoType": "lizard",
+			"bSavage": true,
+			"bRegenHealth": false,
+			"bBot": false,
+			"botSkill": 0,
+			"team": 1,
+			"speedMultiplier": 1,
+			"pawnName": "Savage Lizard",
+			"bCanInteract": false,
+			"health": null,
+			"bHideHealthBar": null,
+			"bIgnoreOutOfSight": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"colour": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1216,
+				576
+			],
+			"id": "buttonhandgun1",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnHandguns1-7",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1280,
+				576
+			],
+			"id": "buttonhandgun2",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnHandguns8-14",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1344,
+				576
+			],
+			"id": "n3nr",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnMachinePistols2-13",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1408,
+				576
+			],
+			"id": "cifx",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnSMGs1-10",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1472,
+				576
+			],
+			"id": "hnla",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnCarbines1-10",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1536,
+				576
+			],
+			"id": "f6oi",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnAssaultRifles1-8",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1600,
+				576
+			],
+			"id": "muge",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnAssaultRifles9-16",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1664,
+				576
+			],
+			"id": "7rhv",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnShotguns1-8",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1728,
+				576
+			],
+			"id": "jtql",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnShotguns9-15",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1792,
+				576
+			],
+			"id": "69ux",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnSnipers1-10",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1856,
+				576
+			],
+			"id": "12vv",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnDMRs1-7",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1918,
+				576
+			],
+			"id": "utwe",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnLMGs1-9",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1984,
+				576
+			],
+			"id": "z488",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnLMGs10-17",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2048,
+				576
+			],
+			"id": "0mpt",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnLaunchers1-12",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2112,
+				576
+			],
+			"id": "n7m2",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnTacticals1-6",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1664,
+				897
+			],
+			"id": "yjw1",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1728,
+				897
+			],
+			"id": "ugrn",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Add1HealthtoDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1600,
+				897
+			],
+			"id": "si62",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Remove1HealthfromDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1792,
+				897
+			],
+			"id": "hhf3",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Add10HealthtoDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1536,
+				897
+			],
+			"id": "ttg0",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Remove10HealthfromDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1856,
+				897
+			],
+			"id": "6zlb",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Add100HealthtoDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1472,
+				897
+			],
+			"id": "vysn",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Remove100HealthfromDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1920,
+				897
+			],
+			"id": "31uy",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Add1000HealthDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1408,
+				897
+			],
+			"id": "tjga",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Remove1000HealthDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1344,
+				897
+			],
+			"id": "8anz",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Remove10000HealthDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1984,
+				897
+			],
+			"id": "rmgv",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_Add10000HealthDummy",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "crate",
+			"crateType": "CRATE_AMMO",
+			"itemData": {
+				"uses": null,
+				"maxUses": null,
+				"interactTime": null
+			},
+			"position": [
+				1280,
+				448
+			],
+			"id": "keaz",
+			"rotation": 0,
+			"bDisposable": false,
+			"bDisabled": false,
+			"mass": 0,
+			"ownerId": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				1664,
+				1006
+			],
+			"id": "8oe6",
+			"rotation": 90,
+			"mass": 0,
+			"health": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bNoBody": false,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				1610,
+				1070
+			],
+			"id": "ny6m",
+			"rotation": 0,
+			"mass": 0,
+			"health": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bNoBody": false,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				1718,
+				1068
+			],
+			"id": "o2vw",
+			"rotation": -180,
+			"mass": 0,
+			"health": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bNoBody": false,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1664,
+				320
+			],
+			"id": "spawnSandbagButton",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_spawnSandbagBarrier",
+			"targetId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				3200,
+				960
+			],
+			"id": "qi9e",
+			"rotation": 0,
+			"objectType": "egg",
+			"timer": 0.001,
+			"numObjects": 1,
+			"eggType": "egg_small",
+			"team": 1,
+			"mass": 0,
+			"items": [
+				{
+					"type": "dinosaur",
+					"id": "0b3q",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "compy",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"botSkill": 0,
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bIgnoreOutOfSight": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"hatchTimer": 9999,
+			"health": null,
+			"bUntargetable": null,
+			"bRegenHealth": false,
+			"bDisabled": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				3200,
+				832
+			],
+			"id": "ul9f",
+			"rotation": 0,
+			"objectType": "egg",
+			"timer": 0.001,
+			"numObjects": 1,
+			"eggType": "egg_large",
+			"team": 1,
+			"mass": 0,
+			"items": [
+				{
+					"type": "dinosaur",
+					"id": "0b3q",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "compy",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"botSkill": 0,
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bIgnoreOutOfSight": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"hatchTimer": 9999,
+			"health": null,
+			"bUntargetable": null,
+			"bRegenHealth": false,
+			"bDisabled": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				3200,
+				640
+			],
+			"id": "x1z0",
+			"rotation": 0,
+			"objectType": "egg",
+			"timer": 0.001,
+			"numObjects": 1,
+			"eggType": "egg_huge",
+			"team": 1,
+			"mass": 0,
+			"items": [
+				{
+					"type": "dinosaur",
+					"id": "0b3q",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "compy",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"botSkill": 0,
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bIgnoreOutOfSight": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"hatchTimer": 9999,
+			"health": null,
+			"bUntargetable": null,
+			"bRegenHealth": false,
+			"bDisabled": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				3200,
+				384
+			],
+			"id": "c1kc",
+			"rotation": 0,
+			"objectType": "egg",
+			"timer": 0.001,
+			"numObjects": 1,
+			"eggType": "egg_massive",
+			"team": 1,
+			"mass": 0,
+			"items": [
+				{
+					"type": "dinosaur",
+					"id": "0b3q",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "compy",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"botSkill": 0,
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bIgnoreOutOfSight": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"hatchTimer": 9999,
+			"health": null,
+			"bUntargetable": null,
+			"bRegenHealth": false,
+			"bDisabled": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2304,
+				512
+			],
+			"id": "iz3q",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurCompy",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2432,
+				512
+			],
+			"id": "eg8i",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"triggerId": "trigger_setDinosaurDilo",
+			"targetId": "{userId}",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2560,
+				512
+			],
+			"id": "5fd1",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurRaptor",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2688,
+				512
+			],
+			"id": "mo51",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurNeedler",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2432,
+				640
+			],
+			"id": "qzqr",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurAllosaurus",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2816,
+				512
+			],
+			"id": "pk9h",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurStegosaurus",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2304,
+				640
+			],
+			"id": "pkzi",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurCarnotaurus",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2688,
+				640
+			],
+			"id": "oour",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurTrex",
+			"indicatorData": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2560,
+				640
+			],
+			"id": "23sa",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurSpinosaurus",
+			"indicatorData": null
+		},
+		{
+			"type": "triggerArea",
+			"position": [
+				2560,
+				910
+			],
+			"id": "zvao",
+			"rotation": 0,
+			"bHidden": false,
+			"width": 150,
+			"height": 150,
+			"bBotsCanTrigger": false,
+			"onTouchTriggerId": "trigger_setInventory",
+			"uses": 9999,
+			"targetType": "dinosaur",
+			"attachToId": null,
+			"targetId": null,
+			"targetTeam": null,
+			"indicatorData": null,
+			"team": null,
+			"icon": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				2816,
+				640
+			],
+			"id": "h22r",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "{userId}",
+			"triggerId": "trigger_setDinosaurLizard",
+			"indicatorData": null
+		},
+		{
+			"type": "crate",
+			"crateType": "CRATE_AMMO",
+			"itemData": {
+				"uses": null,
+				"maxUses": null,
+				"interactTime": null
+			},
+			"position": [
+				2048,
+				448
+			],
+			"id": "1gfi",
+			"rotation": 0,
+			"bDisposable": false,
+			"bDisabled": false,
+			"mass": 0,
+			"ownerId": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "crate",
+			"crateType": "CRATE_STORE",
+			"mass": 0,
+			"position": [
+				1664,
+				448
+			],
+			"id": "tu2f",
+			"rotation": 0,
+			"bDisposable": false,
+			"bDisabled": false,
+			"ownerId": null,
+			"items": null,
+			"itemData": null,
+			"indicatorData": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "mh6",
+			"position": [
+				1496,
+				751
+			],
+			"id": "xanp",
+			"rotation": 0,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": false,
+			"pawnName": "Speed",
+			"bDisabled": false,
+			"mass": 1,
+			"team": 0,
+			"bRespawn": false,
+			"bGodMode": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "growler",
+			"position": [
+				90,
+				487
+			],
+			"id": "nvwh",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "mrap",
+			"position": [
+				92,
+				603
+			],
+			"id": "lo0h",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "lav25",
+			"position": [
+				98,
+				721
+			],
+			"id": "zawb",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "osprey",
+			"position": [
+				222,
+				1105
+			],
+			"id": "h0jn",
+			"rotation": 0,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "cobra",
+			"position": [
+				828,
+				1057
+			],
+			"id": "rkyj",
+			"rotation": 0,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "seaknight",
+			"position": [
+				654,
+				1189
+			],
+			"id": "o5w2",
+			"rotation": 0,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				102,
+				369
+			],
+			"id": "t6xf",
+			"rotation": 0,
+			"timer": 1,
+			"numObjects": 1,
+			"objectType": "car",
+			"vehicleId": "pickup",
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				1664,
+				704
+			],
+			"id": "5iyf",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"triggerId": "trigger_\"remove\"Weapons",
+			"targetId": null,
+			"indicatorData": null
+		}
+	],
+	"author": "Thinog"
+}

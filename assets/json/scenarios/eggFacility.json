@@ -1,0 +1,2580 @@
+{
+	"id": "eggFacility",
+	"author": "Wilkin Games",
+	"name": "STR_SCENARIO_EGG_FACILITY",
+	"desc": "STR_SCENARIO_EGG_FACILITY_DESC",
+	"mapId": "map_sandstorm",
+	"gameModeId": "scenario",
+	"settings": {
+		"bUseDefaultMapObjects": false,
+		"bFriendlyFire": false,
+		"bMapObjects": true,
+		"bMapVehicles": true,
+		"bMapWeapons": true,
+		"bAllowRespawns": false,
+		"preGameTimer": 0,
+		"bAllowRevives": true,
+		"bots": 0,
+		"botSkill": 0,
+		"bAllowBotSettings": true,
+		"timeLimit": 5,
+		"worldType": "jungle",
+		"width": 4000,
+		"height": 2600
+	},
+	"functions": [],
+	"triggers": [
+		{
+			"id": "trigger_gameInit",
+			"event": "gameInit",
+			"actions": [
+				{
+					"action": "setCinematicMode",
+					"value": true
+				},
+				{
+					"action": "createObject",
+					"type": "helicopter",
+					"id": "heli_ally",
+					"vehicleId": "osprey",
+					"position": [
+						1890,
+						3000
+					],
+					"destination": [
+						1830,
+						2352
+					],
+					"destinationTimer": 1,
+					"bAutomated": true,
+					"bDisabled": true,
+					"team": 0,
+					"rotation": -90,
+					"items": [
+						{
+							"type": "trigger",
+							"triggerId": "trigger_spawn"
+						},
+						{
+							"type": "crate",
+							"crateType": "CRATE_AMMO"
+						}
+					],
+					"bCameraTarget": true
+				},
+				{
+					"action": "setCameraTarget",
+					"objectId": "heli_ally",
+					"delay": 0.01
+				},
+				{
+					"action": "addQuest",
+					"quest": {
+						"id": "quest_0",
+						"name": "STR_SCENARIO_EGG_FACILITY",
+						"desc": "STR_SCENARIO_EGG_FACILITY_DESC"
+					}
+				}
+			]
+		},
+		{
+			"id": "trigger_spawn",
+			"actions": [
+				{
+					"action": "respawn",
+					"data": {
+						"position": "{position}",
+						"inventory": [
+							{
+								"id": "hk416"
+							},
+							{
+								"id": "{special:randomFirearmId}"
+							}
+						],
+						"melee": "melee_machete",
+						"equipment": "c4",
+						"grenade": "frag"
+					}
+				},
+				{
+					"action": "setCinematicMode",
+					"value": false
+				},
+				{
+					"action": "message",
+					"message": "STR_SCENARIO_EGG_FACILITY_DESC",
+					"hqId": "hq_obj_destroy"
+				},
+				{
+					"action": "addQuestObjective",
+					"questId": "quest_0",
+					"objective": {
+						"id": "obj_kill",
+						"desc": "STR_KILL_ALL_ENEMIES",
+						"targetIds": [
+							"egg_0",
+							"egg_1",
+							"egg_2"
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "trigger_win",
+			"event": "objectRemoved",
+			"actions": [
+				{
+					"action": "endGame",
+					"delay": 0,
+					"winningTeam": 0,
+					"endCondition": "end_condition_objective_completed",
+					"playerId": null,
+					"cameraTargetId": null
+				}
+			],
+			"conditions": [
+				{
+					"condition": "numPawnsOnTeam",
+					"value": 0,
+					"team": 1,
+					"operator": "=="
+				}
+			],
+			"repeats": null
+		}
+	],
+	"objects": [
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -80,
+			"position": [
+				1882,
+				1601
+			],
+			"id": "fdkxe",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "map_sandstorm",
+			"width": 4000,
+			"height": 2600,
+			"position": [
+				2000,
+				1300
+			],
+			"rotation": 0,
+			"id": "xndtu",
+			"bFixedPosition": true
+		},
+		{
+			"type": "door",
+			"position": [
+				1914.3,
+				294
+			],
+			"doorType": "garage",
+			"material": "metal",
+			"rotation": 0,
+			"size": 160,
+			"bClosed": true,
+			"id": "door_0",
+			"bDisabled": false
+		},
+		{
+			"type": "door",
+			"position": [
+				1190.4,
+				1172.35
+			],
+			"doorType": "garage_large",
+			"material": "metal",
+			"rotation": -90,
+			"size": 263,
+			"bClosed": true,
+			"id": "door_1",
+			"bDisabled": false
+		},
+		{
+			"type": "door",
+			"position": [
+				2387,
+				2317
+			],
+			"doorType": "garage_large",
+			"material": "metal",
+			"rotation": 0,
+			"size": 220,
+			"bClosed": false,
+			"bDisabled": true,
+			"id": "door_2"
+		},
+		{
+			"type": "lever",
+			"position": [
+				2170,
+				2530
+			],
+			"targetId": "door_2",
+			"id": "hee5l",
+			"rotation": 0,
+			"bDisabled": false,
+			"triggerId": null,
+			"leverType": "lever",
+			"indicatorData": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				2352.85,
+				997.4
+			],
+			"id": "jiaal",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				2190,
+				170
+			],
+			"id": "se0a8",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				2440.85,
+				2520.3
+			],
+			"id": "vjpd0",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				2855.85,
+				2511.3
+			],
+			"id": "i80wv",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				2146.85,
+				1898.3
+			],
+			"id": "zrvau",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				1103.95,
+				1484.4
+			],
+			"id": "6mchg",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				1742,
+				2118
+			],
+			"obstacleId": "armory",
+			"id": "fxkas",
+			"rotation": 0,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				1827.9,
+				673.45
+			],
+			"obstacleId": "box",
+			"rotation": 0,
+			"mass": 0,
+			"id": "vte2c",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				2345,
+				1744
+			],
+			"obstacleId": "box",
+			"rotation": 0,
+			"id": "1paqq",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				2358,
+				786
+			],
+			"obstacleId": "box",
+			"rotation": 0,
+			"mass": 0,
+			"id": "30gp5",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				883.95,
+				353.45
+			],
+			"obstacleId": "box",
+			"rotation": 0,
+			"mass": 0,
+			"id": "5cq8r",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				1560,
+				1266
+			],
+			"id": "0cbzv",
+			"rotation": 0,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				2436,
+				294
+			],
+			"id": "civbg",
+			"rotation": 25,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3156,
+				1312
+			],
+			"id": "0ncw8",
+			"rotation": 23,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2697,
+				1122
+			],
+			"id": "m64or",
+			"rotation": 22,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3129,
+				1376
+			],
+			"rotation": 23,
+			"id": "gz7bs",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				1510,
+				1075
+			],
+			"rotation": 0,
+			"id": "nx458",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory",
+			"position": [
+				881,
+				841
+			],
+			"id": "hm699",
+			"rotation": -90,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 90,
+			"position": [
+				1652,
+				1888
+			],
+			"id": "di18s"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 91.97493401088198,
+			"position": [
+				1648,
+				2004
+			],
+			"id": "lej5k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 26.029592191513455,
+			"position": [
+				1734,
+				2046
+			],
+			"id": "vmb7r"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -4.513988458001262,
+			"position": [
+				1810,
+				2040
+			],
+			"id": "ee81k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -128.15722658736905,
+			"position": [
+				1700,
+				1900
+			],
+			"id": "un1oz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 19.7881407767017,
+			"position": [
+				2078,
+				2036
+			],
+			"id": "whs6y"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -32.96940390346213,
+			"position": [
+				2152,
+				1988
+			],
+			"id": "stc7k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -54.21102654081667,
+			"position": [
+				2214,
+				1902
+			],
+			"id": "5r44x"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -82.64762064010765,
+			"position": [
+				2238,
+				1716
+			],
+			"id": "k0c48"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -95.82634202955579,
+			"position": [
+				2228,
+				1618
+			],
+			"id": "igbfh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -160.01689347810003,
+			"position": [
+				2118,
+				1578
+			],
+			"id": "g64b3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 65.49734054800183,
+			"position": [
+				2252,
+				1872
+			],
+			"id": "0xsho"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 90.56170533256656,
+			"position": [
+				2250,
+				2076
+			],
+			"id": "dubjy"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 97.12501634890181,
+			"position": [
+				2252,
+				2152
+			],
+			"id": "azn6z"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -72.86279185381699,
+			"position": [
+				2528,
+				1222
+			],
+			"id": "8nxy6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 178.45184230102205,
+			"position": [
+				2232,
+				1230
+			],
+			"id": "auka8"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -145.1755108430432,
+			"position": [
+				2140,
+				1166
+			],
+			"id": "p6qhd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -5.042451069170913,
+			"position": [
+				2344,
+				1148
+			],
+			"id": "avba0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 22.328656378019147,
+			"position": [
+				2456,
+				1194
+			],
+			"id": "e1qin"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -33.81824578980333,
+			"position": [
+				2662,
+				1056
+			],
+			"id": "21c4a"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 157.38013505195957,
+			"position": [
+				2566,
+				1096
+			],
+			"id": "i3n6u"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -177.1658889836935,
+			"position": [
+				2364,
+				1086
+			],
+			"id": "ofzm1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -139.82076607809267,
+			"position": [
+				2184,
+				934
+			],
+			"id": "liwde"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 41.423665625002656,
+			"position": [
+				2218,
+				964
+			],
+			"id": "6jmdr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 94.84400037508068,
+			"position": [
+				2208,
+				1082
+			],
+			"id": "uh5ey"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 173.6598082540901,
+			"position": [
+				1380,
+				1174
+			],
+			"id": "oftmk"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -2.9356734464211725,
+			"position": [
+				1536,
+				1166
+			],
+			"id": "235r3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -10.124671655397817,
+			"position": [
+				1704,
+				1136
+			],
+			"id": "x35fp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -142.25319461272534,
+			"position": [
+				1642,
+				1088
+			],
+			"id": "65w3s"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -95.71059313749964,
+			"position": [
+				1618,
+				848
+			],
+			"id": "ylcyn"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -93.69138598645128,
+			"position": [
+				1610,
+				724
+			],
+			"id": "tcmu1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -94.39870535499554,
+			"position": [
+				1600,
+				594
+			],
+			"id": "m3xio"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 1.123302714075429,
+			"position": [
+				1702,
+				596
+			],
+			"id": "nk6jy"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 95.81562652949125,
+			"position": [
+				1680,
+				812
+			],
+			"id": "mr985"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 87.07927847899963,
+			"position": [
+				1690,
+				1008
+			],
+			"id": "aqrq6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 135.88140399658215,
+			"position": [
+				1624,
+				1072
+			],
+			"id": "l9ekn"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -84.66784111834045,
+			"position": [
+				1638,
+				922
+			],
+			"id": "zwava"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 8.880659150520245,
+			"position": [
+				1702,
+				932
+			],
+			"id": "5eewa"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -80.38788524563412,
+			"position": [
+				1744,
+				684
+			],
+			"id": "1n2by"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -89.07595464722729,
+			"position": [
+				1746,
+				560
+			],
+			"id": "2v9y9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 175.47117576306746,
+			"position": [
+				1052,
+				518
+			],
+			"id": "1cbm5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 180,
+			"position": [
+				928,
+				518
+			],
+			"id": "pzmsd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 0.40348473505875015,
+			"position": [
+				1496,
+				522
+			],
+			"id": "n0qya"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -0.7073193685442566,
+			"position": [
+				1658,
+				520
+			],
+			"id": "14snh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 33.32842178176362,
+			"position": [
+				2172,
+				858
+			],
+			"id": "38lx7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -71.56505117707799,
+			"position": [
+				2192,
+				798
+			],
+			"id": "ijxq0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 17.35402463626132,
+			"position": [
+				2256,
+				818
+			],
+			"id": "uxu53"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 92.48955292199916,
+			"position": [
+				2252,
+				910
+			],
+			"id": "f6vvp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 178.89829388479365,
+			"position": [
+				2044,
+				914
+			],
+			"id": "awnrr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 52.66680426181418,
+			"position": [
+				2134,
+				1032
+			],
+			"id": "1r5l0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 43.16925135197451,
+			"position": [
+				2360,
+				1244
+			],
+			"id": "vi20n"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -53.455027677177455,
+			"position": [
+				2486,
+				1074
+			],
+			"id": "kuqk5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -15.945395900922854,
+			"position": [
+				2836,
+				974
+			],
+			"id": "hwwcs"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 154.94238458169698,
+			"position": [
+				2682,
+				1046
+			],
+			"id": "upjbx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 118.77472463882181,
+			"position": [
+				2548,
+				1290
+			],
+			"id": "rrefi"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 62.19854122006586,
+			"position": [
+				2606,
+				1400
+			],
+			"id": "dtus0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 68.19859051364818,
+			"position": [
+				2630,
+				1460
+			],
+			"id": "hee7s"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -157.88442900404752,
+			"position": [
+				2138,
+				1246
+			],
+			"id": "p66lj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -92.57073711069053,
+			"position": [
+				2106,
+				766
+			],
+			"id": "ri1ce"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 82.5483160796728,
+			"position": [
+				2264,
+				1974
+			],
+			"id": "djop7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -89.42991155500111,
+			"position": [
+				2268,
+				1572
+			],
+			"id": "v54lh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 48.81407483429035,
+			"position": [
+				1726,
+				1944
+			],
+			"id": "qgsf3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 49.68589983950271,
+			"position": [
+				1782,
+				2010
+			],
+			"id": "b90g1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 0.31830661145136596,
+			"position": [
+				2142,
+				2012
+			],
+			"id": "w03vc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -48.54476645559488,
+			"position": [
+				2248,
+				1892
+			],
+			"id": "y1o8u"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -95.75140209036599,
+			"position": [
+				2220,
+				1614
+			],
+			"id": "wjd0k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -146.97613244420336,
+			"position": [
+				1540,
+				1172
+			],
+			"id": "8q0lu"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -36.35719741999547,
+			"position": [
+				1684,
+				1066
+			],
+			"id": "sujq6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -102.47510971220896,
+			"position": [
+				1634,
+				840
+			],
+			"id": "hx38c"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -78.3885135761115,
+			"position": [
+				1664,
+				694
+			],
+			"id": "awzqa"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -54.727578551401606,
+			"position": [
+				1722,
+				612
+			],
+			"id": "smjh6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 180,
+			"position": [
+				932,
+				522
+			],
+			"id": "qcl41"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 13.840695491655623,
+			"position": [
+				2174,
+				828
+			],
+			"id": "l1all"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 87.9299693469589,
+			"position": [
+				2180,
+				994
+			],
+			"id": "vgt5d"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 83.36748538486154,
+			"position": [
+				2200,
+				1166
+			],
+			"id": "snmek"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 16.7826441452707,
+			"position": [
+				2326,
+				1204
+			],
+			"id": "kb3zl"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -0.8814039965821379,
+			"position": [
+				2456,
+				1202
+			],
+			"id": "gx7wy"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -30.42578380196126,
+			"position": [
+				2582,
+				1128
+			],
+			"id": "d35hn"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -51.34019174590991,
+			"position": [
+				2630,
+				1068
+			],
+			"id": "8sxub"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 90,
+			"position": [
+				1746,
+				1186
+			],
+			"id": "o4zz9"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 4.398705354995532,
+			"position": [
+				1272,
+				1352
+			],
+			"id": "u0eg4",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 8,
+			"position": [
+				1341,
+				1361
+			],
+			"id": "u1w6m",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 97,
+			"position": [
+				1330,
+				1429
+			],
+			"id": "6p7io",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -174.28940686250036,
+			"position": [
+				1262,
+				1418
+			],
+			"id": "cq4kl",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 9,
+			"position": [
+				1815,
+				1592
+			],
+			"id": "pbyzy",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 99,
+			"position": [
+				1799,
+				1660
+			],
+			"id": "lokbo",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 9,
+			"position": [
+				1873,
+				1676
+			],
+			"id": "ludw3",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 9,
+			"position": [
+				1951,
+				1618
+			],
+			"id": "cc0xr",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 100,
+			"position": [
+				1935,
+				1687
+			],
+			"id": "svdk6",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 9.52820463914226,
+			"position": [
+				2748,
+				1844
+			],
+			"id": "99t97",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 106,
+			"position": [
+				2722,
+				1906
+			],
+			"id": "0trju",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 95.5721978039638,
+			"position": [
+				2706,
+				1976
+			],
+			"id": "s7yix",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 15.255118703057775,
+			"position": [
+				2770,
+				1996
+			],
+			"id": "bn2oe",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -66.37062226934319,
+			"position": [
+				2790,
+				1928
+			],
+			"id": "xttmi",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -66.5713071912546,
+			"position": [
+				2816,
+				1868
+			],
+			"id": "v5srf",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -92,
+			"position": [
+				2229,
+				443
+			],
+			"id": "ryd8q",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 0,
+			"position": [
+				2300,
+				446
+			],
+			"id": "2rpmm",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 0,
+			"position": [
+				2372,
+				447
+			],
+			"id": "732fl",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 91,
+			"position": [
+				2368,
+				518
+			],
+			"id": "hsn54",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -179,
+			"position": [
+				2298,
+				513
+			],
+			"id": "r0m5r",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 179,
+			"position": [
+				2225,
+				513
+			],
+			"id": "04nii",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 7.431407971172507,
+			"position": [
+				2838,
+				1956
+			],
+			"id": "trdt6",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -173.03174325862145,
+			"position": [
+				2658,
+				1934
+			],
+			"id": "qmxnt",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -167,
+			"position": [
+				1903,
+				1550
+			],
+			"id": "3p82l",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null
+		},
+		{
+			"type": "egg",
+			"id": "egg_0",
+			"eggType": "egg_massive",
+			"position": [
+				2594,
+				478
+			],
+			"indicatorData": {
+				"labelText": "STR_DESTROY",
+				"icon": null,
+				"iconTint": 16736095
+			},
+			"rotation": 0,
+			"items": [
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"team": 1,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"hatchTimer": null
+		},
+		{
+			"type": "egg",
+			"id": "egg_1",
+			"eggType": "egg_massive",
+			"position": [
+				1208,
+				828
+			],
+			"rotation": 0,
+			"indicatorData": {
+				"labelText": "STR_DESTROY",
+				"icon": null,
+				"iconTint": 16736095
+			},
+			"items": [
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"team": 1,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"hatchTimer": null
+		},
+		{
+			"type": "egg",
+			"id": "egg_2",
+			"eggType": "egg_massive",
+			"position": [
+				2910,
+				1296
+			],
+			"rotation": 0,
+			"indicatorData": {
+				"labelText": "STR_DESTROY",
+				"icon": null,
+				"iconTint": 16736095
+			},
+			"items": [
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"type": "dinosaur",
+					"position": [
+						0,
+						0
+					],
+					"rotation": 0,
+					"dinoType": "{special:randomDinoId}",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bBot": true,
+					"bIgnoreOutOfSight": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 1,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"team": 1,
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null,
+			"hatchTimer": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -8.530765609948133,
+			"position": [
+				2378,
+				2182
+			],
+			"id": "rbg18"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -2.489552921999156,
+			"position": [
+				2424,
+				2180
+			],
+			"id": "hye7y"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 0,
+			"position": [
+				2466,
+				2180
+			],
+			"id": "47gd3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -178.47247455778708,
+			"position": [
+				2316,
+				2176
+			],
+			"id": "vpi14"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -105.3762512488262,
+			"position": [
+				1948,
+				986
+			],
+			"id": "h7gfp",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -86.05481377096244,
+			"position": [
+				1952,
+				928
+			],
+			"id": "fpreg",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -100.92280471986926,
+			"position": [
+				1964,
+				1038
+			],
+			"id": "og8vf",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -90,
+			"position": [
+				1964,
+				968
+			],
+			"id": "e5qn1",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -92.12109639666147,
+			"position": [
+				1962,
+				914
+			],
+			"id": "jvhwl",
+			"health": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 70.70995378081128,
+			"position": [
+				1876,
+				520
+			],
+			"id": "ky2vq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 105.94539590092286,
+			"position": [
+				1856,
+				590
+			],
+			"id": "1hm0e"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -88.29018595585848,
+			"position": [
+				1860,
+				456
+			],
+			"id": "y2yct"
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 270,
+			"position": [
+				2772,
+				1584
+			],
+			"id": "hu2p6",
+			"rotation": -69,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 33.217484446420215,
+			"position": [
+				1069,
+				700
+			],
+			"id": "o60h"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": -1.6444032646950881,
+			"position": [
+				1278,
+				694
+			],
+			"id": "2kkm"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 79.72285941858759,
+			"position": [
+				1311,
+				876
+			],
+			"id": "q7q2"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": -13.486283729559927,
+			"position": [
+				2687,
+				546
+			],
+			"id": "l81g"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": -146.84476668961616,
+			"position": [
+				2488,
+				416
+			],
+			"id": "wekp"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 83.46336635120294,
+			"position": [
+				2499,
+				512
+			],
+			"id": "6wlk"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 63.71099701652613,
+			"position": [
+				2869,
+				1261
+			],
+			"id": "hwur"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": -22.380135051959574,
+			"position": [
+				2971,
+				1219
+			],
+			"id": "9zmo"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 97.12501634890181,
+			"position": [
+				2954,
+				1355
+			],
+			"id": "v3p1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": 178.7811247648687,
+			"position": [
+				2860,
+				1357
+			],
+			"id": "evcg"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": -80.13419305691563,
+			"position": [
+				2888,
+				1196
+			],
+			"id": "op4t"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": -164.35399438831797,
+			"position": [
+				1192,
+				721
+			],
+			"id": "nztl"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": 111.07272661995056,
+			"position": [
+				1108,
+				939
+			],
+			"id": "8qom"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": -19.995324408379272,
+			"position": [
+				2614,
+				391
+			],
+			"id": "7gha"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": 162.13903340918893,
+			"position": [
+				1292,
+				817
+			],
+			"id": "yr6u"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": -14.076479261532231,
+			"position": [
+				2632,
+				481
+			],
+			"id": "qp3w"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": 68.01475441878998,
+			"position": [
+				2957,
+				1286
+			],
+			"id": "nzk9"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": 172.11165055511213,
+			"position": [
+				2791,
+				1309
+			],
+			"id": "r277"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 177.91858049836586,
+			"position": [
+				1883,
+				1342
+			],
+			"id": "yahj"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 155.99395114062145,
+			"position": [
+				1517,
+				1505
+			],
+			"id": "va8d"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 41.667552855586166,
+			"position": [
+				1726,
+				1691
+			],
+			"id": "jrm7"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -57.84459248001938,
+			"position": [
+				2437,
+				560
+			],
+			"id": "xo3t"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 84.38557290095441,
+			"position": [
+				2466,
+				855
+			],
+			"id": "q4m3"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -126.89826891340046,
+			"position": [
+				1981,
+				209
+			],
+			"id": "tduu"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 76.15217491617332,
+			"position": [
+				2387,
+				1856
+			],
+			"id": "fhhh"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 29.450195830298412,
+			"position": [
+				2828,
+				2105
+			],
+			"id": "056i"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -145.05902388134348,
+			"position": [
+				1245,
+				999
+			],
+			"id": "2no8"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -88.67462715607783,
+			"position": [
+				1254,
+				610
+			],
+			"id": "mcm1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 25.906507999514385,
+			"position": [
+				2864,
+				1392
+			],
+			"id": "9ejd"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -65.06060302042111,
+			"position": [
+				2977,
+				1149
+			],
+			"id": "o390"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 74.52136183458164,
+			"position": [
+				3031,
+				1344
+			],
+			"id": "g8hs"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -110.70611239741494,
+			"position": [
+				2715,
+				508
+			],
+			"id": "z6g2"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -157.61327088897033,
+			"position": [
+				2278,
+				328
+			],
+			"id": "tz4i"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 44.51030440687077,
+			"position": [
+				2573,
+				618
+			],
+			"id": "gyif"
+		}
+	],
+	"bDefault": true,
+	"bReducedXP": true,
+	"tiles": [
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		]
+	]
+}

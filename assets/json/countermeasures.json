@@ -1,0 +1,29 @@
+[
+  {
+    "id": null,
+    "name": "STR_NONE",
+    "desc": "STR_NONE",
+    "score": 0
+  },
+  {
+    "id": "ejection_seat",
+    "name": "STR_COUNTERMEASURE_EJECTION_SEAT",
+    "desc": "STR_COUNTERMEASURE_EJECTION_SEAT_DESC",
+    "score": 2500,
+    "cooldown": 10
+  },
+  {
+    "id": "ecm",
+    "name": "STR_COUNTERMEASURE_ECM",
+    "desc": "STR_COUNTERMEASURE_ECM_DESC",
+    "score": 5000,
+    "cooldown": 60
+  },
+  {
+    "id": "flares",
+    "name": "STR_COUNTERMEASURE_FLARES",
+    "desc": "STR_COUNTERMEASURE_FLARES_DESC",
+    "score": 10000,
+    "cooldown": 30
+  }
+]

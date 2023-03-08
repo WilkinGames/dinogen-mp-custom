@@ -1,0 +1,6119 @@
+{
+	"id": "vehicleThieves",
+	"author": "GamerDanger198",
+	"name": "Vehicle Thieves",
+	"desc": "Steal an enemy armored vehicle.",
+	"mapId": "map_custom",
+	"gameModeId": "scenario",
+	"settings": {
+		"bUseDefaultMapObjects": false,
+		"bDebug": false,
+		"bAllowRespawns": false,
+		"preGameTimer": 0,
+		"width": 3840,
+		"height": 2560,
+		"ambience": "amb_forest",
+		"bAllowRevives": true,
+		"bAllowSpectators": true,
+		"bAllowJoinInProgress": false,
+		"bFriendlyFire": true,
+		"bHidePlayerHealth": true,
+		"botSkill": "{setting:botSkill}",
+		"emitter": "forest",
+		"bAllowBotSettings": true,
+		"bots": 0
+	},
+	"functions": [
+		{
+			"id": "function_dinos",
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 2,
+					"id": "o9g6",
+					"type": "spawner",
+					"position": [
+						983,
+						2093
+					],
+					"rotation": 0,
+					"objectType": "dinosaur",
+					"timer": 1.5,
+					"numObjects": 100,
+					"totalObjects": 18,
+					"objectId": null,
+					"bDisabled": false,
+					"dinoType": "compy",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bCanInteract": false,
+					"bBot": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 5,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bHideHealthBar": true,
+					"bIgnoreOutOfSight": null,
+					"bIgnoreEnemies": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"objectScale": null,
+					"maxRange": null,
+					"colour": 6291327,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 18,
+					"id": "slrj",
+					"type": "dinosaur",
+					"position": [
+						2202,
+						229
+					],
+					"rotation": 180,
+					"dinoType": "allosaurus",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bCanInteract": false,
+					"bBot": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 5,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bHideHealthBar": true,
+					"bIgnoreOutOfSight": null,
+					"bIgnoreEnemies": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"objectScale": null,
+					"maxRange": null,
+					"colour": 16736095,
+					"damageMultipliers": null,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 11,
+					"id": "slrj",
+					"type": "dinosaur",
+					"position": [
+						2316,
+						117
+					],
+					"rotation": 90,
+					"dinoType": "allosaurus",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bCanInteract": false,
+					"bBot": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 5,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bHideHealthBar": true,
+					"bIgnoreOutOfSight": null,
+					"bIgnoreEnemies": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"objectScale": null,
+					"maxRange": null,
+					"colour": 16736095,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			]
+		}
+	],
+	"triggers": [
+		{
+			"id": "trigger_gameInit",
+			"event": "gameInit",
+			"actions": [
+				{
+					"action": "addQuest",
+					"delay": 0,
+					"quest": {
+						"id": "quest_0",
+						"name": "Vehicle Thieves",
+						"desc": "Steal an enemy vehicle.",
+						"objectives": [
+							{
+								"id": "objective_0",
+								"desc": "Get into the garage.",
+								"targetId": null,
+								"targetIds": null
+							}
+						],
+						"team": null
+					}
+				},
+				{
+					"action": "setVariable",
+					"delay": 0,
+					"name": "mrapFuel",
+					"value": 0
+				},
+				{
+					"action": "setVariable",
+					"delay": 0,
+					"name": "players",
+					"value": null
+				},
+				{
+					"action": "setVariable",
+					"delay": 0,
+					"name": "extractTime",
+					"value": -1
+				},
+				{
+					"action": "removeObject",
+					"delay": 15,
+					"objectId": "crate1"
+				},
+				{
+					"action": "removeObject",
+					"delay": 15,
+					"objectId": "crate2"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_playerJoined",
+			"event": "playerJoined",
+			"actions": [
+				{
+					"action": "respawn",
+					"playerIndex": "{playerIndex}",
+					"data": {
+						"currentFaction": "human",
+						"position": [
+							506,
+							385
+						],
+						"inventory": [],
+						"melee": "melee_bowie",
+						"equipment": null,
+						"grenade": null,
+						"dinoType": null
+					},
+					"delay": 0
+				},
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "players",
+					"value": 1
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_enteredGarage",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addQuestObjective",
+					"delay": 0,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_1",
+						"desc": "Find fuel and fill up the MRAP's gas tank.",
+						"targetId": null,
+						"targetIds": null
+					}
+				},
+				{
+					"action": "updateQuestObjective",
+					"delay": 0,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_0",
+						"bComplete": true
+					}
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_fuelPaper",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "message",
+					"delay": 0,
+					"message": "GROWLER FUEL: Small, brown boxes north of compound.",
+					"hqId": null,
+					"bInfofeed": true,
+					"timerMax": null,
+					"playerId": null
+				},
+				{
+					"action": "message",
+					"delay": 2,
+					"message": "MRAP FUEL: Large, brown boxes west of compound.",
+					"hqId": null,
+					"bInfofeed": true,
+					"timerMax": null,
+					"playerId": null
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_fuelFound",
+			"event": "objectKilled",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "message",
+					"delay": 0,
+					"message": "MRAP fuel has been found.",
+					"hqId": null,
+					"bInfofeed": false,
+					"timerMax": null,
+					"playerId": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "8sfs",
+					"type": "triggerArea",
+					"position": [
+						3128,
+						2190
+					],
+					"rotation": -24,
+					"onTouchTriggerId": "trigger_fuelAdded",
+					"bHidden": true,
+					"uses": 50,
+					"width": 250,
+					"height": 350,
+					"bBotsCanTrigger": false,
+					"attachToId": "mrap1",
+					"targetId": null,
+					"targetTeam": 0,
+					"targetType": "character",
+					"indicatorData": null,
+					"team": null,
+					"icon": null
+				}
+			],
+			"objectId": "fuelBox",
+			"repeats": null
+		},
+		{
+			"id": "trigger_fuelAdded",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "mrapFuel",
+					"value": 1
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_mrapFull",
+			"event": "variableChanged",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setDataValue",
+					"delay": 0,
+					"objectId": "mrap1",
+					"key": "bDisabled",
+					"value": 0
+				},
+				{
+					"action": "updateQuestObjective",
+					"delay": 0,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_1",
+						"bComplete": true
+					}
+				},
+				{
+					"action": "addQuestObjective",
+					"delay": 0,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_2",
+						"desc": "Deliver the MRAP to the cargobob.",
+						"targetId": null,
+						"targetIds": null
+					}
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "heli1",
+					"type": "helicopter",
+					"position": [
+						-790,
+						-917
+					],
+					"rotation": 0,
+					"bAutomated": true,
+					"vehicleId": "seaknight",
+					"destination": [
+						635,
+						430
+					],
+					"defendTimer": 1e+24,
+					"items": [
+						{
+							"type": "triggerArea",
+							"id": "bkii",
+							"position": [
+								0,
+								0
+							],
+							"rotation": 0,
+							"onTouchTriggerId": "trigger_mrapDelivered",
+							"bHidden": true,
+							"uses": 1,
+							"width": 150,
+							"height": 150,
+							"bBotsCanTrigger": false,
+							"attachToId": null,
+							"targetId": "mrap1",
+							"targetTeam": null,
+							"targetType": null,
+							"indicatorData": null,
+							"team": null,
+							"icon": null
+						}
+					],
+					"itemTimerMax": null,
+					"bDropItemsWhenDestroyed": null,
+					"bKillOccupantsWhenDestroyed": null,
+					"pawnName": null,
+					"bUntargetable": null,
+					"tint": 6710886,
+					"weapons": null,
+					"bDisabled": false,
+					"mass": null,
+					"team": 0,
+					"bRespawn": false,
+					"bGodMode": null
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "u0yp",
+					"type": "dinosaur",
+					"position": [
+						692,
+						2047
+					],
+					"rotation": 0,
+					"dinoType": "allosaurus",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bCanInteract": false,
+					"bBot": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 5,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bHideHealthBar": true,
+					"bIgnoreOutOfSight": true,
+					"bIgnoreEnemies": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"objectScale": null,
+					"maxRange": null,
+					"colour": 16736095,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"name": "mrapFuel",
+			"value": 50,
+			"repeats": null
+		},
+		{
+			"id": "trigger_mrapDelivered",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "exitAllPawnsFromVehicle",
+					"delay": 0,
+					"objectId": "mrap1"
+				},
+				{
+					"action": "setDataValue",
+					"delay": 0.1,
+					"objectId": "mrap1",
+					"key": "bDisabled",
+					"value": 1
+				},
+				{
+					"action": "removeObject",
+					"delay": 2,
+					"objectId": "mrap1"
+				},
+				{
+					"action": "setDestination",
+					"delay": 2,
+					"objectId": "heli1",
+					"position": [
+						-1000,
+						-1000
+					]
+				},
+				{
+					"action": "updateQuestObjective",
+					"delay": 2,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_2",
+						"bComplete": true
+					}
+				},
+				{
+					"action": "addQuestObjective",
+					"delay": 3,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_3",
+						"desc": "Wait for extraction.",
+						"targetId": null,
+						"targetIds": null
+					}
+				},
+				{
+					"action": "setVariable",
+					"delay": 0,
+					"name": "extractTime",
+					"value": 40
+				},
+				{
+					"action": "setHUDElement",
+					"delay": 3,
+					"id": "timer1",
+					"label": "Time until Extraction:",
+					"value": null,
+					"variableName": "extractTime",
+					"format": "time"
+				},
+				{
+					"action": "executeFunction",
+					"delay": 0,
+					"id": "function_dinos"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_extractTime",
+			"event": "gameTimer",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "extractTime",
+					"value": -1
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_playerLeft",
+			"event": "playerLeft",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "players",
+					"value": -1
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_extractionHeliArrives",
+			"event": "variableChanged",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "heli2",
+					"type": "helicopter",
+					"position": [
+						-780,
+						-934
+					],
+					"rotation": 0,
+					"bAutomated": true,
+					"vehicleId": "blackhawk",
+					"destination": [
+						1792,
+						1128
+					],
+					"defendTimer": 100000000000000000,
+					"items": [
+						{
+							"type": "triggerArea",
+							"id": "pi8k",
+							"position": [
+								0,
+								0
+							],
+							"rotation": 0,
+							"onTouchTriggerId": "trigger_extracted",
+							"bHidden": true,
+							"uses": 10000000000000,
+							"width": 150,
+							"height": 150,
+							"bBotsCanTrigger": false,
+							"attachToId": null,
+							"targetId": null,
+							"targetTeam": 0,
+							"targetType": "character",
+							"indicatorData": null,
+							"team": null,
+							"icon": null
+						}
+					],
+					"itemTimerMax": null,
+					"bDropItemsWhenDestroyed": null,
+					"bKillOccupantsWhenDestroyed": null,
+					"pawnName": "Extraction Helicopter",
+					"bUntargetable": null,
+					"tint": 10066329,
+					"weapons": [
+						[
+							{
+								"id": null
+							}
+						],
+						[
+							{
+								"id": null
+							}
+						],
+						[
+							{
+								"id": null
+							}
+						]
+					],
+					"bDisabled": false,
+					"mass": null,
+					"team": 0,
+					"bRespawn": false,
+					"bGodMode": null
+				},
+				{
+					"action": "removeHUDElement",
+					"delay": 0,
+					"id": "timer1"
+				},
+				{
+					"action": "updateQuestObjective",
+					"delay": 0,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_3",
+						"bComplete": true
+					}
+				},
+				{
+					"action": "addQuestObjective",
+					"delay": 0,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_4",
+						"desc": "Extract",
+						"targetId": null,
+						"targetIds": null
+					}
+				},
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "o8ix",
+					"type": "dinosaur",
+					"position": [
+						2202,
+						229
+					],
+					"rotation": 180,
+					"dinoType": "allosaurus",
+					"bSavage": false,
+					"bRegenHealth": false,
+					"bCanInteract": false,
+					"bBot": true,
+					"botSkill": "{setting:botSkill}",
+					"team": 5,
+					"speedMultiplier": 1,
+					"pawnName": null,
+					"health": null,
+					"bHideHealthBar": true,
+					"bIgnoreOutOfSight": null,
+					"bIgnoreEnemies": null,
+					"bInvestigate": null,
+					"investigatePosition": null,
+					"wanderArea": null,
+					"indicatorData": null,
+					"bUntargetable": null,
+					"bCamp": null,
+					"objectScale": null,
+					"maxRange": null,
+					"colour": 16736095,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			],
+			"name": "extractTime",
+			"value": 4,
+			"repeats": null
+		},
+		{
+			"id": "trigger_extracted",
+			"event": null,
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "addToVariable",
+					"delay": 0,
+					"name": "players",
+					"value": -1
+				},
+				{
+					"action": "removeObject",
+					"delay": 0.01,
+					"objectId": "{objectId}"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_win",
+			"event": "variableChanged",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "endGame",
+					"delay": 3,
+					"winningTeam": 0,
+					"endCondition": "end_condition_objective_completed",
+					"conditionText": "MRAP extraction completed. Good work.",
+					"playerId": null,
+					"cameraTargetId": "heli2"
+				},
+				{
+					"action": "setDestination",
+					"delay": 0.1,
+					"objectId": "heli2",
+					"position": [
+						-1000,
+						-1000
+					]
+				},
+				{
+					"action": "setCameraTarget",
+					"delay": 0.1,
+					"objectId": "heli2"
+				},
+				{
+					"action": "updateQuestObjective",
+					"delay": 0.1,
+					"questId": "quest_0",
+					"objective": {
+						"id": "objective_4",
+						"bComplete": true
+					}
+				}
+			],
+			"value": 0,
+			"name": "players",
+			"repeats": null
+		},
+		{
+			"id": "trigger_crate1",
+			"event": "objectUsed",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCharacterInventory",
+					"delay": 0,
+					"objectId": "{userId}",
+					"inventory": [
+						{
+							"id": "m16a4",
+							"name": null,
+							"mag": null,
+							"ammo": 300,
+							"mods": {
+								"optic": null,
+								"accessory": "acc_laser",
+								"barrel": "barrel_range",
+								"ammo": null
+							}
+						},
+						{
+							"id": "dp12",
+							"name": null,
+							"mag": null,
+							"ammo": 32,
+							"mods": {
+								"optic": "reflex",
+								"accessory": null,
+								"barrel": null,
+								"ammo": null
+							}
+						}
+					]
+				},
+				{
+					"action": "setCharacterInventoryItem",
+					"delay": 0,
+					"objectId": "{userId}",
+					"inventoryItem": {
+						"id": "juice",
+						"name": null,
+						"mag": null,
+						"ammo": null,
+						"mods": null
+					},
+					"index": 3
+				},
+				{
+					"action": "setCharacterInventoryItem",
+					"delay": 0,
+					"objectId": "{userId}",
+					"inventoryItem": {
+						"id": "frag",
+						"name": null,
+						"mag": null,
+						"ammo": null,
+						"mods": null
+					},
+					"index": 4
+				}
+			],
+			"objectId": "crate1",
+			"repeats": null
+		},
+		{
+			"id": "trigger_crate2",
+			"event": "objectUsed",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "setCharacterInventory",
+					"delay": 0,
+					"objectId": "{userId}",
+					"inventory": [
+						{
+							"id": "acr",
+							"name": null,
+							"mag": null,
+							"ammo": 300,
+							"mods": {
+								"optic": "eotech",
+								"accessory": "acc_grip",
+								"barrel": "barrel_compensator",
+								"ammo": "ammo_fmj"
+							}
+						},
+						{
+							"id": "m9",
+							"name": null,
+							"mag": null,
+							"ammo": 60,
+							"mods": {
+								"optic": null,
+								"accessory": null,
+								"barrel": null,
+								"ammo": null
+							}
+						}
+					]
+				},
+				{
+					"action": "setCharacterInventoryItem",
+					"delay": 0,
+					"objectId": "{userId}",
+					"inventoryItem": {
+						"id": "stim",
+						"name": null,
+						"mag": null,
+						"ammo": null,
+						"mods": null
+					},
+					"index": 3
+				},
+				{
+					"action": "setCharacterInventoryItem",
+					"delay": 0,
+					"objectId": "{userId}",
+					"inventoryItem": {
+						"id": "stun",
+						"name": null,
+						"mag": null,
+						"ammo": null,
+						"mods": null
+					},
+					"index": 4
+				}
+			],
+			"objectId": "crate2",
+			"repeats": null
+		},
+		{
+			"id": "trigger_mrapDestroyed",
+			"event": "objectKilled",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "endGame",
+					"delay": 0,
+					"winningTeam": 1,
+					"endCondition": "end_condition_objective_failed",
+					"conditionText": "MRAP destroyed.",
+					"playerId": null,
+					"cameraTargetId": null
+				}
+			],
+			"objectId": "mrap1",
+			"repeats": null
+		},
+		{
+			"id": "trigger_heli1Destroyed",
+			"event": "objectKilled",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "endGame",
+					"delay": 0,
+					"winningTeam": 1,
+					"endCondition": "end_condition_objective_failed",
+					"conditionText": "Cargobob destroyed.",
+					"playerId": null,
+					"cameraTargetId": null
+				}
+			],
+			"objectId": "heli1",
+			"repeats": null
+		},
+		{
+			"id": "trigger_heli2Destroyed",
+			"event": "objectKilled",
+			"bDisabled": false,
+			"actions": [
+				{
+					"action": "endGame",
+					"delay": 0,
+					"winningTeam": 1,
+					"endCondition": "end_condition_objective_failed",
+					"conditionText": "Extraction helicopter destroyed.",
+					"playerId": null,
+					"cameraTargetId": null
+				}
+			],
+			"objectId": "heli2",
+			"repeats": null
+		}
+	],
+	"tiles": [
+		[
+			55,
+			56,
+			57,
+			58,
+			0,
+			0,
+			0,
+			0,
+			0,
+			382,
+			383,
+			384,
+			385,
+			400,
+			401
+		],
+		[
+			65,
+			66,
+			67,
+			68,
+			0,
+			389,
+			420,
+			421,
+			422,
+			397,
+			398,
+			399,
+			400,
+			0,
+			0
+		],
+		[
+			0,
+			69,
+			70,
+			71,
+			0,
+			404,
+			435,
+			436,
+			437,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			78,
+			79,
+			313,
+			315,
+			0,
+			83,
+			2,
+			2,
+			2,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			0,
+			317,
+			316,
+			0,
+			83,
+			2,
+			2,
+			2,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			51,
+			52,
+			53,
+			54,
+			55,
+			93,
+			2,
+			2,
+			2,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			61,
+			62,
+			2,
+			63,
+			64,
+			69,
+			70,
+			71,
+			0,
+			305,
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		[
+			0,
+			72,
+			73,
+			73,
+			74,
+			79,
+			80,
+			81,
+			82,
+			305,
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		[
+			409,
+			410,
+			411,
+			412,
+			0,
+			89,
+			90,
+			91,
+			92,
+			305,
+			5,
+			5,
+			5,
+			5,
+			0
+		],
+		[
+			424,
+			425,
+			426,
+			427,
+			428,
+			100,
+			11,
+			12,
+			0,
+			0,
+			5,
+			5,
+			5,
+			5,
+			0
+		]
+	],
+	"objects": [
+		{
+			"type": "dinosaur",
+			"dinoType": "pachy",
+			"position": [
+				855,
+				2454
+			],
+			"id": "6u3f",
+			"rotation": -53,
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bCanInteract": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 2,
+			"speedMultiplier": 1,
+			"bHideHealthBar": true,
+			"bIgnoreOutOfSight": true,
+			"colour": 16770611,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_10",
+			"position": [
+				766,
+				1845
+			],
+			"id": "korh",
+			"rotation": 58,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_3",
+			"position": [
+				2195,
+				1525
+			],
+			"id": "six2",
+			"rotation": -1,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 79,
+			"position": [
+				1466,
+				1071
+			],
+			"id": "vdy0"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_2",
+			"position": [
+				3365,
+				1407
+			],
+			"id": "c3ht",
+			"rotation": 0,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "planks",
+			"position": [
+				1229,
+				1255
+			],
+			"id": "9jyh",
+			"rotation": -85,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "planks",
+			"position": [
+				3380,
+				713
+			],
+			"id": "a4xb",
+			"rotation": 0,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "planks",
+			"position": [
+				3165,
+				241
+			],
+			"id": "i18c",
+			"rotation": 90,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_2",
+			"position": [
+				814,
+				839
+			],
+			"id": "7umd",
+			"rotation": -128,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				1556,
+				1544
+			],
+			"id": "pba6",
+			"rotation": 11
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_3",
+			"position": [
+				1995,
+				1529
+			],
+			"id": "pj66",
+			"rotation": 6,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_7",
+			"position": [
+				2260,
+				760
+			],
+			"id": "smw7",
+			"rotation": -16,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_1",
+			"position": [
+				2196,
+				765
+			],
+			"id": "ix8y",
+			"rotation": -120,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_3",
+			"position": [
+				1649,
+				768
+			],
+			"id": "9kxj",
+			"rotation": 0,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 122,
+			"position": [
+				401,
+				1031
+			],
+			"id": "dg6z"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "planks",
+			"position": [
+				2804,
+				1147
+			],
+			"id": "aogi",
+			"rotation": 0,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				3295,
+				2314
+			],
+			"id": "kqqc",
+			"rotation": -91,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				3233,
+				2324
+			],
+			"id": "asak",
+			"rotation": -14,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_large_1",
+			"bNoBody": false,
+			"position": [
+				3858,
+				662
+			],
+			"id": "yppf",
+			"rotation": -90,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_large_1",
+			"bNoBody": false,
+			"position": [
+				3858,
+				1263
+			],
+			"id": "cvf2",
+			"rotation": -90,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"bNoBody": false,
+			"position": [
+				2340,
+				678
+			],
+			"id": "8kso",
+			"rotation": 90,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_1",
+			"bNoBody": false,
+			"position": [
+				3061,
+				407
+			],
+			"id": "74bj",
+			"rotation": 180,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_4",
+			"bNoBody": false,
+			"position": [
+				3654,
+				1978
+			],
+			"id": "obiq",
+			"rotation": 90,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_2",
+			"bNoBody": false,
+			"position": [
+				2342,
+				1276
+			],
+			"id": "ynek",
+			"rotation": 90,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "mrap",
+			"position": [
+				3132,
+				2191
+			],
+			"id": "mrap1",
+			"rotation": -115,
+			"bDisabled": true,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "growler",
+			"position": [
+				3534,
+				1786
+			],
+			"id": "pibb",
+			"rotation": 180,
+			"bDisabled": true,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_large_1",
+			"bNoBody": false,
+			"position": [
+				2593,
+				1491
+			],
+			"id": "ukn9",
+			"rotation": 0,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_large_1",
+			"bNoBody": false,
+			"position": [
+				2999,
+				1491
+			],
+			"id": "odgg",
+			"rotation": 0,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_large_1",
+			"bNoBody": false,
+			"position": [
+				3550,
+				1491
+			],
+			"id": "x8l9",
+			"rotation": 0,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "door",
+			"doorType": "wood",
+			"position": [
+				2306,
+				939
+			],
+			"id": "ymes",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false,
+			"size": 100,
+			"material": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_2",
+			"position": [
+				2340,
+				789
+			],
+			"id": "yg88",
+			"rotation": 0,
+			"tint": 6710886,
+			"bNoBody": false,
+			"bGodMode": true,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_2",
+			"position": [
+				2340,
+				858
+			],
+			"id": "h5x0",
+			"rotation": 0,
+			"tint": 6710886,
+			"bNoBody": false,
+			"bGodMode": true,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				2296,
+				812
+			],
+			"id": "lutc",
+			"rotation": 180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				2296,
+				1063
+			],
+			"id": "i57v",
+			"rotation": 180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_2",
+			"position": [
+				2340,
+				1026
+			],
+			"id": "q99x",
+			"rotation": 0,
+			"tint": 6710886,
+			"bNoBody": false,
+			"bGodMode": true,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_2",
+			"position": [
+				2340,
+				1094
+			],
+			"id": "0sn4",
+			"rotation": 0,
+			"tint": 6710886,
+			"bNoBody": false,
+			"bGodMode": true,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_2",
+			"bNoBody": false,
+			"position": [
+				3182,
+				2419
+			],
+			"id": "lx5h",
+			"rotation": 0,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "growler",
+			"position": [
+				3537,
+				1651
+			],
+			"id": "vw3z",
+			"rotation": 180,
+			"bDisabled": true,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"size": 520,
+			"position": [
+				2471,
+				1810
+			],
+			"id": "garagedoor1",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": true,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_large_1",
+			"bNoBody": false,
+			"position": [
+				3055,
+				1038
+			],
+			"id": "rs8j",
+			"rotation": 0,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 20,
+			"position": [
+				2861,
+				1041
+			],
+			"id": "41zx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 100,
+			"position": [
+				3042,
+				1038
+			],
+			"id": "w1rm"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -7,
+			"position": [
+				3259,
+				1036
+			],
+			"id": "7mwr"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				2783,
+				1152
+			],
+			"id": "vpml",
+			"rotation": 30,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				2831,
+				1151
+			],
+			"id": "6jid",
+			"rotation": -44,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory",
+			"position": [
+				2909,
+				669
+			],
+			"id": "gqdt",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2452,
+				1369
+			],
+			"id": "31s1",
+			"rotation": -20,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				2438,
+				1279
+			],
+			"id": "qm00",
+			"rotation": 26,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "crate",
+			"position": [
+				2945,
+				1163
+			],
+			"id": "eleq",
+			"rotation": 9,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "crate",
+			"position": [
+				2992,
+				1148
+			],
+			"id": "4xr8",
+			"rotation": 32,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "crate",
+			"position": [
+				3055,
+				1149
+			],
+			"id": "2rza",
+			"rotation": -45,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "tv",
+			"position": [
+				3778,
+				881
+			],
+			"id": "5ays",
+			"rotation": 90,
+			"tint": 65535,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "chair_1",
+			"position": [
+				3688,
+				831
+			],
+			"id": "7nxn",
+			"rotation": -26,
+			"tint": 10066329,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "chair_1",
+			"position": [
+				3681,
+				957
+			],
+			"id": "k8pe",
+			"rotation": -131,
+			"tint": 10066329,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "cabinet_1",
+			"position": [
+				3365,
+				981
+			],
+			"id": "x9jb",
+			"rotation": -90,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "cabinet_1",
+			"position": [
+				3364,
+				1088
+			],
+			"id": "opqu",
+			"rotation": -90,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "table_large",
+			"position": [
+				3395,
+				1036
+			],
+			"id": "bf6a",
+			"rotation": -90,
+			"tint": 16736095,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				3351,
+				711
+			],
+			"id": "evcc",
+			"rotation": 56,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				3397,
+				731
+			],
+			"id": "q0sr",
+			"rotation": 118,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"position": [
+				3397,
+				700
+			],
+			"id": "syl0",
+			"rotation": 18,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				3360,
+				1381
+			],
+			"id": "htbg",
+			"rotation": -180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "chair_2",
+			"position": [
+				3364,
+				1335
+			],
+			"id": "evs0",
+			"rotation": 0,
+			"tint": 10066329,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "cabinet_2",
+			"position": [
+				3324,
+				1407
+			],
+			"id": "xme4",
+			"rotation": 180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "cabinet_2",
+			"position": [
+				3298,
+				1407
+			],
+			"id": "0vzd",
+			"rotation": 180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				3332,
+				1179
+			],
+			"id": "nyzu",
+			"rotation": 29,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				3291,
+				1144
+			],
+			"id": "bv3r",
+			"rotation": 74,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "generator",
+			"position": [
+				3334,
+				2290
+			],
+			"id": "xr22",
+			"rotation": -114,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "lever",
+			"position": [
+				3255,
+				2308
+			],
+			"id": "bu6c",
+			"rotation": -92,
+			"tint": 16770611,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				2498,
+				690
+			],
+			"id": "fyp2",
+			"rotation": 53,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -81,
+			"position": [
+				3363,
+				248
+			],
+			"id": "1mht"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 59,
+			"position": [
+				3340,
+				79
+			],
+			"id": "f16y"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 22,
+			"position": [
+				3792,
+				261
+			],
+			"id": "e39c"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -174,
+			"position": [
+				3659,
+				248
+			],
+			"id": "1r07"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -115,
+			"position": [
+				2521,
+				120
+			],
+			"id": "6utv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -136,
+			"position": [
+				2402,
+				16
+			],
+			"id": "g5j1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 173,
+			"position": [
+				2300,
+				29
+			],
+			"id": "h9l6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 96,
+			"position": [
+				2279,
+				237
+			],
+			"id": "4dw1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -118,
+			"position": [
+				2289,
+				134
+			],
+			"id": "uu46"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 81,
+			"position": [
+				2637,
+				1270
+			],
+			"id": "o6wl",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -102,
+			"position": [
+				2575,
+				987
+			],
+			"id": "6xhq",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -12,
+			"position": [
+				3200,
+				859
+			],
+			"id": "mxdc",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -105,
+			"position": [
+				3161,
+				717
+			],
+			"id": "wjgp",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 53,
+			"position": [
+				3563,
+				1256
+			],
+			"id": "12tw",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 4,
+			"position": [
+				3725,
+				1267
+			],
+			"id": "sqj5",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 157,
+			"position": [
+				2565,
+				1771
+			],
+			"id": "5y40",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 22,
+			"position": [
+				2783,
+				1860
+			],
+			"id": "lk3f",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 12,
+			"position": [
+				3185,
+				1945
+			],
+			"id": "pfwl",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 51,
+			"position": [
+				3309,
+				2099
+			],
+			"id": "386v",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 176,
+			"position": [
+				2959,
+				2121
+			],
+			"id": "pz00",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 17,
+			"position": [
+				3335,
+				2239
+			],
+			"id": "znl5",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -94,
+			"position": [
+				3307,
+				1814
+			],
+			"id": "hjve",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -157,
+			"position": [
+				3027,
+				1697
+			],
+			"id": "nsl3",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -179,
+			"position": [
+				2854,
+				1694
+			],
+			"id": "e7mh",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_weapons",
+			"position": [
+				3669,
+				1378
+			],
+			"id": "vcgq",
+			"rotation": -180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -168,
+			"position": [
+				588,
+				1774
+			],
+			"id": "sd4f"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 10,
+			"position": [
+				714,
+				1796
+			],
+			"id": "rxlt"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -57,
+			"position": [
+				762,
+				1721
+			],
+			"id": "ng4f"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_2",
+			"bNoBody": false,
+			"position": [
+				1344,
+				1549
+			],
+			"id": "ycrg",
+			"rotation": 0,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_4",
+			"bNoBody": false,
+			"position": [
+				1335,
+				2385
+			],
+			"id": "ej1t",
+			"rotation": 177,
+			"tint": 6710886,
+			"material": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_1",
+			"bNoBody": false,
+			"position": [
+				749,
+				826
+			],
+			"id": "g18o",
+			"rotation": 89,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -91,
+			"position": [
+				742,
+				770
+			],
+			"id": "128z"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -4,
+			"position": [
+				838,
+				764
+			],
+			"id": "salc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 121,
+			"position": [
+				764,
+				889
+			],
+			"id": "g6yo"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -154,
+			"position": [
+				688,
+				852
+			],
+			"id": "wenm"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -49,
+			"position": [
+				814,
+				706
+			],
+			"id": "ugsk"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				1276,
+				2163
+			],
+			"id": "ip3q",
+			"rotation": -109,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_table",
+			"position": [
+				1343,
+				2238
+			],
+			"id": "mqs0",
+			"rotation": -141,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_wood",
+			"position": [
+				1612,
+				2259
+			],
+			"id": "qt12",
+			"rotation": 37,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_wood",
+			"position": [
+				1577,
+				2274
+			],
+			"id": "86ap",
+			"rotation": 92,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_2",
+			"position": [
+				931,
+				1655
+			],
+			"id": "q8ri",
+			"rotation": -11,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 166,
+			"position": [
+				923,
+				1652
+			],
+			"id": "bo63"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -127,
+			"position": [
+				232,
+				722
+			],
+			"id": "bi5q"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 77,
+			"position": [
+				311,
+				1068
+			],
+			"id": "g9wi"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -9,
+			"position": [
+				503,
+				1036
+			],
+			"id": "bhw1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 180,
+			"position": [
+				435,
+				1036
+			],
+			"id": "z0hr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -66,
+			"position": [
+				534,
+				816
+			],
+			"id": "01wf"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_3",
+			"bNoBody": false,
+			"position": [
+				1161,
+				496
+			],
+			"id": "zha1",
+			"rotation": 5,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 68,
+			"position": [
+				1265,
+				311
+			],
+			"id": "w6to"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 105,
+			"position": [
+				1257,
+				731
+			],
+			"id": "me6k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -169,
+			"position": [
+				1134,
+				706
+			],
+			"id": "jviy"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -40,
+			"position": [
+				1286,
+				578
+			],
+			"id": "ant4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -142,
+			"position": [
+				1117,
+				446
+			],
+			"id": "i19w"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -57,
+			"position": [
+				1189,
+				333
+			],
+			"id": "bg91"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 122,
+			"position": [
+				1028,
+				594
+			],
+			"id": "r9eo"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -136,
+			"position": [
+				958,
+				526
+			],
+			"id": "s7w7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 4,
+			"position": [
+				1174,
+				541
+			],
+			"id": "qbwx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -76,
+			"position": [
+				1295,
+				429
+			],
+			"id": "2bp6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -111,
+			"position": [
+				1162,
+				213
+			],
+			"id": "6lv5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 115,
+			"position": [
+				1059,
+				431
+			],
+			"id": "bifz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 59,
+			"position": [
+				1217,
+				693
+			],
+			"id": "ujwj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -22,
+			"position": [
+				1371,
+				631
+			],
+			"id": "szex"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 169,
+			"position": [
+				487,
+				520
+			],
+			"id": "ay5e"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 1,
+			"position": [
+				548,
+				521
+			],
+			"id": "vhjx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -27,
+			"position": [
+				1037,
+				273
+			],
+			"id": "rhhb"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_3",
+			"bNoBody": false,
+			"position": [
+				1801,
+				165
+			],
+			"id": "sh1m",
+			"rotation": 78,
+			"tint": null,
+			"material": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -3,
+			"position": [
+				2113,
+				217
+			],
+			"id": "qzmv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -111,
+			"position": [
+				2082,
+				136
+			],
+			"id": "d3lt"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -158,
+			"position": [
+				1935,
+				77
+			],
+			"id": "tizz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -174,
+			"position": [
+				1831,
+				66
+			],
+			"id": "4q01"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -175,
+			"position": [
+				1678,
+				53
+			],
+			"id": "1yvh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 101,
+			"position": [
+				1653,
+				178
+			],
+			"id": "te49"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 24,
+			"position": [
+				1793,
+				337
+			],
+			"id": "2s63"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -32,
+			"position": [
+				1940,
+				244
+			],
+			"id": "6ygs"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -164,
+			"position": [
+				1823,
+				211
+			],
+			"id": "kz4r"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -105,
+			"position": [
+				1757,
+				-43
+			],
+			"id": "z4h6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 24,
+			"position": [
+				1969,
+				52
+			],
+			"id": "u1rc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 82,
+			"position": [
+				2005,
+				304
+			],
+			"id": "guop"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -179,
+			"position": [
+				1706,
+				300
+			],
+			"id": "6jtv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -111,
+			"position": [
+				1631,
+				108
+			],
+			"id": "2inm"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 2,
+			"position": [
+				2121,
+				128
+			],
+			"id": "cixz"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_8",
+			"position": [
+				1422,
+				258
+			],
+			"id": "nkhu",
+			"rotation": -180,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_8",
+			"position": [
+				1547,
+				327
+			],
+			"id": "516r",
+			"rotation": -92,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_8",
+			"position": [
+				1541,
+				441
+			],
+			"id": "y6v2",
+			"rotation": -92,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_8",
+			"position": [
+				1537,
+				550
+			],
+			"id": "2r9f",
+			"rotation": -92,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_8",
+			"position": [
+				1537,
+				658
+			],
+			"id": "mn1b",
+			"rotation": -92,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 170,
+			"position": [
+				1395,
+				255
+			],
+			"id": "uwph"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 13,
+			"position": [
+				1519,
+				284
+			],
+			"id": "pxvc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 83,
+			"position": [
+				1539,
+				457
+			],
+			"id": "4rdf"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 93,
+			"position": [
+				1530,
+				609
+			],
+			"id": "2mi5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 82,
+			"position": [
+				1549,
+				695
+			],
+			"id": "m14q"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -89,
+			"position": [
+				1550,
+				382
+			],
+			"id": "3kxq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -147,
+			"position": [
+				1328,
+				239
+			],
+			"id": "u89w"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 37,
+			"position": [
+				1465,
+				1465
+			],
+			"id": "ksc7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -172,
+			"position": [
+				1316,
+				1515
+			],
+			"id": "sun7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 87,
+			"position": [
+				1333,
+				1643
+			],
+			"id": "wqyx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -24,
+			"position": [
+				1436,
+				1598
+			],
+			"id": "ped5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -86,
+			"position": [
+				1496,
+				804
+			],
+			"id": "9yfi"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -165,
+			"position": [
+				1388,
+				776
+			],
+			"id": "3o9y"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_13",
+			"position": [
+				1808,
+				765
+			],
+			"id": "qnqg",
+			"rotation": -6,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -2,
+			"position": [
+				2259,
+				751
+			],
+			"id": "kw0f"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 178,
+			"position": [
+				1769,
+				766
+			],
+			"id": "x93j"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -8,
+			"position": [
+				1860,
+				753
+			],
+			"id": "fqjb"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_12",
+			"position": [
+				1269,
+				1841
+			],
+			"id": "q1qt",
+			"rotation": 83,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 120,
+			"position": [
+				1272,
+				1792
+			],
+			"id": "0fel"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 91,
+			"position": [
+				1270,
+				1894
+			],
+			"id": "b7me"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				1261,
+				2045
+			],
+			"id": "imxc",
+			"rotation": 45
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_1",
+			"position": [
+				608,
+				1153
+			],
+			"id": "tej0",
+			"rotation": -64,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_5",
+			"position": [
+				1132,
+				1237
+			],
+			"id": "fjqe",
+			"rotation": 94,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -85,
+			"position": [
+				1111,
+				1249
+			],
+			"id": "ecas"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_long",
+			"rotation": 0,
+			"position": [
+				494,
+				62
+			],
+			"id": "tohd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -173,
+			"position": [
+				151,
+				25
+			],
+			"id": "213y"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 21,
+			"position": [
+				511,
+				161
+			],
+			"id": "0xff"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -15,
+			"position": [
+				819,
+				76
+			],
+			"id": "6ebx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -172,
+			"position": [
+				405,
+				18
+			],
+			"id": "bkbm"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 100,
+			"position": [
+				55,
+				2036
+			],
+			"id": "25il"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 6,
+			"position": [
+				170,
+				2048
+			],
+			"id": "bqf4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 1,
+			"position": [
+				271,
+				2050
+			],
+			"id": "rht6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 1,
+			"position": [
+				398,
+				2052
+			],
+			"id": "zcwa"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 1,
+			"position": [
+				517,
+				2055
+			],
+			"id": "8gxz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -2,
+			"position": [
+				684,
+				2048
+			],
+			"id": "lupi"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -2,
+			"position": [
+				732,
+				2046
+			],
+			"id": "9o1r"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -1,
+			"position": [
+				944,
+				2041
+			],
+			"id": "af43"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 7,
+			"position": [
+				1063,
+				2055
+			],
+			"id": "kq9c"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 111,
+			"position": [
+				1038,
+				2125
+			],
+			"id": "1g6p"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -159,
+			"position": [
+				801,
+				2018
+			],
+			"id": "kl6u"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -174,
+			"position": [
+				560,
+				1994
+			],
+			"id": "vlgg"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 2,
+			"position": [
+				968,
+				2007
+			],
+			"id": "ergt"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -171,
+			"position": [
+				723,
+				1969
+			],
+			"id": "m8lc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 170,
+			"position": [
+				323,
+				2043
+			],
+			"id": "rxnl"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -165,
+			"position": [
+				84,
+				1978
+			],
+			"id": "z2fi"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 67,
+			"position": [
+				138,
+				2107
+			],
+			"id": "rotb"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 4,
+			"position": [
+				562,
+				2140
+			],
+			"id": "j3af"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -3,
+			"position": [
+				899,
+				2125
+			],
+			"id": "busz"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -85,
+			"position": [
+				997,
+				987
+			],
+			"id": "nyt1",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 127,
+			"position": [
+				828,
+				1208
+			],
+			"id": "adg3",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -146,
+			"position": [
+				602,
+				1056
+			],
+			"id": "618b",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 11,
+			"position": [
+				971,
+				1128
+			],
+			"id": "8xgn",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 163,
+			"position": [
+				727,
+				1202
+			],
+			"id": "f3ea",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 17,
+			"position": [
+				1948,
+				1571
+			],
+			"id": "hejz",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -22,
+			"position": [
+				2113,
+				1505
+			],
+			"id": "a40o",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -132,
+			"position": [
+				1730,
+				1085
+			],
+			"id": "76zg",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 92,
+			"position": [
+				1719,
+				1401
+			],
+			"id": "h4xm",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -20,
+			"position": [
+				2241,
+				1215
+			],
+			"id": "y5nb",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -135,
+			"position": [
+				1889,
+				868
+			],
+			"id": "cgov",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 83,
+			"position": [
+				1936,
+				1279
+			],
+			"id": "dzla",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -60,
+			"position": [
+				2073,
+				1044
+			],
+			"id": "tj8f",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 161,
+			"position": [
+				1496,
+				1246
+			],
+			"id": "picn",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -72,
+			"position": [
+				1604,
+				915
+			],
+			"id": "vde1",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -14,
+			"position": [
+				2028,
+				806
+			],
+			"id": "mynr",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -18,
+			"position": [
+				2152,
+				765
+			],
+			"id": "vak7",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 103,
+			"position": [
+				1907,
+				1848
+			],
+			"id": "qm01",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_4",
+			"position": [
+				1584,
+				1921
+			],
+			"id": "xm5q",
+			"rotation": 171,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 168,
+			"position": [
+				1584,
+				1917
+			],
+			"id": "gaek"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"position": [
+				1758,
+				1897
+			],
+			"id": "t8c7",
+			"rotation": 20,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"position": [
+				2034,
+				1960
+			],
+			"id": "uue5",
+			"rotation": 0,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -30,
+			"position": [
+				1922,
+				1723
+			],
+			"id": "qh7g",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 99,
+			"position": [
+				1811,
+				2455
+			],
+			"id": "4gsh",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -179,
+			"position": [
+				751,
+				2428
+			],
+			"id": "q3jw",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -136,
+			"position": [
+				650,
+				2332
+			],
+			"id": "f8nz",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -52,
+			"position": [
+				718,
+				2244
+			],
+			"id": "64tf",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -3,
+			"position": [
+				796,
+				2240
+			],
+			"id": "gxxp",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 161,
+			"position": [
+				204,
+				2445
+			],
+			"id": "qbnq",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -142,
+			"position": [
+				71,
+				2340
+			],
+			"id": "y749",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -13,
+			"position": [
+				1943,
+				1908
+			],
+			"id": "0ydb",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 170,
+			"position": [
+				1754,
+				1941
+			],
+			"id": "lrnm",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 62,
+			"position": [
+				1943,
+				2291
+			],
+			"id": "2zsi",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -137,
+			"position": [
+				396,
+				835
+			],
+			"id": "6iel",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 148,
+			"position": [
+				216,
+				948
+			],
+			"id": "ktfh",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -125,
+			"position": [
+				122,
+				816
+			],
+			"id": "7pz3",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -32,
+			"position": [
+				878,
+				352
+			],
+			"id": "k3fy",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				1069,
+				816
+			],
+			"id": "fuelBox",
+			"rotation": 24,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				1142,
+				848
+			],
+			"id": "lbva",
+			"rotation": 21,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				2162,
+				2425
+			],
+			"id": "rad1",
+			"rotation": 22,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				2184,
+				2363
+			],
+			"id": "buyq",
+			"rotation": 22,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				2169,
+				2389
+			],
+			"id": "pm9k",
+			"rotation": -157,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				321,
+				1816
+			],
+			"id": "1d2c",
+			"rotation": 49,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				348,
+				1780
+			],
+			"id": "m2y4",
+			"rotation": -131,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				329,
+				1803
+			],
+			"id": "6hub",
+			"rotation": 100,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2906,
+				294
+			],
+			"id": "rwa4",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				2887,
+				234
+			],
+			"id": "6ja9",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				2892,
+				189
+			],
+			"id": "5hyn",
+			"rotation": 0,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				3158,
+				270
+			],
+			"id": "qqxw",
+			"rotation": 42,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				3155,
+				208
+			],
+			"id": "8b9c",
+			"rotation": 115,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				3192,
+				242
+			],
+			"id": "kphb",
+			"rotation": 60,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				3417,
+				1981
+			],
+			"id": "i607",
+			"rotation": 46,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				3418,
+				2063
+			],
+			"id": "zndp",
+			"rotation": 100,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3202,
+				1631
+			],
+			"id": "y1pb",
+			"rotation": -17,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2830,
+				2009
+			],
+			"id": "9vg3",
+			"rotation": -9,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				2979,
+				2251
+			],
+			"id": "ar3r",
+			"rotation": 23,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "crate",
+			"position": [
+				2755,
+				2032
+			],
+			"id": "24q7",
+			"rotation": 159,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"position": [
+				1238,
+				1230
+			],
+			"id": "a10q",
+			"rotation": -45,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_generic",
+			"position": [
+				1218,
+				1285
+			],
+			"id": "0stv",
+			"rotation": 59,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"objectScale": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				1398,
+				2138
+			],
+			"id": "m9g6",
+			"rotation": -94,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				1657,
+				2203
+			],
+			"id": "69bu",
+			"rotation": -57,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -151,
+			"position": [
+				744,
+				278
+			],
+			"id": "7kr8",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 172,
+			"position": [
+				625,
+				294
+			],
+			"id": "rdd1",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -179,
+			"position": [
+				458,
+				291
+			],
+			"id": "hkec",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 150,
+			"position": [
+				250,
+				409
+			],
+			"id": "joz5",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -132,
+			"position": [
+				76,
+				219
+			],
+			"id": "k9pt",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 0,
+			"position": [
+				2745,
+				202
+			],
+			"id": "ni64",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 20,
+			"position": [
+				3541,
+				50
+			],
+			"id": "20ak",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 10,
+			"position": [
+				3658,
+				71
+			],
+			"id": "gqo1",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 15,
+			"position": [
+				3801,
+				108
+			],
+			"id": "nd43",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 142,
+			"position": [
+				3742,
+				154
+			],
+			"id": "j0nz",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 143,
+			"position": [
+				1653,
+				1755
+			],
+			"id": "eq7z",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -175,
+			"position": [
+				451,
+				1646
+			],
+			"id": "2t82",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -21,
+			"position": [
+				863,
+				1490
+			],
+			"id": "clmg",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -173,
+			"position": [
+				404,
+				1436
+			],
+			"id": "epmn",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				3415,
+				1389
+			],
+			"id": "lever1",
+			"rotation": -91,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "garagedoor1",
+			"triggerId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 67,
+			"position": [
+				766,
+				1838
+			],
+			"id": "2q91"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				1533,
+				2272
+			],
+			"id": "n4ds",
+			"rotation": 23,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "triggerArea",
+			"position": [
+				2592,
+				1813
+			],
+			"id": "2e0d",
+			"rotation": 0,
+			"bHidden": true,
+			"uses": 1,
+			"width": 150,
+			"height": 500,
+			"bBotsCanTrigger": false,
+			"onTouchTriggerId": "trigger_enteredGarage",
+			"targetTeam": 0,
+			"attachToId": null,
+			"targetId": null,
+			"targetType": null,
+			"indicatorData": null,
+			"team": null,
+			"icon": null
+		},
+		{
+			"type": "triggerArea",
+			"position": [
+				3384,
+				981
+			],
+			"id": "xlde",
+			"rotation": 0,
+			"onTouchTriggerId": "trigger_fuelPaper",
+			"bHidden": true,
+			"uses": 1,
+			"width": 50,
+			"height": 50,
+			"bBotsCanTrigger": false,
+			"targetTeam": 0,
+			"attachToId": null,
+			"targetId": null,
+			"targetType": null,
+			"indicatorData": null,
+			"team": null,
+			"icon": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "key_card",
+			"position": [
+				3383,
+				981
+			],
+			"id": "13to",
+			"rotation": 28,
+			"tint": 0,
+			"layer": "layer_bg",
+			"objectScale": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				1782,
+				2340
+			],
+			"id": "ld9c",
+			"rotation": -60,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				1731,
+				2402
+			],
+			"id": "muo3",
+			"rotation": 14,
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "an94",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				1396,
+				2188
+			],
+			"id": "y175",
+			"rotation": 46,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "an94",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				2444,
+				849
+			],
+			"id": "if30",
+			"rotation": -5,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "dinosaur",
+			"dinoType": "raptor",
+			"position": [
+				1435,
+				593
+			],
+			"id": "c5ix",
+			"rotation": 78,
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bCanInteract": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 3,
+			"speedMultiplier": 1,
+			"bHideHealthBar": true,
+			"bIgnoreOutOfSight": true,
+			"colour": 4568036,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "dinosaur",
+			"dinoType": "pachy",
+			"position": [
+				967,
+				2406
+			],
+			"id": "x4rf",
+			"rotation": -122,
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bCanInteract": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 2,
+			"speedMultiplier": 1,
+			"bHideHealthBar": true,
+			"bIgnoreOutOfSight": true,
+			"colour": 16770611,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "dinosaur",
+			"dinoType": "pachy",
+			"position": [
+				1055,
+				2475
+			],
+			"id": "jetx",
+			"rotation": 179,
+			"bSavage": false,
+			"bRegenHealth": false,
+			"bCanInteract": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 2,
+			"speedMultiplier": 1,
+			"bHideHealthBar": true,
+			"bIgnoreOutOfSight": true,
+			"colour": 16770611,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "lvoa",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				1477,
+				2260
+			],
+			"id": "ynxf",
+			"rotation": -29,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "lvoa",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				2969,
+				2163
+			],
+			"id": "apzt",
+			"rotation": -100,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bInteract": false,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "l86lsw",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3369,
+				1627
+			],
+			"id": "ix1u",
+			"rotation": 106,
+			"avatar": {
+				"body": "body0002",
+				"head": "head0037",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": true,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_breacher",
+			"equipment": "blast_vest",
+			"grenade": "napalm",
+			"health": 1500,
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bInteract": false,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"pawnName": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "m4a1",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				2567,
+				1381
+			],
+			"id": "ugzs",
+			"rotation": -41,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"equipment": "stim",
+			"grenade": "flashbang",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "m4a1",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3165,
+				730
+			],
+			"id": "tpwk",
+			"rotation": 21,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"equipment": "stim",
+			"grenade": "flashbang",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "lvoa",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3487,
+				1362
+			],
+			"id": "4u6a",
+			"rotation": -157,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "lvoa",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3465,
+				1037
+			],
+			"id": "rfmg",
+			"rotation": 179,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "m4a1",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3683,
+				884
+			],
+			"id": "vc9p",
+			"rotation": -8,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"equipment": "stim",
+			"grenade": "flashbang",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "m16a4",
+			"position": [
+				3777,
+				1379
+			],
+			"id": "7nlx",
+			"rotation": 90,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "m16a4",
+			"position": [
+				3771,
+				1363
+			],
+			"id": "ryqx",
+			"rotation": 107,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "an94",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3702,
+				1017
+			],
+			"id": "wg7v",
+			"rotation": -17,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"bInteract": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "an94",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3285,
+				2248
+			],
+			"id": "75wj",
+			"rotation": 67,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bInteract": false,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "character",
+			"inventory": [
+				{
+					"id": "an94",
+					"name": null,
+					"mag": null,
+					"ammo": null,
+					"mods": null
+				}
+			],
+			"position": [
+				3353,
+				2235
+			],
+			"id": "5jpi",
+			"rotation": 91,
+			"avatar": {
+				"body": "body0000",
+				"head": "head0008",
+				"facewear": null,
+				"eyewear": null,
+				"hair": "hair0000",
+				"hairColour": "HAIR_COLOUR_BLACK",
+				"beard": null,
+				"face": null
+			},
+			"bRegenHealth": true,
+			"bJuggernaut": false,
+			"bZombie": false,
+			"bBot": true,
+			"botSkill": "{setting:botSkill}",
+			"team": 1,
+			"speedMultiplier": 1,
+			"melee": "melee_bowie",
+			"grenade": "frag",
+			"bHideHealthBar": true,
+			"bUnlimitedAmmo": true,
+			"bIgnoreOutOfSight": true,
+			"bInteract": false,
+			"bSwitchToMelee": false,
+			"avatarId": null,
+			"equipment": null,
+			"pawnName": null,
+			"health": null,
+			"bIgnoreEnemies": null,
+			"bInvestigate": null,
+			"investigatePosition": null,
+			"wanderArea": null,
+			"indicatorData": null,
+			"bDropWeapons": null,
+			"bUntargetable": null,
+			"bCamp": null,
+			"objectScale": null,
+			"maxRange": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "crate",
+			"crateType": "CRATE_WEAPON",
+			"items": [],
+			"position": [
+				609,
+				263
+			],
+			"id": "crate2",
+			"rotation": 27,
+			"itemData": {
+				"uses": 6,
+				"maxUses": 6,
+				"interactTime": 30,
+				"interactTeam": null
+			},
+			"indicatorData": {
+				"labelText": "Assault Kit 2",
+				"icon": "class_assault",
+				"iconTint": 14177600,
+				"iconScale": null,
+				"bClamp": false
+			},
+			"bDisposable": false,
+			"bDisabled": false,
+			"ownerId": null,
+			"mass": null
+		},
+		{
+			"type": "crate",
+			"crateType": "CRATE_WEAPON",
+			"items": [],
+			"position": [
+				406,
+				257
+			],
+			"id": "crate1",
+			"rotation": -22,
+			"itemData": {
+				"uses": 6,
+				"maxUses": 6,
+				"interactTime": 30,
+				"interactTeam": null
+			},
+			"indicatorData": {
+				"labelText": "Assault Kit 1",
+				"icon": "class_assault",
+				"iconTint": 16770611,
+				"iconScale": null,
+				"bClamp": false
+			},
+			"bDisposable": false,
+			"bDisabled": false,
+			"ownerId": null,
+			"mass": null
+		}
+	]
+}

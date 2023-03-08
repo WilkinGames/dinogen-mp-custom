@@ -1,0 +1,12 @@
+[
+  {
+    "id": null,
+    "name": "STR_NONE",
+    "score": 0
+  },
+  {
+    "id": "thermal",
+    "name": "STR_CAMO_THERMAL",
+    "score": 5000
+  }
+]

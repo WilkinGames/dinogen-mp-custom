@@ -1,0 +1,27 @@
+{
+  "name": "dinogen-online",
+  "version": "1.0.0",
+  "description": "Dinogen Online multiplayer server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Wilkin Games",
+  "license": "ISC",
+  "dependencies": {
+    "@theace0296/steamworks": "^1.1.1",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "javascript-astar": "^0.4.1",
+    "node-fetch": "^2.6.7",
+    "os-utils": "^0.0.14",
+    "p2": "^0.7.1",
+    "rate-limiter-flexible": "^2.3.7",
+    "smile2emoji": "^2.7.0",
+    "socket.io": "^4.2.0",
+    "socket.io-json-parser": "^3.0.0",
+    "steamworks.js": "^0.0.23"
+  }
+}

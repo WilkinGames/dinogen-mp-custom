@@ -1,0 +1,591 @@
+{
+	"id": "raceBattle",
+	"author": "Wilkin Games",
+	"name": "STR_SCENARIO_RACE_BATTLE",
+	"desc": "STR_SCENARIO_RACE_BATTLE_DESC",
+	"mapId": "map_complex",
+	"gameModeId": "team_deathmatch",
+	"settings": {
+		"bUseDefaultMapObjects": false,
+		"bMapObjects": true,
+		"bMapVehicles": true,
+		"bMapWeapons": true,
+		"bRandomAirdrops": true,
+		"bots": 8,
+		"botSkill": 2,
+		"botTeam": -1,
+		"allowFactions": "humans_dinosaurs",
+		"airdropTeam": 0,
+		"airdropTimer": 15,
+		"scoreLimit": 100,
+		"timeLimit": 10,
+		"width": 4000,
+		"height": 2600,
+		"bAllowBotSettings": false,
+		"bAllowGameModeSelection": true,
+		"bAllowMapSelection": true
+	},
+	"functions": [
+		{
+			"id": "spawnEgg",
+			"actions": [
+				{
+					"action": "createObject",
+					"delay": 0,
+					"id": "f6v3a",
+					"type": "egg",
+					"position": "{position:random}",
+					"rotation": 0,
+					"eggType": "egg_large",
+					"items": [
+						{
+							"type": "dinosaur",
+							"position": [
+								0,
+								0
+							],
+							"rotation": 0,
+							"dinoType": "{special:randomDinoId}",
+							"bSavage": "{special:randomBoolean}",
+							"bRegenHealth": false,
+							"bBot": true,
+							"botSkill": "{setting:botSkill}",
+							"team": 1,
+							"speedMultiplier": 1,
+							"pawnName": null,
+							"health": null,
+							"bIgnoreOutOfSight": null,
+							"damageMultipliers": null,
+							"bGodMode": null
+						},
+						{
+							"type": "dinosaur",
+							"position": [
+								0,
+								0
+							],
+							"rotation": 0,
+							"dinoType": "{special:randomDinoId}",
+							"bSavage": "{special:randomBoolean}",
+							"bRegenHealth": false,
+							"bBot": true,
+							"botSkill": "{setting:botSkill}",
+							"team": 1,
+							"speedMultiplier": 1,
+							"pawnName": null,
+							"health": null,
+							"bIgnoreOutOfSight": null,
+							"damageMultipliers": null,
+							"bGodMode": null
+						},
+						{
+							"type": "dinosaur",
+							"position": [
+								0,
+								0
+							],
+							"rotation": 0,
+							"dinoType": "{special:randomDinoId}",
+							"bSavage": "{special:randomBoolean}",
+							"bRegenHealth": false,
+							"bBot": true,
+							"botSkill": "{setting:botSkill}",
+							"team": 1,
+							"speedMultiplier": 1,
+							"pawnName": null,
+							"health": null,
+							"bIgnoreOutOfSight": null,
+							"damageMultipliers": null,
+							"bGodMode": null
+						}
+					],
+					"team": 1,
+					"health": null,
+					"damageMultipliers": null,
+					"bGodMode": null
+				}
+			]
+		}
+	],
+	"triggers": [
+		{
+			"id": "trigger_gameInit",
+			"event": "gameInit",
+			"actions": []
+		},
+		{
+			"id": "trigger_spawnEgg",
+			"event": "gameTimer",
+			"actions": [
+				{
+					"action": "executeFunction",
+					"delay": 0,
+					"id": "spawnEgg"
+				},
+				{
+					"action": "message",
+					"delay": 0,
+					"message": "Dinosaur egg spawned!",
+					"hqId": null,
+					"bInfofeed": false,
+					"timerMax": null
+				}
+			],
+			"threshold": 15,
+			"conditions": [
+				{
+					"condition": "numPawnsOnTeam",
+					"value": 12,
+					"team": 1,
+					"operator": "<"
+				}
+			],
+			"repeats": null
+		},
+		{
+			"id": "trigger_showTip",
+			"event": "gameStart",
+			"actions": [
+				{
+					"action": "showTip",
+					"delay": 1,
+					"tipId": "TIP_CUSTOM",
+					"descText": "STR_SCENARIO_RACE_BATTLE",
+					"tipText": "STR_SCENARIO_RACE_BATTLE_TIP"
+				}
+			],
+			"repeats": null
+		}
+	],
+	"tiles": [
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		]
+	],
+	"objects": [
+		{
+			"type": "polygon",
+			"spriteId": "map_complex",
+			"position": [
+				2000,
+				1300
+			],
+			"id": "wuxht",
+			"rotation": 0,
+			"bFixedPosition": true
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				1965.4,
+				1228.35
+			],
+			"obstacleId": "barrel_explosive",
+			"rotation": 0,
+			"mass": 0,
+			"id": "errps",
+			"health": null,
+			"items": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				1701.4,
+				2114.25
+			],
+			"obstacleId": "barrel_explosive",
+			"rotation": 0,
+			"mass": 0,
+			"id": "szkgh",
+			"health": null,
+			"items": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"position": [
+				2268.35,
+				2114.25
+			],
+			"obstacleId": "barrel_explosive",
+			"rotation": 0,
+			"mass": 0,
+			"id": "irxju",
+			"health": null,
+			"items": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"position": [
+				256.85,
+				1583.65
+			],
+			"id": "9t5of",
+			"rotation": 0,
+			"treeType": "tree"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				503.75,
+				2100.2
+			],
+			"id": "x5djm",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				1843.25,
+				1848.35
+			],
+			"id": "q3bon",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				2110.35,
+				1801.25
+			],
+			"id": "a3xjs",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				1582.9,
+				348.9
+			],
+			"id": "6zex2",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				1959.25,
+				626.75
+			],
+			"id": "iph8u",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				3202.85,
+				560.8
+			],
+			"id": "xrrld",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"position": [
+				3628.6,
+				1828.35
+			],
+			"id": "uwdfi",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"position": [
+				3715.35,
+				1502.55
+			],
+			"id": "c15fn",
+			"rotation": 0,
+			"treeType": "tree"
+		},
+		{
+			"type": "tree",
+			"position": [
+				837.65,
+				524.8
+			],
+			"id": "nezo1",
+			"rotation": 0,
+			"treeType": "tree"
+		},
+		{
+			"type": "door",
+			"position": [
+				1621.9,
+				1341.85
+			],
+			"doorType": "garage",
+			"material": "metal",
+			"rotation": 0,
+			"size": 165,
+			"bClosed": true,
+			"id": "5gk0a",
+			"bDisabled": false
+		},
+		{
+			"type": "door",
+			"position": [
+				2321.85,
+				1341.85
+			],
+			"doorType": "garage",
+			"material": "metal",
+			"rotation": 0,
+			"size": 165,
+			"bClosed": true,
+			"id": "rugve",
+			"bDisabled": false
+		},
+		{
+			"type": "car",
+			"position": [
+				1110,
+				372
+			],
+			"vehicleId": "quad",
+			"rotation": 90,
+			"bRespawn": true,
+			"id": "r7bob",
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false
+		},
+		{
+			"type": "mountedWeapon",
+			"position": [
+				452,
+				2010
+			],
+			"vehicleId": "m2",
+			"bRespawn": true,
+			"id": "28qz8",
+			"rotation": 0,
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false
+		},
+		{
+			"type": "mountedWeapon",
+			"position": [
+				3288,
+				2000
+			],
+			"vehicleId": "m2",
+			"bRespawn": true,
+			"id": "2ajo8",
+			"rotation": 0,
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false
+		},
+		{
+			"type": "droppedWeapon",
+			"position": [
+				1970,
+				1130
+			],
+			"weaponId": "m82",
+			"bRespawn": true,
+			"id": "5afst",
+			"rotation": 0,
+			"bRandomVelocity": false,
+			"mag": null,
+			"mods": null
+		},
+		{
+			"type": "droppedWeapon",
+			"position": [
+				1970,
+				782
+			],
+			"weaponId": "tac50",
+			"bRespawn": true,
+			"id": "e96gl",
+			"rotation": 0,
+			"bRandomVelocity": false,
+			"mag": null,
+			"mods": null
+		}
+	]
+}

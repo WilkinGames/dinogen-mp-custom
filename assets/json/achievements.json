@@ -1,0 +1,320 @@
+[
+  {
+    "id": "kills_1",
+    "stat": "kills",
+    "value": 10,
+    "num": 1,
+    "name": "STR_KILLER",
+    "desc": "STR_GET_X_KILLS",
+    "descParams": [ 10 ],
+    "ngId": 69558
+  },
+  {
+    "id": "kills_2",
+    "stat": "kills",
+    "value": 100,
+    "num": 2,
+    "name": "STR_KILLER",
+    "desc": "STR_GET_X_KILLS",
+    "descParams": [ 100 ],
+    "ngId": 69559
+  },
+  {
+    "id": "kills_3",
+    "stat": "kills",
+    "value": 1000,
+    "num": 3,
+    "name": "STR_KILLER",
+    "desc": "STR_GET_X_KILLS",
+    "descParams": [ 1000 ],
+    "ngId": 69560
+  },
+  {
+    "id": "melees_1",
+    "stat": "melees",
+    "value": 10,
+    "num": 1,
+    "name": "STR_STAT_MELEES",
+    "desc": "STR_GET_X_MELEES",
+    "descParams": [ 10 ],
+    "ngId": 69561
+  },
+  {
+    "id": "melees_2",
+    "stat": "melees",
+    "value": 100,
+    "num": 2,
+    "name": "STR_STAT_MELEES",
+    "desc": "STR_GET_X_MELEES",
+    "descParams": [ 100 ],
+    "ngId": 69562
+  },
+  {
+    "id": "melees_3",
+    "stat": "melees",
+    "value": 250,
+    "num": 3,
+    "name": "STR_STAT_MELEES",
+    "desc": "STR_GET_X_MELEES",
+    "descParams": [ 250 ],
+    "ngId": 69563
+  },
+  {
+    "id": "first_bloods_1",
+    "stat": "firstBloods",
+    "value": 1,
+    "num": 5,
+    "name": "STR_FIRST_BLOOD",
+    "desc": "STR_GET_X_FIRST_BLOODS",
+    "descParams": [ 5 ],
+    "ngId": 69564
+  },
+  {
+    "id": "first_bloods_2",
+    "stat": "firstBloods",
+    "value": 50,
+    "num": 2,
+    "name": "STR_FIRST_BLOOD",
+    "desc": "STR_GET_X_FIRST_BLOODS",
+    "descParams": [ 50 ],
+    "ngId": 69565
+  },
+  {
+    "id": "first_bloods_3",
+    "stat": "firstBloods",
+    "value": 100,
+    "num": 3,
+    "name": "STR_FIRST_BLOOD",
+    "desc": "STR_GET_X_FIRST_BLOODS",
+    "descParams": [ 100 ],
+    "ngId": 69566
+  },
+  {
+    "id": "avengers_1",
+    "stat": "avengers",
+    "value": 10,
+    "num": 1,
+    "name": "STR_AVENGER",
+    "desc": "STR_GET_X_AVENGERS",
+    "descParams": [ 10 ],
+    "ngId": 69579
+  },
+  {
+    "id": "avengers_2",
+    "stat": "avengers",
+    "value": 50,
+    "num": 2,
+    "name": "STR_AVENGER",
+    "desc": "STR_GET_X_AVENGERS",
+    "descParams": [ 50 ],
+    "ngId": 69580
+  },
+  {
+    "id": "avengers_3",
+    "stat": "avengers",
+    "value": 100,
+    "num": 3,
+    "name": "STR_AVENGER",
+    "desc": "STR_GET_X_AVENGERS",
+    "descParams": [ 100 ],
+    "ngId": 69581
+  },
+  {
+    "id": "revenges_1",
+    "stat": "revenges",
+    "value": 10,
+    "num": 1,
+    "name": "STR_REVENGE",
+    "desc": "STR_GET_X_REVENGES",
+    "descParams": [ 10 ],
+    "ngId": 69576
+  },
+  {
+    "id": "revenges_2",
+    "stat": "revenges",
+    "value": 50,
+    "num": 2,
+    "name": "STR_REVENGE",
+    "desc": "STR_GET_X_REVENGES",
+    "descParams": [ 50 ],
+    "ngId": 69577
+  },
+  {
+    "id": "revenges_3",
+    "stat": "revenges",
+    "value": 100,
+    "num": 3,
+    "name": "STR_REVENGE",
+    "desc": "STR_GET_X_REVENGES",
+    "descParams": [ 100 ],
+    "ngId": 69578
+  },
+  {
+    "id": "captures_1",
+    "stat": "captures",
+    "value": 10,
+    "num": 1,
+    "name": "STR_CAPTOR",
+    "desc": "STR_CAPTURE_X_TIMES",
+    "descParams": [ 10 ],
+    "ngId": 69567
+  },
+  {
+    "id": "captures_2",
+    "stat": "captures",
+    "value": 50,
+    "num": 2,
+    "name": "STR_CAPTOR",
+    "desc": "STR_CAPTURE_X_TIMES",
+    "descParams": [ 50 ],
+    "ngId": 69568
+  },
+  {
+    "id": "captures_3",
+    "num": 3,
+    "stat": "captures",
+    "value": 100,
+    "name": "STR_CAPTOR",
+    "desc": "STR_CAPTURE_X_TIMES",
+    "descParams": [ 100 ],
+    "ngId": 69569
+  },
+  {
+    "id": "plants_1",
+    "stat": "plants",
+    "value": 10,
+    "num": 1,
+    "name": "STR_BOMB_PLANTER",
+    "desc": "STR_PLANT_X_TIMES",
+    "descParams": [ 10 ],
+    "ngId": 69570
+  },
+  {
+    "id": "plants_2",
+    "stat": "plants",
+    "value": 50,
+    "num": 2,
+    "name": "STR_BOMB_PLANTER",
+    "desc": "STR_PLANT_X_TIMES",
+    "descParams": [ 50 ],
+    "ngId": 69571
+  },
+  {
+    "id": "plants_3",
+    "stat": "plants",
+    "value": 100,
+    "num": 3,
+    "name": "STR_BOMB_PLANTER",
+    "desc": "STR_PLANT_X_TIMES",
+    "descParams": [ 100 ],
+    "ngId": 69572
+  },
+  {
+    "id": "defuses_1",
+    "stat": "defuses",
+    "value": 10,
+    "num": 1,
+    "name": "STR_DEFUSER",
+    "desc": "STR_DEFUSE_X_TIMES",
+    "descParams": [ 10 ],
+    "ngId": 69573
+  },
+  {
+    "id": "defuses_2",
+    "stat": "defuses",
+    "value": 50,
+    "num": 2,
+    "name": "STR_DEFUSER",
+    "desc": "STR_DEFUSE_X_TIMES",
+    "descParams": [ 50 ],
+    "ngId": 69574
+  },
+  {
+    "id": "defuses_3",
+    "stat": "defuses",
+    "value": 100,
+    "num": 3,
+    "name": "STR_DEFUSER",
+    "desc": "STR_DEFUSE_X_TIMES",
+    "descParams": [ 100 ],
+    "ngId": 69575
+  },
+  {
+    "id": "tutorial",
+    "name": "STR_ACH_TUTORIAL",
+    "desc": "STR_ACH_TUTORIAL_DESC",
+    "ngId": 69737
+  },
+  {
+    "id": "prestige",
+    "name": "STR_PRESTIGE",
+    "desc": "STR_ACH_PRESTIGE_DESC",
+    "ngId": 69582
+  },
+  {
+    "id": "survivor_dino",
+    "name": "STR_ACH_DINO_SURVIVOR",
+    "desc": "STR_ACH_DINO_SURVIVOR_DESC",
+    "ngId": 69583
+  },
+  {
+    "id": "survivor_militia",
+    "name": "STR_ACH_MILITIA_SURVIVOR",
+    "desc": "STR_ACH_MILITIA_SURVIVOR_DESC",
+    "ngId": 69584
+  },
+  {
+    "id": "survivor_chaos",
+    "name": "STR_ACH_CHAOS_SURVIVOR",
+    "desc": "STR_ACH_CHAOS_SURVIVOR_DESC",
+    "ngId": 69585
+  },
+  {
+    "id": "medic",
+    "name": "STR_ACH_MEDIC",
+    "desc": "STR_ACH_MEDIC_DESC",
+    "ngId": 69586
+  },
+  {
+    "id": "chain_reaction",
+    "name": "STR_ACH_CHAIN_REACTION",
+    "desc": "STR_ACH_CHAIN_REACTION_DESC",
+    "ngId": 69587
+  },
+  {
+    "id": "heli_hater",
+    "name": "STR_ACH_HELI_HATER",
+    "desc": "STR_ACH_HELI_HATER_DESC",
+    "ngId": 69588
+  },
+  {
+    "id": "juggernaut_beatdown",
+    "name": "STR_ACH_JUGGERNAUT_BEATDOWN",
+    "desc": "STR_ACH_JUGGERNAUT_BEATDOWN_DESC",
+    "ngId": 69589
+  },
+  {
+    "id": "fish_in_a_barrel",
+    "name": "STR_ACH_FISH_IN_A_BARREL",
+    "desc": "STR_ACH_FISH_IN_A_BARREL_DESC",
+    "ngId": 69590
+  },
+  {
+    "id": "drive_by",
+    "name": "STR_ACH_DRIVE_BY",
+    "desc": "STR_ACH_DRIVE_BY_DESC",
+    "ngId": 69591
+  },
+  {
+    "id": "road_rage",
+    "name": "STR_ACH_ROAD_RAGE",
+    "desc": "STR_ACH_ROAD_RAGE_DESC",
+    "ngId": 69592
+  },
+  {
+    "id": "stunned_to_death",
+    "name": "STR_ACH_STUNNED_TO_DEATH",
+    "desc": "STR_ACH_STUNNED_TO_DEATH_DESC",
+    "ngId": 69593
+  }
+]

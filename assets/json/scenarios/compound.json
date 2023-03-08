@@ -1,0 +1,7827 @@
+{
+	"id": "compound",
+	"author": "Wilkin Games",
+	"name": "Compound",
+	"desc": "Map based off Compound Extraction mission.",
+	"mapId": "map_custom",
+	"gameModeId": "team_deathmatch",
+	"settings": {
+		"bUseDefaultMapObjects": false,
+		"bFriendlyFire": true,
+		"bMapObjects": true,
+		"bMapVehicles": true,
+		"bMapWeapons": true,
+		"width": 7683,
+		"height": 2563,
+		"bots": 8,
+		"botSkill": 1,
+		"botTeam": -1,
+		"worldType": "night",
+		"bAllowBotSettings": true,
+		"bAllowGameModeSelection": true
+	},
+	"functions": [],
+	"triggers": [],
+	"tiles": [
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			2,
+			2,
+			2,
+			0,
+			0,
+			0,
+			0,
+			15,
+			16,
+			17,
+			18,
+			2,
+			2,
+			2,
+			71,
+			311,
+			311,
+			311,
+			311,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			15,
+			16,
+			17,
+			18,
+			2,
+			2,
+			2,
+			71,
+			0,
+			0,
+			0,
+			30,
+			31,
+			32,
+			33,
+			2,
+			2,
+			2,
+			0,
+			0,
+			50,
+			51,
+			52,
+			55,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			29,
+			30,
+			31,
+			32,
+			33,
+			34,
+			2,
+			51,
+			52,
+			53,
+			54,
+			55,
+			56,
+			57,
+			58,
+			0,
+			6,
+			6,
+			6,
+			0,
+			15,
+			16,
+			17,
+			18,
+			19,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			42,
+			43,
+			44,
+			57,
+			58,
+			59,
+			60,
+			61,
+			62,
+			63,
+			64,
+			65,
+			66,
+			67,
+			68,
+			6,
+			6,
+			6,
+			6,
+			6,
+			30,
+			31,
+			32,
+			33,
+			34,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			0,
+			6,
+			6,
+			2,
+			2,
+			6,
+			6,
+			69,
+			70,
+			71,
+			0,
+			75,
+			76,
+			77,
+			6,
+			6,
+			6,
+			6,
+			6,
+			43,
+			57,
+			58,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			79,
+			80,
+			81,
+			82,
+			83,
+			84,
+			85,
+			6,
+			6,
+			6,
+			6,
+			6,
+			66,
+			67,
+			68,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			89,
+			90,
+			2,
+			92,
+			93,
+			94,
+			95,
+			0,
+			4,
+			4,
+			4,
+			71,
+			75,
+			76,
+			77,
+			0,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			100,
+			2,
+			2,
+			0,
+			98,
+			2,
+			2,
+			2,
+			4,
+			4,
+			4,
+			71,
+			83,
+			84,
+			85,
+			86,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			6,
+			6,
+			6,
+			6,
+			6,
+			6,
+			0,
+			2,
+			2,
+			2,
+			0,
+			18,
+			2,
+			2,
+			2,
+			4,
+			4,
+			4,
+			0,
+			310,
+			310,
+			310,
+			310,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			2,
+			2,
+			2,
+			0,
+			18,
+			2,
+			2,
+			2,
+			4,
+			4,
+			4,
+			0,
+			7,
+			9,
+			8,
+			7,
+			0,
+			6,
+			6,
+			6,
+			6,
+			6
+		]
+	],
+	"objects": [
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_4",
+			"position": [
+				395,
+				966
+			],
+			"id": "twxb",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_4",
+			"position": [
+				1206,
+				1291
+			],
+			"id": "171u",
+			"rotation": 180
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_4",
+			"position": [
+				2002,
+				1087
+			],
+			"id": "sdj6",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_1",
+			"position": [
+				1908,
+				2262
+			],
+			"id": "pgio",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_5",
+			"position": [
+				211,
+				2148
+			],
+			"id": "lscx",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_1",
+			"position": [
+				1036,
+				2519
+			],
+			"id": "gi0s",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_2",
+			"position": [
+				4449,
+				1564
+			],
+			"id": "6chy",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_2",
+			"position": [
+				4459,
+				573
+			],
+			"id": "qp4b",
+			"rotation": 180
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 87.66948113202106,
+			"position": [
+				42,
+				1032
+			],
+			"id": "x7w4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -35.92850242282284,
+			"position": [
+				180,
+				932
+			],
+			"id": "xfv6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -37.0730733173104,
+			"position": [
+				270,
+				864
+			],
+			"id": "gakm"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 21.037511025421818,
+			"position": [
+				426,
+				924
+			],
+			"id": "1l1w"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 146.30993247402023,
+			"position": [
+				354,
+				972
+			],
+			"id": "rxkf"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 20.955776730632184,
+			"position": [
+				542,
+				1044
+			],
+			"id": "1fzv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 30.618605408909396,
+			"position": [
+				640,
+				1102
+			],
+			"id": "l3oj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 9.066502739816176,
+			"position": [
+				806,
+				1128
+			],
+			"id": "yt0l"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 7.549421768263274,
+			"position": [
+				994,
+				1154
+			],
+			"id": "0myp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 41.28471089457123,
+			"position": [
+				1076,
+				1226
+			],
+			"id": "xj2p"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 51.15916302914309,
+			"position": [
+				1200,
+				1380
+			],
+			"id": "5h8y"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -6.581944655178012,
+			"position": [
+				1356,
+				1362
+			],
+			"id": "cum0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -91.9091524329964,
+			"position": [
+				1354,
+				1302
+			],
+			"id": "mgqj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -22.520565602896887,
+			"position": [
+				1436,
+				1268
+			],
+			"id": "54f2"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -22.203478532057396,
+			"position": [
+				1534,
+				1228
+			],
+			"id": "x37n"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -34.34609740006152,
+			"position": [
+				1654,
+				1146
+			],
+			"id": "1lrz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -37.822754149144984,
+			"position": [
+				1806,
+				1028
+			],
+			"id": "nbgl"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -14.574216198038739,
+			"position": [
+				2006,
+				976
+			],
+			"id": "a0qa"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 114.27444113443947,
+			"position": [
+				1960,
+				1078
+			],
+			"id": "vm5r"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 175.36453657309735,
+			"position": [
+				1812,
+				1090
+			],
+			"id": "ll8c"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -2.9108378261677537,
+			"position": [
+				2048,
+				1078
+			],
+			"id": "h0c4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 43.15238973400541,
+			"position": [
+				2144,
+				1168
+			],
+			"id": "bb4m"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 30.52970589993411,
+			"position": [
+				2222,
+				1214
+			],
+			"id": "3r84"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 1.6365770416167182,
+			"position": [
+				2292,
+				1216
+			],
+			"id": "aea7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 177.26368100977402,
+			"position": [
+				1204,
+				1268
+			],
+			"id": "mlhm"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -164.00847224148293,
+			"position": [
+				220,
+				986
+			],
+			"id": "n34t"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -13.477822753241322,
+			"position": [
+				462,
+				928
+			],
+			"id": "660z"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 44.34893961977051,
+			"position": [
+				640,
+				1102
+			],
+			"id": "5u5z"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 8.046091007452398,
+			"position": [
+				1022,
+				1156
+			],
+			"id": "mcb4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 47.385944030388806,
+			"position": [
+				1206,
+				1356
+			],
+			"id": "r8wv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 15.47863816541836,
+			"position": [
+				1356,
+				1408
+			],
+			"id": "ipsu"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -55.22216863363612,
+			"position": [
+				1436,
+				1248
+			],
+			"id": "d892"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -26.56505117707799,
+			"position": [
+				1720,
+				1106
+			],
+			"id": "ki3a"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -43.830860672092584,
+			"position": [
+				1870,
+				962
+			],
+			"id": "ng7c"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 34.39884513634789,
+			"position": [
+				2092,
+				1114
+			],
+			"id": "glh6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 32.005383208083494,
+			"position": [
+				2300,
+				1228
+			],
+			"id": "zm6k"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -167.3196165081802,
+			"position": [
+				428,
+				810
+			],
+			"id": "s8xk"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 72.21611155730749,
+			"position": [
+				530,
+				1128
+			],
+			"id": "4pgs"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -164.74488129694222,
+			"position": [
+				68,
+				1002
+			],
+			"id": "vn0w"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 18.66295811195116,
+			"position": [
+				1122,
+				1358
+			],
+			"id": "2hdl"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_5",
+			"position": [
+				352,
+				1548
+			],
+			"id": "xsex",
+			"rotation": 41
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -161.47850172702766,
+			"position": [
+				328,
+				1092
+			],
+			"id": "6xhp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 131.98721249581666,
+			"position": [
+				220,
+				1212
+			],
+			"id": "i2k1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 125.44571032759825,
+			"position": [
+				136,
+				1330
+			],
+			"id": "81lt"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 122.19573393471325,
+			"position": [
+				68,
+				1438
+			],
+			"id": "nh3l"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 121.75948008481281,
+			"position": [
+				16,
+				1522
+			],
+			"id": "dix9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -76.2509510165807,
+			"position": [
+				62,
+				1334
+			],
+			"id": "rfyb"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -74.52136183458164,
+			"position": [
+				98,
+				1204
+			],
+			"id": "x8o8"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -53.65254179111473,
+			"position": [
+				176,
+				1098
+			],
+			"id": "sree"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -6.137255949261988,
+			"position": [
+				362,
+				1078
+			],
+			"id": "r6b8"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 52.69605172201657,
+			"position": [
+				394,
+				1120
+			],
+			"id": "tdl9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 136.3411277797172,
+			"position": [
+				88,
+				1412
+			],
+			"id": "a4sr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -46.02915480430598,
+			"position": [
+				252,
+				1242
+			],
+			"id": "6y6c"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -68.52320902045962,
+			"position": [
+				300,
+				1120
+			],
+			"id": "yjnx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 164.98163936884933,
+			"position": [
+				136,
+				1164
+			],
+			"id": "fkvj"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"rotation": -43,
+			"position": [
+				1598,
+				1060
+			],
+			"id": "u6jr",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"rotation": -10,
+			"position": [
+				946,
+				1052
+			],
+			"id": "9l0u",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"rotation": -20,
+			"position": [
+				788,
+				1046
+			],
+			"id": "0hsz",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_4",
+			"position": [
+				1218,
+				188
+			],
+			"id": "zr4r",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_1",
+			"position": [
+				2110,
+				156
+			],
+			"id": "p5in",
+			"rotation": 6
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -85.92474412036664,
+			"position": [
+				908,
+				212
+			],
+			"id": "oj65"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -31.701429669505718,
+			"position": [
+				1112,
+				86
+			],
+			"id": "tx4m"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -0.8814039965821379,
+			"position": [
+				1242,
+				84
+			],
+			"id": "nt1i"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 150.40770364064204,
+			"position": [
+				1080,
+				176
+			],
+			"id": "kc5l"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -139.84400037508067,
+			"position": [
+				1016,
+				122
+			],
+			"id": "mklz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 18.711737875099768,
+			"position": [
+				1140,
+				164
+			],
+			"id": "6jnl"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 20.885801460693038,
+			"position": [
+				1292,
+				222
+			],
+			"id": "m4in"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 45,
+			"position": [
+				1378,
+				308
+			],
+			"id": "9cro"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 5.000644597558433,
+			"position": [
+				1538,
+				322
+			],
+			"id": "q39t"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -26.762281997050103,
+			"position": [
+				2002,
+				88
+			],
+			"id": "phhr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 63.43494882292201,
+			"position": [
+				2054,
+				192
+			],
+			"id": "8cr8"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 17.417970792202837,
+			"position": [
+				2156,
+				224
+			],
+			"id": "mfu2"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -56.725112015165074,
+			"position": [
+				2198,
+				160
+			],
+			"id": "fiok"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -152.4027041313563,
+			"position": [
+				2110,
+				114
+			],
+			"id": "rq8m"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -157.38013505195957,
+			"position": [
+				2062,
+				94
+			],
+			"id": "0cw4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 36.46923439005187,
+			"position": [
+				2154,
+				162
+			],
+			"id": "i9ox"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 166.41814756407035,
+			"position": [
+				1500,
+				320
+			],
+			"id": "plwv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -145.22216863363613,
+			"position": [
+				1284,
+				170
+			],
+			"id": "9tiy"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -149.62087398863164,
+			"position": [
+				1168,
+				102
+			],
+			"id": "w50d"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 156.80140948635182,
+			"position": [
+				1000,
+				174
+			],
+			"id": "8hia"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -167.15229514128234,
+			"position": [
+				658,
+				96
+			],
+			"id": "ae4z"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 139.82076607809267,
+			"position": [
+				118,
+				552
+			],
+			"id": "olen"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"rotation": 4.782995103100443,
+			"position": [
+				1234,
+				718
+			],
+			"id": "qbkm",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_2",
+			"rotation": -15,
+			"position": [
+				718,
+				672
+			],
+			"id": "xrtw",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_2",
+			"rotation": 21,
+			"position": [
+				896,
+				484
+			],
+			"id": "qm8e",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -53.45891240017056,
+			"position": [
+				816,
+				446
+			],
+			"id": "8do0"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 13.851419013804989,
+			"position": [
+				962,
+				482
+			],
+			"id": "kkmg"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 130.96228937902288,
+			"position": [
+				804,
+				664
+			],
+			"id": "n731"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -167.90524292298792,
+			"position": [
+				664,
+				634
+			],
+			"id": "06sy"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 12.31196180774628,
+			"position": [
+				1168,
+				744
+			],
+			"id": "vany"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -65.82089285331082,
+			"position": [
+				1212,
+				646
+			],
+			"id": "q3dj"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 60.86570780277382,
+			"position": [
+				1280,
+				768
+			],
+			"id": "a96p"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -149.19855402386318,
+			"position": [
+				864,
+				520
+			],
+			"id": "63of"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 120.7740361012482,
+			"position": [
+				758,
+				698
+			],
+			"id": "afj1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -61.270731215544814,
+			"position": [
+				896,
+				430
+			],
+			"id": "c6ly"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 32.19573393471325,
+			"position": [
+				1284,
+				676
+			],
+			"id": "6819"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 57.94043640190711,
+			"position": [
+				1522,
+				1046
+			],
+			"id": "5g33"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -31.37300514010846,
+			"position": [
+				1604,
+				996
+			],
+			"id": "bhhi"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -179.6629698901422,
+			"position": [
+				924,
+				992
+			],
+			"id": "t4j9"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 165.06858282186246,
+			"position": [
+				864,
+				1008
+			],
+			"id": "sqxj"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -169.5085229876684,
+			"position": [
+				756,
+				988
+			],
+			"id": "dxnt"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 3.576334374997351,
+			"position": [
+				852,
+				994
+			],
+			"id": "vi3c"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 8.901716032891995,
+			"position": [
+				1516,
+				1098
+			],
+			"id": "7lqz"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				1162,
+				300
+			],
+			"id": "z673",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				144,
+				804
+			],
+			"id": "xzij",
+			"rotation": -48,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_2",
+			"position": [
+				1920,
+				574
+			],
+			"id": "un5v",
+			"rotation": 28
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 14.87737137020174,
+			"position": [
+				1980,
+				526
+			],
+			"id": "anjg"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 167.3196165081802,
+			"position": [
+				1900,
+				544
+			],
+			"id": "bfnx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 116.02959219151349,
+			"position": [
+				1858,
+				630
+			],
+			"id": "vsxd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -3.7313969991604465,
+			"position": [
+				1950,
+				624
+			],
+			"id": "o1a1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -113.62937773065683,
+			"position": [
+				1922,
+				560
+			],
+			"id": "2rew"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 164.94760766727222,
+			"position": [
+				1156,
+				766
+			],
+			"id": "vbjb"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 3.4682292589171477,
+			"position": [
+				1420,
+				782
+			],
+			"id": "fsek"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -179.1656544244532,
+			"position": [
+				1008,
+				776
+			],
+			"id": "edjs"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -174.14398641457106,
+			"position": [
+				852,
+				760
+			],
+			"id": "96o1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 176.34777721969368,
+			"position": [
+				758,
+				766
+			],
+			"id": "h3qc"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 172.09283729704154,
+			"position": [
+				686,
+				776
+			],
+			"id": "b6d3"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -12.889631514059973,
+			"position": [
+				1650,
+				754
+			],
+			"id": "h6ub"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 164.4852114534585,
+			"position": [
+				1191,
+				760
+			],
+			"id": "uyvo"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -122.07052903505635,
+			"position": [
+				914,
+				769
+			],
+			"id": "c7ce"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -4.7374433480101095,
+			"position": [
+				1096,
+				1046
+			],
+			"id": "e6fj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 13.62139792921548,
+			"position": [
+				1343,
+				765
+			],
+			"id": "258i"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 1.8855997707796843,
+			"position": [
+				1634,
+				836
+			],
+			"id": "jh2j"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -178.3362749957084,
+			"position": [
+				813,
+				779
+			],
+			"id": "klej"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -129.23585557076262,
+			"position": [
+				51,
+				50
+			],
+			"id": "wziz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -1.8840502310918026,
+			"position": [
+				203,
+				45
+			],
+			"id": "26qs"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 128.9990332987335,
+			"position": [
+				37,
+				250
+			],
+			"id": "3cpz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -4.7374433480101095,
+			"position": [
+				966,
+				786
+			],
+			"id": "vp92"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -178.3362749957084,
+			"position": [
+				1257,
+				1008
+			],
+			"id": "u7kn"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 26.672117378295628,
+			"position": [
+				1497,
+				752
+			],
+			"id": "aj49"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_3",
+			"position": [
+				2887,
+				471
+			],
+			"id": "9th3",
+			"rotation": -77
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -18.592630079739898,
+			"position": [
+				2695,
+				349
+			],
+			"id": "7gwd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 64.16324577599843,
+			"position": [
+				2741,
+				444
+			],
+			"id": "obfq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 47.58302066863506,
+			"position": [
+				2868,
+				583
+			],
+			"id": "7q4j"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 19.53665493812839,
+			"position": [
+				2992,
+				627
+			],
+			"id": "vur0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -50.07473037815753,
+			"position": [
+				3110,
+				486
+			],
+			"id": "lpec"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -136.32197565953697,
+			"position": [
+				2977,
+				359
+			],
+			"id": "tmre"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -173.05403237923719,
+			"position": [
+				2780,
+				335
+			],
+			"id": "zay3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 28.926425835253614,
+			"position": [
+				2970,
+				440
+			],
+			"id": "ff5w"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 52.815293546766874,
+			"position": [
+				3036,
+				527
+			],
+			"id": "w6jp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -148.33278357056383,
+			"position": [
+				2822,
+				395
+			],
+			"id": "ehzq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -167.38067770656923,
+			"position": [
+				2755,
+				380
+			],
+			"id": "1hy2"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 47.68700000212405,
+			"position": [
+				2887,
+				525
+			],
+			"id": "6pk4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 16.886791123944043,
+			"position": [
+				2999,
+				559
+			],
+			"id": "oojh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -92.41950921665635,
+			"position": [
+				2993,
+				417
+			],
+			"id": "hgg4"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_2",
+			"position": [
+				2990,
+				1171
+			],
+			"id": "g0z9",
+			"rotation": -68
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 95.35838620594468,
+			"position": [
+				2928,
+				1110
+			],
+			"id": "ua3f"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 3.23970029610213,
+			"position": [
+				3034,
+				1116
+			],
+			"id": "j5z9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 62.31893843151474,
+			"position": [
+				3015,
+				1198
+			],
+			"id": "2t6d"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -157.7703789087622,
+			"position": [
+				2951,
+				1130
+			],
+			"id": "l3p3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 42.41420565757551,
+			"position": [
+				3032,
+				1204
+			],
+			"id": "wz81"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -156.02500376093744,
+			"position": [
+				2607,
+				1015
+			],
+			"id": "8aaa"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 176.42366562500266,
+			"position": [
+				2457,
+				1019
+			],
+			"id": "b2qd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 180,
+			"position": [
+				2324,
+				1012
+			],
+			"id": "mrep"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				3845,
+				1142
+			],
+			"id": "zxus",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				3845,
+				902
+			],
+			"id": "jg8d",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "lever",
+			"position": [
+				4307,
+				691
+			],
+			"id": "mada",
+			"rotation": 0,
+			"leverType": "lever",
+			"bDisabled": false,
+			"targetId": "door_top_0",
+			"triggerId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 240,
+			"position": [
+				4099,
+				117
+			],
+			"id": "door_top_0",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_2",
+			"position": [
+				4296,
+				679
+			],
+			"id": "88pg",
+			"rotation": -40
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				5123,
+				1237
+			],
+			"id": "33pb",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				5123,
+				998
+			],
+			"id": "f1ck",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory",
+			"position": [
+				1022,
+				2277
+			],
+			"id": "tm3f",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				2051,
+				1911
+			],
+			"id": "rclr",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				2051,
+				1285
+			],
+			"id": "lpme",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2010,
+				1646
+			],
+			"id": "39p9",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2010,
+				1577
+			],
+			"id": "2qvi",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				2052,
+				1617
+			],
+			"id": "qfci",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_2",
+			"position": [
+				4156,
+				2331
+			],
+			"id": "cms2",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_5",
+			"position": [
+				3017,
+				2142
+			],
+			"id": "sm1r",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"position": [
+				2369,
+				1416
+			],
+			"id": "3l6u",
+			"rotation": -37,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -152.47644730483987,
+			"position": [
+				1257,
+				817
+			],
+			"id": "doke"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 28.235959015679672,
+			"position": [
+				2365,
+				1412
+			],
+			"id": "v2b8"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -155.8078222356825,
+			"position": [
+				355,
+				509
+			],
+			"id": "d7w1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 0,
+			"position": [
+				503,
+				509
+			],
+			"id": "pf80"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 0,
+			"position": [
+				636,
+				509
+			],
+			"id": "ognc"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -4.484606009544625,
+			"position": [
+				738,
+				501
+			],
+			"id": "x28o"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 8.939565003151523,
+			"position": [
+				1183,
+				571
+			],
+			"id": "vs7r"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 144.03948280335513,
+			"position": [
+				1081,
+				645
+			],
+			"id": "bngo"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 111.19405648154229,
+			"position": [
+				1043,
+				743
+			],
+			"id": "4hyb"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -11.86960571708705,
+			"position": [
+				2104,
+				520
+			],
+			"id": "c00h"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 0.8205237271592076,
+			"position": [
+				3291,
+				537
+			],
+			"id": "vu9d"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -2.4978965624692404,
+			"position": [
+				3589,
+				524
+			],
+			"id": "v94t"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -178.47247455778708,
+			"position": [
+				3439,
+				520
+			],
+			"id": "vrul"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": -88.82016217916994,
+			"position": [
+				3448,
+				83
+			],
+			"id": "ze4n",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": 93,
+			"position": [
+				3408,
+				81
+			],
+			"id": "ayso",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": 87,
+			"position": [
+				3367,
+				81
+			],
+			"id": "6e4r",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": 2,
+			"position": [
+				3411,
+				83
+			],
+			"id": "2ya7",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": 178.4332194380238,
+			"position": [
+				2461,
+				142
+			],
+			"id": "muvi",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": -5,
+			"position": [
+				2487,
+				201
+			],
+			"id": "u1pu",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": -93,
+			"position": [
+				2526,
+				149
+			],
+			"id": "zc9n",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": -169.7651972365768,
+			"position": [
+				2446,
+				111
+			],
+			"id": "kly2",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": 88,
+			"position": [
+				2408,
+				170
+			],
+			"id": "1nhv",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"rotation": 2,
+			"position": [
+				2469,
+				172
+			],
+			"id": "e7vb",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_5",
+			"position": [
+				4984,
+				2226
+			],
+			"id": "hnrp",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 62.083493591693205,
+			"position": [
+				3339,
+				1814
+			],
+			"id": "5jck"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 95.71059313749964,
+			"position": [
+				3332,
+				1884
+			],
+			"id": "622x"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -58.511046865761415,
+			"position": [
+				3547,
+				1533
+			],
+			"id": "lr9s"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -83.78218265047876,
+			"position": [
+				3491,
+				1291
+			],
+			"id": "d2q9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -88.21407324514155,
+			"position": [
+				3589,
+				827
+			],
+			"id": "t27s"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 116.36656774641459,
+			"position": [
+				3056,
+				1945
+			],
+			"id": "rz7l"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 18.019769281777148,
+			"position": [
+				3239,
+				1922
+			],
+			"id": "ixi3"
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 208,
+			"position": [
+				4098,
+				2005
+			],
+			"id": "door_dino",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "lever",
+			"position": [
+				4570,
+				1435
+			],
+			"id": "lever_dino",
+			"rotation": 0,
+			"leverType": "button",
+			"bDisabled": false,
+			"targetId": "door_dino",
+			"triggerId": null,
+			"indicatorData": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_2",
+			"position": [
+				4567,
+				1457
+			],
+			"id": "1e6l",
+			"rotation": 12
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"position": [
+				2417,
+				1325
+			],
+			"id": "mu6g",
+			"rotation": 57,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 4,
+			"position": [
+				2429,
+				1334
+			],
+			"id": "25sy"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3885,
+				1166
+			],
+			"id": "g1qg",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3886,
+				875
+			],
+			"id": "i7nc",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				5082,
+				970
+			],
+			"id": "z8kt",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				5082,
+				1265
+			],
+			"id": "82s2",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_1",
+			"position": [
+				2667,
+				2448
+			],
+			"id": "2sk1",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_1",
+			"position": [
+				2489,
+				2450
+			],
+			"id": "5t8m",
+			"rotation": -90
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_1",
+			"position": [
+				2287,
+				2428
+			],
+			"id": "58i9",
+			"rotation": 139
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -99.12617090485841,
+			"position": [
+				2194,
+				1692
+			],
+			"id": "obfd"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -34.07719528013074,
+			"position": [
+				2398,
+				1554
+			],
+			"id": "l8fw"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -140.54846629371806,
+			"position": [
+				2206,
+				1396
+			],
+			"id": "my77"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 126.98876838714399,
+			"position": [
+				2090,
+				1550
+			],
+			"id": "e5on"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -11.252232816271688,
+			"position": [
+				2472,
+				1474
+			],
+			"id": "6qc1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -26.21675285641924,
+			"position": [
+				2736,
+				1344
+			],
+			"id": "xm03"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -96.86999230821426,
+			"position": [
+				2716,
+				1178
+			],
+			"id": "50ko"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 69.09201952899035,
+			"position": [
+				2852,
+				1534
+			],
+			"id": "63cu"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 85.76360520094116,
+			"position": [
+				2856,
+				1588
+			],
+			"id": "n4gu"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 86.05481377096244,
+			"position": [
+				2860,
+				1646
+			],
+			"id": "q5b4"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -134.24115987573146,
+			"position": [
+				2562,
+				1340
+			],
+			"id": "y9s0"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -127.04247477308287,
+			"position": [
+				2482,
+				1234
+			],
+			"id": "fehs"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -25.88702626632669,
+			"position": [
+				2618,
+				1168
+			],
+			"id": "1575"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 81.46923439005187,
+			"position": [
+				2636,
+				1288
+			],
+			"id": "fy6p"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 76.32869286780416,
+			"position": [
+				2654,
+				1362
+			],
+			"id": "fu9o"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 139.86173214380298,
+			"position": [
+				2182,
+				1760
+			],
+			"id": "p2g4"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 136.39718102729637,
+			"position": [
+				2098,
+				1840
+			],
+			"id": "s9p4"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -21.3048939594407,
+			"position": [
+				3216,
+				1404
+			],
+			"id": "kjbr"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 85.76360520094116,
+			"position": [
+				3213,
+				1510
+			],
+			"id": "wf9h"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 95.3558250428552,
+			"position": [
+				3181,
+				1669
+			],
+			"id": "63vu"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 95.19442890773482,
+			"position": [
+				3284,
+				1766
+			],
+			"id": "mhx6"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 111.44773632710536,
+			"position": [
+				3186,
+				1644
+			],
+			"id": "p8y1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 27.85965069524227,
+			"position": [
+				3326,
+				1718
+			],
+			"id": "ict9"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -69.3579896843628,
+			"position": [
+				3456,
+				1329
+			],
+			"id": "30bo"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 165.96375653207352,
+			"position": [
+				3501,
+				1229
+			],
+			"id": "97ng"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 133.60281897270363,
+			"position": [
+				3449,
+				1221
+			],
+			"id": "x91f"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 46.24689811235965,
+			"position": [
+				2382,
+				2488
+			],
+			"id": "m9ti"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 7.3523793598923595,
+			"position": [
+				2568,
+				2512
+			],
+			"id": "h0hp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 0,
+			"position": [
+				2670,
+				2512
+			],
+			"id": "pmkv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -4.969740728110304,
+			"position": [
+				2716,
+				2508
+			],
+			"id": "y7ex"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 177.47388308838046,
+			"position": [
+				2172,
+				2532
+			],
+			"id": "onvr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -2.511363267163078,
+			"position": [
+				2400,
+				2522
+			],
+			"id": "7r7u"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 178.33971763101718,
+			"position": [
+				2262,
+				2526
+			],
+			"id": "od0r"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -2.8387878410053813,
+			"position": [
+				2504,
+				2514
+			],
+			"id": "mthy"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 180,
+			"position": [
+				2264,
+				2434
+			],
+			"id": "adaq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 1.1070270456807774,
+			"position": [
+				2580,
+				2452
+			],
+			"id": "58i5"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": -14.805665326255689,
+			"position": [
+				4346,
+				1954
+			],
+			"id": "r72w"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": -56.768288932020646,
+			"position": [
+				4422,
+				1838
+			],
+			"id": "s3qh"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 39.95754893082909,
+			"position": [
+				4644,
+				2024
+			],
+			"id": "zx8w"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 95.01311375503582,
+			"position": [
+				4634,
+				2138
+			],
+			"id": "polg"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_2",
+			"rotation": 77.9052429229879,
+			"position": [
+				4664,
+				2278
+			],
+			"id": "engj"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": -118.65711745655817,
+			"position": [
+				4570,
+				2106
+			],
+			"id": "6ik3"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": -37.09283729704154,
+			"position": [
+				4652,
+				2044
+			],
+			"id": "snzp"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": -103.43102887068167,
+			"position": [
+				4620,
+				1910
+			],
+			"id": "w8le"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_3",
+			"rotation": 127.37580749554817,
+			"position": [
+				4510,
+				2054
+			],
+			"id": "qop3"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": -159.8423891054552,
+			"position": [
+				4352,
+				1996
+			],
+			"id": "pq3b"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": 91.80873932249207,
+			"position": [
+				4346,
+				2186
+			],
+			"id": "vgrl"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_blood_1",
+			"rotation": 47.91083782616775,
+			"position": [
+				4402,
+				2248
+			],
+			"id": "v14e"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 22.994898910333845,
+			"position": [
+				4284,
+				1818
+			],
+			"id": "b1fd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 40.83532734813408,
+			"position": [
+				4726,
+				2200
+			],
+			"id": "b4ab"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 134.81457741265606,
+			"position": [
+				4418,
+				2510
+			],
+			"id": "d9ud"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -4.299862820192069,
+			"position": [
+				4684,
+				2490
+			],
+			"id": "wxab"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -153.0121094182515,
+			"position": [
+				4468,
+				2380
+			],
+			"id": "5rar"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -72.6225079149125,
+			"position": [
+				4642,
+				1824
+			],
+			"id": "61nq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 165.96375653207352,
+			"position": [
+				4242,
+				1924
+			],
+			"id": "2z22"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 62.956165152626745,
+			"position": [
+				4534,
+				2496
+			],
+			"id": "7maj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -67.46902076953457,
+			"position": [
+				4724,
+				2038
+			],
+			"id": "59t3"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 157.7406004320874,
+			"position": [
+				4294,
+				2214
+			],
+			"id": "zh0m"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -139.88118472519037,
+			"position": [
+				3112,
+				1218
+			],
+			"id": "wy9x"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_2",
+			"position": [
+				2917,
+				1647
+			],
+			"id": "2urq",
+			"rotation": 74,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_2",
+			"position": [
+				2913,
+				1517
+			],
+			"id": "es0e",
+			"rotation": 97,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 27.484322572536495,
+			"position": [
+				2913,
+				1508
+			],
+			"id": "2582"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 90,
+			"position": [
+				2917,
+				1643
+			],
+			"id": "aa99"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 137.91700728662772,
+			"position": [
+				2327,
+				2317
+			],
+			"id": "r0ts"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 50.50320556848864,
+			"position": [
+				2643,
+				2317
+			],
+			"id": "2zu2"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 173.53913492891218,
+			"position": [
+				2582,
+				2300
+			],
+			"id": "cs22"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -20.797162279163846,
+			"position": [
+				2713,
+				2343
+			],
+			"id": "wyjg"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 149.36281498881266,
+			"position": [
+				2356,
+				2330
+			],
+			"id": "11hx"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 74.33526697427818,
+			"position": [
+				2169,
+				2374
+			],
+			"id": "1edi"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 13.927471354626185,
+			"position": [
+				2762,
+				2315
+			],
+			"id": "su4m"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 114.07549825507884,
+			"position": [
+				2436,
+				2325
+			],
+			"id": "3oe5"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 32.938690542955506,
+			"position": [
+				2660,
+				2360
+			],
+			"id": "b4g0"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -32.415547329858676,
+			"position": [
+				2306,
+				2355
+			],
+			"id": "at8t"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2008,
+				1309
+			],
+			"id": "39vx",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				2006,
+				1935
+			],
+			"id": "s087",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				729,
+				2235
+			],
+			"id": "zlj5",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				491,
+				2280
+			],
+			"id": "anv8",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs_large",
+			"position": [
+				490,
+				2232
+			],
+			"id": "tsq3",
+			"rotation": 2,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs",
+			"position": [
+				456,
+				2187
+			],
+			"id": "0txq",
+			"rotation": -5,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs",
+			"position": [
+				495,
+				2189
+			],
+			"id": "u2et",
+			"rotation": 5,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "generator",
+			"position": [
+				625,
+				2211
+			],
+			"id": "1cye",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				582,
+				2285
+			],
+			"id": "v5pm",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				582,
+				2250
+			],
+			"id": "yuwc",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				651,
+				2220
+			],
+			"id": "1ozn",
+			"rotation": 38
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_1",
+			"position": [
+				3254,
+				1820
+			],
+			"id": "xuhm",
+			"rotation": 59
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 95.71059313749964,
+			"position": [
+				3216,
+				1748
+			],
+			"id": "n0x3"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_3",
+			"position": [
+				5258,
+				441
+			],
+			"id": "5s5m",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -34.35088919793553,
+			"position": [
+				4880,
+				190
+			],
+			"id": "6azu"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -67.43299092212538,
+			"position": [
+				4944,
+				34
+			],
+			"id": "3az7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -179.61803379527097,
+			"position": [
+				4794,
+				33
+			],
+			"id": "swui"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory",
+			"position": [
+				4460,
+				373
+			],
+			"id": "0x4b",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 114.00128096561299,
+			"position": [
+				4672,
+				307
+			],
+			"id": "4qxl"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -174.62029840087462,
+			"position": [
+				4226,
+				265
+			],
+			"id": "x4nv"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -42.81835859644853,
+			"position": [
+				4444,
+				63
+			],
+			"id": "wwmd"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 37.828287834612915,
+			"position": [
+				4699,
+				261
+			],
+			"id": "8gq2"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs",
+			"position": [
+				4776,
+				212
+			],
+			"id": "z02n",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"position": [
+				4945,
+				168
+			],
+			"id": "pm3k",
+			"rotation": -4,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"position": [
+				4970,
+				98
+			],
+			"id": "9joo",
+			"rotation": 6,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -148.5603150317674,
+			"position": [
+				4457,
+				201
+			],
+			"id": "up7y",
+			"health": 100,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 16,
+			"position": [
+				4482,
+				170
+			],
+			"id": "mxe8",
+			"health": 100,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory",
+			"position": [
+				260,
+				164
+			],
+			"id": "urzz",
+			"rotation": -12,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 12.875001559612475,
+			"position": [
+				350,
+				80
+			],
+			"id": "cs83",
+			"health": null,
+			"mass": 10,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 33.11134196037203,
+			"position": [
+				386,
+				103
+			],
+			"id": "tr48",
+			"health": null,
+			"mass": 10,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 143.47114463301483,
+			"position": [
+				180,
+				270
+			],
+			"id": "rdul",
+			"health": null,
+			"mass": 10,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				103,
+				144
+			],
+			"id": "bsi6",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				394,
+				53
+			],
+			"id": "cs81",
+			"rotation": 8
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs",
+			"position": [
+				155,
+				145
+			],
+			"id": "iq67",
+			"rotation": 11,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "logs",
+			"position": [
+				151,
+				185
+			],
+			"id": "un75",
+			"rotation": 2,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 52.35005753067967,
+			"position": [
+				682,
+				884
+			],
+			"id": "no6b"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 2.7591076586202736,
+			"position": [
+				848,
+				892
+			],
+			"id": "91wi"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 9.090276920822323,
+			"position": [
+				948,
+				908
+			],
+			"id": "h7wb"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 3.1798301198642345,
+			"position": [
+				1092,
+				916
+			],
+			"id": "euxp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 173.453709216706,
+			"position": [
+				726,
+				958
+			],
+			"id": "bbuc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 0,
+			"position": [
+				966,
+				958
+			],
+			"id": "lfc6"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_2",
+			"rotation": 72,
+			"position": [
+				3490,
+				1299
+			],
+			"id": "3b2j",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3886,
+				944
+			],
+			"id": "brx6",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				3885,
+				1096
+			],
+			"id": "7lnk",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "door",
+			"doorType": "wood",
+			"position": [
+				3859,
+				1020
+			],
+			"id": "319e",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false,
+			"size": 100,
+			"material": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				4523,
+				1459
+			],
+			"id": "wccv",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				4347,
+				684
+			],
+			"id": "jw4h",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				4241,
+				1209
+			],
+			"id": "4svc",
+			"rotation": 90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				4202,
+				1232
+			],
+			"id": "p9ur",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				4236,
+				1232
+			],
+			"id": "ebno",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_3",
+			"rotation": 11,
+			"position": [
+				2478,
+				2078
+			],
+			"id": "kl5a",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -0.8303154862580109,
+			"position": [
+				2473,
+				2065
+			],
+			"id": "f60v"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"position": [
+				2362,
+				2047
+			],
+			"id": "apun",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"position": [
+				2599,
+				2115
+			],
+			"id": "ds9y",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "window",
+			"position": [
+				345,
+				1931
+			],
+			"id": "7z0v",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"height": 100,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				322,
+				1940
+			],
+			"id": "b5mx",
+			"rotation": 5,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				304,
+				1962
+			],
+			"id": "vw58",
+			"rotation": -7,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 101,
+			"position": [
+				636,
+				1860
+			],
+			"id": "tqjo",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 102.87500155961249,
+			"position": [
+				598,
+				1920
+			],
+			"id": "iidv",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 12.528807709151511,
+			"position": [
+				666,
+				1934
+			],
+			"id": "bal9",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_2",
+			"position": [
+				6412,
+				1800
+			],
+			"id": "h2n0",
+			"rotation": -90
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_2",
+			"position": [
+				6296,
+				221
+			],
+			"id": "6w84",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_1",
+			"position": [
+				5684,
+				1834
+			],
+			"id": "kfcr",
+			"rotation": 31
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 17.360950899277306,
+			"position": [
+				5652,
+				1767
+			],
+			"id": "xz3f"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 93.3664606634298,
+			"position": [
+				5649,
+				1818
+			],
+			"id": "lgjj"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 45,
+			"position": [
+				5697,
+				1866
+			],
+			"id": "mpsr"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -100.98065001017355,
+			"position": [
+				5684,
+				1799
+			],
+			"id": "dph1"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_4",
+			"position": [
+				7185,
+				677
+			],
+			"id": "muyg",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 146.60697014442653,
+			"position": [
+				5282,
+				2064
+			],
+			"id": "njoz"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 0,
+			"position": [
+				5543,
+				2064
+			],
+			"id": "sp7n"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -1.7899106082460694,
+			"position": [
+				5703,
+				2059
+			],
+			"id": "2ktv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -2.0454084888872277,
+			"position": [
+				5871,
+				2053
+			],
+			"id": "abcn"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 8.039444550836647,
+			"position": [
+				6048,
+				2078
+			],
+			"id": "r7ph"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -178.5443666929616,
+			"position": [
+				5379,
+				2061
+			],
+			"id": "uk25"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 1.9414863909143774,
+			"position": [
+				5497,
+				2065
+			],
+			"id": "yoci"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 1.181188913326638,
+			"position": [
+				5982,
+				2075
+			],
+			"id": "muym"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 178.33489394189633,
+			"position": [
+				5638,
+				2085
+			],
+			"id": "w4m7"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -15.037815903582251,
+			"position": [
+				5772,
+				2049
+			],
+			"id": "rts5"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -178.68888183587555,
+			"position": [
+				5204,
+				2036
+			],
+			"id": "srs6"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 67.88353441445696,
+			"position": [
+				5293,
+				2255
+			],
+			"id": "v8hd"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -14.316759118933227,
+			"position": [
+				5485,
+				2206
+			],
+			"id": "2op7"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 24.075498255078834,
+			"position": [
+				5814,
+				2353
+			],
+			"id": "wehs"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -95.03193422282922,
+			"position": [
+				5800,
+				2194
+			],
+			"id": "paqf"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 16.313852426260556,
+			"position": [
+				5923,
+				2230
+			],
+			"id": "7y2g"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": 177.25359932265576,
+			"position": [
+				5652,
+				2243
+			],
+			"id": "k46b"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush",
+			"rotation": -47.46105465053028,
+			"position": [
+				5819,
+				2061
+			],
+			"id": "xxjt"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "rock_1",
+			"rotation": 21,
+			"position": [
+				6044,
+				1725
+			],
+			"id": "e0k5",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": -126.63411387596742,
+			"position": [
+				6038,
+				1716
+			],
+			"id": "a8ja"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": 56.659292653523,
+			"position": [
+				6088,
+				1792
+			],
+			"id": "6suh"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_small",
+			"rotation": -111.43460412941805,
+			"position": [
+				6035,
+				1657
+			],
+			"id": "lw28"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 134.56263613247927,
+			"position": [
+				5970,
+				1723
+			],
+			"id": "tqz0"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_2",
+			"position": [
+				5671,
+				1136
+			],
+			"id": "0fcc",
+			"rotation": 27
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -116.48809248660581,
+			"position": [
+				5673,
+				1127
+			],
+			"id": "j9rk"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 98.13010235415598,
+			"position": [
+				5663,
+				1197
+			],
+			"id": "zvlo"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -57.050784883409555,
+			"position": [
+				5733,
+				1089
+			],
+			"id": "gnov"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -164.85078834732903,
+			"position": [
+				5504,
+				1027
+			],
+			"id": "6qob"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 0.8654293372805257,
+			"position": [
+				5835,
+				1032
+			],
+			"id": "ddr5"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 100.72885929801006,
+			"position": [
+				5799,
+				1222
+			],
+			"id": "6h6s"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 44.404431227394156,
+			"position": [
+				6285,
+				1698
+			],
+			"id": "z05m"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 106.88033016552386,
+			"position": [
+				6197,
+				1988
+			],
+			"id": "vo65"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -170.71834326017898,
+			"position": [
+				5065,
+				1803
+			],
+			"id": "tiwm"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -76.27290342145021,
+			"position": [
+				5193,
+				1279
+			],
+			"id": "zpki"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -43.45184230102203,
+			"position": [
+				5383,
+				1099
+			],
+			"id": "d7s1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 98.13010235415598,
+			"position": [
+				5365,
+				1225
+			],
+			"id": "fho0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -174.80054338259814,
+			"position": [
+				3310,
+				1038
+			],
+			"id": "b24n"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_riverside_1",
+			"position": [
+				5730,
+				616
+			],
+			"id": "86of",
+			"rotation": -27
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": -11.099737955619968,
+			"position": [
+				5812,
+				579
+			],
+			"id": "j4wu"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 177.44099768230055,
+			"position": [
+				5649,
+				552
+			],
+			"id": "j0p1"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 56.19204008995808,
+			"position": [
+				5724,
+				664
+			],
+			"id": "26rq"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -95.96448710125313,
+			"position": [
+				5717,
+				597
+			],
+			"id": "ojvb"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -18.35459013856751,
+			"position": [
+				6145,
+				455
+			],
+			"id": "lkvf"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 19.33480853782641,
+			"position": [
+				6316,
+				515
+			],
+			"id": "6vij"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 178.90729746434025,
+			"position": [
+				5949,
+				522
+			],
+			"id": "2rb9"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 39.70991879462873,
+			"position": [
+				6008,
+				571
+			],
+			"id": "bsmp"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -122.39984017391934,
+			"position": [
+				5909,
+				415
+			],
+			"id": "4pn6"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -173.69290806526234,
+			"position": [
+				5719,
+				394
+			],
+			"id": "qwqk"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 35.7030808530298,
+			"position": [
+				6046,
+				629
+			],
+			"id": "l5ny"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 117.75854060106003,
+			"position": [
+				6006,
+				705
+			],
+			"id": "h1jf"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 127.0730733173104,
+			"position": [
+				5938,
+				795
+			],
+			"id": "tm1e"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 175.6882380980176,
+			"position": [
+				5686,
+				814
+			],
+			"id": "54r7"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -177.5424618518229,
+			"position": [
+				5453,
+				804
+			],
+			"id": "cj4q"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -31.742143994717605,
+			"position": [
+				6022,
+				452
+			],
+			"id": "6k22"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 11.699693669338272,
+			"position": [
+				6389,
+				528
+			],
+			"id": "ozp1"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 102.42365039235573,
+			"position": [
+				6300,
+				932
+			],
+			"id": "zzog"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -142.90716270295846,
+			"position": [
+				6177,
+				839
+			],
+			"id": "8no5"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -179.534190917235,
+			"position": [
+				6054,
+				838
+			],
+			"id": "25d5"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 152.63178957111177,
+			"position": [
+				5969,
+				882
+			],
+			"id": "4cjx"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 170.81945804237384,
+			"position": [
+				5375,
+				978
+			],
+			"id": "vx2q"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 91.97493401088198,
+			"position": [
+				5363,
+				1326
+			],
+			"id": "d0sl"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 14.245605920441387,
+			"position": [
+				5556,
+				1375
+			],
+			"id": "9rvy"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 17.744671625056935,
+			"position": [
+				5756,
+				1439
+			],
+			"id": "lsm3"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 73.22877618136958,
+			"position": [
+				5778,
+				1512
+			],
+			"id": "4m24"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 156.7474078251384,
+			"position": [
+				5394,
+				1677
+			],
+			"id": "tddx"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 116.78290480217517,
+			"position": [
+				5341,
+				1782
+			],
+			"id": "lnyy"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 32.18263176720482,
+			"position": [
+				5457,
+				1855
+			],
+			"id": "hcxi"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -14.826479970355665,
+			"position": [
+				5831,
+				1756
+			],
+			"id": "abjm"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				6404,
+				520
+			],
+			"id": "qch1",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				6402,
+				930
+			],
+			"id": "j5if",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6444,
+				642
+			],
+			"id": "a4ts",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6444,
+				801
+			],
+			"id": "gukc",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "door",
+			"doorType": "wood",
+			"position": [
+				6402,
+				722
+			],
+			"id": "l92q",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false,
+			"size": 100,
+			"material": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				6404,
+				616
+			],
+			"id": "qhhe",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				6404,
+				829
+			],
+			"id": "2ns3",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -82.26789877323725,
+			"position": [
+				5894,
+				1292
+			],
+			"id": "hc2o"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				4269,
+				1232
+			],
+			"id": "11q8",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 18,
+			"position": [
+				4549,
+				920
+			],
+			"id": "wnep",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"position": [
+				4391,
+				684
+			],
+			"id": "0uav",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "platform",
+			"position": [
+				1530,
+				2268
+			],
+			"id": "ub5j",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				1575,
+				2280
+			],
+			"id": "odzf",
+			"rotation": 27
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_2",
+			"position": [
+				1483,
+				2272
+			],
+			"id": "jxfk",
+			"rotation": -90
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				1632,
+				2281
+			],
+			"id": "lsmx",
+			"rotation": 1,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				1631,
+				2244
+			],
+			"id": "f4hf",
+			"rotation": -5,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				1641,
+				2193
+			],
+			"id": "m8ps",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"position": [
+				1608,
+				2208
+			],
+			"id": "7pz3",
+			"rotation": -15,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				1452,
+				2218
+			],
+			"id": "pf7v",
+			"rotation": -90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "generator",
+			"position": [
+				1415,
+				2213
+			],
+			"id": "6386",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_2",
+			"position": [
+				1432,
+				2215
+			],
+			"id": "f68s",
+			"rotation": -76
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -154.34847153494744,
+			"position": [
+				695,
+				1875
+			],
+			"id": "al23",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 140.15008233801984,
+			"position": [
+				568,
+				1981
+			],
+			"id": "oahm",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 12.022276686183519,
+			"position": [
+				676,
+				2004
+			],
+			"id": "fdjm",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 0,
+			"position": [
+				1216,
+				1510
+			],
+			"id": "u1sr",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 0,
+			"position": [
+				1253,
+				1510
+			],
+			"id": "xegu",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 0,
+			"position": [
+				1289,
+				1510
+			],
+			"id": "me46",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 0,
+			"position": [
+				1325,
+				1510
+			],
+			"id": "ch1v",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory",
+			"position": [
+				1051,
+				1416
+			],
+			"id": "wpkz",
+			"rotation": 60,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "boulder_1",
+			"position": [
+				3562,
+				2288
+			],
+			"id": "9rcr",
+			"rotation": 12
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 31.727961866400143,
+			"position": [
+				3631,
+				2245
+			],
+			"id": "vkfp"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 169.84573341979976,
+			"position": [
+				3497,
+				2269
+			],
+			"id": "4f86"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_small",
+			"rotation": 30.74296464034994,
+			"position": [
+				3650,
+				2360
+			],
+			"id": "z2qc"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -129.07249580760984,
+			"position": [
+				3568,
+				2259
+			],
+			"id": "pyx6"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 34.57419147411521,
+			"position": [
+				3642,
+				2310
+			],
+			"id": "mb0e"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 154.16132232428998,
+			"position": [
+				3388,
+				2433
+			],
+			"id": "cuqs"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -23.88483492746129,
+			"position": [
+				3799,
+				2251
+			],
+			"id": "icnv"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 69.0674646348969,
+			"position": [
+				3869,
+				2434
+			],
+			"id": "wpxl"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -142.63777694602365,
+			"position": [
+				3425,
+				2095
+			],
+			"id": "iumo"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -162.21611155730747,
+			"position": [
+				3266,
+				2044
+			],
+			"id": "324d"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 42.39305504071895,
+			"position": [
+				3576,
+				2327
+			],
+			"id": "6901"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": -55.4914770123316,
+			"position": [
+				3675,
+				2183
+			],
+			"id": "8hl0"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 166.13598781545147,
+			"position": [
+				3440,
+				2241
+			],
+			"id": "q1ti"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 41.89397290438357,
+			"position": [
+				3644,
+				2424
+			],
+			"id": "p68i"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -104.3328028253521,
+			"position": [
+				3586,
+				2197
+			],
+			"id": "6rhj"
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_1",
+			"position": [
+				7601,
+				1531
+			],
+			"id": "b3ie",
+			"rotation": 90
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_complex_2",
+			"position": [
+				7263,
+				2427
+			],
+			"id": "1k3k",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6444,
+				574
+			],
+			"id": "3wgi",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6444,
+				505
+			],
+			"id": "rfi8",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6444,
+				870
+			],
+			"id": "up5h",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6444,
+				939
+			],
+			"id": "s8hg",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 61.351835116520974,
+			"position": [
+				814,
+				1490
+			],
+			"id": "kw2j",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 59,
+			"position": [
+				880,
+				1532
+			],
+			"id": "ahf1",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -30,
+			"position": [
+				874,
+				1456
+			],
+			"id": "y729",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 12.512185783446348,
+			"position": [
+				2703,
+				1921
+			],
+			"id": "bcrh"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 150.92167094181792,
+			"position": [
+				2293,
+				2149
+			],
+			"id": "ygyx"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 10.455657560305085,
+			"position": [
+				2694,
+				2223
+			],
+			"id": "b6e9"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 177.46145540160123,
+			"position": [
+				2491,
+				2232
+			],
+			"id": "p8rd"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -24.24463925215811,
+			"position": [
+				2773,
+				2105
+			],
+			"id": "eb68"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": -172.24302904402512,
+			"position": [
+				2149,
+				2020
+			],
+			"id": "uvy0"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 79.3950661468285,
+			"position": [
+				2193,
+				2255
+			],
+			"id": "8kc4"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"position": [
+				4876,
+				19
+			],
+			"id": "qqdh",
+			"rotation": -6,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 0.3604877608137692,
+			"position": [
+				5086,
+				32
+			],
+			"id": "gqxt"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree",
+			"rotation": 90,
+			"position": [
+				5098,
+				126
+			],
+			"id": "3zg2"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -10.105036365037956,
+			"position": [
+				5290,
+				96
+			],
+			"id": "zeco"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -4.871391031524085,
+			"position": [
+				5642,
+				66
+			],
+			"id": "apoo"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -0.37694047959713317,
+			"position": [
+				5946,
+				64
+			],
+			"id": "gvu9"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": 121.15930450834438,
+			"position": [
+				5894,
+				150
+			],
+			"id": "1an3"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -171.6561084159669,
+			"position": [
+				5594,
+				106
+			],
+			"id": "ztlf"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -174.68545433005525,
+			"position": [
+				5336,
+				82
+			],
+			"id": "m6ww"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm_small",
+			"rotation": -16.63095370672142,
+			"position": [
+				5490,
+				36
+			],
+			"id": "unku"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 95.5672003526452,
+			"position": [
+				5436,
+				590
+			],
+			"id": "cnbu"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -25.141326367294084,
+			"position": [
+				5990,
+				330
+			],
+			"id": "m5v4"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 178.54055064500773,
+			"position": [
+				5676,
+				338
+			],
+			"id": "xuzm"
+		},
+		{
+			"type": "car",
+			"vehicleId": "growler",
+			"position": [
+				7335,
+				401
+			],
+			"id": "j71x",
+			"rotation": -90,
+			"bDisabled": false,
+			"mass": null,
+			"team": 1,
+			"bAutomated": false,
+			"bRespawn": true
+		},
+		{
+			"type": "car",
+			"vehicleId": "quad",
+			"position": [
+				5036,
+				2018
+			],
+			"id": "96dz",
+			"rotation": 0,
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 300,
+			"position": [
+				6652,
+				422
+			],
+			"id": "eip3",
+			"rotation": -61,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_weapons",
+			"position": [
+				4658,
+				332
+			],
+			"id": "36rz",
+			"rotation": 135,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "platform_large",
+			"position": [
+				6470,
+				73
+			],
+			"id": "6kqa",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": 0.42388212722320384,
+			"position": [
+				6488,
+				48
+			],
+			"id": "g77j",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": 133.80651057601796,
+			"position": [
+				6441,
+				97
+			],
+			"id": "3mo3",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": 12.68038349181982,
+			"position": [
+				6481,
+				106
+			],
+			"id": "qciu",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": -120.57922687248902,
+			"position": [
+				6442,
+				40
+			],
+			"id": "d0ko",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": 50.01311375503581,
+			"position": [
+				6468,
+				71
+			],
+			"id": "rpxp",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_weapons",
+			"position": [
+				1363,
+				2217
+			],
+			"id": "p8cn",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": 53.47981792685005,
+			"position": [
+				2138,
+				518
+			],
+			"id": "ewge"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"rotation": -55.069062698889425,
+			"position": [
+				2226,
+				392
+			],
+			"id": "3iob"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_weapons",
+			"position": [
+				7106,
+				452
+			],
+			"id": "b6rf",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_weapons",
+			"position": [
+				7172,
+				453
+			],
+			"id": "t0vt",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_weapons",
+			"position": [
+				7239,
+				452
+			],
+			"id": "7c9h",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				7280,
+				419
+			],
+			"id": "gj70",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				7103,
+				362
+			],
+			"id": "hnb5",
+			"rotation": 90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				7218,
+				362
+			],
+			"id": "rl2o",
+			"rotation": 90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				7251,
+				387
+			],
+			"id": "p26g",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "window",
+			"position": [
+				7045,
+				420
+			],
+			"id": "sm9r",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"height": 120,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "growler",
+			"position": [
+				7507,
+				401
+			],
+			"id": "8j86",
+			"rotation": -90,
+			"bDisabled": false,
+			"mass": null,
+			"team": 1,
+			"bAutomated": false,
+			"bRespawn": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "generator",
+			"position": [
+				6916,
+				76
+			],
+			"id": "qe6p",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				6943,
+				116
+			],
+			"id": "yixp",
+			"rotation": 44
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				6933,
+				164
+			],
+			"id": "yleq",
+			"rotation": -91
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				6880,
+				100
+			],
+			"id": "89c1",
+			"rotation": -33
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				6861,
+				140
+			],
+			"id": "4z9h",
+			"rotation": 115
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_2",
+			"position": [
+				6916,
+				23
+			],
+			"id": "enig",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "platform",
+			"position": [
+				6944,
+				205
+			],
+			"id": "xj07",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "platform",
+			"position": [
+				6832,
+				161
+			],
+			"id": "rg9s",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -11,
+			"position": [
+				6674,
+				81
+			],
+			"id": "nknk",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 76,
+			"position": [
+				6691,
+				149
+			],
+			"id": "q0am",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 5,
+			"position": [
+				7208,
+				88
+			],
+			"id": "o5f1",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 95,
+			"position": [
+				7203,
+				157
+			],
+			"id": "y03e",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				6956,
+				56
+			],
+			"id": "sikk",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				977,
+				1799
+			],
+			"id": "hq13",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				979,
+				2008
+			],
+			"id": "bc5z",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				1398,
+				1558
+			],
+			"id": "gj9o",
+			"rotation": 90
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				1626,
+				1976
+			],
+			"id": "y9j5",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				888,
+				1906
+			],
+			"id": "po0b",
+			"rotation": 90
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				1712,
+				1938
+			],
+			"id": "9okz",
+			"rotation": 90
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				1590,
+				2063
+			],
+			"id": "gjdc",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				6597,
+				1666
+			],
+			"id": "42p0",
+			"rotation": -90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				6597,
+				1716
+			],
+			"id": "b2yd",
+			"rotation": -90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "desk",
+			"position": [
+				6597,
+				1766
+			],
+			"id": "t4r0",
+			"rotation": -90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "generator",
+			"position": [
+				6615,
+				1825
+			],
+			"id": "msu8",
+			"rotation": 90,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "wires_1",
+			"position": [
+				6615,
+				1789
+			],
+			"id": "zyr3",
+			"rotation": 45
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "platform",
+			"position": [
+				6619,
+				1827
+			],
+			"id": "e5sj",
+			"rotation": 0
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				7259,
+				2131
+			],
+			"id": "32b4",
+			"rotation": 90
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_small_1",
+			"position": [
+				7223,
+				1163
+			],
+			"id": "fd6x",
+			"rotation": 90
+		},
+		{
+			"type": "door",
+			"doorType": "garage_large",
+			"material": "metal",
+			"size": 245,
+			"position": [
+				6874,
+				1488
+			],
+			"id": "oayt",
+			"rotation": 90,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "polygon",
+			"spriteId": "building_district_2",
+			"position": [
+				7222,
+				1682
+			],
+			"id": "7u1c",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				7002,
+				1737
+			],
+			"id": "iuye",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "armory_table",
+			"position": [
+				6725,
+				2037
+			],
+			"id": "wi49",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags",
+			"position": [
+				7150,
+				1267
+			],
+			"id": "zzvz",
+			"rotation": 45,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"position": [
+				7124,
+				1350
+			],
+			"id": "acwt",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_small",
+			"position": [
+				7126,
+				1423
+			],
+			"id": "v21o",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "mountedWeapon",
+			"vehicleId": "m2",
+			"position": [
+				7124,
+				1291
+			],
+			"id": "73k6",
+			"rotation": -149,
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": 12.634115823804137,
+			"position": [
+				7486,
+				1678
+			],
+			"id": "qova",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_oil",
+			"rotation": 79.99202019855866,
+			"position": [
+				7498,
+				1746
+			],
+			"id": "49uv",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"rotation": -98.15099035159483,
+			"position": [
+				7443,
+				1362
+			],
+			"id": "401a",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "barrel_explosive",
+			"rotation": 127.20792192178156,
+			"position": [
+				7402,
+				1416
+			],
+			"id": "6bd9",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				6608,
+				1227
+			],
+			"id": "9lrt",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				7077,
+				1416
+			],
+			"id": "oaiq",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"position": [
+				7446,
+				1416
+			],
+			"id": "buv9",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": -3,
+			"position": [
+				4338,
+				922
+			],
+			"id": "qhg3",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "bush_palm",
+			"rotation": 20.638982357574083,
+			"position": [
+				2724,
+				1026
+			],
+			"id": "b1lp"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sign_raptor",
+			"position": [
+				4011,
+				2008
+			],
+			"id": "egx7",
+			"rotation": 0
+		},
+		{
+			"type": "teamSpawn",
+			"team": 1,
+			"width": 150,
+			"height": 200,
+			"position": [
+				6830,
+				1783
+			],
+			"id": "8psf",
+			"rotation": 0
+		},
+		{
+			"type": "teamSpawn",
+			"team": 0,
+			"width": 200,
+			"height": 200,
+			"position": [
+				447,
+				406
+			],
+			"id": "r43y",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				1421,
+				79
+			],
+			"id": "jq7a",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				260,
+				251
+			],
+			"id": "ntas",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				304,
+				722
+			],
+			"id": "qsxq",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				1263,
+				1162
+			],
+			"id": "gnyz",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				1228,
+				353
+			],
+			"id": "qawc",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				981,
+				1896
+			],
+			"id": "4e3b",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				924,
+				1280
+			],
+			"id": "mmu2",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				1249,
+				2265
+			],
+			"id": "rjry",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				2379,
+				2234
+			],
+			"id": "z1mc",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				2253,
+				1359
+			],
+			"id": "yi90",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				2838,
+				194
+			],
+			"id": "bhqp",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				2666,
+				607
+			],
+			"id": "yld8",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				3139,
+				1842
+			],
+			"id": "bagy",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				3522,
+				2374
+			],
+			"id": "z9di",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4468,
+				1786
+			],
+			"id": "xqb4",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4334,
+				2166
+			],
+			"id": "l9go",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				3895,
+				1865
+			],
+			"id": "372j",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4639,
+				748
+			],
+			"id": "lf95",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4272,
+				1401
+			],
+			"id": "4enb",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4887,
+				97
+			],
+			"id": "x1zf",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4279,
+				321
+			],
+			"id": "17kc",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				3884,
+				375
+			],
+			"id": "53go",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				3189,
+				646
+			],
+			"id": "8b3a",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				5404,
+				678
+			],
+			"id": "e9ua",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				5176,
+				1773
+			],
+			"id": "ke86",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				5277,
+				92
+			],
+			"id": "zgty",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				5848,
+				1773
+			],
+			"id": "o3p6",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				5632,
+				2433
+			],
+			"id": "ldgf",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				6268,
+				1850
+			],
+			"id": "x39b",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				6106,
+				1351
+			],
+			"id": "ki1u",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				6963,
+				433
+			],
+			"id": "2nkh",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				7298,
+				117
+			],
+			"id": "vmk5",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				7015,
+				720
+			],
+			"id": "tx32",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				7392,
+				1363
+			],
+			"id": "lnm7",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				6695,
+				1229
+			],
+			"id": "xyob",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				7363,
+				2128
+			],
+			"id": "jaos",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				6837,
+				2028
+			],
+			"id": "tf8e",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				6663,
+				1604
+			],
+			"id": "l4up",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				5501,
+				1126
+			],
+			"id": "ruke",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4650,
+				1379
+			],
+			"id": "n0lb",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				4268,
+				762
+			],
+			"id": "lj5n",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				465,
+				2087
+			],
+			"id": "flpo",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				1808,
+				1966
+			],
+			"id": "z8dl",
+			"rotation": 0
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": false,
+			"position": [
+				1732,
+				547
+			],
+			"id": "m2wk",
+			"rotation": 0
+		},
+		{
+			"type": "flagCTF",
+			"team": 0,
+			"position": [
+				333,
+				260
+			],
+			"id": "pn8c",
+			"rotation": 0
+		},
+		{
+			"type": "flagCTF",
+			"team": 1,
+			"position": [
+				6679,
+				1920
+			],
+			"id": "ieeb",
+			"rotation": 0
+		},
+		{
+			"type": "flagDomination",
+			"num": 2,
+			"position": [
+				7373,
+				1164
+			],
+			"id": "p4mp",
+			"rotation": 0
+		},
+		{
+			"type": "flagDomination",
+			"num": 1,
+			"position": [
+				4457,
+				1070
+			],
+			"id": "3ohf",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"rotation": 15,
+			"position": [
+				4595,
+				1212
+			],
+			"id": "uwjy",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "flagDomination",
+			"num": 0,
+			"position": [
+				1503,
+				566
+			],
+			"id": "uoif",
+			"rotation": 0
+		},
+		{
+			"type": "bombSpawn",
+			"num": 0,
+			"team": 0,
+			"position": [
+				286,
+				291
+			],
+			"id": "jk52",
+			"rotation": 0
+		},
+		{
+			"type": "bombSpawn",
+			"num": 1,
+			"team": 0,
+			"position": [
+				1527,
+				2265
+			],
+			"id": "1jvd",
+			"rotation": 0
+		},
+		{
+			"type": "bombSpawn",
+			"num": 0,
+			"team": 1,
+			"position": [
+				6829,
+				157
+			],
+			"id": "fmtm",
+			"rotation": 0
+		},
+		{
+			"type": "bombSpawn",
+			"num": 1,
+			"team": 1,
+			"position": [
+				7348,
+				1365
+			],
+			"id": "k53v",
+			"rotation": 0
+		},
+		{
+			"type": "car",
+			"vehicleId": "pickup",
+			"position": [
+				828,
+				116
+			],
+			"id": "68s3",
+			"rotation": 128,
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true
+		},
+		{
+			"type": "car",
+			"vehicleId": "lav25",
+			"position": [
+				599,
+				1462
+			],
+			"id": "yt9s",
+			"rotation": 42,
+			"bDisabled": false,
+			"mass": null,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 10.631792926543016,
+			"position": [
+				4560,
+				856
+			],
+			"id": "omkn",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 179.26232686256782,
+			"position": [
+				4327,
+				859
+			],
+			"id": "kmg9",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 46.421647232988754,
+			"position": [
+				4661,
+				1210
+			],
+			"id": "hkwc",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 112.7824057304817,
+			"position": [
+				4640,
+				1260
+			],
+			"id": "4vp7",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 0,
+			"position": [
+				7211,
+				2314
+			],
+			"id": "gqg7",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": 2,
+			"position": [
+				7250,
+				2314
+			],
+			"id": "eztx",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -2,
+			"position": [
+				7287,
+				2314
+			],
+			"id": "q8rj",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small",
+			"rotation": -2,
+			"position": [
+				7326,
+				2313
+			],
+			"id": "4oew",
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				5082,
+				1038
+			],
+			"id": "a0kj",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box",
+			"position": [
+				5082,
+				1196
+			],
+			"id": "v800",
+			"rotation": 0,
+			"health": null,
+			"mass": null,
+			"items": null,
+			"indicatorData": null,
+			"damageMultipliers": null,
+			"bGodMode": true
+		},
+		{
+			"type": "door",
+			"doorType": "wood",
+			"position": [
+				5106,
+				1115
+			],
+			"id": "z985",
+			"rotation": 0,
+			"bClosed": true,
+			"bDisabled": false,
+			"size": 100,
+			"material": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 12.370682526175909,
+			"position": [
+				5029,
+				1103
+			],
+			"id": "fwfu"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -175.95448333275263,
+			"position": [
+				3912,
+				1024
+			],
+			"id": "109i"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 167.3521680478255,
+			"position": [
+				2027,
+				1447
+			],
+			"id": "5vym"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": 90.86542933728053,
+			"position": [
+				2022,
+				1778
+			],
+			"id": "ervk"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "decal_debris",
+			"rotation": -13.380853453634392,
+			"position": [
+				6457,
+				723
+			],
+			"id": "ggrz"
+		},
+		{
+			"type": "spawnPoint",
+			"bStore": true,
+			"position": [
+				4445,
+				1328
+			],
+			"id": "z7m5",
+			"rotation": 0
+		}
+	],
+	"bDefault": true,
+	"bReducedXP": true
+}

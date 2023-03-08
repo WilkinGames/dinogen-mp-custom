@@ -1,0 +1,18 @@
+{
+  "missions": [
+    "specOps",
+    "compoundExtraction",
+    "terrorize",
+    "eggFacility",
+    "tutorial",
+    "vehicleThieves"
+  ],
+  "examples": [
+    "lizardSlayer",
+    "raceBattle",
+    "airdropWars",
+    "bowsAndArrows",
+    "vehicleShowcase",
+    "testRoom"
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "scenario",
+    "name": "STR_MODE_SCENARIO",
+    "desc": "STR_MODE_SCENARIO_DESC",
+    "bTeam": false,
+    "bHidden": true
+  },
+  {
+    "id": "deathmatch",
+    "name": "STR_MODE_FFA",
+    "desc": "STR_MODE_FFA_DESC",
+    "bTeam": false
+  },
+  {
+    "id": "team_deathmatch",
+    "name": "STR_MODE_TDM",
+    "desc": "STR_MODE_TDM_DESC",
+    "bTeam": true
+  },
+  {
+    "id": "capture_the_flag",
+    "name": "STR_MODE_CTF",
+    "desc": "STR_MODE_CTF_DESC",
+    "bTeam": true
+  },
+  {
+    "id": "domination",
+    "name": "STR_MODE_DOMINATION",
+    "desc": "STR_MODE_DOMINATION_DESC",
+    "bTeam": true
+  },
+  {
+    "id": "destruction",
+    "name": "STR_MODE_DESTRUCTION",
+    "desc": "STR_MODE_DESTRUCTION_DESC",
+    "bTeam": true
+  },
+  {
+    "id": "humans_vs_dinosaurs",
+    "name": "STR_HUMANS_AND_DINOSAURS",
+    "desc": "STR_MODE_TDM_DESC",
+    "bTeam": true,
+    "bNoFactions": true
+  },
+  {
+    "id": "evolution",
+    "name": "STR_MODE_EVOLUTION",
+    "desc": "STR_MODE_EVOLUTION_DESC",
+    "teamDesc": [
+      "STR_KILL_DINOSAURS_EVOLUTION",
+      "STR_KILL_HUMANS_EVOLUTION"
+    ],
+    "bTeam": true,
+    "bNoFactions": true
+  },
+  {
+    "id": "raptor_hunt",
+    "name": "STR_MODE_RAPTOR_HUNT",
+    "desc": "STR_MODE_RAPTOR_HUNT_DESC",
+    "teamDesc": [
+      "STR_KILL_RAPTORS",
+      "STR_KILL_HUMANS"
+    ],
+    "bTeam": true,
+    "bNoFactions": true
+  },
+  {
+    "id": "tyrant",
+    "name": "STR_MODE_TYRANT",
+    "desc": "STR_MODE_TYRANT_DESC",
+    "teamDesc": [
+      "STR_KILL_TREX",
+      "STR_KILL_HUMANS"
+    ],
+    "bTeam": true,
+    "bNoFactions": true
+  },
+  {
+    "id": "survival_dino",
+    "name": "STR_MODE_SURVIVAL_DINO",
+    "desc": "STR_MODE_SURVIVAL_DINO_DESC",
+    "bSurvival": true,
+    "ngId": 11941
+  },
+  {
+    "id": "survival_militia",
+    "name": "STR_MODE_SURVIVAL_MILITIA",
+    "desc": "STR_MODE_SURVIVAL_MILITIA_DESC",
+    "bSurvival": true,
+    "ngId": 11942
+  },
+  {
+    "id": "survival_chaos",
+    "name": "STR_MODE_SURVIVAL_CHAOS",
+    "desc": "STR_MODE_SURVIVAL_CHAOS_DESC",
+    "bSurvival": true,
+    "ngId": 11943
+  },
+  {
+    "id": "survival_zombie",
+    "name": "STR_MODE_SURVIVAL_ZOMBIE",
+    "desc": "STR_MODE_SURVIVAL_ZOMBIE_DESC",
+    "bSurvival": true,
+    "bHidden": true
+  },
+  {
+    "id": "survival_chicken",
+    "name": "STR_MODE_SURVIVAL_CHICKEN",
+    "desc": "STR_MODE_SURVIVAL_CHICKEN_DESC",
+    "bSurvival": true,
+    "bHidden": true
+  }
+]

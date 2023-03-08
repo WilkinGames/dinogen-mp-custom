@@ -1,0 +1,103 @@
+[
+  {
+    "id": "compy",
+    "name": "STR_DINO_COMPY",
+    "desc": "STR_DINO_COMPY_DESC",
+    "speed": 4,
+    "damage": 1,
+    "health": 1
+  },
+  {
+    "id": "dilo",
+    "name": "STR_DINO_DILO",
+    "desc": "STR_DINO_DILO_DESC",
+    "speed": 2,
+    "damage": 2,
+    "health": 1
+  },
+  {
+    "id": "raptor",
+    "name": "STR_DINO_RAPTOR",
+    "desc": "STR_DINO_RAPTOR_DESC",
+    "speed": 3,
+    "damage": 3,
+    "health": 2
+  },
+  {
+    "id": "needler",
+    "name": "STR_DINO_NEEDLER",
+    "desc": "STR_DINO_NEEDLER_DESC",
+    "speed": 2,
+    "damage": 3,
+    "health": 1
+  },
+  {
+    "id": "pachy",
+    "soundId": "dilo",
+    "name": "STR_DINO_PACHY",
+    "desc": "STR_DINO_PACHY_DESC",
+    "speed": 2,
+    "damage": 3,
+    "health": 2,
+    "bHidden": true
+  },
+  {
+    "id": "stegosaurus",
+    "name": "STR_DINO_STEGOSAURUS",
+    "desc": "STR_DINO_STEGOSAURUS_DESC",
+    "speed": 1,
+    "damage": 2,
+    "health": 4
+  },
+  {
+    "id": "carnotaurus",
+    "name": "STR_DINO_CARNOTAURUS",
+    "desc": "STR_DINO_CARNOTAURUS_DESC",
+    "speed": 2,
+    "damage": 3,
+    "health": 2
+  },
+  {
+    "id": "allosaurus",
+    "name": "STR_DINO_ALLOSAURUS",
+    "desc": "STR_DINO_ALLOSAURUS_DESC",
+    "speed": 2,
+    "damage": 3,
+    "health": 3
+  },
+  {
+    "id": "spinosaurus",
+    "name": "STR_DINO_SPINOSAURUS",
+    "desc": "STR_DINO_SPINOSAURUS_DESC",
+    "speed": 1,
+    "damage": 4,
+    "health": 3
+  },
+  {
+    "id": "trex",
+    "name": "STR_DINO_TREX",
+    "desc": "STR_DINO_TREX_DESC",
+    "speed": 3,
+    "damage": 4,
+    "health": 4
+  },
+  {
+    "id": "lizard",
+    "soundId": "compy",
+    "name": "STR_DINO_LIZARD",
+    "desc": "STR_DINO_LIZARD_DESC",
+    "speed": 1,
+    "damage": 1,
+    "health": 1,
+    "bHidden": true
+  },
+  {
+    "id": "chicken",
+    "name": "STR_CHICKEN",
+    "desc": "STR_CHICKEN_DESC",
+    "speed": 1,
+    "damage": 1,
+    "health": 1,
+    "bHidden": true
+  }
+]

@@ -1,0 +1,318 @@
+{
+  "id": "airdropWars",
+  "author": "Wilkin Games",
+  "mapId": "map_riverside",
+  "gameModeId": "scenario",
+  "name": "STR_SCENARIO_AIRDROP_WARS",
+  "desc": "STR_SCENARIO_AIRDROP_WARS_DESC",
+  "settings": {
+    "botSkill": 1,
+    "bUseDefaultMapObjects": true,
+    "bAllowBotSettings": true,
+    "preGameTimer": 5,
+    "bAllowClassSelection": true,
+    "bAllowRespawns": true,
+    "allowFactions": "humans",
+    "bTeam": true,
+    "bRandomAirdrops": true,
+    "bUseKillfeed": true,
+    "worldType": "night",
+    "boxes": 600
+  },
+  "objects": [
+
+  ],
+  "functions": [
+    {
+      "id": "createDefenderAirdrop",
+      "actions": [
+        {
+          "action": "message",
+          "bInfofeed": true,
+          "message": "Defender airdrop inbound!"
+        },
+        {
+          "action": "createObject",
+          "type": "helicopter",
+          "vehicleId": "seaknight",
+          "position": [ -500, 1100 ],
+          "team": 0,
+          "bAutomated": true,
+          "itemTimerMax": 0.5,
+          "items": [
+            {
+              "type": "character",
+              "avatarId": "dinogen",
+              "bBot": true,
+              "botSkill": "{setting:botSkill}",
+              "pawnName": "Defender",
+              "inventory": [
+                {
+                  "id": "m16a4",
+                  "mods": "{randomMods:m16a4}"
+                }
+              ],
+              "equipment": "stim"
+            },
+            {
+              "type": "character",
+              "avatarId": "dinogen",
+              "bBot": true,
+              "botSkill": "{setting:botSkill}",
+              "pawnName": "Defender",
+              "inventory": [
+                {
+                  "id": "sr25",
+                  "mods": "{randomMods:sr25}"
+                }
+              ],
+              "equipment": "claymore"
+            },
+            {
+              "type": "character",
+              "avatarId": "dinogen",
+              "bBot": true,
+              "botSkill": "{setting:botSkill}",
+              "pawnName": "Defender",
+              "inventory": [
+                {
+                  "id": "mg4",
+                  "mods": "{randomMods:mg4}"
+                }
+              ],
+              "equipment": "ammo_box"
+            }
+          ],
+          "destination": [ 400, 1100 ]
+        }
+      ]
+    },
+    {
+      "id": "createMercAirdrop",
+      "actions": [
+        {
+          "action": "message",
+          "bInfofeed": true,
+          "message": "Mercenary airdrop inbound!"
+        },
+        {
+          "action": "createObject",
+          "type": "helicopter",
+          "vehicleId": "seaknight",
+          "position": [ 4500, 1100 ],
+          "team": 1,
+          "bAutomated": true,
+          "pawnName": "Mercenary Airdrop",
+          "itemTimerMax": 0.5,
+          "items": [
+            {
+              "type": "character",
+              "avatarId": "militia",
+              "bBot": true,
+              "botSkill": "{setting:botSkill}",
+              "pawnName": "Mercenary",
+              "inventory": [
+                {
+                  "id": "ak47",
+                  "mods": "{randomMods:ak47}"
+                }
+              ],
+              "equipment": "stim"
+            },
+            {
+              "type": "character",
+              "avatarId": "militia",
+              "bBot": true,
+              "botSkill": "{setting:botSkill}",
+              "pawnName": "Mercenary",
+              "inventory": [
+                {
+                  "id": "dragunov",
+                  "mods": "{randomMods:dragunov}"
+                }
+              ],
+              "equipment": "claymore"
+            },
+            {
+              "type": "character",
+              "avatarId": "militia",
+              "bBot": true,
+              "botSkill": "{setting:botSkill}",
+              "pawnName": "Mercenary",
+              "inventory": [
+                {
+                  "id": "m240",
+                  "mods": "{randomMods:m240}"
+                }
+              ],
+              "equipment": "ammo_box"
+            }
+          ],
+          "destination": [ 3590, 1100 ]
+        }
+      ]
+    }
+  ],
+  "triggers": [
+    {
+      "id": "trigger_playerJoined_0",
+      "event": "playerJoined",
+      "playerTeam": 0,
+      "actions": [
+        {
+          "action": "respawn",
+          "playerIndex": "{playerIndex}",
+          "data": {
+            "position": [ 400, 1120 ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "trigger_playerJoined_1",
+      "event": "playerJoined",
+      "playerTeam": 1,
+      "actions": [
+        {
+          "action": "respawn",
+          "playerIndex": "{playerIndex}",
+          "data": {
+            "position": [ 3700, 1120 ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "trigger_gameInit",
+      "event": "gameInit",
+      "actions": [
+        {
+          "action": "setVariable",
+          "name": "defenderKills",
+          "value": 0,
+          "bShowOnHUD": true
+        },
+        {
+          "action": "setVariable",
+          "name": "mercenaryKills",
+          "value": 0,
+          "bShowOnHUD": true
+        },
+        {
+          "action": "addQuest",
+          "quest": {
+            "id": "quest_0",
+            "name": "STR_SCENARIO_AIRDROP_WARS"
+          }
+        },
+        {
+          "action": "setHUDElement",
+          "id": "score_defenders",
+          "label": "Defender Kills",
+          "value": 0,
+          "variableName": "defenderKills"
+        },
+        {
+          "action": "setHUDElement",
+          "id": "score_mercenaries",
+          "label": "Mercenary Kills",
+          "value": 0,
+          "variableName": "mercenaryKills"
+        }
+      ]
+    },
+    {
+      "id": "trigger_gameStart",
+      "event": "gameStart",
+      "actions": [
+        {
+          "action": "message",
+          "message": "Kill the enemy forces!",
+          "hqId": "hq_give_them_hell"
+        },
+        {
+          "action": "executeFunction",
+          "id": "createDefenderAirdrop"
+        },
+        {
+          "action": "executeFunction",
+          "id": "createMercAirdrop"
+        }
+      ]
+    },
+    {
+      "id": "trigger_addMercenaryScore",
+      "event": "objectKilled",
+      "team": 0,
+      "actions": [
+        {
+          "action": "addVariable",
+          "name": "mercenaryKills",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "trigger_addDefenderScore",
+      "event": "objectKilled",
+      "team": 1,
+      "actions": [
+        {
+          "action": "addVariable",
+          "name": "defenderKills",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "trigger_spawnDefenderHeli",
+      "event": "gameTimer",
+      "threshold": 10,
+      "actions": [
+        {
+          "action": "executeFunction",
+          "id": "createDefenderAirdrop"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "numPawnsOnTeam",
+          "team": 0,
+          "operator": "<",
+          "value": 6
+        },
+        {
+          "condition": "numHelicoptersOnTeam",
+          "team": 0,
+          "operator": "<",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "trigger_spawnMercHeli",
+      "event": "gameTimer",
+      "threshold": 10,
+      "actions": [
+        {
+          "action": "executeFunction",
+          "id": "createMercAirdrop"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "numPawnsOnTeam",
+          "team": 1,
+          "operator": "<",
+          "value": 6
+        },
+        {
+          "condition": "numHelicoptersOnTeam",
+          "team": 1,
+          "operator": "<",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}

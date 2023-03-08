@@ -1,0 +1,256 @@
+[
+  {
+    "id": "item_quad",
+    "type": "car",
+    "name": "STR_QUAD",
+    "desc": "STR_QUAD_DESC",
+    "cost": 2500,
+    "category": "vehicle",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_growler",
+    "type": "car",
+    "name": "STR_GROWLER",
+    "desc": "STR_GROWLER_DESC",
+    "cost": 5000,
+    "category": "vehicle",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_mrap",
+    "type": "car",
+    "name": "STR_MRAP",
+    "desc": "STR_MRAP_DESC",
+    "cost": 20000,
+    "category": "vehicle",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_lav25",
+    "type": "car",
+    "name": "STR_LAV25",
+    "desc": "STR_LAV25_DESC",
+    "cost": 50000,
+    "category": "vehicle",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_t90",
+    "type": "tank",
+    "name": "STR_T90",
+    "desc": "STR_ABRAMS_DESC",
+    "cost": 90000,
+    "category": "vehicle",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_abrams",
+    "type": "tank",
+    "name": "STR_ABRAMS",
+    "desc": "STR_ABRAMS_DESC",
+    "cost": 100000,
+    "category": "vehicle",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_ammo",
+    "useId": "package",
+    "type": "helicopter",
+    "name": "STR_AMMO_AIRDROP",
+    "desc": "STR_AMMO_AIRDROP_DESC",
+    "cost": 1000,
+    "category": "airdrop",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_weapon",
+    "useId": "package",
+    "type": "helicopter",
+    "name": "STR_WEAPON_AIRDROP",
+    "desc": "STR_WEAPON_AIRDROP_DESC",
+    "cost": 2500,
+    "category": "airdrop",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_weapon_heavy",
+    "useId": "package",
+    "type": "helicopter",
+    "name": "STR_HEAVY_AIRDROP",
+    "desc": "STR_HEAVY_AIRDROP_DESC",
+    "cost": 10000,
+    "category": "airdrop",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_osprey",
+    "type": "helicopter",
+    "name": "STR_OSPREY_AIRDROP",
+    "desc": "STR_OSPREY_DESC",
+    "cost": 15000,
+    "category": "airdrop",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_sentry",
+    "name": "STR_SENTRY",
+    "desc": "STR_SENTRY_DESC",
+    "cost": 5000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_sentry_shotgun",
+    "name": "STR_SENTRY_SHOTGUN",
+    "desc": "STR_SENTRY_DESC",
+    "cost": 5000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_sentry_rocket",
+    "name": "STR_SENTRY_ROCKET",
+    "desc": "STR_SENTRY_ROCKET_DESC",
+    "cost": 5000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_sentry_flame",
+    "name": "STR_SENTRY_FLAME",
+    "desc": "STR_SENTRY_DESC",
+    "cost": 10000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_sentry_grenade",
+    "name": "STR_SENTRY_GRENADE",
+    "desc": "STR_SENTRY_DESC",
+    "cost": 10000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_sentry_sniper",
+    "name": "STR_SENTRY_SNIPER",
+    "desc": "STR_SENTRY_SNIPER_DESC",
+    "cost": 15000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_sentry_railgun",
+    "name": "STR_SENTRY_RAILGUN",
+    "desc": "STR_SENTRY_SNIPER_DESC",
+    "cost": 25000,
+    "type": "mountedWeapon",
+    "category": "turret"
+  },
+  {
+    "id": "item_m2",
+    "name": "STR_WPN_M2",
+    "desc": "STR_WPN_DESC_M2",
+    "cost": 2500,
+    "type": "mountedWeapon",
+    "category": "turret_mounted"
+  },
+  {
+    "id": "item_bgm71",
+    "name": "STR_WPN_BGM71",
+    "desc": "STR_WPN_DESC_BGM71",
+    "cost": 5000,
+    "type": "mountedWeapon",
+    "category": "turret_mounted"
+  },
+  {
+    "id": "item_m242",
+    "name": "STR_WPN_M242",
+    "desc": "STR_WPN_DESC_M242",
+    "cost": 10000,
+    "type": "mountedWeapon",
+    "category": "turret_mounted"
+  },
+  {
+    "id": "item_egg_compy",
+    "name": "STR_EGG_COMPY",
+    "desc": "STR_EGG_COMPY_DESC",
+    "cost": 2500,
+    "type": "egg",
+    "category": "dinosaur"
+  },
+  {
+    "id": "item_egg_dilo",
+    "name": "STR_EGG_DILO",
+    "desc": "STR_EGG_DILO_DESC",
+    "cost": 5000,
+    "type": "egg",
+    "category": "dinosaur"
+  },
+  {
+    "id": "item_egg_raptor",
+    "name": "STR_EGG_RAPTOR",
+    "desc": "STR_EGG_RAPTOR_DESC",
+    "cost": 10000,
+    "type": "egg",
+    "category": "dinosaur"
+  },
+  {
+    "id": "item_egg_needler",
+    "name": "STR_EGG_NEEDLER",
+    "desc": "STR_EGG_NEEDLER_DESC",
+    "cost": 15000,
+    "type": "egg",
+    "category": "dinosaur"
+  },
+  {
+    "id": "item_egg_allosaurus",
+    "name": "STR_EGG_ALLOSAURUS",
+    "desc": "STR_EGG_ALLOSAURUS_DESC",
+    "cost": 20000,
+    "type": "egg",
+    "category": "dinosaur"
+  },
+  {
+    "id": "item_egg_spinosaurus",
+    "name": "STR_EGG_SPINOSAURUS",
+    "desc": "STR_EGG_SPINOSAURUS_DESC",
+    "cost": 30000,
+    "type": "egg",
+    "category": "dinosaur"
+  },
+  {
+    "id": "item_cobra",
+    "type": "helicopter",
+    "name": "STR_COBRA",
+    "desc": "STR_COBRA_DESC",
+    "cost": 20000,
+    "category": "heli"
+  },
+  {
+    "id": "item_kiowa",
+    "type": "helicopter",
+    "name": "STR_KIOWA",
+    "desc": "STR_KIOWA_DESC",
+    "cost": 25000,
+    "category": "heli"
+  },
+  {
+    "id": "item_apache",
+    "type": "helicopter",
+    "name": "STR_APACHE",
+    "desc": "STR_APACHE_DESC",
+    "cost": 30000,
+    "category": "heli"
+  },
+  {
+    "id": "item_blackhawk",
+    "type": "helicopter",
+    "name": "STR_BLACKHAWK",
+    "desc": "STR_BLACKHAWK_DESC",
+    "cost": 35000,
+    "category": "heli",
+    "bHidden": true
+  }
+]

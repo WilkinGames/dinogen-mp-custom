@@ -1,0 +1,1758 @@
+﻿{
+  "id": "map_firing_range",
+  "width": 2000,
+  "height": 2000,
+  "emitter": "forest",
+  "teamSpawns": [
+    {
+      "x": 214,
+      "y": 285,
+      "w": 338,
+      "h": 436
+    },
+    {
+
+      "x": 1453,
+      "y": 1358,
+      "w": 338,
+      "h": 436
+    }
+  ],
+  "spawns": [
+    [ 208, 207 ],
+    [ 1112, 207 ],
+    [ 1720, 207 ],
+    [ 208, 750 ],
+    [ 1720, 750 ],
+    [ 633, 1119 ],
+    [ 1720, 910 ],
+    [ 486, 1438 ],
+    [ 497, 1782 ],
+    [ 1789, 1782 ]
+  ],
+  "storeSpawn": [
+    1075,
+    1100
+  ],
+  "bombs": {
+    "destruction": [
+      [
+        [ 328, 483 ],
+        [ 1679, 483 ]
+      ],
+      [
+        [ 1506, 1363 ],
+        [ 638, 1564 ]
+      ]
+    ]
+  },
+  "objects": [
+    {
+      "type": "polygon",
+      "spriteId": "map_firing_range",
+      "position": [
+        1000,
+        1000
+      ],
+      "id": "ti4e",
+      "rotation": 0,
+      "bFixedPosition": true,
+      "tint": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "grass_3",
+      "position": [
+        891,
+        1148
+      ],
+      "id": "z88j",
+      "rotation": 34,
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "grass_2",
+      "position": [
+        455,
+        486
+      ],
+      "id": "7tjf",
+      "rotation": -76,
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "grass_3",
+      "position": [
+        551,
+        479
+      ],
+      "id": "fhsc",
+      "rotation": 84,
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "car",
+      "position": [
+        813,
+        214
+      ],
+      "vehicleId": "quad",
+      "rotation": 90,
+      "bRespawn": true,
+      "id": "wxnf",
+      "bDisabled": false,
+      "team": 0,
+      "bAutomated": false,
+      "tint": null,
+      "bUntargetable": null,
+      "bKillOccupantsWhenDestroyed": null,
+      "weapons": null,
+      "weaponRotation": null,
+      "mass": null,
+      "bGodMode": null
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm",
+      "position": [
+        1210.4,
+        1828
+      ],
+      "id": "trb7",
+      "rotation": 0
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm",
+      "position": [
+        1768.4,
+        1828
+      ],
+      "id": "etkw",
+      "rotation": 0
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        1286.9,
+        207.45
+      ],
+      "id": "bpcm",
+      "rotation": 0
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm",
+      "position": [
+        782,
+        1826
+      ],
+      "id": "9x1h",
+      "rotation": 0
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box",
+      "position": [
+        1793.9,
+        205.45
+      ],
+      "id": "psxy",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box",
+      "position": [
+        1793.9,
+        763.45
+      ],
+      "id": "l2h4",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "barrel_explosive",
+      "position": [
+        537.75,
+        885.45
+      ],
+      "id": "s40k",
+      "rotation": 0,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "objectScale": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "barrel_explosive",
+      "position": [
+        537.75,
+        186.15
+      ],
+      "id": "o8am",
+      "rotation": 0,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "objectScale": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbags_large",
+      "rotation": 170,
+      "position": [
+        1577.5,
+        741.3
+      ],
+      "id": "1h3i",
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbags_large",
+      "rotation": -170,
+      "position": [
+        1581.8,
+        229.5
+      ],
+      "id": "hg9c",
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "door",
+      "id": "door_0",
+      "position": [
+        1071,
+        831.7
+      ],
+      "doorType": "garage",
+      "material": "metal",
+      "rotation": 90,
+      "size": 202,
+      "bClosed": true,
+      "bDisabled": false
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "rock_8",
+      "rotation": 18,
+      "position": [
+        907,
+        1654
+      ],
+      "id": "74zj",
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        956,
+        1664
+      ],
+      "id": "ealt",
+      "rotation": 17
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        882,
+        1628
+      ],
+      "id": "0fht",
+      "rotation": -38
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "rock_11",
+      "position": [
+        1498,
+        1251
+      ],
+      "id": "tsmo",
+      "rotation": -12,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        1554,
+        1235
+      ],
+      "id": "zj7y",
+      "rotation": -22
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        1476,
+        1246
+      ],
+      "id": "8ct9",
+      "rotation": -9
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "path_2",
+      "rotation": -38,
+      "position": [
+        1515,
+        1036
+      ],
+      "id": "1bds",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "armory_weapons",
+      "position": [
+        1251,
+        775
+      ],
+      "id": "ltql",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "armory_weapons",
+      "position": [
+        1314,
+        776
+      ],
+      "id": "k76q",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "armory_weapons",
+      "position": [
+        1378,
+        776
+      ],
+      "id": "aj7w",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": -79,
+      "position": [
+        1682,
+        214
+      ],
+      "id": "rvy0",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 107,
+      "position": [
+        1662,
+        278
+      ],
+      "id": "bgyn",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 75,
+      "position": [
+        1770,
+        671
+      ],
+      "id": "5ps2",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 129,
+      "position": [
+        1714,
+        739
+      ],
+      "id": "9odc",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 151,
+      "position": [
+        1668,
+        765
+      ],
+      "id": "7v0d",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 158,
+      "position": [
+        696,
+        1166
+      ],
+      "id": "r553",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 95,
+      "position": [
+        682,
+        1320
+      ],
+      "id": "y2uf",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": -75,
+      "position": [
+        939,
+        1257
+      ],
+      "id": "h9xo",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbag",
+      "rotation": 29,
+      "position": [
+        1560,
+        260
+      ],
+      "id": "6ozh",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbag",
+      "rotation": 147,
+      "position": [
+        1604,
+        272
+      ],
+      "id": "y5va",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbag",
+      "rotation": 90,
+      "position": [
+        1603,
+        699
+      ],
+      "id": "7vdx",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbag",
+      "rotation": 85,
+      "position": [
+        1609,
+        774
+      ],
+      "id": "6rk8",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbag",
+      "rotation": -152,
+      "position": [
+        1546,
+        741
+      ],
+      "id": "r7yr",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "polygon",
+      "spriteId": "building_small_1",
+      "bNoBody": false,
+      "position": [
+        1467,
+        911
+      ],
+      "id": "t92h",
+      "rotation": 0,
+      "tint": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "rock_5",
+      "position": [
+        783,
+        745
+      ],
+      "id": "m3e4",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm",
+      "position": [
+        818,
+        827
+      ],
+      "id": "xbqo",
+      "rotation": 0
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "rotation": 42,
+      "position": [
+        824,
+        718
+      ],
+      "id": "rngm"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "rotation": 168,
+      "position": [
+        736,
+        728
+      ],
+      "id": "fvf1"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm",
+      "position": [
+        1319,
+        828
+      ],
+      "id": "8gzo",
+      "rotation": -22
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_small",
+      "rotation": -94,
+      "position": [
+        710,
+        206
+      ],
+      "id": "0akl"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_small",
+      "rotation": 179,
+      "position": [
+        603,
+        203
+      ],
+      "id": "jx5h"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_small",
+      "rotation": 50,
+      "position": [
+        926,
+        212
+      ],
+      "id": "ce7o"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_small",
+      "rotation": -2,
+      "position": [
+        1017,
+        214
+      ],
+      "id": "mdam"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_small",
+      "rotation": -2,
+      "position": [
+        1437,
+        914
+      ],
+      "id": "zbfz"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_small",
+      "rotation": 85,
+      "position": [
+        1502,
+        911
+      ],
+      "id": "6e03"
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 52,
+      "position": [
+        1132,
+        351
+      ],
+      "id": "2jlc",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 18,
+      "position": [
+        1290,
+        402
+      ],
+      "id": "r4yq",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 75,
+      "position": [
+        1357,
+        650
+      ],
+      "id": "chb4",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 178,
+      "position": [
+        1252,
+        653
+      ],
+      "id": "lvs4",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 173,
+      "position": [
+        889,
+        697
+      ],
+      "id": "sfv2",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 168,
+      "position": [
+        658,
+        747
+      ],
+      "id": "mem5",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": -82,
+      "position": [
+        717,
+        329
+      ],
+      "id": "nzo4",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 116,
+      "position": [
+        515,
+        738
+      ],
+      "id": "vfga",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 34,
+      "position": [
+        859,
+        968
+      ],
+      "id": "jj6n",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": -176,
+      "position": [
+        754,
+        961
+      ],
+      "id": "pw56",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": -4,
+      "position": [
+        1778,
+        885
+      ],
+      "id": "uhap",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 134,
+      "position": [
+        909,
+        1798
+      ],
+      "id": "ovxa",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": -82,
+      "position": [
+        973,
+        1362
+      ],
+      "id": "6993",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "bush_palm_small",
+      "rotation": 129,
+      "position": [
+        884,
+        1470
+      ],
+      "id": "gosu",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": -32,
+      "position": [
+        1710,
+        952
+      ],
+      "id": "c5h6",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 60,
+      "position": [
+        1756,
+        1031
+      ],
+      "id": "stwu",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small_plank",
+      "rotation": 121,
+      "position": [
+        1717,
+        1097
+      ],
+      "id": "36o9",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbags_large",
+      "position": [
+        597,
+        1019
+      ],
+      "id": "xzx2",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbags_large",
+      "position": [
+        597,
+        1127
+      ],
+      "id": "wahi",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "sandbags_large",
+      "position": [
+        598,
+        1229
+      ],
+      "id": "24e8",
+      "rotation": 0,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 7,
+      "position": [
+        1629,
+        213
+      ],
+      "id": "l9uu",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 85,
+      "position": [
+        1633,
+        256
+      ],
+      "id": "bzuv",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 90,
+      "position": [
+        1630,
+        672
+      ],
+      "id": "zw05",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 80,
+      "position": [
+        1639,
+        723
+      ],
+      "id": "uq9y",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": -167,
+      "position": [
+        1535,
+        699
+      ],
+      "id": "16h4",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": -90,
+      "position": [
+        1535,
+        226
+      ],
+      "id": "xov4",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 79,
+      "position": [
+        1546,
+        284
+      ],
+      "id": "ucsn",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_body",
+      "rotation": 69,
+      "position": [
+        1706,
+        692
+      ],
+      "id": "2qqc",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_body",
+      "rotation": -81,
+      "position": [
+        1769,
+        310
+      ],
+      "id": "779i",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_body",
+      "rotation": -174,
+      "position": [
+        1719,
+        305
+      ],
+      "id": "enwf",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_head",
+      "rotation": 98,
+      "position": [
+        1664,
+        705
+      ],
+      "id": "8ihc",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_head",
+      "rotation": -78,
+      "position": [
+        1758,
+        270
+      ],
+      "id": "7fdj",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_body",
+      "rotation": 92,
+      "position": [
+        1714,
+        1482
+      ],
+      "id": "2rjw",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_body",
+      "rotation": 40,
+      "position": [
+        1751,
+        1513
+      ],
+      "id": "vms7",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_body",
+      "rotation": 147,
+      "position": [
+        1346,
+        1774
+      ],
+      "id": "1dsa",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_head",
+      "rotation": -36,
+      "position": [
+        1758,
+        1473
+      ],
+      "id": "dnwx",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "target_dummy_head",
+      "rotation": 148,
+      "position": [
+        1311,
+        1754
+      ],
+      "id": "1o2g",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "decal_debris",
+      "rotation": -21,
+      "position": [
+        1535,
+        1668
+      ],
+      "id": "6z3f",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 0,
+      "position": [
+        1734,
+        1668
+      ],
+      "id": "y7b2",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": -47,
+      "position": [
+        1765,
+        1635
+      ],
+      "id": "i5vd",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": -64,
+      "position": [
+        1784,
+        1596
+      ],
+      "id": "wey6",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 88,
+      "position": [
+        1787,
+        1665
+      ],
+      "id": "2y11",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 177,
+      "position": [
+        1312,
+        1692
+      ],
+      "id": "vgdl",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": -104,
+      "position": [
+        1297,
+        1632
+      ],
+      "id": "c9qs",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_762mm",
+      "rotation": 121,
+      "position": [
+        1257,
+        1699
+      ],
+      "id": "2hl5",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_12g",
+      "rotation": -11,
+      "position": [
+        1745,
+        1600
+      ],
+      "id": "g32s",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_12g",
+      "rotation": 166,
+      "position": [
+        1287,
+        1717
+      ],
+      "id": "3njb",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "shell_12g",
+      "rotation": -70,
+      "position": [
+        1668,
+        668
+      ],
+      "id": "sjht",
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small",
+      "rotation": 89,
+      "position": [
+        188,
+        533
+      ],
+      "id": "nrkt",
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small",
+      "rotation": 91,
+      "position": [
+        188,
+        573
+      ],
+      "id": "m9li",
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "armory_weapons",
+      "position": [
+        204,
+        621
+      ],
+      "id": "tabu",
+      "rotation": -90,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "planks",
+      "position": [
+        600,
+        769
+      ],
+      "id": "g3y9",
+      "rotation": 0,
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "planks",
+      "position": [
+        1618,
+        899
+      ],
+      "id": "ljq8",
+      "rotation": 0,
+      "tint": null,
+      "objectScale": null,
+      "layer": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "rock_8",
+      "position": [
+        507,
+        486
+      ],
+      "id": "pz16",
+      "rotation": 84,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "rotation": 31,
+      "position": [
+        516,
+        447
+      ],
+      "id": "6yph"
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "rotation": 2,
+      "position": [
+        521,
+        517
+      ],
+      "id": "qw6y"
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "rock_8",
+      "position": [
+        912,
+        1137
+      ],
+      "id": "05dv",
+      "rotation": 32,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        953,
+        1151
+      ],
+      "id": "vft4",
+      "rotation": 10
+    },
+    {
+      "type": "tree",
+      "treeType": "tree_palm_small",
+      "position": [
+        898,
+        1107
+      ],
+      "id": "11y6",
+      "rotation": -22
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small",
+      "position": [
+        1006,
+        1210
+      ],
+      "id": "2ple",
+      "rotation": -40,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small",
+      "position": [
+        970,
+        1237
+      ],
+      "id": "1foy",
+      "rotation": -32,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box",
+      "position": [
+        600,
+        453
+      ],
+      "id": "xccx",
+      "rotation": -6,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "box_small",
+      "position": [
+        589,
+        511
+      ],
+      "id": "1ubj",
+      "rotation": -4,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    },
+    {
+      "type": "obstacle",
+      "obstacleId": "cabinet_1",
+      "position": [
+        1079,
+        191
+      ],
+      "id": "bfa3",
+      "rotation": -90,
+      "bNoBody": false,
+      "health": null,
+      "mass": null,
+      "material": null,
+      "items": null,
+      "indicatorData": null,
+      "tint": null,
+      "bIgnoreProjectiles": null,
+      "layer": null,
+      "damageMultipliers": null,
+      "bGodMode": null
+    }
+  ],
+  "flags": {
+    "capture_the_flag": [
+      [ 284, 476 ],
+      [ 1604, 1644 ]
+    ],
+    "domination": [
+      [ 807, 507.75 ],
+      [ 1067.3, 833.15 ],
+      [ 1269.05, 1347.3 ]
+    ],
+    "conquest": [
+      [ 618.2, 514.25 ],
+      [ 1415.4, 514.25 ],
+      [ 1067.3, 833.15 ],
+      [ 813.4, 1366.8 ],
+      [ 1513, 1366.8 ]
+    ]
+  },
+  "tiles": [
+    [ 0, 0, 0, 0, 3, 0, 6 ],
+    [ 0, 0, 0, 0, 0, 0, 6 ],
+    [ 0, 0, 0, 0, 0, 0, 6 ],
+    [ 0, 0, 0, 0, 0, 3, 3 ],
+    [ 0, 0, 3, 3, 0, 3, 3 ],
+    [ 0, 0, 3, 3, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 3, 3 ]
+  ],
+  "ai": {
+    "threshold": 50,
+    "nodes": [
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+    ]
+  }
+}

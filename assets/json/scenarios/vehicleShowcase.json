@@ -1,0 +1,763 @@
+{
+	"id": "vehicleShowcase",
+	"author": "Wilkin Games",
+	"name": "STR_SCENARIO_VEHICLE_SHOWCASE",
+	"desc": "STR_SCENARIO_VEHICLE_SHOWCASE_DESC",
+	"mapId": "map_firing_range",
+	"gameModeId": "scenario",
+	"settings": {
+		"bUseDefaultMapObjects": false,
+		"bFriendlyFire": true,
+		"bAllowRespawns": true,
+		"preGameTimer": 0,
+		"fadeInTime": 1,
+		"respawnTime": 1,
+		"vehicleRespawnTime": 5,
+		"weaponRespawnTime": 5,
+		"width": 2000,
+		"height": 2000
+	},
+	"functions": [],
+	"triggers": [
+		{
+			"id": "trigger_gameInit",
+			"event": "gameInit",
+			"actions": [
+				{
+					"action": "message",
+					"message": "STR_SCENARIO_VEHICLE_SHOWCASE"
+				}
+			]
+		},
+		{
+			"id": "trigger_playerJoined",
+			"event": "playerJoined",
+			"actions": [
+				{
+					"action": "respawn",
+					"playerIndex": "{playerIndex}",
+					"data": {
+						"position": [
+							1080,
+							1400
+						],
+						"inventory": [
+							{
+								"id": "m16a4"
+							},
+							{
+								"id": "m9"
+							}
+						],
+						"melee": "melee_knife",
+						"equipment": "blowtorch",
+						"grenade": "frag"
+					},
+					"delay": 0
+				}
+			],
+			"repeats": null
+		}
+	],
+	"objects": [
+		{
+			"type": "polygon",
+			"spriteId": "map_firing_range",
+			"width": 2000,
+			"height": 2000,
+			"position": [
+				1000,
+				1000
+			],
+			"id": "muzgr",
+			"rotation": 0,
+			"bFixedPosition": true,
+			"tint": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1841,
+				1828
+			],
+			"id": "dowpv",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				785.45,
+				830.85
+			],
+			"id": "x8bnu",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				1321,
+				826
+			],
+			"id": "a4vrw",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				903.6,
+				1404.45
+			],
+			"id": "8jdlt",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm_small",
+			"position": [
+				1286.9,
+				207.45
+			],
+			"id": "qokv2",
+			"rotation": 0
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"position": [
+				453,
+				1819
+			],
+			"id": "3ocuz",
+			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"rotation": 170,
+			"position": [
+				1577.5,
+				741.3
+			],
+			"id": "v76qs",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "sandbags_large",
+			"rotation": -170,
+			"position": [
+				1581.8,
+				229.5
+			],
+			"id": "a6dlv",
+			"bNoBody": false,
+			"health": null,
+			"mass": null,
+			"material": null,
+			"items": null,
+			"indicatorData": null,
+			"tint": null,
+			"bIgnoreProjectiles": null,
+			"layer": null,
+			"damageMultipliers": null,
+			"bGodMode": null
+		},
+		{
+			"type": "door",
+			"id": "door_0",
+			"position": [
+				1071,
+				831.7
+			],
+			"doorType": "garage",
+			"material": "metal",
+			"rotation": 90,
+			"size": 202,
+			"bClosed": true,
+			"bDisabled": false
+		},
+		{
+			"type": "car",
+			"vehicleId": "quad",
+			"position": [
+				1246,
+				1772
+			],
+			"id": "tiokv",
+			"rotation": -90,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "pickup",
+			"position": [
+				1087,
+				1725
+			],
+			"id": "42mgi",
+			"rotation": -90,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "growler",
+			"position": [
+				1379,
+				1747
+			],
+			"id": "ooaey",
+			"rotation": -90,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "mrap",
+			"position": [
+				1533,
+				1724
+			],
+			"id": "kua00",
+			"rotation": -90,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "car",
+			"vehicleId": "lav25",
+			"position": [
+				1705,
+				1711
+			],
+			"id": "s7qdv",
+			"rotation": -90,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"tint": null,
+			"bUntargetable": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tank",
+			"vehicleId": "abrams",
+			"position": [
+				594,
+				1530
+			],
+			"id": "t7ugy",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"tint": null,
+			"bUntargetable": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "mh6",
+			"position": [
+				1509,
+				1370
+			],
+			"id": "90l0k",
+			"rotation": -90,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": true,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "seaknight",
+			"position": [
+				1579,
+				1010
+			],
+			"id": "tab2m",
+			"rotation": 173,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": true,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "cobra",
+			"position": [
+				346,
+				275
+			],
+			"id": "0oj4q",
+			"rotation": 11,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": true,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "apache",
+			"position": [
+				1252,
+				316
+			],
+			"id": "oz2n8",
+			"rotation": 166,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": true,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "osprey",
+			"position": [
+				407,
+				613
+			],
+			"id": "pogwh",
+			"rotation": -14,
+			"bAutomated": false,
+			"bDropItemsWhenDestroyed": true,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": true,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1760,
+				476
+			],
+			"id": "v5hdc",
+			"rotation": 180,
+			"objectType": "dummy",
+			"timer": 1,
+			"numObjects": 1,
+			"team": -1,
+			"indicatorData": null,
+			"bUntargetable": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1762,
+				646
+			],
+			"id": "6r952",
+			"rotation": 180,
+			"objectType": "dummy",
+			"timer": 1,
+			"numObjects": 1,
+			"team": -1,
+			"indicatorData": null,
+			"bUntargetable": null
+		},
+		{
+			"type": "spawner",
+			"position": [
+				1760,
+				306
+			],
+			"id": "30sh7",
+			"rotation": 180,
+			"objectType": "dummy",
+			"timer": 1,
+			"numObjects": 1,
+			"team": -1,
+			"indicatorData": null,
+			"bUntargetable": null
+		},
+		{
+			"type": "mountedWeapon",
+			"vehicleId": "m2",
+			"position": [
+				1288,
+				514
+			],
+			"id": "0xure",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"health": null,
+			"damageMultipliers": null,
+			"bUntargetable": null,
+			"bDisableAutomatedLaser": null,
+			"bUnlimitedAmmo": null,
+			"ammo": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "mountedWeapon",
+			"vehicleId": "bgm71",
+			"position": [
+				810,
+				224
+			],
+			"id": "8k0jw",
+			"rotation": 90,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": true,
+			"health": null,
+			"damageMultipliers": null,
+			"bUntargetable": null,
+			"bDisableAutomatedLaser": null,
+			"bUnlimitedAmmo": null,
+			"ammo": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "blackhawk",
+			"position": [
+				834,
+				1090
+			],
+			"id": "la3z",
+			"rotation": -6,
+			"bAutomated": false,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bDropItemsWhenDestroyed": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "helicopter",
+			"vehicleId": "kiowa",
+			"position": [
+				735,
+				437
+			],
+			"id": "6gbp",
+			"rotation": 7,
+			"bAutomated": false,
+			"bDisabled": false,
+			"team": 0,
+			"bRespawn": false,
+			"destination": null,
+			"defendTimer": null,
+			"items": null,
+			"itemTimerMax": null,
+			"bDropItemsWhenDestroyed": null,
+			"bKillOccupantsWhenDestroyed": null,
+			"pawnName": null,
+			"bUntargetable": null,
+			"tint": null,
+			"weapons": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tank",
+			"vehicleId": "t90",
+			"position": [
+				590,
+				1703
+			],
+			"id": "wnep",
+			"rotation": 0,
+			"bDisabled": false,
+			"team": 0,
+			"bAutomated": false,
+			"bRespawn": false,
+			"tint": null,
+			"bUntargetable": null,
+			"weapons": null,
+			"weaponRotation": null,
+			"mass": null,
+			"bGodMode": null
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 136,
+			"position": [
+				783,
+				1389
+			],
+			"id": "jh5b"
+		},
+		{
+			"type": "tree",
+			"treeType": "tree_palm",
+			"rotation": 18,
+			"position": [
+				655,
+				1336
+			],
+			"id": "ll56"
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_2",
+			"rotation": -20,
+			"position": [
+				1346,
+				1167
+			],
+			"id": "vho7",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_2",
+			"rotation": -86,
+			"position": [
+				1280,
+				1418
+			],
+			"id": "k6t8",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_2",
+			"rotation": 56,
+			"position": [
+				1708,
+				1208
+			],
+			"id": "ho73",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_2",
+			"rotation": 86,
+			"position": [
+				1723,
+				1436
+			],
+			"id": "78x5",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "grass_2",
+			"rotation": -170,
+			"position": [
+				1507,
+				1586
+			],
+			"id": "arul",
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		}
+	],
+	"bDefault": true,
+	"tiles": [
+		[
+			0,
+			0,
+			0,
+			0,
+			3,
+			0,
+			6
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			6
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			6
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			3,
+			3
+		],
+		[
+			0,
+			0,
+			3,
+			3,
+			0,
+			3,
+			3
+		],
+		[
+			0,
+			0,
+			3,
+			3,
+			0,
+			0,
+			0
+		],
+		[
+			0,
+			0,
+			0,
+			0,
+			0,
+			3,
+			3
+		]
+	]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Local Server",
+  "country": null,
+  "type": "STR_LAN",
+  "port": 9000,
+  "maxPlayers": 100,
+  "bAllowVotekick": true,
+  "bAllowVoteskip": true,
+  "bAllowVotes": true,
+  "bPersistentStats": true,
+  "welcome": "STR_SERVER_WELCOME",
+  "rules": "STR_SERVER_RULES_NONE",
+  "info": [
+    "STR_SERVER_RULES_INFO",
+    "STR_SERVER_PLAYER_INFO"
+  ],
+  "admins": [
+    "xwilkinx"
+  ],
+  "banned": [
+  ]
+}
