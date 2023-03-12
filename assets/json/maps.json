@@ -39,6 +39,11 @@
     "bCustom": true
   },
   {
+    "id": "map_laboratory",
+    "name": "STR_MAP_LABORATORY",
+    "bCustom": true
+  },
+  {
     "id": "map_compound",
     "name": "STR_MAP_COMPOUND",
     "bCustom": true

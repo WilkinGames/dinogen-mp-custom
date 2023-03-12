@@ -1,6 +1,5 @@
 {
 	"id": "map_villa",
-	"name": "STR_MAP_VILLA",
 	"bCustom": true,
 	"ambience": "amb_forest",
 	"emitter": "forest",

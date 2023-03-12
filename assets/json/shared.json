@@ -64,7 +64,7 @@
     "mass": 2,
     "damping": 0.9999,
     "angularDamping": 0.9,
-    "maxSpeed": 300
+    "maxSpeed": 325
   },
   "needler": {
     "width": 50,

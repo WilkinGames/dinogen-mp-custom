@@ -1621,9 +1621,7 @@
     "recoil": 0.5,
     "penetration": 2,
     "lookModifier": 1.5,
-
     "unlockLevel": 1,
-
     "score": 37500
   },
   {
@@ -1647,10 +1645,31 @@
     "recoil": 0.9,
     "penetration": 3,
     "lookModifier": 1.4,
-
     "unlockLevel": 1,
-
     "score": 40000
+  },
+  {
+    "id": "perun",
+    "soundId": "samr",
+    "name": "STR_WPN_PERUN",
+    "desc": "STR_WPN_DESC_SNIPER_SEMI_HIGH_ROF",
+    "type": "TYPE_RIFLE",
+    "fireMode": "MODE_SEMI",
+    "round": "556mm",
+    "damage": 50,
+    "accuracy": 1.5,
+    "fireRate": 6,
+    "magSize": 30,
+    "reloadTime": 2,
+    "speedModifier": 0.8,
+    "range": 2000,
+    "mag": 30,
+    "ammo": 90,
+    "moneyCost": 8500,
+    "recoil": 1,
+    "penetration": 3,
+    "lookModifier": 1.6,
+    "score": 45000
   },
   {
     "id": "g11",
@@ -1699,7 +1718,6 @@
     "penetration": 2,
     "lookModifier": 1.4,
     "unlockLevel": 1,
-
     "score": 60000
   },
   {
@@ -2405,30 +2423,6 @@
     "lookModifier": 1.6,
     "unlockLevel": 1,
     "score": 25000
-  },
-  {
-    "id": "perun",
-    "soundId": "hk416",
-    "name": "STR_WPN_PERUN",
-    "desc": "STR_WPN_DESC_SNIPER_SEMI_HIGH_ROF",
-    "type": "TYPE_DMR",
-    "fireMode": "MODE_SEMI",
-    "round": "556mm",
-    "damage": 50,
-    "accuracy": 1.5,
-    "fireRate": 6,
-    "magSize": 30,
-    "reloadTime": 2,
-    "speedModifier": 0.8,
-    "range": 2000,
-    "mag": 30,
-    "ammo": 90,
-    "moneyCost": 8500,
-    "recoil": 1,
-    "penetration": 3,
-    "lookModifier": 1.6,
-    "score": 30000,
-    "bHidden": true
   },
   {
     "id": "fal_spr",
@@ -4226,7 +4220,7 @@
     "round": "poison",
     "bProjectile": true,
     "damage": 50,
-    "fireDamage": 25,
+    "fireDamage": 10,
     "accuracy": 3,
     "fireRate": 20,
     "reloadTime": 1,

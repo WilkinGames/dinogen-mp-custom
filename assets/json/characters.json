@@ -328,6 +328,24 @@
     "cost": 0
   },
   {
+    "id": "face0013",
+    "name": "STR_FEMALE",
+    "type": "face",
+    "cost": 0
+  },
+  {
+    "id": "face0014",
+    "name": "STR_FEMALE_TONED_1",
+    "type": "face",
+    "cost": 0
+  },
+  {
+    "id": "face0015",
+    "name": "STR_FEMALE_TONED_2",
+    "type": "face",
+    "cost": 0
+  },
+  {
     "id": "face0003",
     "name": "STR_ZOMBIE",
     "type": "face",
@@ -353,27 +371,33 @@
   },
   {
     "id": "face0007",
-    "name": "STR_ZOMBIE",
+    "name": "STR_ZOMBIE_FAT",
     "type": "face",
     "cost": 20
   },
   {
     "id": "face0008",
-    "name": "STR_ZOMBIE",
+    "name": "STR_ZOMBIE_EXPLODER",
     "type": "face",
     "cost": 20
   },
   {
     "id": "face0010",
-    "name": "STR_ZOMBIE",
+    "name": "STR_ZOMBIE_SPRINTER",
     "type": "face",
     "cost": 30
   },
   {
     "id": "face0011",
-    "name": "STR_ZOMBIE",
+    "name": "STR_ZOMBIE_MUTATED_SPRINTER",
     "type": "face",
     "cost": 30
+  },
+  {
+    "id": "face0012",
+    "name": "STR_INFESTOR",
+    "type": "face",
+    "cost": 100
   },
   {
     "id": "HAIR_COLOUR_BROWN",

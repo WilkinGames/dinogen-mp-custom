@@ -55,7 +55,6 @@
   },
   {
     "id": "item_ammo",
-    "useId": "package",
     "type": "helicopter",
     "name": "STR_AMMO_AIRDROP",
     "desc": "STR_AMMO_AIRDROP_DESC",
@@ -65,7 +64,6 @@
   },
   {
     "id": "item_weapon",
-    "useId": "package",
     "type": "helicopter",
     "name": "STR_WEAPON_AIRDROP",
     "desc": "STR_WEAPON_AIRDROP_DESC",
@@ -75,12 +73,20 @@
   },
   {
     "id": "item_weapon_heavy",
-    "useId": "package",
     "type": "helicopter",
     "name": "STR_HEAVY_AIRDROP",
     "desc": "STR_HEAVY_AIRDROP_DESC",
     "cost": 10000,
     "category": "airdrop",
+    "bAirdrop": true
+  },
+  {
+    "id": "item_mh6",
+    "type": "helicopter",
+    "name": "STR_SUPPORT_AIRDROP",
+    "desc": "STR_SUPPORT_AIRDROP_DESC",
+    "category": "airdrop",
+    "cost": 10000,
     "bAirdrop": true
   },
   {
@@ -249,8 +255,7 @@
     "type": "helicopter",
     "name": "STR_BLACKHAWK",
     "desc": "STR_BLACKHAWK_DESC",
-    "cost": 35000,
-    "category": "heli",
-    "bHidden": true
+    "cost": 40000,
+    "category": "heli"
   }
 ]

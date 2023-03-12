@@ -16,6 +16,14 @@
     "health": 1
   },
   {
+    "id": "pachy",
+    "name": "STR_DINO_PACHY",
+    "desc": "STR_DINO_PACHY_DESC",
+    "speed": 2,
+    "damage": 3,
+    "health": 2
+  },
+  {
     "id": "raptor",
     "name": "STR_DINO_RAPTOR",
     "desc": "STR_DINO_RAPTOR_DESC",
@@ -30,16 +38,6 @@
     "speed": 2,
     "damage": 3,
     "health": 1
-  },
-  {
-    "id": "pachy",
-    "soundId": "dilo",
-    "name": "STR_DINO_PACHY",
-    "desc": "STR_DINO_PACHY_DESC",
-    "speed": 2,
-    "damage": 3,
-    "health": 2,
-    "bHidden": true
   },
   {
     "id": "stegosaurus",

@@ -1,5 +1,5 @@
 {
-  "name": "Local Server",
+  "name": "Dinogen Online Server",
   "country": null,
   "type": "STR_LAN",
   "port": 9000,
@@ -8,6 +8,7 @@
   "bAllowVoteskip": true,
   "bAllowVotes": true,
   "bPersistentStats": true,
+  "bDisableDummies": true,
   "welcome": "STR_SERVER_WELCOME",
   "rules": "STR_SERVER_RULES_NONE",
   "info": [
