@@ -494,7 +494,7 @@
 		"pl": "Łączenie z %1..."
 	},
 	"STR_HOST_GAME": {
-		"en": "Host Game",
+		"en": "Host Server",
 		"ru": "Хост-игра",
 		"zh": "主机游戏",
 		"uk": "Ведуча гра",
@@ -2494,6 +2494,9 @@
 		"pt": "Previsão do cliente",
 		"de": "Client-Vorhersage",
 		"pl": "Prognoza klienta"
+	},
+	"STR_SETTING_CLIENT_VOLATILE": {
+		"en": "Client Volatility"
 	},
 	"STR_SETTING_CHAT_FILTER": {
 		"en": "Filter Chat Profanity",
@@ -20058,6 +20061,21 @@
 		"de": "Mit nacktem Oberkörper",
 		"pl": "Półnagi"
 	},
+	"STR_SHIRTLESS_TAN": {
+		"en": "Shirtless Tan"
+	},
+	"STR_SHIRTLESS_DARK": {
+		"en": "Shirtless Dark"
+	},
+	"STR_SHIRTLESS_FEMALE": {
+		"en": "Shirtless Female"
+	},
+	"STR_SHIRTLESS_FEMALE_TAN": {
+		"en": "Shirtless Female Tan"
+	},
+	"STR_SHIRTLESS_FEMALE_DARK": {
+		"en": "Shirtless Female Dark"
+	},
 	"STR_PRESET": {
 		"en": "Preset",
 		"ru": "Предустановка",
@@ -24295,5 +24313,14 @@
 		"pt": "Cor",
 		"de": "Farbe",
 		"pl": "Kolor"
+	},
+	"STR_ADD_SERVER": {
+		"en": "Add Server"
+	},
+	"STR_DEFAULT_SERVERS": {
+		"en": "Default Servers"
+	},
+	"STR_CUSTOM_SERVERS": {
+		"en": "Custom Servers"
 	}
 }

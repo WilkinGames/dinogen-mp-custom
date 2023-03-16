@@ -1,5 +1,5 @@
 {
-  "name": "dinogen-online",
+  "name": "dinogen-mp-custom",
   "version": "1.0.0",
   "description": "Dinogen Online multiplayer server",
   "main": "server.js",

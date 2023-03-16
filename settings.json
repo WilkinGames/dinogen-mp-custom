@@ -1,7 +1,7 @@
 {
   "name": "Dinogen Online Server",
   "country": null,
-  "type": "STR_LAN",
+  "type": "STR_INTERNET",
   "port": 9000,
   "maxPlayers": 100,
   "bAllowVotekick": true,

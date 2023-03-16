@@ -1269,6 +1269,36 @@
     "cost": 25
   },
   {
+    "id": "body0008",
+    "name": "STR_SHIRTLESS_TAN",
+    "type": "body",
+    "cost": 25
+  },
+  {
+    "id": "body0009",
+    "name": "STR_SHIRTLESS_DARK",
+    "type": "body",
+    "cost": 25
+  },
+  {
+    "id": "body0013",
+    "name": "STR_SHIRTLESS_FEMALE",
+    "type": "body",
+    "cost": 25
+  },
+  {
+    "id": "body0014",
+    "name": "STR_SHIRTLESS_FEMALE_TAN",
+    "type": "body",
+    "cost": 25
+  },
+  {
+    "id": "body0015",
+    "name": "STR_SHIRTLESS_FEMALE_DARK",
+    "type": "body",
+    "cost": 25
+  },
+  {
     "id": "body0010",
     "name": "STR_ZOMBIE",
     "type": "body",
