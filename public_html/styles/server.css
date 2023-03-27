@@ -1,0 +1,35 @@
+body {
+     background-attachment: fixed;
+     background-color: #333333;
+     opacity: 1;
+     color: #D85540;
+     font-size: 12px;
+     font-family: 'Consolas', monospace;
+}
+table {
+	font-size: 12px;
+}
+table tr:nth-child(odd) td
+{
+	background-color:rgba(0, 0, 0, 0.2);
+}
+table tr:nth-child(even) td
+{
+	color: #D85540;
+    background-color: black;
+	background-color:rgba(0, 0, 0, 0.1);
+}
+hr {
+     border: 1px solid white;
+     opacity: 0.1;
+}
+h1 {
+     height: 20px;
+}
+td {
+     text-align: center;
+     vertical-align: middle;
+}
+a {
+	color: #D85540;
+}

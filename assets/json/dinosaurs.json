@@ -80,6 +80,16 @@
     "health": 4
   },
   {
+    "id": "pterodactyl",
+    "soundId": "pachy",
+    "name": "STR_DINO_PTERODACTYL",
+    "desc": "STR_DINO_PTERODACTYL_DESC",
+    "speed": 2,
+    "damage": 2,
+    "health": 2,
+    "bHidden": true
+  },
+  {
     "id": "lizard",
     "soundId": "compy",
     "name": "STR_DINO_LIZARD",
@@ -97,5 +107,5 @@
     "damage": 1,
     "health": 1,
     "bHidden": true
-  }
+  }  
 ]

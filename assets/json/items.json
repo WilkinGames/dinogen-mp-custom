@@ -255,7 +255,7 @@
     "type": "helicopter",
     "name": "STR_BLACKHAWK",
     "desc": "STR_BLACKHAWK_DESC",
-    "cost": 40000,
+    "cost": 50000,
     "category": "heli"
   }
 ]

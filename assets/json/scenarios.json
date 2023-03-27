@@ -4,15 +4,13 @@
     "compoundExtraction",
     "terrorize",
     "eggFacility",
-    "tutorial",
-    "vehicleThieves"
+    "tutorial"
   ],
   "examples": [
     "lizardSlayer",
     "raceBattle",
     "airdropWars",
     "bowsAndArrows",
-    "vehicleShowcase",
-    "testRoom"
+    "vehicleShowcase"
   ]
 }

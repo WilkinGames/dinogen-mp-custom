@@ -2496,7 +2496,17 @@
 		"pl": "Prognoza klienta"
 	},
 	"STR_SETTING_CLIENT_VOLATILE": {
-		"en": "Client Volatility"
+		"en": "Client Volatility",
+		"ru": "Волатильность клиента",
+		"zh": "客户波动率",
+		"uk": "Волатильність клієнта",
+		"fr": "Volatilité des clients",
+		"tr": "İstemci Oynaklığı",
+		"es": "Volatilidad del cliente",
+		"it": "Volatilità del cliente",
+		"pt": "Volatilidade do cliente",
+		"de": "Client-Volatilität",
+		"pl": "Zmienność klientów"
 	},
 	"STR_SETTING_CHAT_FILTER": {
 		"en": "Filter Chat Profanity",
@@ -5617,6 +5627,32 @@
 		"pt": "Velociraptors inimigos são ágeis e letais. Mate-os antes que eles cheguem muito perto!",
 		"de": "Feindliche Velociraptoren sind agil und tödlich. Töte sie, bevor sie zu nahe kommen!",
 		"pl": "Wrogie Velociraptory są zwinne i śmiercionośne. Zabij je, zanim podejdą zbyt blisko!"
+	},
+	"STR_TIP_PTERODACTYLS": {
+		"en": "Pterodactyls",
+		"ru": "Птеродактили",
+		"zh": "翼手龙",
+		"uk": "Птеродактилі",
+		"fr": "Ptérodactyles",
+		"tr": "Pterodaktiller",
+		"es": "pterodáctilos",
+		"it": "Pterodattili",
+		"pt": "Pterodáctilos",
+		"de": "Flugsaurier",
+		"pl": "Pterodaktyle"
+	},
+	"STR_TIP_PTERODACTYLS_DESC": {
+		"en": "Enemy Pterodactyls can fly over walls and objects. Anti-air weapons are recommended!",
+		"ru": "Вражеские птеродактили могут летать над стенами и объектами. Рекомендуется противовоздушное оружие!",
+		"zh": "敌方翼手龙可以飞过墙壁和物体。推荐防空武器！",
+		"uk": "Ворожі птеродактилі можуть літати над стінами та предметами. Рекомендується протиповітряна зброя!",
+		"fr": "Les ptérodactyles ennemis peuvent survoler les murs et les objets. Les armes anti-aériennes sont recommandées !",
+		"tr": "Düşman Pterodaktiller duvarların ve nesnelerin üzerinden uçabilir. Hava savunma silahları tavsiye edilir!",
+		"es": "Los pterodáctilos enemigos pueden volar sobre paredes y objetos. ¡Se recomiendan armas antiaéreas!",
+		"it": "Gli pterodattili nemici possono sorvolare muri e oggetti. Si raccomandano armi antiaeree!",
+		"pt": "Pterodáctilos inimigos podem voar sobre paredes e objetos. Armas antiaéreas são recomendadas!",
+		"de": "Feindliche Flugsaurier können über Mauern und Objekte hinwegfliegen. Luftabwehrwaffen werden empfohlen!",
+		"pl": "Wrogie pterodaktyle mogą latać nad ścianami i obiektami. Polecamy broń przeciwlotniczą!"
 	},
 	"STR_TIP_TREX": {
 		"en": "Enemy Tyrannosaurus Rex",
@@ -17696,17 +17732,30 @@
 		"pl": "Welociraptor"
 	},
 	"STR_DINO_PACHY": {
-		"en": "Pachycephalosaurus",
-		"ru": "пахицефалозавр",
+		"en": "Pachy",
+		"ru": "Пахи",
 		"zh": "厚头龙",
-		"uk": "Пахіцефалозавр",
-		"fr": "Pachycéphalosaure",
-		"tr": "Pakisefalozorlar",
-		"es": "Paquicefalosaurio",
-		"it": "Pachicefalosauro",
-		"pt": "Paquicefalossauro",
-		"de": "Pachycephalosaurus",
-		"pl": "Pachycefalozaur"
+		"uk": "Пачі",
+		"fr": "Pachy",
+		"tr": "Pachy",
+		"es": "Pachy",
+		"it": "Pachy",
+		"pt": "Pachy",
+		"de": "Pachy",
+		"pl": "Pachy"
+	},
+	"STR_DINO_PTERODACTYL": {
+		"en": "Pterodactyl",
+		"ru": "Птеродактиль",
+		"zh": "翼手龙",
+		"uk": "Птеродактиль",
+		"fr": "Ptérodactyle",
+		"tr": "Pterodaktil",
+		"es": "Pterodáctilo",
+		"it": "Pterodattilo",
+		"pt": "Pterodáctilo",
+		"de": "Pterodaktylus",
+		"pl": "Pterodaktyl"
 	},
 	"STR_DINO_NEEDLER": {
 		"en": "Needlesaurus",
@@ -17837,6 +17886,19 @@
 		"pt": "Equilibrado com uma velocidade de estocada rápida.",
 		"de": "Ausgeglichen mit einer schnellen Ausfallgeschwindigkeit.",
 		"pl": "Zrównoważony z dużą prędkością lonży."
+	},
+	"STR_DINO_PTERODACTYL_DESC": {
+		"en": "Flying dinosaur with moderate stats.",
+		"ru": "Летающий динозавр со средними характеристиками.",
+		"zh": "具有中等统计数据的飞行恐龙。",
+		"uk": "Літаючий динозавр із середньою статистикою.",
+		"fr": "Dinosaure volant avec des statistiques modérées.",
+		"tr": "Orta düzeyde istatistiklere sahip uçan dinozor.",
+		"es": "Dinosaurio volador con estadísticas moderadas.",
+		"it": "Dinosauro volante con statistiche moderate.",
+		"pt": "Dinossauro voador com estatísticas moderadas.",
+		"de": "Fliegender Dinosaurier mit moderaten Statistiken.",
+		"pl": "Latający dinozaur o umiarkowanych statystykach."
 	},
 	"STR_DINO_NEEDLER_DESC": {
 		"en": "Launches deadly needles.",
@@ -18838,6 +18900,19 @@
 		"pt": "Itens",
 		"de": "Artikel",
 		"pl": "Rzeczy"
+	},
+	"STR_BUNDLE_ALL": {
+		"en": "Bundle Pack",
+		"ru": "Пакет пакетов",
+		"zh": "捆绑包",
+		"uk": "Пакет пакетів",
+		"fr": "Pack groupé",
+		"tr": "Paket Paketi",
+		"es": "Paquete de paquete",
+		"it": "Pacchetto pacchetto",
+		"pt": "Pacote",
+		"de": "Bundle-Paket",
+		"pl": "pakiet"
 	},
 	"STR_BUNDLE_DINO": {
 		"en": "Dino Bundle",
@@ -20062,19 +20137,69 @@
 		"pl": "Półnagi"
 	},
 	"STR_SHIRTLESS_TAN": {
-		"en": "Shirtless Tan"
+		"en": "Shirtless Tan",
+		"ru": "Загар без рубашки",
+		"zh": "光着膀子的棕褐色",
+		"uk": "Загар без сорочки",
+		"fr": "Bronzage torse nu",
+		"tr": "Gömleksiz Tan",
+		"es": "bronceado sin camisa",
+		"it": "Abbronzatura senza camicia",
+		"pt": "bronzeado sem camisa",
+		"de": "Hemdlose Bräune",
+		"pl": "opalenizna bez koszuli"
 	},
 	"STR_SHIRTLESS_DARK": {
-		"en": "Shirtless Dark"
+		"en": "Shirtless Dark",
+		"ru": "Темный без рубашки",
+		"zh": "光着膀子的黑暗",
+		"uk": "Темний без сорочки",
+		"fr": "Torse nu sombre",
+		"tr": "Gömleksiz Koyu",
+		"es": "oscuro sin camisa",
+		"it": "Scuro senza camicia",
+		"pt": "escuro sem camisa",
+		"de": "Nackter Oberkörper dunkel",
+		"pl": "Ciemny bez koszuli"
 	},
 	"STR_SHIRTLESS_FEMALE": {
-		"en": "Shirtless Female"
+		"en": "Shirtless Female",
+		"ru": "Женщина без рубашки",
+		"zh": "光着膀子的女性",
+		"uk": "Жінка без сорочки",
+		"fr": "Femme torse nu",
+		"tr": "Gömleksiz Kadın",
+		"es": "mujer sin camisa",
+		"it": "Femmina senza camicia",
+		"pt": "Mulher sem camisa",
+		"de": "Nackter Oberkörper weiblich",
+		"pl": "Kobieta bez koszuli"
 	},
 	"STR_SHIRTLESS_FEMALE_TAN": {
-		"en": "Shirtless Female Tan"
+		"en": "Shirtless Female Tan",
+		"ru": "Женский загар без рубашки",
+		"zh": "赤膊女棕褐色",
+		"uk": "Жіночий загар без сорочки",
+		"fr": "Bronzage féminin torse nu",
+		"tr": "Gömleksiz Kadın Taba",
+		"es": "bronceado femenino sin camisa",
+		"it": "Abbronzatura femminile senza camicia",
+		"pt": "Bronzeado feminino sem camisa",
+		"de": "Shirtless weibliche Tan",
+		"pl": "Bez koszuli opalona kobieta"
 	},
 	"STR_SHIRTLESS_FEMALE_DARK": {
-		"en": "Shirtless Female Dark"
+		"en": "Shirtless Female Dark",
+		"ru": "Без Рубашки Женский Темный",
+		"zh": "光着膀子的女性黑暗",
+		"uk": "Жінка без сорочки Темна",
+		"fr": "Torse nu Femme Sombre",
+		"tr": "Gömleksiz Kadın Koyu",
+		"es": "Mujer sin camisa oscura",
+		"it": "Oscurità femminile senza camicia",
+		"pt": "Feminino Sem Camisa Escuro",
+		"de": "Nackter Oberkörper weiblich dunkel",
+		"pl": "Bez koszuli Ciemny Kobieta"
 	},
 	"STR_PRESET": {
 		"en": "Preset",
@@ -21675,6 +21800,19 @@
 		"de": "Raster ein-/ausblenden",
 		"pl": "Pokaż/ukryj siatkę"
 	},
+	"STR_EDITOR_KEY_NODES": {
+		"en": "Show/Hide Nodes",
+		"ru": "Показать/скрыть узлы",
+		"zh": "显示/隐藏节点",
+		"uk": "Показати/приховати вузли",
+		"fr": "Afficher/Masquer les nœuds",
+		"tr": "Düğümleri Göster/Gizle",
+		"es": "Mostrar/ocultar nodos",
+		"it": "Mostra/Nascondi nodi",
+		"pt": "Mostrar/ocultar nós",
+		"de": "Knoten ein-/ausblenden",
+		"pl": "Pokaż/ukryj węzły"
+	},
 	"STR_EDITOR_KEY_ZOOM": {
 		"en": "Mouse Wheel to Zoom",
 		"ru": "Колесико мыши для увеличения",
@@ -23170,6 +23308,58 @@
 		"de": "Herausforderungen",
 		"pl": "Wyzwania"
 	},
+	"STR_ACTIVE_EVENTS_AND_CHALLENGES": {
+		"en": "Active Events & Challenges",
+		"ru": "Активные события",
+		"zh": "活动事件",
+		"uk": "Активні події",
+		"fr": "Événements actifs",
+		"tr": "Aktif Etkinlikler",
+		"es": "Eventos activos",
+		"it": "Eventi attivi",
+		"pt": "Eventos ativos",
+		"de": "Aktive Ereignisse",
+		"pl": "Aktywne wydarzenia"
+	},
+	"STR_EVENTS": {
+		"en": "Events",
+		"ru": "События",
+		"zh": "事件",
+		"uk": "Події",
+		"fr": "Événements",
+		"tr": "Olaylar",
+		"es": "Eventos",
+		"it": "Eventi",
+		"pt": "Eventos",
+		"de": "Veranstaltungen",
+		"pl": "Wydarzenia"
+	},
+	"STR_DOUBLE_XP": {
+		"en": "Double XP",
+		"ru": "Двойной опыт",
+		"zh": "双倍经验值",
+		"uk": "Подвійний XP",
+		"fr": "XP doublé",
+		"tr": "Çift XP",
+		"es": "XP doble",
+		"it": "PE doppi",
+		"pt": "EXP dupla",
+		"de": "Doppelte EP",
+		"pl": "Podwójne PD"
+	},
+	"STR_DOUBLE_WEAPON_XP": {
+		"en": "Double Weapon XP",
+		"ru": "Двойной опыт оружия",
+		"zh": "双武器经验值",
+		"uk": "Подвійна зброя XP",
+		"fr": "XP d'arme double",
+		"tr": "Çift Silah DP'si",
+		"es": "XP de arma doble",
+		"it": "Doppia Arma XP",
+		"pt": "Arma dupla XP",
+		"de": "Doppelte Waffen-XP",
+		"pl": "Podwójne PD broni"
+	},
 	"STR_CHALLENGE_DAILY": {
 		"en": "Daily",
 		"ru": "Повседневная",
@@ -24262,6 +24452,19 @@
 		"de": "Fan",
 		"pl": "Kibic"
 	},
+	"STR_MECHANIC": {
+		"en": "Mechanic",
+		"ru": "Механик",
+		"zh": "机械",
+		"uk": "Механік",
+		"fr": "Mécanicien",
+		"tr": "Tamirci",
+		"es": "Mecánico",
+		"it": "Meccanico",
+		"pt": "Mecânico",
+		"de": "Mechaniker",
+		"pl": "Mechanik"
+	},
 	"STR_KICK_IDLE_PLAYERS": {
 		"en": "Kick Idle Players",
 		"ru": "Выгнать бездействующих игроков",
@@ -24315,12 +24518,263 @@
 		"pl": "Kolor"
 	},
 	"STR_ADD_SERVER": {
-		"en": "Add Server"
+		"en": "Add Server",
+		"ru": "Добавить сервер",
+		"zh": "添加服务器",
+		"uk": "Додати сервер",
+		"fr": "Ajouter un serveur",
+		"tr": "Sunucu ekle",
+		"es": "Agregar servidor",
+		"it": "Aggiungi server",
+		"pt": "Adicionar servidor",
+		"de": "Server hinzufügen",
+		"pl": "Dodaj serwer"
 	},
 	"STR_DEFAULT_SERVERS": {
-		"en": "Default Servers"
+		"en": "Default Servers",
+		"ru": "Серверы по умолчанию",
+		"zh": "默认服务器",
+		"uk": "Сервери за замовчуванням",
+		"fr": "Serveurs par défaut",
+		"tr": "Varsayılan Sunucular",
+		"es": "Servidores predeterminados",
+		"it": "Server predefiniti",
+		"pt": "Servidores padrão",
+		"de": "Standardserver",
+		"pl": "Serwery domyślne"
 	},
 	"STR_CUSTOM_SERVERS": {
-		"en": "Custom Servers"
+		"en": "Custom Servers",
+		"ru": "Пользовательские серверы",
+		"zh": "自定义服务器",
+		"uk": "Спеціальні сервери",
+		"fr": "Serveurs personnalisés",
+		"tr": "Özel Sunucular",
+		"es": "Servidores personalizados",
+		"it": "Server personalizzati",
+		"pt": "Servidores personalizados",
+		"de": "Benutzerdefinierte Server",
+		"pl": "Serwery niestandardowe"
+	},
+	"STR_REDEEM_CODE": {
+		"en": "Redeem Code",
+		"ru": "Активировать код",
+		"zh": "兑换码",
+		"uk": "Активувати код",
+		"fr": "Utiliser le code",
+		"tr": "Kodu Kullan",
+		"es": "Canjear código",
+		"it": "Riscatta codice",
+		"pt": "Resgatar código",
+		"de": "Code einlösen",
+		"pl": "Zrealizuj kod"
+	},
+	"STR_REDEEM_CODE_DESC": {
+		"en": "If you have a promotion code for Dinogen Online, enter it below.",
+		"ru": "Если у вас есть промо-код для Dinogen Online, введите его ниже.",
+		"zh": "如果您有 Dinogen Online 的促销代码，请在下方输入。",
+		"uk": "Якщо у вас є промокод для Dinogen Online, введіть його нижче.",
+		"fr": "Si vous disposez d'un code promotionnel pour Dinogen Online, saisissez-le ci-dessous.",
+		"tr": "Dinogen Online için bir promosyon kodunuz varsa aşağıya girin.",
+		"es": "Si tiene un código de promoción para Dinogen Online, introdúzcalo a continuación.",
+		"it": "Se disponi di un codice promozionale per Dinogen Online, inseriscilo di seguito.",
+		"pt": "Se você tiver um código promocional para Dinogen Online, insira-o abaixo.",
+		"de": "Wenn Sie einen Aktionscode für Dinogen Online haben, geben Sie ihn unten ein.",
+		"pl": "Jeśli posiadasz kod promocyjny do Dinogen Online, wpisz go poniżej."
+	},
+	"STR_REDEEM_CODE_SUCCESS_X": {
+		"en": "Promotion code has been redeemed:\n%1",
+		"ru": "Промокод был использован:\n%1",
+		"zh": "优惠码已兑换：\n%1",
+		"uk": "Промо-код активовано:\n%1",
+		"fr": "Le code promotionnel a été utilisé :\n%1",
+		"tr": "Promosyon kodu kullanıldı:\n%1",
+		"es": "El código de promoción ha sido canjeado:\n%1",
+		"it": "Il codice promozionale è stato riscattato:\n%1",
+		"pt": "O código promocional foi resgatado:\n% 1",
+		"de": "Aktionscode wurde eingelöst:\n%1",
+		"pl": "Kod promocyjny został wykorzystany:\n%1"
+	},
+	"STR_REDEEM_CODE_INVALID": {
+		"en": "Invalid promotion code.",
+		"ru": "Недействительный промо-код.",
+		"zh": "促销代码无效。",
+		"uk": "Недійсний промокод.",
+		"fr": "Code promotionnel invalide.",
+		"tr": "Geçersiz promosyon kodu.",
+		"es": "Código de promoción no válido.",
+		"it": "Codice promozionale non valido.",
+		"pt": "Código promocional inválido.",
+		"de": "Ungültiger Aktionscode.",
+		"pl": "Nieprawidłowy kod promocyjny."
+	},
+	"STR_REDEEM_CODE_ALREADY_USED": {
+		"en": "You have already redeemed this promotion code.",
+		"ru": "Вы уже использовали этот промокод.",
+		"zh": "您已经兑换了此促销代码。",
+		"uk": "Ви вже активували цей промокод.",
+		"fr": "Vous avez déjà utilisé ce code promotionnel.",
+		"tr": "Bu promosyon kodunu zaten kullandınız.",
+		"es": "Ya has canjeado este código de promoción.",
+		"it": "Hai già riscattato questo codice promozionale.",
+		"pt": "Você já resgatou este código promocional.",
+		"de": "Sie haben diesen Aktionscode bereits eingelöst.",
+		"pl": "Wykorzystałeś już ten kod promocyjny."
+	},
+	"STR_REDEEM_CODE_USED": {
+		"en": "Promotion code has already been used.",
+		"ru": "Промокод уже использован.",
+		"zh": "促销代码已被使用。",
+		"uk": "Промокод вже використано.",
+		"fr": "Le code promotionnel a déjà été utilisé.",
+		"tr": "Promosyon kodu zaten kullanılmış.",
+		"es": "El código de promoción ya se ha utilizado.",
+		"it": "Il codice promozionale è già stato utilizzato.",
+		"pt": "O código promocional já foi usado.",
+		"de": "Aktionscode wurde bereits verwendet.",
+		"pl": "Kod promocyjny został już wykorzystany."
+	},
+	"STR_REDEEM_CODE_EXPIRED": {
+		"en": "Promotion code has expired.",
+		"ru": "Срок действия промо-кода истек.",
+		"zh": "促销代码已过期。",
+		"uk": "Термін дії промо-коду закінчився.",
+		"fr": "Le code promotionnel a expiré.",
+		"tr": "Promosyon kodunun süresi doldu.",
+		"es": "El código de promoción ha caducado.",
+		"it": "Il codice promozionale è scaduto.",
+		"pt": "O código promocional expirou.",
+		"de": "Aktionscode ist abgelaufen.",
+		"pl": "Kod promocyjny wygasł."
+	},
+	"STR_BADGE_ACHIEVEMENTS_DESC": {
+		"en": "Unlock all Achievements",
+		"ru": "Разблокировать все достижения",
+		"zh": "解锁所有成就",
+		"uk": "Розблокуйте всі досягнення",
+		"fr": "Débloquez toutes les réalisations",
+		"tr": "Tüm Başarıların Kilidini Açın",
+		"es": "Desbloquea todos los logros",
+		"it": "Sblocca tutti gli obiettivi",
+		"pt": "Desbloqueie todas as conquistas",
+		"de": "Schalte alle Erfolge frei",
+		"pl": "Odblokuj wszystkie osiągnięcia"
+	},
+	"STR_BADGE_CHALLENGES_DESC": {
+		"en": "Complete 100 Challenges",
+		"ru": "Выполните 100 испытаний",
+		"zh": "完成 100 项挑战",
+		"uk": "Виконайте 100 завдань",
+		"fr": "Complétez 100 défis",
+		"tr": "100 Mücadeleyi Tamamla",
+		"es": "Completa 100 desafíos",
+		"it": "Completa 100 sfide",
+		"pt": "Complete 100 desafios",
+		"de": "Schließe 100 Herausforderungen ab",
+		"pl": "Ukończ 100 wyzwań"
+	},
+	"STR_BADGE_SURVIVAL_DESC": {
+		"en": "Get 1,500 kills in all Survival modes",
+		"ru": "Совершите 1500 убийств во всех режимах выживания.",
+		"zh": "在所有生存模式中获得 1,500 次击杀",
+		"uk": "Зробіть 1500 вбивств у всіх режимах виживання",
+		"fr": "Obtenez 1 500 éliminations dans tous les modes de survie",
+		"tr": "Tüm Hayatta Kalma modlarında 1.500 öldürme elde edin",
+		"es": "Consigue 1500 muertes en todos los modos Supervivencia",
+		"it": "Ottieni 1.500 uccisioni in tutte le modalità Sopravvivenza",
+		"pt": "Consiga 1.500 mortes em todos os modos de Sobrevivência",
+		"de": "Erziele 1.500 Kills in allen Überlebensmodi",
+		"pl": "Zdobądź 1500 zabójstw we wszystkich trybach przetrwania"
+	},
+	"STR_BADGE_SUPPORTER_DESC": {
+		"en": "Acquire a bundle",
+		"ru": "Получить пакет",
+		"zh": "获取捆绑包",
+		"uk": "Придбайте пучок",
+		"fr": "Acquérir un forfait",
+		"tr": "Bir paket edinin",
+		"es": "Adquirir un paquete",
+		"it": "Acquista un pacchetto",
+		"pt": "Adquira um pacote",
+		"de": "Erwerben Sie ein Bündel",
+		"pl": "Zdobądź pakiet"
+	},
+	"STR_BADGE_MECHANIC_DESC": {
+		"en": "Repair 10,000 objects",
+		"ru": "Отремонтировать 10 000 объектов",
+		"zh": "修复 10,000 个物体",
+		"uk": "Відремонтувати 10 000 об'єктів",
+		"fr": "Réparer 10 000 objets",
+		"tr": "10.000 nesneyi onarın",
+		"es": "Repara 10,000 objetos",
+		"it": "Ripara 10.000 oggetti",
+		"pt": "Conserte 10.000 objetos",
+		"de": "Repariere 10.000 Objekte",
+		"pl": "Napraw 10 000 obiektów"
+	},
+	"STR_REPORT_DESC": {
+		"en": "Indicate why you are reporting this player. False reports will not be tolerated.",
+		"ru": "Укажите, почему вы сообщаете об этом игроке. Ложные сообщения не допускаются.",
+		"zh": "说明您举报该玩家的原因。虚假报告将不会被容忍。",
+		"uk": "Вкажіть, чому ви повідомляєте про цього гравця. Неправдиві повідомлення не допускатимуться.",
+		"fr": "Indiquez pourquoi vous signalez ce joueur. Les faux rapports ne seront pas tolérés.",
+		"tr": "Bu oyuncuyu neden şikayet ettiğinizi belirtin. Yanlış raporlara müsamaha gösterilmeyecektir.",
+		"es": "Indique por qué está denunciando a este jugador. No se tolerarán informes falsos.",
+		"it": "Indica perché stai segnalando questo giocatore. False segnalazioni non saranno tollerate.",
+		"pt": "Indique por que você está denunciando este jogador. Relatos falsos não serão tolerados.",
+		"de": "Geben Sie an, warum Sie diesen Spieler melden. Falschmeldungen werden nicht toleriert.",
+		"pl": "Wskaż, dlaczego zgłaszasz tego gracza. Fałszywe zgłoszenia nie będą tolerowane."
+	},
+	"STR_REPORT_REASON": {
+		"en": "Reason",
+		"ru": "Причина",
+		"zh": "原因",
+		"uk": "Причина",
+		"fr": "Raison",
+		"tr": "Sebep",
+		"es": "Razón",
+		"it": "Motivo",
+		"pt": "Razão",
+		"de": "Grund",
+		"pl": "Powód"
+	},
+	"STR_REPORT_CHEATING": {
+		"en": "Cheating",
+		"ru": "Мошенничество",
+		"zh": "作弊",
+		"uk": "Обман",
+		"fr": "Tricherie",
+		"tr": "Hile",
+		"es": "Infiel",
+		"it": "Imbrogliare",
+		"pt": "Trapaceando",
+		"de": "Schummeln",
+		"pl": "Oszukiwanie"
+	},
+	"STR_REPORT_HARASSMENT": {
+		"en": "Harassment/Abuse",
+		"ru": "Домогательства / жестокое обращение",
+		"zh": "骚扰/虐待",
+		"uk": "Переслідування/зловживання",
+		"fr": "Harcèlement/Abus",
+		"tr": "Taciz/İstismar",
+		"es": "Acoso/Abuso",
+		"it": "Molestie/Abuso",
+		"pt": "Assédio/Abuso",
+		"de": "Belästigung/Missbrauch",
+		"pl": "Nękanie/znęcanie się"
+	},
+	"STR_REPORT_IMPERSONATION": {
+		"en": "Impersonation",
+		"ru": "Олицетворение",
+		"zh": "冒充",
+		"uk": "Уособлення",
+		"fr": "Imitation",
+		"tr": "kimliğe bürünme",
+		"es": "Interpretación",
+		"it": "Furto d'identità",
+		"pt": "Representação",
+		"de": "Identitätswechsel",
+		"pl": "Personifikacja"
 	}
 }
