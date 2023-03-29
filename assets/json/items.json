@@ -214,7 +214,7 @@
     "id": "item_egg_allosaurus",
     "name": "STR_EGG_ALLOSAURUS",
     "desc": "STR_EGG_ALLOSAURUS_DESC",
-    "cost": 20000,
+    "cost": 25000,
     "type": "egg",
     "category": "dinosaur"
   },
@@ -222,7 +222,7 @@
     "id": "item_egg_spinosaurus",
     "name": "STR_EGG_SPINOSAURUS",
     "desc": "STR_EGG_SPINOSAURUS_DESC",
-    "cost": 30000,
+    "cost": 35000,
     "type": "egg",
     "category": "dinosaur"
   },

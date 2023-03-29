@@ -132,11 +132,11 @@
 	"flags": {
 		"capture_the_flag": [
 			[
-				363,
-				666
+				495,
+				445
 			],
 			[
-				4233,
+				4200,
 				955
 			]
 		],
@@ -6135,6 +6135,136 @@
 			],
 			"id": "wxny",
 			"rotation": 0
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small_plank",
+			"position": [
+				371,
+				639
+			],
+			"id": "71a3",
+			"rotation": 8,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small_plank",
+			"position": [
+				371,
+				639
+			],
+			"id": "ke8t",
+			"rotation": 45,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small_plank",
+			"position": [
+				371,
+				639
+			],
+			"id": "qo5g",
+			"rotation": 84,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small_plank",
+			"position": [
+				371,
+				639
+			],
+			"id": "2t7w",
+			"rotation": 127,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "box_small_plank",
+			"position": [
+				369,
+				637
+			],
+			"id": "ixsb",
+			"rotation": 162,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "dirt_0",
+			"position": [
+				366,
+				636
+			],
+			"id": "xwok",
+			"rotation": 0,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "dirt_0",
+			"position": [
+				375,
+				632
+			],
+			"id": "xhgw",
+			"rotation": -27,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "obstacle",
+			"obstacleId": "dirt_0",
+			"position": [
+				376,
+				642
+			],
+			"id": "koya",
+			"rotation": -65,
+			"tint": null,
+			"objectScale": null,
+			"layer": null
+		},
+		{
+			"type": "emitter",
+			"gravityX": 10,
+			"gravityY": -20,
+			"speedMinX": -10,
+			"speedMaxX": 10,
+			"speedMinY": -10,
+			"speedMaxY": 0,
+			"position": [
+				374,
+				631
+			],
+			"id": "426l",
+			"rotation": 0,
+			"frame": "smoke",
+			"particleTint": 0,
+			"maxParticles": 50,
+			"minParticleScale": 0.5,
+			"maxParticleScale": 2,
+			"lifespan": 5000,
+			"frequency": 100,
+			"layer": "layer_front",
+			"opacity": 0.5,
+			"attachToId": null,
+			"destroyTimer": null
 		}
 	],
 	"tiles": [

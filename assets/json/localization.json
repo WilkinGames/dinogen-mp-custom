@@ -363,6 +363,19 @@
 		"de": "Dinogen-Wiki",
 		"pl": "Odkrywaj wiki"
 	},
+	"STR_RESOURCES": {
+		"en": "Resources",
+		"ru": "Ресурсы",
+		"zh": "资源",
+		"uk": "Ресурси",
+		"fr": "Ressources",
+		"tr": "Kaynaklar",
+		"es": "Recursos",
+		"it": "Risorse",
+		"pt": "Recursos",
+		"de": "Ressourcen",
+		"pl": "Zasoby"
+	},
 	"STR_SWITCH_TEAM": {
 		"en": "Switch Team",
 		"ru": "Сменить команды",
