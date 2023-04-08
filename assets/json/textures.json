@@ -4,6 +4,14 @@
   "wood",
   "tile",
   "tile2",
+  "tile3",
   "grass",
-  "grass2"
+  "grass2",
+  "dirt",
+  "walkway",
+  "rocks",
+  "water",
+  "stairs",
+  "box",
+  "planks"
 ]

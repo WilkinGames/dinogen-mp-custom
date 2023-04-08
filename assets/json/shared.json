@@ -124,7 +124,7 @@
     "mass": 1,
     "damping": 0.9999,
     "angularDamping": 0.9,
-    "maxSpeed": 600
+    "maxSpeed": 625
   },
   "egg_small": {
     "size": 18,

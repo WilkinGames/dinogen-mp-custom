@@ -110,7 +110,7 @@
     "type": "ammo",
     "name": "STR_MOD_HOLLOW_POINT",
     "desc": "STR_MOD_HOLLOW_POINT_DESC",
-    "score": 12500,
+    "score": 15000,
     "moneyCost": 2500,
     "cost": 5
   },
@@ -163,7 +163,7 @@
     "type": "ammo",
     "name": "STR_MOD_GRENADE_HE",
     "desc": "STR_MOD_GRENADE_HE_DESC",
-    "score": 10000,
+    "score": 15000,
     "cost": 10,
     "moneyCost": 3000
   },
@@ -172,7 +172,7 @@
     "type": "ammo",
     "name": "STR_MOD_GRENADE_FIRE",
     "desc": "STR_MOD_GRENADE_FIRE_DESC",
-    "score": 15000,
+    "score": 20000,
     "cost": 10,
     "moneyCost": 5000
   },

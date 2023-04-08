@@ -49,6 +49,11 @@
     "bCustom": true
   },
   {
+    "id": "map_atrium",
+    "name": "STR_MAP_ATRIUM",
+    "bCustom": true
+  },
+  {
     "id": "map_field",
     "name": "STR_MAP_FIELD"
   },

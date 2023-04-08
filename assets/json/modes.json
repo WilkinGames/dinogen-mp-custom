@@ -98,6 +98,13 @@
     "ngId": 11943
   },
   {
+    "id": "survival_pandemonium",
+    "name": "STR_MODE_SURVIVAL_PANDEMONIUM",
+    "desc": "STR_MODE_SURVIVAL_PANDEMONIUM_DESC",
+    "bSurvival": true,
+    "bHidden": true
+  },
+  {
     "id": "survival_zombie",
     "name": "STR_MODE_SURVIVAL_ZOMBIE",
     "desc": "STR_MODE_SURVIVAL_ZOMBIE_DESC",

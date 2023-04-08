@@ -11637,27 +11637,6 @@
 		},
 		{
 			"type": "obstacle",
-			"obstacleId": "lever",
-			"position": [
-				2815,
-				818
-			],
-			"id": "293u",
-			"rotation": 0,
-			"bNoBody": false,
-			"health": null,
-			"mass": null,
-			"material": null,
-			"items": null,
-			"indicatorData": null,
-			"tint": null,
-			"bIgnoreProjectiles": null,
-			"layer": null,
-			"damageMultipliers": null,
-			"bGodMode": null
-		},
-		{
-			"type": "obstacle",
 			"obstacleId": "grass_2",
 			"position": [
 				555,
