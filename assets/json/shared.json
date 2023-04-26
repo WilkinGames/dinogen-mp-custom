@@ -72,7 +72,7 @@
     "mass": 2,
     "damping": 0.9999,
     "angularDamping": 0.9,
-    "maxSpeed": 325
+    "maxSpeed": 300
   },
   "spinosaurus": {
     "width": 130,
@@ -84,6 +84,15 @@
     "sprintCooldownMax": 2
   },
   "stegosaurus": {
+    "width": 100,
+    "height": 28,
+    "mass": 3,
+    "damping": 0.9999,
+    "angularDamping": 0.9,
+    "maxSpeed": 250,
+    "sprintCooldownMax": 2
+  },
+  "ankylosaurus": {
     "width": 130,
     "height": 50,
     "mass": 4,

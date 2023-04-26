@@ -40,6 +40,16 @@
     "health": 1
   },
   {
+    "id": "ankylosaurus",
+    "soundId": "stegosaurus",
+    "name": "STR_DINO_ANKYLOSAURUS",
+    "desc": "STR_DINO_ANKYLOSAURUS_DESC",
+    "speed": 1,
+    "damage": 2,
+    "health": 3,
+    "bHidden": true
+  },
+  {
     "id": "stegosaurus",
     "name": "STR_DINO_STEGOSAURUS",
     "desc": "STR_DINO_STEGOSAURUS_DESC",
@@ -107,5 +117,5 @@
     "damage": 1,
     "health": 1,
     "bHidden": true
-  }  
+  }
 ]

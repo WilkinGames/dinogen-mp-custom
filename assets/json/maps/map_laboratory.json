@@ -282,6 +282,24 @@
 	},
 	"objects": [
 		{
+			"type": "polygon",
+			"shape": "box",
+			"width": 600,
+			"height": 100,
+			"bNoBody": false,
+			"position": [
+				223,
+				4674
+			],
+			"id": "aezt",
+			"rotation": 0,
+			"tint": null,
+			"material": null,
+			"opacity": null,
+			"texture": null,
+			"bHideOutline": null
+		},
+		{
 			"type": "obstacle",
 			"obstacleId": "wires_1",
 			"position": [
