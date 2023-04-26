@@ -1,23 +1,33 @@
 {
-  "name": "Dinogen Online Server",
-  "country": null,
-  "type": "STR_INTERNET",
-  "port": 9000,
-  "maxPlayers": 100,
-  "bAllowVotekick": true,
-  "bAllowVoteskip": true,
-  "bAllowVotes": true,
-  "bPersistentStats": true,
-  "bDisableDummies": true,
-  "welcome": "STR_SERVER_WELCOME",
-  "rules": "STR_SERVER_RULES_NONE",
-  "info": [
-    "STR_SERVER_RULES_INFO",
-    "STR_SERVER_PLAYER_INFO"
-  ],
-  "admins": [
-    "xwilkinx"
-  ],
-  "banned": [
-  ]
+	"name": "Dinogen Online Server",
+	"country": null,
+	"port": 9000,
+	"maxPlayers": 100,
+	"bPersistentStats": false,
+	"bAllowVotekick": true,
+	"bAllowVoteskip": true,
+	"bAllowVotes": true,
+	"bDisableDummies": false,
+	"bDisableCustomLobbies": false,	
+	"bSingleGame": false,
+	"singleGameData": {
+		"lobbyType": "all",
+		"scenario": "scenario.json"
+	},
+	"publicLobbies": [	
+		"all",		
+		"standard",
+		"survival",
+		"groundWar"
+	],	
+	"welcome": "STR_SERVER_WELCOME",
+	"rules": "STR_SERVER_RULES_DEFAULT",
+	"info": [
+		"STR_SERVER_RULES_INFO",
+		"STR_SERVER_PLAYER_INFO",
+		"STR_SERVER_VOTESKIP_INFO",
+		"STR_SERVER_DISCORD"
+	],	
+	"admins": [],
+	"banned": []	
 }
