@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "bDefault": true,
     "name": "Human FFA",
     "data": {
@@ -8,18 +8,6 @@
       "mapId": "random",
       "settings": {
         "allowFactions": "humans"
-      }
-    }
-  },
-  {
-    "id": 1,
-    "bDefault": true,
-    "name": "Humans vs Dinosaurs TDM",
-    "data": {
-      "gameModeId": "team_deathmatch",
-      "mapId": "random",
-      "settings": {
-        "allowFactions": "humans_dinosaurs"
       }
     }
   },

@@ -48,7 +48,7 @@
     "name": "STR_MOD_FMJ",
     "desc": "STR_MOD_FMJ_DESC",
     "score": 5000,
-    "moneyCost": 1000,
+    "moneyCost": 1500,
     "cost": 2
   },
   {
@@ -57,7 +57,7 @@
     "name": "STR_MOD_PIERCING",
     "desc": "STR_MOD_PIERCING_DESC",
     "score": 2500,
-    "moneyCost": 500,
+    "moneyCost": 1000,
     "cost": 1
   },
   {
@@ -66,7 +66,7 @@
     "name": "STR_MOD_MAGPULL",
     "desc": "STR_MOD_MAGPULL_DESC",
     "score": 7000,
-    "moneyCost": 1000,
+    "moneyCost": 2000,
     "cost": 3
   },
   {
@@ -76,7 +76,7 @@
     "desc": "STR_MOD_EXTENDED_DESC",
     "score": 10000,
     "moneyCost": 1500,
-    "cost": 2
+    "cost": 3
   },
   {
     "id": "ammo_slug",
@@ -85,7 +85,7 @@
     "desc": "STR_MOD_SLUG_DESC",
     "score": 15000,
     "moneyCost": 3000,
-    "cost": 3
+    "cost": 5
   },
   {
     "id": "ammo_fire",
@@ -94,7 +94,7 @@
     "desc": "STR_MOD_DRAGONS_BREATH_DESC",
     "score": 25000,
     "moneyCost": 5000,
-    "cost": 5
+    "cost": 10
   },
   {
     "id": "arrow_poison",
@@ -224,7 +224,7 @@
     "name": "STR_MOD_GRIP_ANGLED",
     "desc": "STR_MOD_GRIP_ANGLED_DESC",
     "score": 7500,
-    "moneyCost": 500,
+    "moneyCost": 1000,
     "cost": 5
   },
   {

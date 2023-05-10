@@ -17,8 +17,7 @@
 	"publicLobbies": [	
 		"all",		
 		"standard",
-		"survival",
-		"groundWar"
+		"survival"
 	],	
 	"welcome": "STR_SERVER_WELCOME",
 	"rules": "STR_SERVER_RULES_DEFAULT",

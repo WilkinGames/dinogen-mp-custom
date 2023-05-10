@@ -672,7 +672,7 @@
     "assault": {
       "primary": {
         "id": "m16a4",
-        "mods": { "optic": null }
+        "mods": {}
       },
       "secondary": {
         "id": "m3",

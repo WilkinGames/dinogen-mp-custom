@@ -8481,7 +8481,7 @@ class GameInstance
     handlePawn(_body)
     {
         var data = _body.data;
-        if (this.game.bMultiplayer && !data.controllableId && this.isOutOfMap(_body, !data.bBot))
+        if (this.game.bMultiplayer && !data.controllableId && !data.bGodMode && this.isOutOfMap(_body, !data.bBot))
         {
             if (this.game.bSurvival || this.game.gameModeData.bAllowRevives)
             {
@@ -10591,6 +10591,17 @@ class GameInstance
         } 
     }
 
+    executeMacro(_data)
+    {
+        if (_data)
+        {
+            switch (_data.macroId)
+            {
+
+            }
+        }
+    }
+
     executeTriggerById(_id, _params = null)
     {
         try
@@ -11099,6 +11110,13 @@ class GameInstance
             let trigger;
             switch (_data.action)
             {
+                case "macro":
+                    switch (_data.id)
+                    {
+                        case 0:
+                            break;
+                    }
+                    break;
                 case "disableTrigger":
                     trigger = this.getTriggerById(_data.triggerId);
                     if (trigger)
@@ -11395,6 +11413,9 @@ class GameInstance
                     break;
                 case "executeTrigger":
                     this.executeTriggerById(_data.triggerId);
+                    break;
+                case "executeMacro":
+                    this.executeMacro(_data);
                     break;
                 case "endGame":
                     this.requestEvent({
@@ -13588,6 +13609,7 @@ class GameInstance
                     break;               
 
                 case GameServer.EVENT_GAME_END:
+                    console.log(_data);
                     if (_data.condition == MatchState.END_CONDITION_FORFEIT)
                     {
                         _data.winningTeam = -1; //Draw
@@ -17913,7 +17935,7 @@ class GameInstance
                         {
                             continue;
                         }
-                        if (_team == null || cur.data.team == _team)
+                        if (_team == null || cur.data.team == _team || !this.vehicleHasOccupant(cur))
                         {
                             arr.push(cur);
                         }
@@ -18754,7 +18776,7 @@ class GameInstance
                                         eventId: GameServer.EVENT_GAME_END,
                                         condition: MatchState.END_CONDITION_SCORE,
                                         winningTeam: ps.team,
-                                        playerId: ps.id,
+                                        //playerId: ps.id,
                                         cameraTargetId: ps.id
                                     });
                                 }
@@ -18787,16 +18809,18 @@ class GameInstance
                                             eventId: GameServer.EVENT_GAME_END,
                                             condition: MatchState.END_CONDITION_TREX_KILLED,
                                             winningTeam: ps.team,
+                                            playerId: ps.id,
                                             cameraTargetId: ps.id
                                         });
                                     }
                                     else if (scores[ps.team] >= game.gameModeData.scoreLimit)
                                     {
+                                        let rexes = this.getPlayersOnTeam(1);
                                         this.requestEvent({
                                             eventId: GameServer.EVENT_GAME_END,
                                             condition: MatchState.END_CONDITION_SCORE,
                                             winningTeam: ps.team,
-                                            playerId: this.getPlayersOnTeam(1).id,
+                                            playerId: rexes[0] ? rexes[0].id : null,
                                             cameraTargetId: ps.id
                                         });
                                     }
@@ -19271,7 +19295,7 @@ class GameInstance
             });
             if (ps.money > 0 && !this.game.gameSettings.bDisableMoneyDrops)
             {
-                var costToDie = 1000;
+                var costToDie = Math.max(1000, Math.round(ps.money * 0.1)); //Money lost when killed
                 var dif = Math.min(0, ps.money - costToDie);
                 this.addPlayerMoney(ps.id, -costToDie);
                 var numBills = 5;
@@ -21373,7 +21397,7 @@ class GameInstance
                 4: 0.1
             };
             health *= 10;
-            speedMult = bCommander ? 1 : 0.75;
+            speedMult = bCommander ? 1 : 0.8;
             melee = "melee_hatchet";
         }
         else if (primary.type == Weapon.TYPE_SHOTGUN)
@@ -26777,8 +26801,9 @@ class GameInstance
             scale: _data.scale,
             bNoBody: _data.bNoBody,
             tint: _data.tint,
+            layer: _data.layer,
             bHideOutline: _data.bHideOutline,
-            bIgnoreProjectiles: _data.bIgnoreProjectiles,
+            bIgnoreProjectiles: _data.bIgnoreProjectiles,            
             bSkipServerUpdate: true
         };        
         var data = body.data;
@@ -26942,7 +26967,7 @@ class GameInstance
             case Dinosaur.RAPTOR:
                 data.lungeMult = 2;
                 data.health = 500;
-                data.reward = this.game.bSurvival ? 500 : 250;
+                data.reward = this.game.bSurvival ? 400 : 200;
                 if (this.game.bSurvival)
                 {
                     weapon.damage *= 2;
@@ -27618,6 +27643,18 @@ class GameInstance
     getPlayers()
     {
         return this.game.players;
+    }
+
+    setPerformanceMode(_bVal)
+    {
+        if (this.game)
+        {
+            this.setTickRate(_bVal ? 10 : 60);
+            this.game.world.solver.tolerance = _bVal ? 0.999 : 0.1;
+            this.game.world.solver.iterations = _bVal ? 1 : 2;
+            this.game.world.setImpactEvents(!_bVal);
+            this.log(_bVal ? "Performance mode ENABLED" : "Peformance mode DISABLED");
+        }
     }
 
     getCurrentGameData()
@@ -29658,93 +29695,218 @@ class GameInstance
         return arr;
     }
 
+    generateWorld()
+    {
+        this.log("Generating world");
+        var scenario = {
+
+        };
+    }
+
     getBotClasses()
     {
-        var classes = this.clone(this.getSharedData("classes"));
-        var types = [Weapon.TYPE_RIFLE, Weapon.TYPE_SMG, Weapon.TYPE_LMG, Weapon.TYPE_SNIPER];
-        var keys = Object.keys(classes);
-        for (var i = 0; i < keys.length; i++)
+        try
         {
-            let key = keys[i];
-            let curClass = classes[key];
-            let primary = curClass.primary;
-            let rand = this.Random(1, 5);
-            switch (rand)
+            var classes = this.getSharedData("classes", true);
+            var types = [Weapon.TYPE_RIFLE, Weapon.TYPE_SMG, Weapon.TYPE_LMG, Weapon.TYPE_SNIPER];
+            var keys = Object.keys(classes);
+            for (var i = 0; i < keys.length; i++)
             {
-                case 1:
-                    var wpnType = Weapon.TYPE_DMR;
-                    break;
-                case 2:
+                let key = keys[i];
+                let curClass = classes[key];
+                let primary = curClass.primary;
+                let rand = this.Random(1, 5);
+                switch (rand)
+                {
+                    case 1:
+                        var wpnType = Weapon.TYPE_DMR;
+                        break;
+                    case 2:
+                        wpnType = Weapon.TYPE_CARBINE;
+                        break;
+                    default:
+                        wpnType = types[i];
+                        break;
+                }
+                if (!wpnType)
+                {
+                    console.warn("Invalid weapon type", wpnType, i)
                     wpnType = Weapon.TYPE_CARBINE;
-                    break;
-                default:
-                    wpnType = types[i];
-                    break;
+                }
+                let wpns = this.getAllWeaponsByType(wpnType);
+                primary.id = wpns[this.Random(0, wpns.length - 1)].id;
+                if (!primary.id)
+                {
+                    console.warn("Invalid primary id", primary.id);
+                    primary.id = "m4a1";
+                }
+                let primaryData = this.getWeaponData(primary.id);
+                this.setRandomWeaponMods(primaryData);
+                primary.mods = primaryData.mods;
+                let secondary = curClass.secondary;
+                switch (key)
+                {
+                    case Classes.ASSAULT:
+                        var secondaryWpnTypes = [Weapon.TYPE_SHOTGUN];
+                        break;
+                    case Classes.COMMANDO:
+                        secondaryWpnTypes = [Weapon.TYPE_LAUNCHER];
+                        break;
+                    default:
+                        secondaryWpnTypes = [Weapon.TYPE_PISTOL, Weapon.TYPE_MACHINE_PISTOL];
+                        break;
+                }
+                wpns = this.getAllWeaponsByType(secondaryWpnTypes[this.Random(0, secondaryWpnTypes.length - 1)]);
+                switch (key)
+                {
+                    case Classes.SUPPORT:
+                        wpns.push(this.getWeaponData("riot_shield"), this.getWeaponData("tazer"));
+                        break;
+                    case Classes.HUNTER:
+                        wpns.push(this.getWeaponData("bow"), this.getWeaponData("crossbow"));
+                        break;
+                }
+                secondary.id = wpns[this.Random(0, wpns.length - 1)].id;
+                if (!secondary.id)
+                {
+                    console.warn("Invalid secondary id", secondary.id);
+                    secondary.id = "m9";
+                }
+                let secondaryData = this.getWeaponData(secondary.id);
+                this.setRandomWeaponMods(secondaryData);
+                secondary.mods = secondaryData.mods;
+                let grenades = this.getAllWeaponsByType(Weapon.TYPE_GRENADE);
+                curClass.grenade = grenades[this.Random(0, grenades.length - 1)].id;
+                curClass.melee = this.getRandomMelee().id;
+                curClass.avatar[Faction.DINOGEN].body = this.getRandomBody(Faction.DINOGEN);
+                curClass.avatar[Faction.DINOGEN].head = this.RandomBoolean() ? Character.HEAD_NONE : Character.HEAD_US_HELMET;
+                curClass.avatar[Faction.MILITIA].body = this.getRandomBody(Faction.MILITIA);
+                curClass.avatar[Faction.MILITIA].head = this.RandomBoolean() ? Character.HEAD_NONE : Character.HEAD_OPFOR_HELMET;
+                curClass.avatar[Faction.DINOGEN].facewear = this.Random(1, 3 == 1) ? Character.FACEWEAR_GAITER : Character.FACEWEAR_NONE;
+                curClass.avatar[Faction.MILITIA].facewear = this.Random(1, 3 == 1) ? Character.FACEWEAR_GAITER : Character.FACEWEAR_NONE;
+                curClass.avatar[Faction.DINOGEN].hair = this.getRandomHair();
+                curClass.avatar[Faction.MILITIA].hair = this.getRandomHair();
+                curClass.avatar[Faction.DINOGEN].hairColour = this.getRandomHairColour();
+                curClass.avatar[Faction.MILITIA].hairColour = this.getRandomHairColour();
+                curClass.avatar[Faction.DINOGEN].legs = this.getRandomLegs();
+                curClass.avatar[Faction.MILITIA].legs = this.getRandomLegs();
             }
-            if (!wpnType)
-            {
-                console.warn("Invalid weapon type", wpnType, i)
-                wpnType = Weapon.TYPE_CARBINE;
-            }
-            let wpns = this.getAllWeaponsByType(wpnType);
-            primary.id = wpns[this.Random(0, wpns.length - 1)].id;
-            if (!primary.id)
-            {
-                console.warn("Invalid primary id", primary.id);
-                primary.id = "m4a1";
-            }
-            let primaryData = this.getWeaponData(primary.id);
-            this.setRandomWeaponMods(primaryData);
-            primary.mods = primaryData.mods;
-            let secondary = curClass.secondary;
-            switch (key)
-            {
-                case Classes.ASSAULT:
-                    var secondaryWpnTypes = [Weapon.TYPE_SHOTGUN];
-                    break;
-                case Classes.COMMANDO:
-                    secondaryWpnTypes = [Weapon.TYPE_LAUNCHER];
-                    break;
-                default:
-                    secondaryWpnTypes = [Weapon.TYPE_PISTOL, Weapon.TYPE_MACHINE_PISTOL];
-                    break;
-            }
-            wpns = this.getAllWeaponsByType(secondaryWpnTypes[this.Random(0, secondaryWpnTypes.length - 1)]);
-            switch (key)
-            {
-                case Classes.SUPPORT:
-                    wpns.push(this.getWeaponData("riot_shield"), this.getWeaponData("tazer"));
-                    break;
-                case Classes.HUNTER:
-                    wpns.push(this.getWeaponData("bow"), this.getWeaponData("crossbow"));
-                    break;
-            }
-            secondary.id = wpns[this.Random(0, wpns.length - 1)].id;
-            if (!secondary.id)
-            {
-                console.warn("Invalid secondary id", secondary.id);
-                secondary.id = "m9";
-            }
-            let secondaryData = this.getWeaponData(secondary.id);
-            this.setRandomWeaponMods(secondaryData);
-            secondary.mods = secondaryData.mods;
-            let grenades = this.getAllWeaponsByType(Weapon.TYPE_GRENADE);
-            curClass.grenade = grenades[this.Random(0, grenades.length - 1)].id;
-            curClass.melee = this.getRandomMelee().id;
-            curClass.avatar[Faction.DINOGEN].body = this.getRandomBody(Faction.DINOGEN);
-            curClass.avatar[Faction.DINOGEN].head = this.RandomBoolean() ? Character.HEAD_NONE : Character.HEAD_US_HELMET;
-            curClass.avatar[Faction.MILITIA].body = this.getRandomBody(Faction.MILITIA);
-            curClass.avatar[Faction.MILITIA].head = this.RandomBoolean() ? Character.HEAD_NONE : Character.HEAD_OPFOR_HELMET;
-            curClass.avatar[Faction.DINOGEN].facewear = this.Random(1, 3 == 1) ? Character.FACEWEAR_GAITER : Character.FACEWEAR_NONE;
-            curClass.avatar[Faction.MILITIA].facewear = this.Random(1, 3 == 1) ? Character.FACEWEAR_GAITER : Character.FACEWEAR_NONE;
-            curClass.avatar[Faction.DINOGEN].hair = this.getRandomHair();
-            curClass.avatar[Faction.MILITIA].hair = this.getRandomHair();
-            curClass.avatar[Faction.DINOGEN].hairColour = this.getRandomHairColour();
-            curClass.avatar[Faction.MILITIA].hairColour = this.getRandomHairColour();
-            curClass.avatar[Faction.DINOGEN].legs = this.getRandomLegs();
-            curClass.avatar[Faction.MILITIA].legs = this.getRandomLegs();
+            classes.preferredFaction = this.game.bSurvival ? Faction.DINOGEN : (this.RandomBoolean() ? Faction.DINOGEN : Faction.MILITIA);
         }
-        classes.preferredFaction = this.game.bSurvival ? Faction.DINOGEN : (this.RandomBoolean() ? Faction.DINOGEN : Faction.MILITIA);
+        catch (e)
+        {
+            console.warn(e);
+            classes = {
+                "assault": {
+                    "primary": {
+                        "id": "m16a4",
+                        "mods": {}
+                    },
+                    "secondary": {
+                        "id": "m3",
+                        "mods": {}
+                    },
+                    "grenade": "frag",
+                    "equipment": "stim",
+                    "melee": "melee_knife",
+                    "avatar": {
+                        "dinogen": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0000",
+                            "head": "head0000"
+                        },
+                        "militia": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0001",
+                            "head": "head0000"
+                        }
+                    }
+                },
+                "commando": {
+                    "primary": {
+                        "id": "mp5",
+                        "mods": {}
+                    },
+                    "secondary": {
+                        "id": "thumper",
+                        "mods": {}
+                    },
+                    "grenade": "frag",
+                    "equipment": "claymore",
+                    "melee": "melee_knife",
+                    "avatar": {
+                        "dinogen": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0000",
+                            "head": "head0000"
+                        },
+                        "militia": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0001",
+                            "head": "head0000"
+                        }
+                    }
+                },
+                "support": {
+                    "primary": {
+                        "id": "mg4",
+                        "mods": {}
+                    },
+                    "secondary": {
+                        "id": "m9",
+                        "mods": {}
+                    },
+                    "grenade": "smoke",
+                    "equipment": "ammo_box",
+                    "melee": "melee_knife",
+                    "avatar": {
+                        "dinogen": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0000",
+                            "head": "head0000"
+                        },
+                        "militia": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0001",
+                            "head": "head0000"
+                        }
+                    }
+                },
+                "hunter": {
+                    "primary": {
+                        "id": "m40a3",
+                        "mods": { "optic": "scope" }
+                    },
+                    "secondary": {
+                        "id": "m9",
+                        "mods": {}
+                    },
+                    "grenade": "smoke",
+                    "equipment": "sensor",
+                    "melee": "melee_knife",
+                    "avatar": {
+                        "dinogen": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0000",
+                            "head": "head0000"
+                        },
+                        "militia": {
+                            "hair": "hair0000",
+                            "hairColour": "HAIR_COLOUR_BROWN",
+                            "body": "body0001",
+                            "head": "head0000"
+                        }
+                    }
+                }
+            }
+        }
         return classes;
     }
 

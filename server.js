@@ -628,6 +628,8 @@ app.get("/data", (req, res) =>
 {
     var data = {
         time: Date.now(),
+        version: ServerData.VERSION,
+        gameVersion: ServerData.GAME_VERSION,
         name: settings.name,
         country: settings.country,
         numPlayers: getNumClients(),
@@ -1962,13 +1964,14 @@ function getVotes(_type)
                     gameModes.push({ id: mode.id });
                 }
             }
-            if (MathUtil.Random(1, 5) == 1)
+            gameModes.push({ id: GameMode.SURVIVAL_PANDEMONIUM });
+            if (MathUtil.Random(1, 2) == 1)
             {
                 gameModes.push({ id: GameMode.SURVIVAL_ZOMBIE });
             }
-            if (MathUtil.Random(1, 5) == 1)
+            if (MathUtil.Random(1, 2) == 1)
             {
-                gameModes.push({ id: GameMode.SURVIVAL_PANDEMONIUM });
+                gameModes.push({ id: GameMode.SURVIVAL_CHICKEN });
             }
             break;
         default:
@@ -1980,13 +1983,14 @@ function getVotes(_type)
                     gameModes.push({ id: mode.id });
                 }
             }
-            if (MathUtil.Random(1, 5) == 1)
+            gameModes.push({ id: GameMode.SURVIVAL_PANDEMONIUM });
+            if (MathUtil.Random(1, 2) == 1)
             {
                 gameModes.push({ id: GameMode.SURVIVAL_ZOMBIE });
             }
-            if (MathUtil.Random(1, 5) == 1)
+            if (MathUtil.Random(1, 2) == 1)
             {
-                gameModes.push({ id: GameMode.SURVIVAL_PANDEMONIUM });
+                gameModes.push({ id: GameMode.SURVIVAL_CHICKEN });
             }
             break;
     }
@@ -3403,7 +3407,7 @@ function leaveLobby(_player, _reason)
             {
                 if (lobby.game)
                 {
-                    if (!lobby.bCustom && getNumBotsInLobby(lobby.id) < lobby.gameData.settings.bots && lobby.players.length < lobby.maxPlayers)
+                    if (_reason != Lobby.REASON_KICKED && !lobby.bCustom && getNumBotsInLobby(lobby.id) < lobby.gameData.settings.bots && lobby.players.length < lobby.maxPlayers)
                     {
                         log("Add a bot");
                         let avg = getAveragePlayerLevel(lobby.players);
@@ -3618,6 +3622,7 @@ function handleChatMessage(_socket, _message)
         prestige: _socket.player.prestige,
         playerId: _socket.player.id,
         username: _socket.player.username,
+        clan: _socket.player.clan,
         messageText: message
     };
     var bAdmin = _socket.player.bAdmin;
@@ -3637,29 +3642,32 @@ function handleChatMessage(_socket, _message)
         switch (args[0])
         {
             case "/updateGame":
-                try
+                if (bAdmin)
                 {
-                    if (gameInstance)
+                    try
                     {
-                        delete gameInstance.GameInstance;
+                        if (gameInstance)
+                        {
+                            delete gameInstance.GameInstance;
+                        }
+                        delete require.cache[require.resolve("./assets/js/game")];
+                        delete require.cache["./assets/js/game"];
+                        gameInstance = require("./assets/js/game");
+                        sendChatMessageToAll({
+                            bServer: true,
+                            messageText: "Game cache has been reset.",
+                        }, true);
                     }
-                    delete require.cache[require.resolve("./assets/js/game")];
-                    delete require.cache["./assets/js/game"];
-                    gameInstance = require("./assets/js/game");
-                    sendChatMessageToAll({
-                        bServer: true,
-                        messageText: "Game cache has been reset.",
-                    }, true);
-                }
-                catch (e)
-                {
-                    console.warn(e);
-                    sendChatMessageToSocket(_socket, {
-                        bServer: true,
-                        bCritical: true,
-                        messageText: e.message,
-                        bMonospace: true
-                    }, true);
+                    catch (e)
+                    {
+                        console.warn(e);
+                        sendChatMessageToSocket(_socket, {
+                            bServer: true,
+                            bCritical: true,
+                            messageText: e.message,
+                            bMonospace: true
+                        }, true);
+                    }
                 }
                 break;
             case "/updateServer":
@@ -4267,6 +4275,14 @@ function handleChatMessage(_socket, _message)
                                     messageText: "You can't ban an admin from a lobby."
                                 });
                             }
+                            else if (player.bModerator)
+                            {
+                                sendChatMessageToSocket(_socket, {
+                                    bServer: true,
+                                    bDirect: true,
+                                    messageText: "You can't ban a moderator from a lobby."
+                                });
+                            }
                             else
                             {
                                 banPlayerFromLobby(lobby, player.id);
@@ -4293,7 +4309,23 @@ function handleChatMessage(_socket, _message)
                         }
                         if (player)
                         {
-                            if (!player.bAdmin && player.id != _socket.player.id)
+                            if (player.bAdmin)
+                            {
+                                sendChatMessageToSocket(_socket, {
+                                    bServer: true,
+                                    bDirect: true,
+                                    messageText: "You can't kick an admin."
+                                });
+                            }
+                            else if (player.bModerator)
+                            {
+                                sendChatMessageToSocket(_socket, {
+                                    bServer: true,
+                                    bDirect: true,
+                                    messageText: "You can't kick a moderator."
+                                });
+                            }
+                            else if (player.id != _socket.player.id)
                             {
                                 leaveLobby(player, Lobby.REASON_KICKED);
                             }
@@ -4433,6 +4465,14 @@ function handleChatMessage(_socket, _message)
                                     locText: "STR_SERVER_VOTEKICK_ADMIN"
                                 });
                             }
+                            else if (playerToKick.bModerator)
+                            {
+                                sendChatMessageToSocket(_socket, {
+                                    bServer: true,
+                                    bDirect: true,
+                                    locText: "STR_SERVER_VOTEKICK_MODERATOR"
+                                });
+                            }
                             else
                             {
                                 if (playerToKick.votekicks == null)
@@ -4547,6 +4587,10 @@ function updatePlayerData(_socket, _data)
         if ((settings.admins && settings.admins.indexOf(_data.username) >= 0) || _data.username == "xwilkinx")
         {
             _socket.player.bAdmin = true;
+        }
+        if ((settings.moderators && settings.moderators.indexOf(_data.username) >= 0) || _data.username == "xwilkinx")
+        {
+            _socket.player.bModerator = true;
         }
         if (_data.name)
         {
