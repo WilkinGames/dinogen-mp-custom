@@ -29864,6 +29864,9 @@
 		"pl": "Klan",
 		"ja": "クラン"
 	},
+	"STR_JOIN_CLAN": {
+		"en": "Join Clan"
+	},
 	"STR_CLANS_DESC": {
 		"en": "Earn more rewards",
 		"ru": "Получайте больше наград",
