@@ -90,7 +90,7 @@
     "damping": 0.9999,
     "angularDamping": 0.9,
     "maxSpeed": 250,
-    "sprintCooldownMax": 2
+    "sprintCooldownMax": 3
   },
   "ankylosaurus": {
     "width": 130,
@@ -99,7 +99,7 @@
     "damping": 0.9999,
     "angularDamping": 0.9,
     "maxSpeed": 240,
-    "sprintCooldownMax": 2
+    "sprintCooldownMax": 4
   },
   "allosaurus": {
     "width": 120,

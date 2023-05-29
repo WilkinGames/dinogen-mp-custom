@@ -3705,19 +3705,19 @@
 		"ja": "ルール: チート禁止。"
 	},
 	"STR_SERVER_DISCORD": {
-		"en": "Join the Dinogen Online Discord: discord.gg/dinogen",
-		"ru": "Присоединяйтесь к Dinogen Online Discord: discord.gg/dinogen",
-		"zh": "加入 Dinogen 在线 Discord：discord.gg/dinogen",
-		"zh-CHT": "加入 Dinogen Discord：discord.gg/dinogen",
-		"uk": "Приєднуйтеся до Dinogen Online Discord: discord.gg/dinogen",
-		"fr": "Rejoignez le discord en ligne Dinogen : discord.gg/dinogen",
-		"tr": "Dinogen Online Discord'a katılın: discord.gg/dinogen",
-		"es": "Únase al Discord en línea de Dinogen: discord.gg/dinogen",
-		"it": "Unisciti a Dinogen Online Discord: discord.gg/dinogen",
-		"pt": "Junte-se ao Discord Online Dinogen: discord.gg/dinogen",
-		"de": "Tritt dem Dinogen Online Discord bei: discord.gg/dinogen",
-		"pl": "Dołącz do Dinogen Online Discord: discord.gg/dinogen",
-		"ja": "Dinogen Online Discord に参加してください: discord.gg/dinogen"
+		"en": "Join the Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
+		"ru": "Присоединяйтесь к Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
+		"zh": "加入 Dinogen 在线 Discord：discord.gg/jhdNu5kDrZ",
+		"zh-CHT": "加入 Dinogen Discord：discord.gg/jhdNu5kDrZ",
+		"uk": "Приєднуйтеся до Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
+		"fr": "Rejoignez le discord en ligne Dinogen : discord.gg/jhdNu5kDrZ",
+		"tr": "Dinogen Online Discord'a katılın: discord.gg/jhdNu5kDrZ",
+		"es": "Únase al Discord en línea de Dinogen: discord.gg/jhdNu5kDrZ",
+		"it": "Unisciti a Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
+		"pt": "Junte-se ao Discord Online Dinogen: discord.gg/jhdNu5kDrZ",
+		"de": "Tritt dem Dinogen Online Discord bei: discord.gg/jhdNu5kDrZ",
+		"pl": "Dołącz do Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
+		"ja": "Dinogen Online Discord に参加してください: discord.gg/jhdNu5kDrZ"
 	},
 	"STR_SERVER_PLAYER_INFO": {
 		"en": "Type /players to view players.",
@@ -6088,6 +6088,21 @@
 		"de": "Atrium",
 		"pl": "Atrium",
 		"ja": "アトリウム"
+	},
+	"STR_MAP_FACILITY": {
+		"en": "Facility",
+		"ru": "Средство",
+		"zh": "设施",
+		"zh-CHT": "设施",
+		"uk": "Об'єкт",
+		"fr": "Facilité",
+		"tr": "Tesis",
+		"es": "Instalación",
+		"it": "Facilità",
+		"pt": "Instalação",
+		"de": "Einrichtung",
+		"pl": "Obiekt",
+		"ja": "施設"
 	},
 	"STR_MAP_COMPOUND": {
 		"en": "Compound",
@@ -8488,6 +8503,81 @@
 		"de": "Eskorte Airdrop",
 		"pl": "Zrzut eskortowy",
 		"ja": "エスコートエアドロップ"
+	},
+	"STR_AIRSTRIKES": {
+		"en": "Airstrikes",
+		"ru": "Воздушные удары",
+		"zh": "空袭",
+		"zh-CHT": "空袭",
+		"uk": "Авіаудари",
+		"fr": "Frappes aériennes",
+		"tr": "Hava saldırıları",
+		"es": "Ataques aéreos",
+		"it": "Attacchi aerei",
+		"pt": "ataques aéreos",
+		"de": "Luftschläge",
+		"pl": "Naloty",
+		"ja": "空爆"
+	},
+	"STR_AIRSTRIKE": {
+		"en": "Airstrike",
+		"ru": "Авиаудар",
+		"zh": "空袭",
+		"zh-CHT": "空袭",
+		"uk": "авіаудар",
+		"fr": "Frappe aérienne",
+		"tr": "hava saldırısı",
+		"es": "ataque aéreo",
+		"it": "Attacco aereo",
+		"pt": "ataque aéreo",
+		"de": "Luftangriff",
+		"pl": "nalot",
+		"ja": "空爆"
+	},
+	"STR_AIRSTRIKE_DESC": {
+		"en": "Precision airstrike",
+		"ru": "Точный авиаудар",
+		"zh": "精准空袭",
+		"zh-CHT": "精准空袭",
+		"uk": "Точність авіаудару",
+		"fr": "Frappe aérienne de précision",
+		"tr": "Hassas hava saldırısı",
+		"es": "Ataque aéreo de precisión",
+		"it": "Attacco aereo di precisione",
+		"pt": "Ataque aéreo de precisão",
+		"de": "Präziser Luftangriff",
+		"pl": "Precyzyjny nalot",
+		"ja": "精密空爆"
+	},
+	"STR_NAPALM_AIRSTRIKE": {
+		"en": "Napalm Airstrike",
+		"ru": "Напалмовый авиаудар",
+		"zh": "凝固汽油弹空袭",
+		"zh-CHT": "凝固汽油弹空袭",
+		"uk": "Напалмовий авіаудар",
+		"fr": "Frappe aérienne au napalm",
+		"tr": "napalm hava saldırısı",
+		"es": "Ataque aéreo con napalm",
+		"it": "Attacco aereo al napalm",
+		"pt": "Ataque Aéreo Napalm",
+		"de": "Napalm-Luftangriff",
+		"pl": "Nalot napalmowy",
+		"ja": "ナパーム空爆"
+	},
+	"STR_NAPALM_AIRSTRIKE_DESC": {
+		"en": "Precision airstrike with napalm",
+		"ru": "Прицельный авиаудар с напалмом",
+		"zh": "使用凝固汽油弹进行精确空袭",
+		"zh-CHT": "使用凝固汽油弹进行精确空袭",
+		"uk": "Точний авіаудар з напалмом",
+		"fr": "Frappe aérienne de précision au napalm",
+		"tr": "Napalm ile hassas hava saldırısı",
+		"es": "Ataque aéreo de precisión con napalm",
+		"it": "Attacco aereo di precisione con napalm",
+		"pt": "Ataque aéreo de precisão com napalm",
+		"de": "Präziser Luftangriff mit Napalm",
+		"pl": "Precyzyjny nalot z napalmem",
+		"ja": "ナパーム弾による精密空爆"
 	},
 	"STR_KIOWA": {
 		"en": "OH-58D Kiowa",
@@ -17009,6 +17099,21 @@
 		"pl": "Prośba o naprawe",
 		"ja": "修理依頼"
 	},
+	"STR_CMD_REQUEST_HOLD": {
+		"en": "Hold Position",
+		"ru": "Удерживать позицию",
+		"zh": "保持位置",
+		"zh-CHT": "保持位置",
+		"uk": "Тримайте позицію",
+		"fr": "Tenir la position",
+		"tr": "Pozisyonu Tut",
+		"es": "Mantén la posición",
+		"it": "Mantenere la posizione",
+		"pt": "Manter a posição",
+		"de": "Position halten",
+		"pl": "Utrzymać pozycję",
+		"ja": "ホールドポジション"
+	},
 	"STR_CMD_REQUEST_AMMO": {
 		"en": "Request Ammo",
 		"ru": "Запросить боеприпасы",
@@ -20308,6 +20413,36 @@
 		"de": "Compoundbogen",
 		"pl": "Łuk kompozytowy",
 		"ja": "コンパウンドボウ"
+	},
+	"STR_WPN_QUADRA": {
+		"en": "Quadra",
+		"ru": "Квадра",
+		"zh": "夸德拉",
+		"zh-CHT": "夸德拉",
+		"uk": "Квадра",
+		"fr": "Quadra",
+		"tr": "dörtlü",
+		"es": "cuádruple",
+		"it": "Quadra",
+		"pt": "quadra",
+		"de": "Quadra",
+		"pl": "Quadra",
+		"ja": "クアドラ"
+	},
+	"STR_WPN_TRIDANT": {
+		"en": "Tridant LMG",
+		"ru": "Трезубец ручного пулемета",
+		"zh": "三叉戟轻机枪",
+		"zh-CHT": "三叉戟轻机枪",
+		"uk": "Tridant LMG",
+		"fr": "Tridant LMG",
+		"tr": "Tridant LMG",
+		"es": "LMG tridente",
+		"it": "Tridente mitragliatore mitragliatore",
+		"pt": "Tridant LMG",
+		"de": "Tridant LMG",
+		"pl": "Trident LMG",
+		"ja": "トライダントLMG"
 	},
 	"STR_WPN_FLAMETHROWER": {
 		"en": "Flamethrower",
@@ -29865,7 +30000,19 @@
 		"ja": "クラン"
 	},
 	"STR_JOIN_CLAN": {
-		"en": "Join Clan"
+		"en": "Join Clan",
+		"ru": "Вступить в клан",
+		"zh": "加入战队",
+		"zh-CHT": "加入战队",
+		"uk": "Приєднатися до клану",
+		"fr": "Rejoindre le clan",
+		"tr": "Klana katıl",
+		"es": "Unirse al clan",
+		"it": "Unisciti al clan",
+		"pt": "Junte-se ao clã",
+		"de": "Tritt dem Clan bei",
+		"pl": "Dołączyć do klanu",
+		"ja": "クランに参加する"
 	},
 	"STR_CLANS_DESC": {
 		"en": "Earn more rewards",
@@ -30001,6 +30148,21 @@
 		"de": "Die meisten Kills",
 		"pl": "Najwięcej zabójstw",
 		"ja": "最多キル"
+	},
+	"STR_MOST_REVIVES": {
+		"en": "Most Revives",
+		"ru": "Большинство возрождений",
+		"zh": "大多数复活",
+		"zh-CHT": "大多数复活",
+		"uk": "Більшість оживає",
+		"fr": "La plupart des relances",
+		"tr": "Çoğu Diriliş",
+		"es": "La mayoría de revive",
+		"it": "La maggior parte dei ravviva",
+		"pt": "Mais revive",
+		"de": "Die meisten Wiederbelebungen",
+		"pl": "Większość ożywień",
+		"ja": "ほとんどの復活者"
 	},
 	"STR_MOST_MELEES": {
 		"en": "Most Melees",

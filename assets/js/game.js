@@ -97,6 +97,7 @@ const GameServer = {
     PAWN_LOCK_ACQUIRED: 58,
     PAWN_INTERACTABLE_USED: 59,
     PAWN_MOVE: 60,
+    PAWN_VOX: 61,
     INV_CLASS_DATA: 1,
     INV_CURRENT_INVENTORY_INDEX: 2,
     INV_FIRE: 3,
@@ -276,7 +277,10 @@ const Item = {
     EGG_RAPTOR: "item_egg_raptor",
     EGG_NEEDLER: "item_egg_needler",
     EGG_ALLOSAURUS: "item_egg_allosaurus",
-    EGG_SPINOSAURUS: "item_egg_spinosaurus"
+    EGG_SPINOSAURUS: "item_egg_spinosaurus",
+    AIRSTRIKE: "item_airstrike",
+    AIRSTRIKE_NAPALM: "item_airstrike_napalm",
+    DEADSWITCH: "item_deadswitch"
 };
 const Helicopter = {
     MH6: "mh6",
@@ -318,7 +322,8 @@ const Commands = {
     REQUEST_FOLLOW: 4,
     REQUEST_COVER: 5,
     REQUEST_REPAIR: 6,
-    TAUNT: 7
+    HOLD: 7,
+    TAUNT: 8
 };
 const Crate = {
     STORE: "CRATE_STORE",
@@ -724,6 +729,7 @@ class GameInstance
                 scenario: _data.scenario ? this.clone(_data.scenario) : null,
                 cinematic: null,
                 actionQueue: [],
+                supportItems: [],
                 gameModeData: {
                     id: _data.gameModeId,
                     timeLimit: _data.settings.timeLimit ? _data.settings.timeLimit * 60 : null,
@@ -1854,10 +1860,73 @@ class GameInstance
                     }
                 }
             }
-
-            //Update map nodes
+            
             if (!this.matchHasEnded())
             {
+                let supportItems = this.game.supportItems;
+                if (supportItems)
+                {
+                    for (var i = supportItems.length - 1; i >= 0; i--)
+                    {
+                        let supportItem = supportItems[i];
+                        if (!supportItem)
+                        {
+                            continue;
+                        }
+                        if (supportItem.explosions)
+                        {
+                            for (var j = 0; j < supportItem.explosions.length; j++)
+                            {
+                                let explosion = supportItem.explosions[j];
+                                if (explosion.timer > 0)
+                                {
+                                    explosion.timer--;
+                                }
+                                else
+                                {
+                                    let explosionPos = supportItem.position;
+                                    this.createExplosion({
+                                        eventId: GameServer.EVENT_SPAWN_EXPLOSION,
+                                        x: explosionPos[0] + this.Random(-25, 25),
+                                        y: explosionPos[1] + this.Random(-25, 25),
+                                        radius: supportItem.radius,
+                                        damage: supportItem.damage,
+                                        playerId: supportItem.playerId,
+                                        team: supportItem.team,
+                                        causerId: supportItem.playerId,
+                                        weaponId: supportItem.id
+                                    });
+                                    if (explosion.bFire)
+                                    {
+                                        let napalm = this.getWeaponData("napalm");
+                                        napalm.fireDamage = 25; 
+                                        napalm.fireTime = 10; 
+                                        for (var i = 0; i < 8; i++)
+                                        {
+                                            let flame = this.createFlame(explosionPos, [this.Random(-400, 400), this.Random(-400, 400)], supportItem.team, supportItem.playerId, napalm, 10);
+                                            flame.angle = this.RandomAngle();
+                                        }
+                                    }
+                                    supportItem.explosions.splice(j, 1);
+                                }
+                            }
+                        }
+                        if (supportItem.timer > 0)
+                        {
+                            supportItem.timer--;
+                        }
+                        else
+                        {
+                            switch (supportItem.id == Item.DEADSWITCH)
+                            {
+                                //...
+                            }
+                            supportItems.splice(i, 1);
+                        }
+                    }
+                }
+
+                //Update map nodes
                 if (this.game.nodesToCheck)
                 {
                     let nodesPerTick = this.game.bMultiplayer ? 10 : 100;
@@ -5093,23 +5162,54 @@ class GameInstance
             }
         }
         else
-        {           
+        {   
+            var prevCommand = ai.currentCommand;
             var supportRequest = ai.bInteract && this.getNearbyRequest(_body, Commands.REQUEST_SUPPORT, 1000, data.playerId);
+            if (!supportRequest) var followRequest = ai.bInteract && this.getNearbyRequest(_body, Commands.REQUEST_FOLLOW, 1000, data.playerId);
+            if (!followRequest) var holdRequest = this.getNearbyRequest(_body, Commands.HOLD, 500, data.playerId);
             if (supportRequest)
             {
+                ai.currentCommand = Commands.REQUEST_SUPPORT;
                 ai.destThreshold = 100;
                 ai.moveToPos = supportRequest.position;
                 ai.desiredVehicleId = null;
-            }
-            else
-            {
-                var followRequest = ai.bInteract && this.getNearbyRequest(_body, Commands.REQUEST_FOLLOW, 1000, data.playerId);
-                if (followRequest)
+                if (ai.bHold)
                 {
-                    ai.destThreshold = 100;
-                    ai.moveToPos = followRequest.position;
-                    ai.desiredVehicleId = null;
+                    delete ai.bCamp;
+                    delete ai.bHold;
                 }
+            }
+            else if (followRequest)
+            {
+                ai.currentCommand = Commands.REQUEST_FOLLOW;
+                ai.destThreshold = 100;
+                ai.moveToPos = followRequest.position;
+                ai.desiredVehicleId = null;
+                if (ai.bHold)
+                {
+                    delete ai.bCamp;
+                    delete ai.bHold;
+                }
+            }
+            else if (holdRequest)
+            {
+                ai.currentCommand = Commands.HOLD;
+                ai.bCamp = true;
+                ai.bHold = true;
+                ai.campPos = [_body.position[0], _body.position[1]];
+            }
+            else if (!ai.bHold)
+            {
+                delete ai.currentCommand;
+            }
+            if (ai.currentCommand && ai.currentCommand != prevCommand)
+            {
+                this.onEvent({
+                    eventId: GameServer.EVENT_PAWN_ACTION,
+                    pawnId: _body.data.id,
+                    type: GameServer.PAWN_VOX,
+                    voxType: ai.currentCommand == Commands.HOLD ? "affirmative_hold" : "affirmative"
+                });
             }
             if (!followRequest && !supportRequest)
             {
@@ -8272,6 +8372,10 @@ class GameInstance
                 {
                     index = this.getCharacterInventoryItemIndex(pawn, "crossbow");
                 }
+                if (index == -1)
+                {
+                    index = this.getCharacterInventoryItemIndex(pawn, "quadra");
+                }
                 if (index >= 0)
                 {
                     let bOverlaps = body.getAABB().overlaps(pawn.getAABB());
@@ -9071,6 +9175,14 @@ class GameInstance
             useAccuracy *= 10;
             var bulletRad = rad + this.ToRad(this.Random(-useAccuracy, useAccuracy) * 0.1);
             bulletRad += this.ToRad(data.weapon.recoil);
+            if (weapon.id == "quadra")
+            {
+                let addRot = this.ToRad(weapon.mag % 2 == 0 ? 90 : -90);
+                let bulletSpacing = 10;
+                muzzlePos = this.getCharacterMuzzlePosition(_body);
+                muzzlePos[0] += (Math.cos(data.aimRotation + addRot) * bulletSpacing);
+                muzzlePos[1] += (Math.sin(data.aimRotation + addRot) * bulletSpacing);
+            }
             if (weapon.bRocket)
             {
                 var rocketData = {
@@ -9155,7 +9267,7 @@ class GameInstance
                 if (this.game.bSurvival)
                 {
                     damage *= 5;
-                }
+                }                
                 this.createProjectile(muzzlePos, bulletRad, data.team, {
                     playerId: data.id,
                     causerId: data.id,
@@ -14754,6 +14866,14 @@ class GameInstance
                         var ps = this.getPlayerById(_playerId);
                         if (ps)
                         {
+                            ps.revives = ps.revives ? (ps.revives + 1) : 1;
+                            this.onEvent({
+                                eventId: GameServer.EVENT_PLAYER_UPDATE,
+                                playerId: _playerId,
+                                data: {
+                                    revives: ps.revives
+                                }
+                            });
                             if (this.game.bSurvival)
                             {
                                 this.game.gameModeData.waveRevives++;
@@ -16427,10 +16547,7 @@ class GameInstance
         var data = _body.data;
         if (data.type != ObjectType.CHARACTER)
         {
-            if (!this.game.bRanked)
-            {
-                return null;
-            }
+            return;
         }
         if (!this.getPlayersOnTeam(data.team))
         {
@@ -17027,9 +17144,13 @@ class GameInstance
                     bUse = false;
                 }
             }
+            if (item.type == "airstrike" && this.game.supportItems.length >= 3)
+            {
+                bUse = false;
+            }
             if (bUse)
             {
-                if (item.bAirdrop)
+                if (item.bAirdrop || item.type == "airstrike")
                 {
                     switch (item.id)
                     {
@@ -17045,12 +17166,17 @@ class GameInstance
                         case Item.T90:
                             areaSize = 250;
                             break;
+                        case Item.AIRSTRIKE:
+                        case Item.AIRSTRIKE_NAPALM:
+                            areaSize = 250;
+                            break;
                         default:
                             areaSize = 150;
                             break;
                     }
+                    var targetPos = item.type == "airstrike" ? pawn.data.lookPos : pawn.position;
                     var area = this.createTriggerArea({
-                        position: pawn.position,
+                        position: targetPos,
                         width: areaSize,
                         height: areaSize,
                         team: pawn.data.team,
@@ -17584,6 +17710,53 @@ class GameInstance
                                 }
                             ],
                             destination: this.clone(pawn.position)
+                        });
+                        break;
+                    case Item.AIRSTRIKE:
+                        this.game.supportItems.push({
+                            id: itemId,
+                            playerId: data.id,
+                            position: pawn.data.lookPos ? pawn.data.lookPos : pawn.position,
+                            team: data.team,
+                            timer: this.game.settings.fps * 5,
+                            explosions: [
+                                {
+                                    timer: this.game.settings.fps * 3
+                                },
+                                {
+                                    timer: this.game.settings.fps * 3.25
+                                },
+                                {
+                                    timer: this.game.settings.fps * 3.5
+                                }
+                            ],
+                            damage: 800,
+                            radius: 500
+                        });
+                        break;
+                    case Item.AIRSTRIKE_NAPALM:                        
+                        this.game.supportItems.push({
+                            id: itemId,
+                            playerId: data.id,
+                            position: pawn.data.lookPos ? pawn.data.lookPos : pawn.position,
+                            team: data.team,
+                            timer: this.game.settings.fps * 5,
+                            explosions: [
+                                {
+                                    timer: this.game.settings.fps * 3,
+                                    bFire: true
+                                },
+                                {
+                                    timer: this.game.settings.fps * 3.25,
+                                    bFire: true
+                                },
+                                {
+                                    timer: this.game.settings.fps * 3.5,
+                                    bFire: true
+                                }
+                            ],
+                            damage: 500,
+                            radius: 350
                         });
                         break;
                     case Item.ABRAMS:
@@ -18703,7 +18876,7 @@ class GameInstance
                     var victimPlayerState = this.getPlayerById(_victimId);
                     if (this.isTeamGameMode())
                     {
-                        ps.avengerTimer = this.game.settings.fps;
+                        ps.avengerTimer = this.game.settings.fps * 3;
                         if (victimPlayerState)
                         {
                             if (victimPlayerState.avengerTimer > 0)
@@ -19909,9 +20082,7 @@ class GameInstance
                         vehicleId: tanks[this.Random(0, tanks.length - 1)]
                     });
                 }
-                console.log(enemies);
                 gameData.waveEnemyData = enemies[this.Random(0, enemies.length - 1)];
-                //gameData.waveEnemyData = { type: ObjectType.CHARACTER, bBigfoot: true };
                 console.log(gameData.waveEnemyData);
                 let waveEnemyData = gameData.waveEnemyData;
                 if (waveEnemyData.bJuggernaut)
@@ -20498,7 +20669,7 @@ class GameInstance
                 if (wave >= 5)
                 {
                     if (this.Random(1, 10) == 1) dinos.push(Dinosaur.RAPTOR);
-                    //if (this.Random(1, 5) == 1) dinos.push(Dinosaur.ANKYLOSAURUS);
+                    if (this.Random(1, 5) == 1) dinos.push(Dinosaur.ANKYLOSAURUS);
                 }
                 if (wave >= 8)
                 {
@@ -21301,7 +21472,7 @@ class GameInstance
         {
             if (wave >= 20)
             {
-                wpns.push(this.getWeaponData("bow"), this.getWeaponData("crossbow"));
+                wpns.push(this.getWeaponData("bow"), this.getWeaponData("crossbow"), this.getWeaponData("quadra"));
             }
             if (wave >= 25)
             {
@@ -22057,7 +22228,9 @@ class GameInstance
             Dinosaur.PACHY,
             Dinosaur.RAPTOR,
             Dinosaur.RAPTOR,
-            Dinosaur.NEEDLER,
+            Dinosaur.ANKYLOSAURUS,
+            Dinosaur.ANKYLOSAURUS,
+            Dinosaur.NEEDLER,            
             Dinosaur.STEGOSAURUS,
             Dinosaur.SPINOSAURUS,
             Dinosaur.ALLOSAURUS,
@@ -27955,16 +28128,6 @@ class GameInstance
                                 if (dataB["health"])
                                 {
                                     var projDamage = dataA.damage;
-                                    switch (dataA.weaponId)
-                                    {
-                                        case "crossbow":
-                                        case "bow":
-                                            if (dataB.type == ObjectType.DINOSAUR)
-                                            {
-                                                //projDamage *= 2;
-                                            }
-                                            break;
-                                    }
                                     if (projDamage > 0)
                                     {
                                         this.requestEvent({
@@ -27998,6 +28161,7 @@ class GameInstance
 
                                 case "crossbow":
                                 case "bow":
+                                case "quadra":
                                     this.createImpactEffect(pos[0], pos[1], _bodyA.rotation, "default", 1);
                                     this.createArrow(pos, {
                                         angle: _bodyA.angle
@@ -29763,7 +29927,7 @@ class GameInstance
                         wpns.push(this.getWeaponData("riot_shield"), this.getWeaponData("tazer"));
                         break;
                     case Classes.HUNTER:
-                        wpns.push(this.getWeaponData("bow"), this.getWeaponData("crossbow"));
+                        wpns.push(this.getWeaponData("bow"), this.getWeaponData("crossbow"), this.getWeaponData("quadra"));
                         break;
                 }
                 secondary.id = wpns[this.Random(0, wpns.length - 1)].id;
@@ -30106,6 +30270,7 @@ class GameInstance
             case "riot_shield":
             case "flamethrower":
             case "bow":
+            case "quadra":
             case "crossbow":
                 return;
         }
@@ -30148,7 +30313,7 @@ class GameInstance
             {
                 return mods;
             }
-            if (wpn.id == "bow")
+            if (wpn.id == "bow" || wpn.id == "quadra")
             {
                 return mods;
             }
@@ -30387,7 +30552,8 @@ class GameInstance
             "minigun",
             "flamethrower",
             "m82",
-            "tac50"            
+            "tac50",
+            "quadra"
         ];
         for (var i = 0; i < ids.length; i++)
         {

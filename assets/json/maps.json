@@ -24,6 +24,11 @@
     "name": "STR_MAP_HEXAGON"
   },
   {
+    "id": "map_facility",
+    "name": "STR_MAP_FACILITY",
+    "bCustom": true
+  },
+  {
     "id": "map_campsite",
     "name": "STR_MAP_CAMPSITE",
     "bCustom": true

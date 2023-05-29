@@ -81,8 +81,8 @@ const EventUtil = {
     }
 };
 const ServerData = {
-    VERSION: "1.0.4",
-    GAME_VERSION: "1.0.6"
+    VERSION: "1.0.5",
+    GAME_VERSION: "1.0.7"
 };
 const Lobby = {
     COUNTDOWN_INTERMISSION: 10,
@@ -143,6 +143,7 @@ const Map = {
     HEXAGON: "map_hexagon",
     FIRING_RANGE: "map_firing_range",
     FIELD: "map_field",
+    FACILITY: "map_facility",
     CAMPSITE: "map_campsite",
     VILLA: "map_villa",
     LABORATORY: "map_laboratory",
@@ -1902,6 +1903,7 @@ function getVotes(_type)
             Map.COMPLEX,
             Map.DISTRICT,
             Map.SANDSTORM,
+            Map.FACILITY,
             Map.CAMPSITE,
             Map.VILLA,
             Map.LABORATORY,
@@ -1919,6 +1921,7 @@ function getVotes(_type)
             Map.SANDSTORM,
             Map.FIRING_RANGE,
             Map.HEXAGON,
+            Map.FACILITY,
             Map.CAMPSITE,
             Map.VILLA,
             Map.LABORATORY,
@@ -2179,7 +2182,7 @@ function checkLobbyReady(_lobby)
 {
     try
     {
-        if (_lobby)
+        if (_lobby && _lobby.players)
         {
             var numReady = 0;
             var numPlayers = getNumRealPlayersInLobby(_lobby.id);

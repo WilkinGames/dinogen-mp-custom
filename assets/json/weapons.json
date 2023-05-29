@@ -2609,6 +2609,27 @@
     "score": 50000
   },
   {
+    "id": "tridant",
+    "soundId": "mg4",
+    "name": "STR_WPN_TRIDANT",
+    "type": "TYPE_LMG",
+    "fireMode": "MODE_AUTO",
+    "round": "556mm",
+    "damage": 28,
+    "accuracy": 2.5,
+    "fireRate": 3,
+    "magSize": 100,
+    "reloadTime": 3.3,
+    "speedModifier": 0.7,
+    "range": 1600,
+    "mag": 100,
+    "ammo": 100,
+    "recoil": 0.8,
+    "penetration": 2,
+    "lookModifier": 1.4,
+    "score": 60000
+  },
+  {
     "id": "minigun",
     "name": "STR_WPN_MINIGUN",
     "type": "TYPE_LMG",
@@ -3574,7 +3595,7 @@
     "bNoShell": true,
     "bNoMuzzleFlash": true,
     "bNoMag": true,
-    "score": 1000
+    "score": 5000
   },
   {
     "id": "bow",
@@ -3600,7 +3621,33 @@
     "bNoShell": true,
     "bNoMuzzleFlash": true,
     "bNoMag": true,
-    "score": 2500
+    "score": 10000
+  },
+  {
+    "id": "quadra",
+    "name": "STR_WPN_QUADRA",
+    "type": "TYPE_WEAPON_TACTICAL",
+    "fireMode": "MODE_AUTO",
+    "round": "arrow",
+    "damage": 300,
+    "accuracy": 0.5,
+    "fireRate": 3,
+    "magSize": 4,
+    "reloadTime": 0.8,
+    "speedModifier": 1,
+    "range": 3000,
+    "mag": 4,
+    "ammo": 4,
+    "bArrow": false,
+    "moneyCost": 10000,
+    "recoil": 2,
+    "penetration": 1,
+    "lookModifier": 1.8,
+    "bNoShell": true,
+    "bNoMuzzleFlash": true,
+    "bSingleRoundLoaded": true,
+    "bNoMag": true,
+    "score": 50000
   },
   {
     "id": "railgun",
@@ -3988,9 +4035,9 @@
     "name": "STR_DINO_ANKYLOSAURUS",
     "type": "TYPE_MELEE",
     "fireMode": "MODE_AUTO",
-    "damage": 100,
+    "damage": 150,
     "accuracy": 5,
-    "fireRate": 20,
+    "fireRate": 30,
     "mag": 1,
     "speedModifier": 1,
     "range": 100,

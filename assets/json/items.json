@@ -99,6 +99,22 @@
     "bAirdrop": true
   },
   {
+    "id": "item_airstrike",
+    "name": "STR_AIRSTRIKE",
+    "desc": "STR_AIRSTRIKE_DESC",
+    "cost": 5000,
+    "type": "airstrike",
+    "category": "airstrike"
+  },
+  {
+    "id": "item_airstrike_napalm",
+    "name": "STR_NAPALM_AIRSTRIKE",
+    "desc": "STR_NAPALM_AIRSTRIKE_DESC",
+    "cost": 10000,
+    "type": "airstrike",
+    "category": "airstrike"
+  },
+  {
     "id": "item_sentry",
     "name": "STR_SENTRY",
     "desc": "STR_SENTRY_DESC",

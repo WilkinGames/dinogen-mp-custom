@@ -46,8 +46,7 @@
     "desc": "STR_DINO_ANKYLOSAURUS_DESC",
     "speed": 1,
     "damage": 2,
-    "health": 3,
-    "bHidden": true
+    "health": 3
   },
   {
     "id": "stegosaurus",
