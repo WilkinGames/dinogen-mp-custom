@@ -81,8 +81,8 @@ const EventUtil = {
     }
 };
 const ServerData = {
-    VERSION: "1.0.5",
-    GAME_VERSION: "1.0.7"
+    VERSION: "1.0.6",
+    GAME_VERSION: "1.0.8"
 };
 const Lobby = {
     COUNTDOWN_INTERMISSION: 10,
@@ -100,6 +100,7 @@ const Lobby = {
     TYPE_SURVIVAL: "survival",
     TYPE_SCENARIO: "scenario",
     TYPE_GROUND_WAR: "groundWar",
+    TYPE_OPEN_WORLD: "openWorld",
     REASON_KICKED: "kicked",
     REASON_CLIENT_QUIT: "client_quit",
     REASON_LEAVE: "leave",
@@ -123,6 +124,8 @@ const GameMode = {
     CONQUEST: "conquest",
     TYRANT: "tyrant",
     EVOLUTION: "evolution",
+    DINO_RESCUE: "dino_rescue",
+    EXTRACTION: "extraction",
     RAPTOR_HUNT: "raptor_hunt",
     HUMANS_VS_DINOSAURS: "humans_vs_dinosaurs",
     DESTRUCTION: "destruction",
@@ -132,7 +135,8 @@ const GameMode = {
     SURVIVAL_MILITIA: "survival_militia",
     SURVIVAL_ZOMBIE: "survival_zombie",
     SURVIVAL_CHICKEN: "survival_chicken",
-    SURVIVAL_PANDEMONIUM: "survival_pandemonium"
+    SURVIVAL_PANDEMONIUM: "survival_pandemonium",
+    OPEN_WORLD: "open_world"
 };
 const Map = {
     RANDOM: "map_random",
@@ -149,7 +153,8 @@ const Map = {
     LABORATORY: "map_laboratory",
     OASIS: "map_oasis",
     COMPOUND: "map_compound",
-    ATRIUM: "map_atrium"
+    ATRIUM: "map_atrium",
+    GENERATED: "map_generated"
 };
 const BotSkill = {
     AUTO: -1,
@@ -427,6 +432,7 @@ const p2 = require("p2");
 const astar = require("javascript-astar");
 const shared = require("./assets/json/shared.json");
 const bots = require("./assets/json/bots.json");
+const openWorld = require("./assets/json/openWorld.json");
 const sprites = require("./assets/json/sprites.json");
 const weapons_world = require("./assets/images/world/atlas_weapons_world.json");
 const weapons = require("./assets/json/weapons.json");
@@ -467,6 +473,14 @@ function incrementStat(_id)
     stats[_id]++;
     if (settings.bPersistentStats)
     {
+        try
+        {
+            JSON.parse(stats);
+        }
+        catch (e)
+        {
+            console.warn("Invalid stats JSON:", stats);
+        }
         try
         {
             let data = JSON.stringify(stats);
@@ -1463,11 +1477,35 @@ if (settings.bSingleGame)
     //Create lobby for single game server
     let singleGameData = settings.singleGameData;
     if (singleGameData)
-    {
-        createPublicLobby(singleGameData.lobbyType, settings.maxPlayers);
+    {        
+        if (singleGameData.lobbyType)
+        {
+            createPublicLobby(singleGameData.lobbyType);
+        }
+        else if (singleGameData.scenario)
+        {
+            createPublicLobby(Lobby.TYPE_MIXED, settings.maxPlayers); //TODO
+        }
+        else if (singleGameData.gameModeId)
+        {
+            let singleLobby = createPublicLobby(Lobby.TYPE_OPEN_WORLD, settings.maxPlayers);
+            singleLobby.gameData.gameModeId = singleGameData.gameModeId;
+            singleLobby.gameData.mapId = singleGameData.mapId;
+            singleLobby.maxPlayers = settings.maxPlayers;
+            if (singleGameData.settings)
+            {
+                singleLobby.gameData.settings = singleGameData.settings;
+            }
+        }
+        else
+        {
+            console.warn("Invalid singleGameData");
+            createPublicLobby(Lobby.TYPE_MIXED, settings.maxPlayers);
+        }
     }
     else
     {
+        console.warn("Missing singleGameData");
         createPublicLobby(Lobby.TYPE_MIXED, settings.maxPlayers);
     }
 }
@@ -1656,6 +1694,17 @@ function createPublicLobby(_type, _maxPlayers)
                 maxPlayers = 16;
                 gameData.settings.bots = maxPlayers;
                 break;
+            case Lobby.TYPE_OPEN_WORLD:
+                maxPlayers = 16;
+                gameData.settings = {
+                    maxSubSteps: 1,
+                    tolerance: 0.9,
+                    iterations: 1,
+                    bots: 0,
+                    bSpawnProtection: true,
+                    respawnTime: 30
+                };
+                break;
             default:
                 console.warn("Unsupported lobby type:", _type);
                 _type = Lobby.TYPE_MIXED;
@@ -1746,7 +1795,7 @@ function triggerServerInfo(_lobbyId)
                 break;
             case 2:
                 msg = "STR_SERVER_X_DINOSAUR_KILLS";
-                params = [stats.dinoKills ? stats.heliKills : 0];
+                params = [stats.dinoKills ? stats.dinoKills : 0];
                 break;
             case 3:
                 msg = "STR_SERVER_X_HELI_KILLS";
@@ -1833,6 +1882,16 @@ function initVotes(_lobby)
     }
     switch (_lobby.type)
     {
+        case Lobby.TYPE_OPEN_WORLD:
+            _lobby.votes = [
+                {
+                    id: GameMode.OPEN_WORLD,
+                    mapId: Map.GENERATED,
+                    players: []
+                }
+            ];
+            break;
+
         case Lobby.TYPE_SCENARIO:
             _lobby.votes = [];
             try
@@ -1951,7 +2010,9 @@ function getVotes(_type)
                 GameMode.DOMINATION,
                 GameMode.DESTRUCTION,
                 GameMode.RAPTOR_HUNT,
-                GameMode.EVOLUTION
+                GameMode.EVOLUTION,
+                GameMode.DINO_RESCUE,
+                GameMode.EXTRACTION
             ];
             for (var i = 0; i < groundWarModes.length; i++)
             {
@@ -2448,6 +2509,7 @@ function setLobbyTeams(_lobby)
                 case GameMode.SURVIVAL_ZOMBIE:
                 case GameMode.SURVIVAL_CHICKEN:
                 case GameMode.SURVIVAL_PANDEMONIUM:
+                case GameMode.OPEN_WORLD:
                     player.team = 0;
                     bUsePreferred = true;
                     break;
@@ -2722,6 +2784,7 @@ function joinLobby(_player, _lobbyId)
                 case GameMode.SURVIVAL_ZOMBIE:
                 case GameMode.SURVIVAL_CHICKEN:
                 case GameMode.SURVIVAL_PANDEMONIUM:
+                case GameMode.OPEN_WORLD:
                     _player.team = 0;
                     break;
                 case GameMode.FREE_FOR_ALL:
@@ -3037,6 +3100,7 @@ function setLobbyState(_lobbyId, _state)
                     modes: modes,
                     maps: allMaps,
                     bots: bots,
+                    openWorld: openWorld,
                     callbacks: {
                         error: (_data) =>
                         {
@@ -3133,7 +3197,7 @@ function setLobbyState(_lobbyId, _state)
                         console.warn(votes);
                     }
                 }
-                if (!lobby.bCustom && lobby.type != Lobby.TYPE_SCENARIO)
+                if (!lobby.bCustom && lobby.type != Lobby.TYPE_SCENARIO && lobby.type != Lobby.TYPE_OPEN_WORLD)
                 {
                     var defaultSettings = shared.defaultGameSettings[gameData.gameModeId];
                     if (defaultSettings)
@@ -3145,10 +3209,21 @@ function setLobbyState(_lobbyId, _state)
                             gameData.settings[key] = defaultSettings[key];
                         }
                     }
+                    let modeData = getGameMode(gameData.gameModeId);
                     let worldTypes = [null, null, "night", "dawn"];
                     gameData.settings.worldType = worldTypes[MathUtil.Random(0, worldTypes.length - 1)];
-                    let boxes = [null, null, 600];
-                    gameData.settings.boxes = boxes[MathUtil.Random(0, boxes.length - 1)];
+                    delete gameData.settings.boxes;
+                    delete gameData.settings.forest;
+                    if (!modeData.bSurvival && modeData.id != GameMode.OPEN_WORLD)
+                    {
+                        let boxes = [null, null, 600];
+                        gameData.settings.boxes = boxes[MathUtil.Random(0, boxes.length - 1)];
+                        if (gameData.gameModeId == GameMode.RAPTOR_HUNT)
+                        {
+                            let forest = [400, 600, 800];
+                            gameData.settings.forest = forest[MathUtil.Random(0, forest.length - 1)];
+                        }
+                    }
                 }
                 if (isSurvivalGameMode(gameData.gameModeId) && gameData.settings.bHardcore)
                 {
@@ -3159,7 +3234,7 @@ function setLobbyState(_lobbyId, _state)
                         gameData.settings.bMapWeapons = false;
                     }
                 }
-                var numBots = gameData.settings.bots;
+                var numBots = gameData.settings.bots;                
                 if (!lobby.bCustom)
                 {
                     if (isSurvivalGameMode(gameData.gameModeId))
@@ -3171,6 +3246,7 @@ function setLobbyState(_lobbyId, _state)
                 {
                     numBots = 0;
                 }
+                console.log("Add", numBots, "bots to lobby");
                 var avg = getAveragePlayerLevel(lobby.players);
                 var desiredBotSkill = Math.floor(avg / 30);
                 for (i = 0; i < numBots; i++)
@@ -3849,11 +3925,9 @@ function handleChatMessage(_socket, _message)
                 var upTime = convertMS(Date.now() - serverStartTime);
                 info += "Uptime: " + upTime.day + "d " + upTime.hour + "h " + upTime.minute + "m " + upTime.seconds + "s";
                 info += "\n" + getNumClients() + " connected / " + lobbies.length + " lobbies / " + getLobbiesInProgress() + " games in progress";
-                info += "\n---";
                 info += "\n" + (settings.bAllowVotes ? "☑" : "☐") + " Map Voting";
-                info += "\n" + (settings.bAllowVotekick ? "☑" : "☐") + " Votekick";
-                info += "\n" + (settings.bAllowVoteskip ? "☑" : "☐") + " Voteskip";
-                info += "\n---";
+                info += "  •  " + (settings.bAllowVotekick ? "☑" : "☐") + " Votekick";
+                info += "  •  " + (settings.bAllowVoteskip ? "☑" : "☐") + " Voteskip";
                 sendChatMessageToSocket(_socket, {
                     bServer: true,
                     bDirect: true,
@@ -3897,6 +3971,16 @@ function handleChatMessage(_socket, _message)
                         bServer: true,
                         bDirect: true,
                         messageText: "Lobby ID: " + lobby.id + "\nType: " + (lobby.bCustom ? "Custom" : lobby.type) + "\nState: " + lobby.state + "\nMax Players: " + lobby.maxPlayers + "\nLobby is " + (lobby.bPublic ? "public" : "private 🔒")
+                    });
+                }
+                break;
+
+            case "/tickRate":
+                if (lobby && lobby.game)
+                {
+                    sendChatMessageToLobby(lobby.id, {
+                        bServer: true,
+                        messageText: "Current tick rate: " + (lobby.game.game.gameSettings.tickRate ? lobby.game.game.gameSettings.tickRate : 60)
                     });
                 }
                 break;
@@ -5083,6 +5167,10 @@ function getLobbyDataForSocket(_socket, _lobby)
                         if (game.bSurvival)
                         {
                             data.wave = gameModeData.wave;
+                        }
+                        else
+                        {
+                            data.scores = gameModeData.scores;
                         }
                     }
                 }

@@ -103,7 +103,7 @@
     "desc": "STR_MOD_ARROW_POISON_DESC",
     "score": 10000,
     "moneyCost": 5000,
-    "cost": 10
+    "cost": 15
   },
   {
     "id": "ammo_hollow_point",
@@ -112,7 +112,7 @@
     "desc": "STR_MOD_HOLLOW_POINT_DESC",
     "score": 15000,
     "moneyCost": 2500,
-    "cost": 5
+    "cost": 8
   },
   {
     "id": "ammo_explosive",
@@ -121,7 +121,7 @@
     "desc": "STR_MOD_EXPLOSIVE_DESC",
     "score": 30000,
     "moneyCost": 10000,
-    "cost": 10
+    "cost": 15
   },
   {
     "id": "arrow_explosive",
@@ -130,7 +130,7 @@
     "desc": "STR_MOD_ARROW_EXPLOSIVE_DESC",
     "score": 30000,
     "moneyCost": 10000,
-    "cost": 20
+    "cost": 30
   },
   {
     "id": "grenade_smoke",

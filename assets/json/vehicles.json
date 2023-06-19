@@ -2,163 +2,80 @@
   {
     "id": "mh6",
     "name": "STR_MH6",
-    "type": "helicopter",
-    "uiScale": 2,
-    "seats": [
-      [ 44, 0 ],
-      [ 23, 0 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "seaknight",
     "name": "STR_SEAKNIGHT",
-    "type": "helicopter",
-    "uiScale": 2,
-    "seats": [
-      [ 44, 0 ],
-      [ 23, 0 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "blackhawk",
     "name": "STR_BLACKHAWK",
-    "type": "helicopter",
-    "uiScale": 3,
-    "seats": [
-      [ 58, 3 ],
-      [ 30, 7 ],
-      [ 17, 7 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "cobra",
     "name": "STR_COBRA",
-    "type": "helicopter",
-    "uiScale": 2,
-    "seats": [
-      [ 55, 0 ],
-      [ 36, -2 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "apache",
     "name": "STR_APACHE",
-    "type": "helicopter",
-    "uiScale": 2,
-    "seats": [
-      [ 55, 0 ],
-      [ 36, -2 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "kiowa",
     "name": "STR_KIOWA",
-    "type": "helicopter",
-    "uiScale": 2,
-    "seats": [
-      [ 65, 0 ],
-      [ 50, 0 ],
-      [ 42, 10 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "osprey",
     "name": "STR_OSPREY",
-    "type": "helicopter",
-    "uiScale": 3,
-    "seats": [
-      [ 100, 25 ],
-      [ 85, 25 ],
-      [ 46, 25 ],
-      [ -17, 25 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "chickencopter",
     "soundId": "cobra",
     "name": "STR_CHICKENCOPTER",
-    "type": "helicopter",
-    "uiScale": 2,
-    "seats": [
-      [ 44, 0 ],
-      [ 23, 0 ]
-    ]
+    "type": "helicopter"
   },
   {
     "id": "abrams",
     "name": "STR_ABRAMS",
-    "type": "tank",
-    "uiScale": 3,
-    "seats": [
-      [ -5, 7 ],
-      [ -34, -16 ]
-    ]
+    "type": "tank"
   },
   {
     "id": "t90",
     "name": "STR_T90",
-    "type": "tank",
-    "uiScale": 3,
-    "seats": [
-      [ -5, 7 ],
-      [ -34, -16 ]
-    ]
+    "type": "tank"
   },
   {
     "id": "quad",
     "name": "STR_QUAD",
-    "type": "car",
-    "uiScale": 1.5,
-    "seats": [
-      [ 2, -20 ],
-      [ -26, -20 ]
-    ]
+    "type": "car"
   },
   {
     "id": "pickup",
     "name": "STR_PICKUP",
     "type": "car",
-    "soundId": "mrap",
-    "uiScale": 1.5,
-    "seats": [
-      [ 2, -20 ],
-      [ -26, -20 ]
-    ]
+    "soundId": "mrap"
   },
   {
     "id": "growler",
     "name": "STR_GROWLER",
     "type": "car",
-    "soundId": "mrap",
-    "uiScale": 1.5,
-    "seats": [
-      [ 2, -20 ],
-      [ -26, -20 ]
-    ]
+    "soundId": "mrap"
   },
   {
     "id": "mrap",
     "name": "STR_MRAP",
-    "type": "car",
-    "uiScale": 1.5,
-    "seats": [
-      [ 2, -20 ],
-      [ -26, -30 ],
-      [ -36, -30 ],
-      [ -46, -30 ]
-    ]
+    "type": "car"
   },
   {
     "id": "lav25",
     "name": "STR_LAV25",
-    "type": "car",
-    "uiScale": 1.5,
-    "seats": [
-      [ 2, -20 ],
-      [ -26, -30 ],
-      [ -36, -30 ],
-      [ -46, -30 ]
-    ]
+    "type": "car"
   },
   {
     "id": "m2",
@@ -168,6 +85,11 @@
   {
     "id": "bgm71",
     "name": "STR_WPN_BGM71",
+    "type": "mountedWeapon"
+  },
+  {
+    "id": "m242",
+    "name": "STR_WPN_M242",
     "type": "mountedWeapon"
   }
 ]

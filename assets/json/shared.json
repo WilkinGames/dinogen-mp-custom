@@ -89,16 +89,16 @@
     "mass": 3,
     "damping": 0.9999,
     "angularDamping": 0.9,
-    "maxSpeed": 250,
+    "maxSpeed": 300,
     "sprintCooldownMax": 3
   },
   "ankylosaurus": {
     "width": 130,
     "height": 50,
-    "mass": 4,
+    "mass": 5,
     "damping": 0.9999,
     "angularDamping": 0.9,
-    "maxSpeed": 240,
+    "maxSpeed": 230,
     "sprintCooldownMax": 4
   },
   "allosaurus": {
@@ -815,6 +815,10 @@
     "mode_rotation_survival": [ "survival_dino", "survival_militia", "survival_chaos", "survival_zombie", "survival_chicken" ]
   },
   "defaultGameSettings": {
+    "open_world": {
+      "scoreLimit": 0,
+      "timeLimit": 0
+    },
     "deathmatch": {
       "scoreLimit": 50,
       "bSpawnProtection": true,
@@ -870,6 +874,20 @@
     },
     "destruction": {
       "scoreLimit": 2,
+      "bSpawnProtection": true,
+      "bMapVehicles": true,
+      "bMapWeapons": true
+    },
+    "dino_rescue": {
+      "scoreLimit": 3,
+      "timeLimit": 5,
+      "bSpawnProtection": true,
+      "bMapVehicles": true,
+      "bMapWeapons": true,
+      "bUseRoundThreshold": true
+    },
+    "extraction": {
+      "scoreLimit": 3,
       "bSpawnProtection": true,
       "bMapVehicles": true,
       "bMapWeapons": true

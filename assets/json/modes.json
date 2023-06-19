@@ -55,6 +55,28 @@
     "bNoFactions": true
   },
   {
+    "id": "dino_rescue",
+    "name": "STR_MODE_DINO_RESCUE",
+    "desc": "STR_MODE_DINO_RESCUE_DESC",
+    "teamDesc": [
+      "STR_RESCUE_DINOS",
+      "STR_PREVENT_DINO_RESCUE"
+    ],
+    "bTeam": true,
+    "bUseRounds": true
+  },
+  {
+    "id": "extraction",
+    "name": "STR_MODE_EXTRACTION",
+    "desc": "STR_MODE_EXTRACTION_DESC",
+    "teamDesc": [
+      "STR_SECURE_AIRDROPS",
+      "STR_PREVENT_AIRDROPS"
+    ],
+    "bTeam": true,
+    "bNoFactions": true
+  },
+  {
     "id": "raptor_hunt",
     "name": "STR_MODE_RAPTOR_HUNT",
     "desc": "STR_MODE_RAPTOR_HUNT_DESC",
@@ -116,6 +138,13 @@
     "name": "STR_MODE_SURVIVAL_CHICKEN",
     "desc": "STR_MODE_SURVIVAL_CHICKEN_DESC",
     "bSurvival": true,
+    "bHidden": true
+  },
+  {
+    "id": "open_world",
+    "name": "STR_MODE_OPEN_WORLD",
+    "desc": "STR_MODE_OPEN_WORLD_DESC",
+    "bTeam": true,
     "bHidden": true
   }
 ]

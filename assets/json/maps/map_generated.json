@@ -1,0 +1,44 @@
+﻿{
+  "id": "map_generated",
+  "emitter": "forest",
+  "ambience": "amb_jungle",
+  "width": 8192,
+  "height": 8192,
+  "teamSpawns": [],
+  "spawns": [],
+  "storeSpawn": [],
+  "bombs": {
+    "destruction": [
+      [
+        [ 500, 500 ],
+        [ 500, 2300 ]
+      ],
+      [
+        [ 2300, 500 ],
+        [ 2300, 2300 ]
+      ]
+    ]
+  },
+  "flags": {
+    "capture_the_flag": [
+      [ 400, 2400 ],
+      [ 2400, 400 ]
+    ],
+    "domination": [
+      [ 300, 300 ],
+      [ 1400, 1400 ],
+      [ 2500, 2500 ]
+    ],
+    "conquest": [
+      [ 700, 2100 ],
+      [ 700, 700 ],
+      [ 1400, 1400 ],
+      [ 2100, 2100 ],
+      [ 2100, 700 ]
+    ]
+  },
+  "objects": [],
+  "ai": {
+    "nodes": []
+  }
+}

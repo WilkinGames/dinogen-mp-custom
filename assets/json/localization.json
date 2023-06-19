@@ -2399,6 +2399,9 @@
 		"pl": "Bomba rozbrojona",
 		"ja": "爆弾解除"
 	},
+	"STR_HOSTAGE_BONUS": {
+		"en": "Hostage Bonus"
+	},
 	"STR_PLANTED_BOMB": {
 		"en": "Planted Bomb",
 		"ru": "Установлена бомба",
@@ -3705,19 +3708,19 @@
 		"ja": "ルール: チート禁止。"
 	},
 	"STR_SERVER_DISCORD": {
-		"en": "Join the Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
-		"ru": "Присоединяйтесь к Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
-		"zh": "加入 Dinogen 在线 Discord：discord.gg/jhdNu5kDrZ",
-		"zh-CHT": "加入 Dinogen Discord：discord.gg/jhdNu5kDrZ",
-		"uk": "Приєднуйтеся до Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
-		"fr": "Rejoignez le discord en ligne Dinogen : discord.gg/jhdNu5kDrZ",
-		"tr": "Dinogen Online Discord'a katılın: discord.gg/jhdNu5kDrZ",
-		"es": "Únase al Discord en línea de Dinogen: discord.gg/jhdNu5kDrZ",
-		"it": "Unisciti a Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
-		"pt": "Junte-se ao Discord Online Dinogen: discord.gg/jhdNu5kDrZ",
-		"de": "Tritt dem Dinogen Online Discord bei: discord.gg/jhdNu5kDrZ",
-		"pl": "Dołącz do Dinogen Online Discord: discord.gg/jhdNu5kDrZ",
-		"ja": "Dinogen Online Discord に参加してください: discord.gg/jhdNu5kDrZ"
+		"en": "Join the Dinogen Online Discord: discord.gg/dinogen",
+		"ru": "Присоединяйтесь к Dinogen Online Discord: discord.gg/dinogen",
+		"zh": "加入 Dinogen 在线 Discord：discord.gg/dinogen",
+		"zh-CHT": "加入 Dinogen Discord：discord.gg/dinogen",
+		"uk": "Приєднуйтеся до Dinogen Online Discord: discord.gg/dinogen",
+		"fr": "Rejoignez le discord en ligne Dinogen : discord.gg/dinogen",
+		"tr": "Dinogen Online Discord'a katılın: discord.gg/dinogen",
+		"es": "Únase al Discord en línea de Dinogen: discord.gg/dinogen",
+		"it": "Unisciti a Dinogen Online Discord: discord.gg/dinogen",
+		"pt": "Junte-se ao Discord Online Dinogen: discord.gg/dinogen",
+		"de": "Tritt dem Dinogen Online Discord bei: discord.gg/dinogen",
+		"pl": "Dołącz do Dinogen Online Discord: discord.gg/dinogen",
+		"ja": "Dinogen Online Discord に参加してください: discord.gg/dinogen"
 	},
 	"STR_SERVER_PLAYER_INFO": {
 		"en": "Type /players to view players.",
@@ -4349,6 +4352,12 @@
 		"pl": "Zaokrąglić",
 		"ja": "ラウンドオーバー"
 	},
+	"STR_ROUND_WIN": {
+		"en": "Round Win"
+	},
+	"STR_ROUND_LOSS": {
+		"en": "Round Loss"
+	},
 	"STR_REVIVE_X": {
 		"en": "Revive %1",
 		"ru": "Возродить %1",
@@ -4558,6 +4567,15 @@
 		"de": "Ziel abgeschlossen",
 		"pl": "Cel ukończony",
 		"ja": "目的は完了しました"
+	},
+	"STR_CONDITION_DINOS_RESCUED": {
+		"en": "All Dinosaurs Rescued"
+	},
+	"STR_CONDITION_HUMANS_KILLED": {
+		"en": "All Humans Killed"
+	},
+	"STR_CONDITION_HUMANS_EXTRACTED": {
+		"en": "Humans Extracted"
 	},
 	"STR_CONDITION_OBJECTIVE_FAILED": {
 		"en": "Objective Failed",
@@ -5174,6 +5192,33 @@
 		"pl": "Pandemonium",
 		"ja": "大混乱"
 	},
+	"STR_MODE_DINO_RESCUE": {
+		"en": "Dinosaur Rescue"
+	},
+	"STR_MODE_DINO_RESCUE_DESC": {
+		"en": "Teams take turns rescuing the captive dinosaurs."
+	},
+	"STR_MODE_EXTRACTION": {
+		"en": "Extraction"
+	},
+	"STR_MODE_EXTRACTION_DESC": {
+		"en": "Humans must secure the airdrops and escape."
+	},
+	"STR_SECURE_AIRDROPS": {
+		"en": "Secure the airdrop crates."
+	},
+	"STR_PREVENT_AIRDROPS": {
+		"en": "Prevent the humans from securing the airdrop crates."
+	},
+	"STR_EXTRACTION_HELICOPTER_INBOUND": {
+		"en": "Extraction helicopter inbound!"
+	},
+	"STR_GET_TO_EXTRACTION_HELI": {
+		"en": "Get to the extraction helicopter!"
+	},
+	"STR_PREVENT_HUMAN_ESCAPE": {
+		"en": "Don't let the humans escape!"
+	},
 	"STR_MODE_TYRANT_DESC": {
 		"en": "Humans must kill the Tyrannosaurus Rex.",
 		"ru": "Люди должны убить Тираннозавра Рекса.",
@@ -5608,6 +5653,15 @@
 		"de": "Respawn in %1",
 		"pl": "Odradzanie się w %1",
 		"ja": "%1 でリスポーン中"
+	},
+	"STR_NEXT_AIRDROP_IN_X": {
+		"en": "Next airdrop in %1"
+	},
+	"STR_AIRDROPS_SECURED_X_OF_X": {
+		"en": "Airdrops Secured: %1 of %2"
+	},
+	"STR_CHANGE_CLASS": {
+		"en": "Change Class"
 	},
 	"STR_WAITING_TO_RESPAWN": {
 		"en": "Waiting to respawn",
@@ -6148,6 +6202,12 @@
 		"de": "Benutzerdefinierte Karte",
 		"pl": "Mapa niestandardowa",
 		"ja": "カスタムマップ"
+	},
+	"STR_MAP_GENERATED": {
+		"en": "Generated Map"
+	},
+	"STR_DAY_X": {
+		"en": "Day %1"
 	},
 	"STR_MAP": {
 		"en": "Map",
@@ -9419,6 +9479,9 @@
 		"pl": "Losowa mapa",
 		"ja": "ランダムマップ"
 	},
+	"STR_RANDOM_MAP_DESC": {
+		"en": "Play a random map."
+	},
 	"STR_WPN_KEVLAR": {
 		"en": "Kevlar",
 		"ru": "Кевлар",
@@ -10648,6 +10711,9 @@
 		"de": "Adrenalin-Schuss",
 		"pl": "Zastrzyk adrenaliny",
 		"ja": "アドレナリンショット"
+	},
+	"STR_INVENTORY_X_OF_X": {
+		"en": "Inventory: %1 / %2"
 	},
 	"STR_INVENTORY_FULL": {
 		"en": "Inventory Full",
@@ -15748,6 +15814,24 @@
 		"de": "Koteletten",
 		"pl": "Bokobrody",
 		"ja": "もみあげ"
+	},
+	"STR_STAT_RESCUES": {
+		"en": "Rescues"
+	},
+	"STR_X_RESCUED_DINOSAUR": {
+		"en": "%1 Rescued Dinosaur"
+	},
+	"STR_DINOSAUR_RESCUED": {
+		"en": "Dinosaur Rescued"
+	},
+	"STR_RESCUED_DINOSAUR": {
+		"en": "Rescued Dinosaur"
+	},
+	"STR_TEAM_RESCUERS": {
+		"en": "Rescuers"
+	},
+	"STR_TEAM_CAPTORS": {
+		"en": "Captors"
 	},
 	"STR_STAT_DAMAGE": {
 		"en": "Damage",
@@ -24254,6 +24338,12 @@
 		"pl": "Zabij dinozaury, aby ukończyć samouczek.",
 		"ja": "恐竜を倒してチュートリアルを完了します。"
 	},
+	"STR_MODE_OPEN_WORLD": {
+		"en": "Open World"
+	},
+	"STR_MODE_OPEN_WORLD_DESC": {
+		"en": "Explore, build, and survive."
+	},
 	"STR_MODE_SCENARIO": {
 		"en": "Scenario",
 		"ru": "Сценарий",
@@ -30179,6 +30269,12 @@
 		"pl": "Większość walk wręcz",
 		"ja": "ほとんどの乱闘"
 	},
+	"STR_MOST_ASSISTS": {
+		"en": "Most Assists"
+	},
+	"STR_MOST_RESCUES": {
+		"en": "Most Rescues"
+	},
 	"STR_MOST_DEATHS": {
 		"en": "Most Deaths",
 		"ru": "Большинство смертей",
@@ -30283,5 +30379,56 @@
 		"de": "Server verwendet nicht die neueste Version",
 		"pl": "Serwer nie używa najnowszej wersji",
 		"ja": "サーバーが最新バージョンを使用していない"
+	},
+	"STR_HOSTAGE": {
+		"en": "Hostage"
+	},
+	"STR_RESCUE": {
+		"en": "Rescue"
+	},
+	"STR_RESCUE_ZONE": {
+		"en": "Rescue Zone"
+	},
+	"STR_RESCUE_DINOS": {
+		"en": "Rescue the captive dinosaurs."
+	},
+	"STR_PREVENT_DINO_RESCUE": {
+		"en": "Prevent the captive dinosaurs from being rescued."
+	},
+	"STR_NUM_ROUNDS": {
+		"en": "Number of Rounds"
+	},
+	"STR_NUM_CRATES": {
+		"en": "Number of Crates"
+	},
+	"STR_SECURE": {
+		"en": "Secure"
+	},
+	"STR_EXTRACTION_HELICOPTER": {
+		"en": "Extraction Helicopter"
+	},
+	"STR_X_SECURED_AIRDROP": {
+		"en": "%1 Secured Airdrop"
+	},
+	"STR_SECURED_AIRDROP": {
+		"en": "Secured Airdrop"
+	},
+	"STR_SIZE_TINY": {
+		"en": "Size: Tiny"
+	},
+	"STR_SIZE_SMALL": {
+		"en": "Size: Small"
+	},
+	"STR_SIZE_MEDIUM": {
+		"en": "Size: Medium"
+	},
+	"STR_SIZE_LARGE": {
+		"en": "Size: Large"
+	},
+	"STR_SIZE_HUGE": {
+		"en": "Size: Huge"
+	},
+	"STR_TOTAL_WINS_X": {
+		"en": "Total Wins: %1"
 	}
 }

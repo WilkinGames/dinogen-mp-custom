@@ -1,70 +1,90 @@
 [
   {
+    "id": "map_firing_range",
+    "name": "STR_MAP_FIRING_RANGE",
+    "size": "tiny"
+  },
+  {
     "id": "map_riverside",
-    "name": "STR_MAP_RIVERSIDE"
+    "name": "STR_MAP_RIVERSIDE",
+    "size": "small"
   },
   {
     "id": "map_complex",
-    "name": "STR_MAP_COMPLEX"
+    "name": "STR_MAP_COMPLEX",
+    "size": "small"
   },
   {
     "id": "map_district",
-    "name": "STR_MAP_DISTRICT"
+    "name": "STR_MAP_DISTRICT",
+    "size": "small"
   },
   {
     "id": "map_sandstorm",
-    "name": "STR_MAP_SANDSTORM"
-  },
-  {
-    "id": "map_firing_range",
-    "name": "STR_MAP_FIRING_RANGE"
+    "name": "STR_MAP_SANDSTORM",
+    "size": "small"
   },
   {
     "id": "map_hexagon",
-    "name": "STR_MAP_HEXAGON"
+    "name": "STR_MAP_HEXAGON",
+    "size": "small"
+  },
+  {
+    "id": "map_field",
+    "name": "STR_MAP_FIELD",
+    "size": "small"
   },
   {
     "id": "map_facility",
     "name": "STR_MAP_FACILITY",
-    "bCustom": true
+    "bCustom": true,
+    "size": "medium"
   },
   {
     "id": "map_campsite",
     "name": "STR_MAP_CAMPSITE",
-    "bCustom": true
+    "bCustom": true,
+    "size": "medium"
   },
   {
     "id": "map_oasis",
     "name": "STR_MAP_OASIS",
-    "bCustom": true
+    "bCustom": true,
+    "size": "medium"
   },
   {
     "id": "map_villa",
     "name": "STR_MAP_VILLA",
-    "bCustom": true
+    "bCustom": true,
+    "size": "large"
   },
   {
     "id": "map_laboratory",
     "name": "STR_MAP_LABORATORY",
-    "bCustom": true
+    "bCustom": true,
+    "size": "large"
   },
   {
     "id": "map_compound",
     "name": "STR_MAP_COMPOUND",
-    "bCustom": true
+    "bCustom": true,
+    "size": "large"
   },
   {
     "id": "map_atrium",
     "name": "STR_MAP_ATRIUM",
-    "bCustom": true
-  },
-  {
-    "id": "map_field",
-    "name": "STR_MAP_FIELD"
+    "bCustom": true,
+    "size": "large"
   },
   {
     "id": "map_custom",
     "name": "STR_MAP_CUSTOM",
+    "bHidden": true
+  },
+  {
+    "id": "map_generated",
+    "name": "STR_MAP_GENERATED",
+    "bCustom": true,
     "bHidden": true
   }
 ]
