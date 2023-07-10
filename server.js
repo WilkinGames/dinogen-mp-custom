@@ -3633,7 +3633,7 @@ async function initHathoraGame()
     try
     {
         let appId = settings.hathora.appId;
-        let token = "iFshgkXYkKvW2giv5lH5R0ViZIUTmxYlE4NL2iUGNc8s7";
+        let token = settings.hathora.token;
         let roomClient = new hathora.RoomV1Api(new hathora.Configuration({
             headers: { Authorization: "Bearer " + token }
         }));
