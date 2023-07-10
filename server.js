@@ -116,7 +116,6 @@ const LobbyState = {
     IN_PROGRESS: "in_progress"
 };
 const GameMode = {
-    RANDOM: "random",
     SCENARIO: "scenario",
     FREE_FOR_ALL: "deathmatch",
     TEAM_DEATHMATCH: "team_deathmatch",
@@ -402,6 +401,7 @@ log(settings, "\n");
 log(chalk.yellow("Loading modules..."));
 const { exec } = require("child_process");
 const fs = require("fs");
+const hathora = require("@hathora/hathora-cloud-sdk");
 const cors = require("cors");
 const express = require("express");
 const app = express();
@@ -475,7 +475,7 @@ function incrementStat(_id)
     {
         try
         {
-            JSON.parse(stats);
+            JSON.stringify(stats);
         }
         catch (e)
         {
@@ -647,6 +647,8 @@ app.get("/data", (req, res) =>
         gameVersion: ServerData.GAME_VERSION,
         name: settings.name,
         country: settings.country,
+        region: settings.region,
+        host: settings.host,
         numPlayers: getNumClients(),
         maxPlayers: settings.maxPlayers,
         bDisableCustomLobbies: settings.bDisableCustomLobbies,
@@ -920,6 +922,10 @@ io.on("connection", (socket) =>
                 else
                 {
                     leaveLobby(socket.player, Lobby.REASON_CLIENT_QUIT);
+                    if (settings.bSingleGame)
+                    {
+                        disconnectSocket(socket, { reason: Lobby.REASON_CLIENT_QUIT });
+                    }
                 }
             }
             else
@@ -933,11 +939,11 @@ io.on("connection", (socket) =>
                     }
                 }
                 leaveLobby(socket.player, Lobby.REASON_CLIENT_QUIT);
-            }
-            if (settings.bSingleGame)
-            {
-                disconnectSocket(socket, { reason: Lobby.REASON_CLIENT_QUIT });
-            }
+                if (settings.bSingleGame)
+                {
+                    disconnectSocket(socket, { reason: Lobby.REASON_CLIENT_QUIT });
+                }
+            }            
         }
         else
         {
@@ -1468,17 +1474,41 @@ io.on("connection", (socket) =>
         leaveLobby(socket.player, socket.disconnectReason);
         //emitPlayerList();
         io.emit("playerDisconnected", socket.player.id);
+        if (settings.bKillServerWhenNoPlayers)
+        {
+            if (!getNumRealClients())
+            {
+                log("No more players, killing server in 3 seconds...");
+                setTimeout(() =>
+                {
+                    if (!getNumRealClients())
+                    {
+                        process.exit();
+                    }
+                }, 3000);
+            }
+        }
     });
 });
 
 var lobbies = [];
-if (settings.bSingleGame)
+
+//Initial lobby setup
+if (settings.hathora)
 {
-    //Create lobby for single game server
+    initHathoraGame();
+}
+else if (settings.bSingleGame)
+{
+    //Create lobby for single game server    
     let singleGameData = settings.singleGameData;
     if (singleGameData)
-    {        
-        if (singleGameData.lobbyType)
+    {      
+        if (singleGameData.lobbyType == "custom")
+        {
+            createCustomLobby();
+        }
+        else if (singleGameData.lobbyType)
         {
             createPublicLobby(singleGameData.lobbyType);
         }
@@ -1529,6 +1559,7 @@ else if (settings.publicLobbies)
         }        
     }    
 }
+
 //Multiplayer dummies
 var dummies = [];
 if (!settings.bDisableDummies)
@@ -1546,7 +1577,7 @@ if (!settings.bDisableDummies)
 
 function startDummyAutomation()
 {
-    var ms = 1000 * 30;
+    var ms = 1000 * 30; //Randomly add/remove a dummy every 30 seconds
     dummyTimeout = setTimeout(() =>
     {
         var dummy = dummies[MathUtil.Random(0, dummies.length - 1)];
@@ -1700,6 +1731,7 @@ function createPublicLobby(_type, _maxPlayers)
                     maxSubSteps: 1,
                     tolerance: 0.9,
                     iterations: 1,
+                    spawnProtectionTime: 3,
                     bots: 0,
                     bSpawnProtection: true,
                     respawnTime: 30
@@ -1710,6 +1742,10 @@ function createPublicLobby(_type, _maxPlayers)
                 _type = Lobby.TYPE_MIXED;
                 break;
         }
+    }
+    if (settings.bDisableBots)
+    {
+        gameData.settings.bots = 0;
     }
     var lobby = {        
         id: getRandomUniqueId(),
@@ -1998,7 +2034,7 @@ function getVotes(_type)
             for (var i = 0; i < modes.length; i++)
             {
                 let mode = modes[i];
-                if (!mode.bSurvival && !mode.bHidden)
+                if (!mode.bSurvival && !mode.bHidden && mode.id != GameMode.HUMANS_VS_DINOSAURS)
                 {
                     gameModes.push({ id: mode.id });
                 }
@@ -3589,6 +3625,55 @@ function startGame(_lobbyId, _gameData)
         {
             io.to(lobby.id).emit("enterGame");
         }, 3000);
+    }
+}
+
+async function initHathoraGame()
+{
+    try
+    {
+        let appId = settings.hathora.appId;
+        let token = "iFshgkXYkKvW2giv5lH5R0ViZIUTmxYlE4NL2iUGNc8s7";
+        let roomClient = new hathora.RoomV1Api(new hathora.Configuration({
+            headers: { Authorization: "Bearer " + token }
+        }));
+        let processId = process.env.HATHORA_PROCESS_ID;
+        log("HATHORA_PROCESS_ID -->", processId);
+
+        let rooms = await roomClient.getActiveRoomsForProcess(appId, processId);
+        let room = rooms[0];
+        log("Room", room);
+
+        let lobbyClient = new hathora.LobbyV2Api();
+        log("Getting lobby info...");
+        let info = await lobbyClient.getLobbyInfo(appId, room.roomId);
+        log(info);
+
+        let initialConfig = info.initialConfig;
+        if (initialConfig)
+        {
+            if (initialConfig.host)
+            {
+                settings.host = initialConfig.host;
+                settings.admins.push(initialConfig.host);
+            }
+            settings.name = initialConfig.name;
+            settings.region = initialConfig.region;
+            settings.maxPlayers = initialConfig.maxPlayers;
+            settings.bDisableBots = initialConfig.bDisableBots;
+            if (initialConfig.lobbyType == "custom")
+            {
+                createCustomLobby();
+            }
+            else
+            {
+                createPublicLobby(initialConfig.lobbyType);
+            }
+        }
+    }
+    catch (e)
+    {
+        console.warn(e);
     }
 }
 

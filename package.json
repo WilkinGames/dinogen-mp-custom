@@ -10,7 +10,8 @@
   "author": "Wilkin Games",
   "license": "ISC",
   "dependencies": {
-    "@theace0296/steamworks": "^1.1.1",
+    "@hathora/cli": "^1.9.0",
+    "@hathora/hathora-cloud-sdk": "^0.0.4",
     "chalk": "^4.1.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -21,7 +22,6 @@
     "rate-limiter-flexible": "^2.3.7",
     "smile2emoji": "^2.7.0",
     "socket.io": "^4.2.0",
-    "socket.io-json-parser": "^3.0.0",
-    "steamworks.js": "^0.0.23"
+    "socket.io-json-parser": "^3.0.0"
   }
 }
