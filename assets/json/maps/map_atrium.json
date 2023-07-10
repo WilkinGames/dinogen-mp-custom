@@ -3,6 +3,7 @@
 	"bCustom": true,
 	"width": 5206,
 	"height": 5120,
+	"bgTexture": "texture_water",
 	"storeSpawn": [ 2463, 2454 ],
 	"teamSpawns": [
 		{

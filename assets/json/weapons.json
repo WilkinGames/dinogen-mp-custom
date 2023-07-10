@@ -270,7 +270,7 @@
     "range": 1500,
     "mag": 7,
     "ammo": 28,
-    "recoil": 5,
+    "recoil": 4,
     "penetration": 5,
     "lookModifier": 1,
     "score": 7500
@@ -3620,6 +3620,7 @@
     "lookModifier": 1.8,
     "bNoShell": true,
     "bNoMuzzleFlash": true,
+    "bSingleRoundLoaded": true,
     "bNoMag": true,
     "score": 10000
   },

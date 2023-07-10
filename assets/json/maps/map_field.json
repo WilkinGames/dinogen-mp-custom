@@ -2,6 +2,7 @@
   "id": "map_field",
   "width": 2800,
   "height": 2800,
+  "bgTexture": "texture_grass2",
   "teamSpawns": [
     {
       "x": 400,

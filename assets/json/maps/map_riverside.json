@@ -2,6 +2,7 @@
 	"id": "map_riverside",
 	"width": 4000,
 	"height": 2600,
+	"bgTexture": "texture_grass2",
 	"ambience": "amb_forest",
 	"emitter": "forest",
 	"teamSpawns": [

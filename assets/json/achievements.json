@@ -62,8 +62,8 @@
   {
     "id": "first_bloods_1",
     "stat": "firstBloods",
-    "value": 1,
-    "num": 5,
+    "value": 5,
+    "num": 1,
     "name": "STR_FIRST_BLOOD",
     "desc": "STR_GET_X_FIRST_BLOODS",
     "descParams": [ 5 ],

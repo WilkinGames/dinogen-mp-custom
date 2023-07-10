@@ -5,7 +5,7 @@
     "name": "Human FFA",
     "data": {
       "gameModeId": "deathmatch",
-      "mapId": "random",
+      "mapId": "map_random",
       "settings": {
         "allowFactions": "humans"
       }
@@ -17,7 +17,7 @@
     "name": "Dinosaur CTF",
     "data": {
       "gameModeId": "capture_the_flag",
-      "mapId": "random",
+      "mapId": "map_random",
       "settings": {
         "allowFactions": "dinosaurs"
       }
@@ -29,7 +29,7 @@
     "name": "Raptor Hide and Seek",
     "data": {
       "gameModeId": "raptor_hunt",
-      "mapId": "random",
+      "mapId": "map_random",
       "settings": {
         "bHardcore": true,
         "forest": 200,

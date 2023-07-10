@@ -3,6 +3,7 @@
 	"bCustom": true,
 	"width": 5120,
 	"height": 2560,
+	"bgTexture": "texture_grass2",
 	"ambience": "amb_forest",
 	"emitter": "forest",
 	"storeSpawn": [

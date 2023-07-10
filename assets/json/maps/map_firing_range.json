@@ -2,6 +2,7 @@
   "id": "map_firing_range",
   "width": 2000,
   "height": 2000,
+  "bgTexture": "texture_grass2",
   "emitter": "forest",
   "teamSpawns": [
     {

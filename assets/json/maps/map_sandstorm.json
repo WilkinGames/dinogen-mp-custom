@@ -2,6 +2,7 @@
   "id": "map_sandstorm",
   "width": 4000,
   "height": 2600,
+  "bgTexture": "texture_dirt",
   "ambience": "amb_wind",
   "emitter": "dirt",
   "teamSpawns": [

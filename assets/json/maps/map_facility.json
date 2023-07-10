@@ -1,9 +1,10 @@
 {
 	"id": "map_facility",
 	"bCustom": true,
+	"bgTexture": "texture_grass2",
 	"width": 6400,
 	"height": 6400,
-	"storeSpawn": [3070, 5055],
+	"storeSpawn": [ 3070, 5055 ],
 	"teamSpawns": [
 		{
 			"x": 3000,
