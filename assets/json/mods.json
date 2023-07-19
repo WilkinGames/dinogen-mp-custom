@@ -75,7 +75,7 @@
     "name": "STR_MOD_EXTENDED",
     "desc": "STR_MOD_EXTENDED_DESC",
     "score": 10000,
-    "moneyCost": 1500,
+    "moneyCost": 2000,
     "cost": 3
   },
   {

@@ -2351,37 +2351,6 @@ class GameInstance
                     {
                         objData.destroyTimer = data.destroyTimer;
                     }
-                    if (this.isVehicle(body))
-                    {
-                        var weapons = data.weapons;
-                        if (weapons)
-                        {
-                            /*
-                            objData.weapons = [];
-                            for (var j = 0; j < weapons.length; j++)
-                            {
-                                objData.weapons[j] = [];
-                                var weaponList = weapons[j];
-                                for (var k = 0; k < weaponList.length; k++)
-                                {
-                                    var curWeapon = weaponList[k];
-                                    if (curWeapon)
-                                    {
-                                        objData.weapons[j][k] = {
-                                            aimRotation: curWeapon.aimRotation,
-                                            bCooldown: curWeapon.bCooldown
-                                        }
-                                        if (curWeapon.weaponData && curWeapon.weaponData.overheatMax)
-                                        {
-                                            objData.weapons[j][k].overheat = curWeapon.overheat;
-                                        }
-                                        this.removeUndefinedKeys(objData.weapons[j][k]);
-                                    }
-                                }
-                            }
-                            */
-                        }
-                    }
                     let keys = Object.keys(objData);
                     if (keys.length > 1)
                     {
@@ -13229,6 +13198,21 @@ class GameInstance
                     playerIndex: ps ? this.game.players.indexOf(ps) : null
                 });
                 break;
+            case GameServer.EVENT_OBJECT_UPDATE:
+                if (_data.objects)
+                {
+                    var keys = Object.keys(_data.objects);
+                    for (var i = keys.length - 1; i >= 0; i--)
+                    {
+                        let key = keys[i];
+                        let obj = _data.objects[key];
+                        if (!obj.length)
+                        {
+                            delete _data.objects[key];
+                        }
+                    }
+                }
+                break;
         }
     }
 
@@ -20334,7 +20318,7 @@ class GameInstance
         var items = data.items;
         if (items)
         {
-            if (data.bDropItemsWhenDestroyed !== false)
+            if (data.bDropItemsWhenDestroyed != false)
             {
                 for (var i = 0; i < items.length; i++)
                 {
@@ -24029,7 +24013,8 @@ class GameInstance
             bGodMode: _data.bGodMode,
             bDisabled: _data.bDisabled,
             tint: _data.tint,
-            bShowHatchTimer: _data.bShowHatchTimer
+            bShowHatchTimer: _data.bShowHatchTimer,
+            bDropItemsWhenDestroyed: _data.bDropItemsWhenDestroyed != null ? _data.bDropItemsWhenDestroyed : false
         };
         var data = body.data;
         data.maxHealth = data.health;
@@ -29021,10 +29006,10 @@ class GameInstance
                     if (ps)
                     {
                         data.damageMultipliers = {
-                            1: 0.25,
-                            2: 0.25,
-                            3: 0.25,
-                            4: 0.25
+                            1: 0.2,
+                            2: 0.2,
+                            3: 0.2,
+                            4: 0.2
                         }
                     }
                     break;
@@ -31858,12 +31843,12 @@ class GameInstance
             {
                 if (!structure.width)
                 {
-                    structure.width = 5;
+                    structure.width = 10;
                     console.warn(structure.id);
                 }
                 if (!structure.height)
                 {
-                    structure.height = 5;
+                    structure.height = 10;
                     console.warn(structure.id);
                 }
                 structures.push(structure);
@@ -33379,12 +33364,13 @@ class GameInstance
             for (var i = keys.length - 1; i >= 0; i--)
             {
                 let key = keys[i];
-                if (_data[key] === undefined)
+                let val = _data[key];
+                if (val === undefined)
                 {
                     delete _data[key];
                     num++;
                 }
-                else if (typeof _data[key] === "boolean")
+                else if (typeof val === "boolean")
                 {
                     _data[key] = _data[key] == true ? 1 : 0;
                     num++;

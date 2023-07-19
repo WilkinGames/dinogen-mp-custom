@@ -654,6 +654,15 @@ app.get("/data", (req, res) =>
         bDisableCustomLobbies: settings.bDisableCustomLobbies,
         bSingleGame: settings.bSingleGame
     };
+    if (settings.bSingleGame)
+    {
+        var lobby = lobbies[0];
+        if (lobby && lobby.game)
+        {
+            data.gameModeId = lobby.gameData.gameModeId;
+            data.mapId = lobby.gameData.mapId;
+        }
+    }
     res.send(data);
 });
 app.get("/stats", (req, res) =>
@@ -2944,7 +2953,11 @@ function joinLobby(_player, _lobbyId)
         emitPlayerList(_player);
         if (!lobby.bCustom && getNumRealPlayers(lobby.players) >= lobby.maxPlayers)
         {
-            if (!hasOpenPublicLobby(lobby.type))
+            if (lobbies.length >= settings.maxLobbies)
+            {
+                log("Lobby limit reached");
+            }
+            else if (!hasOpenPublicLobby(lobby.type))
             {
                 createPublicLobby(lobby.type);
             }
@@ -3805,6 +3818,50 @@ function handleChatMessage(_socket, _message)
         }
         switch (args[0])
         {
+            case "/install":
+                if (bAdmin)
+                {
+                    try
+                    {
+                        log("Attempting npm install...");
+                        exec("npm install", (error, stdout, stderr) =>
+                        {
+                            log(error, stdout, stderr);
+                            if (error)
+                            {
+                                console.warn(error.message);
+                                sendChatMessageToSocket(_socket, {
+                                    bServer: true,
+                                    bCritical: true,
+                                    messageText: error.message,
+                                    bMonospace: true
+                                }, true);
+                                return;
+                            }
+                            if (stderr)
+                            {
+                                log(stderr);
+                                sendChatMessageToSocket(_socket, {
+                                    bServer: true,
+                                    bDirect: true,
+                                    messageText: stderr,
+                                    bMonospace: true
+                                }, true);
+                            }
+                            log(stdout);
+                            sendChatMessageToAll({
+                                bServer: true,
+                                messageText: stdout,
+                                bMonospace: true
+                            }, true);
+                        });
+                    }
+                    catch (e)
+                    {
+                        console.warn(e);
+                    }
+                }
+                break;
             case "/updateGame":
                 if (bAdmin)
                 {
