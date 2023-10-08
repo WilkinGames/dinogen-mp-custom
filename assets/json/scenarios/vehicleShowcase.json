@@ -1,11 +1,11 @@
 {
 	"id": "vehicleShowcase",
-	"author": "Wilkin Games",
 	"name": "STR_SCENARIO_VEHICLE_SHOWCASE",
 	"desc": "STR_SCENARIO_VEHICLE_SHOWCASE_DESC",
 	"mapId": "map_firing_range",
 	"gameModeId": "scenario",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bUseDefaultMapObjects": false,
 		"bFriendlyFire": true,
 		"bAllowRespawns": true,

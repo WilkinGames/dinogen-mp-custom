@@ -1,11 +1,11 @@
 {
 	"id": "tutorial",
-	"author": "Wilkin Games",
 	"mapId": "map_firing_range",
 	"gameModeId": "scenario",
 	"name": "STR_TUTORIAL",
 	"desc": "STR_TUTORIAL_DESC",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bUseDefaultMapObjects": false,
 		"preGameTimer": 0,
 		"bFriendlyFire": false,

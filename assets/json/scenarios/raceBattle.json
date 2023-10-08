@@ -1,6 +1,5 @@
 {
 	"id": "raceBattle",
-	"author": "Wilkin Games",
 	"name": "STR_SCENARIO_RACE_BATTLE",
 	"desc": "STR_SCENARIO_RACE_BATTLE_DESC",
 	"mapId": "map_complex",

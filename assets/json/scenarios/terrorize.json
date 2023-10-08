@@ -5,6 +5,7 @@
 	"mapId": "map_custom",
 	"gameModeId": "scenario",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bUseDefaultMapObjects": false,
 		"bDebug": false,
 		"bFriendlyFire": false,
@@ -6162,6 +6163,5 @@
 			"damageMultipliers": null,
 			"bGodMode": null
 		}
-	],
-	"author": "Wilkin Games"
+	]
 }

@@ -1,11 +1,11 @@
 {
 	"id": "specOps",
-	"author": "Wilkin Games",
 	"name": "STR_SCENARIO_SPEC_OPS",
 	"desc": "STR_SCENARIO_SPEC_OPS_DESC",
 	"mapId": "map_custom",
 	"gameModeId": "scenario",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bUseDefaultMapObjects": false,
 		"bDebug": false,
 		"bFriendlyFire": true,

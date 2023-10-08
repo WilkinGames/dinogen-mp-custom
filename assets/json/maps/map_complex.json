@@ -2,7 +2,7 @@
   "id": "map_complex",
   "width": 4000,
   "height": 2600,
-  "bgTexture": "texture_grass2",
+  "bgTexture": "texture_trees",
   "emitter": "forest",
   "teamSpawns": [
     {

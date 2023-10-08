@@ -53,6 +53,12 @@
     "size": "medium"
   },
   {
+    "id": "map_forest",
+    "name": "STR_MAP_FOREST",
+    "bCustom": true,
+    "size": "medium"
+  },
+  {
     "id": "map_villa",
     "name": "STR_MAP_VILLA",
     "bCustom": true,

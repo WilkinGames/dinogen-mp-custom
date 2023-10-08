@@ -4,7 +4,7 @@
   "ambience": "amb_jungle",
   "width": 8192,
   "height": 8192,
-  "bgTexture": "texture_grass2",
+  "bgTexture": "texture_trees",
   "teamSpawns": [],
   "spawns": [],
   "storeSpawn": [],

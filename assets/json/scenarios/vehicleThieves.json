@@ -1,6 +1,5 @@
 {
 	"id": "vehicleThieves",
-	"author": "GamerDanger198",
 	"name": "Vehicle Thieves",
 	"desc": "Steal an enemy armored vehicle.",
 	"mapId": "map_custom",
@@ -21,7 +20,8 @@
 		"botSkill": "{setting:botSkill}",
 		"emitter": "forest",
 		"bAllowBotSettings": true,
-		"bots": 0
+		"bots": 0,
+		"bgTexture": "texture_trees"
 	},
 	"functions": [
 		{

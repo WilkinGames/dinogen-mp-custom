@@ -2,7 +2,6 @@
   "id": "map_district",
   "width": 4000,
   "height": 2600,
-  "bgTexture": "texture_dirt",
   "ambience": "amb_city",
   "emitter": "dirt",
   "teamSpawns": [

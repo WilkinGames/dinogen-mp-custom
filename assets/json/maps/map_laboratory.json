@@ -5,7 +5,7 @@
 	"bCustom": true,
 	"width": 5120,
 	"height": 5632,
-	"bgTexture": "texture_grass2",
+	"bgTexture": "texture_trees",
 	"storeSpawn": [ 3470, 4464 ],
 	"spawns": [
 		[

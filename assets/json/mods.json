@@ -75,7 +75,7 @@
     "name": "STR_MOD_EXTENDED",
     "desc": "STR_MOD_EXTENDED_DESC",
     "score": 10000,
-    "moneyCost": 2000,
+    "moneyCost": 2500,
     "cost": 3
   },
   {
@@ -111,7 +111,7 @@
     "name": "STR_MOD_HOLLOW_POINT",
     "desc": "STR_MOD_HOLLOW_POINT_DESC",
     "score": 15000,
-    "moneyCost": 2500,
+    "moneyCost": 3000,
     "cost": 8
   },
   {
@@ -207,6 +207,7 @@
     "name": "STR_MOD_SUPPRESSOR",
     "desc": "STR_MOD_SUPPRESSOR_DESC",
     "score": 3000,
+    "moneyCost": 100,
     "cost": 1
   },
   {
@@ -266,6 +267,7 @@
     "name": "STR_MOD_BRAKE",
     "desc": "STR_MOD_BRAKE_DESC",
     "score": 10000,
+    "moneyCost": 2000,
     "cost": 3
   },
   {
@@ -274,6 +276,7 @@
     "name": "STR_MOD_HEAVY",
     "desc": "STR_MOD_HEAVY_DESC",
     "score": 15000,
+    "moneyCost": 3000,
     "cost": 5
   }
 ]

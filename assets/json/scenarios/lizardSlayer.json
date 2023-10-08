@@ -1,11 +1,11 @@
 {
 	"id": "lizardSlayer",
-	"author": "Wilkin Games",
 	"name": "STR_SCENARIO_LIZARD_SLAYER",
 	"desc": "STR_SCENARIO_LIZARD_SLAYER_DESC",
 	"mapId": "map_field",
 	"gameModeId": "scenario",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bFriendlyFire": false,
 		"bMapObjects": true,
 		"bMapVehicles": true,
@@ -206,6 +206,11 @@
 		}
 	],
 	"objects": [
+		{
+			"type": "polygon",
+			"position": [ 1400, 1400 ],
+			"spriteId": "map_field"
+		},
 		{
 			"type": "obstacle",
 			"obstacleId": "rock_1",

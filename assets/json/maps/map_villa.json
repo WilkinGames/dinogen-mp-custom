@@ -5,7 +5,7 @@
 	"emitter": "forest",
 	"width": 5120,
 	"height": 3584,
-	"bgTexture": "texture_grass2",
+	"bgTexture": "texture_trees",
 	"storeSpawn": [
 		2090,
 		2210

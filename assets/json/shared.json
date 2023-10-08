@@ -496,6 +496,10 @@
     "mass": 100,
     "angularDamping": 0.99
   },
+  "drone": {
+    "width": 40,
+    "height": 40
+  },
   "chickencopter": {
     "width": 40,
     "height": 40

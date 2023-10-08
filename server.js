@@ -82,7 +82,7 @@ const EventUtil = {
 };
 const ServerData = {
     VERSION: "1.0.6",
-    GAME_VERSION: "1.0.8"
+    GAME_VERSION: "1.0.9"
 };
 const Lobby = {
     COUNTDOWN_INTERMISSION: 10,
@@ -676,7 +676,7 @@ app.get("/settings", (req, res) =>
 
 io.on("connection", (socket) =>
 {   
-    if (getNumClients() >= settings.maxPlayers)
+    if (getNumClients() > settings.maxPlayers)
     {
         socket.emit("showWindow", {
             id: "mp_max_players",
@@ -3134,7 +3134,8 @@ function setLobbyState(_lobbyId, _state)
                     gameData.mapId = arr[MathUtil.Random(0, arr.length - 1)];
                 }                
                 gameData.bMultiplayer = true;
-                gameData.lobbyId = lobby.id;                
+                gameData.lobbyId = lobby.id;
+                gameData.bCustomLobby = lobby.bCustom;
                 gameData.data = {
                     p2: p2,
                     astar: astar.astar,
@@ -3668,7 +3669,7 @@ async function initHathoraGame()
             if (initialConfig.host)
             {
                 settings.host = initialConfig.host;
-                settings.admins.push(initialConfig.host);
+                //settings.admins.push(initialConfig.host);
             }
             settings.name = initialConfig.name;
             settings.region = initialConfig.region;
@@ -4710,7 +4711,8 @@ function handleChatMessage(_socket, _message)
                                 }
                                 playerToKick.votekicks[_socket.player.id] = 1;
                                 var numVotes = Object.keys(playerToKick.votekicks).length;
-                                var kickNum = Math.floor(lobby.players.length * 0.5) + 1;
+                                var numPlayers = getNumRealPlayersInLobby(lobby.id);
+                                var kickNum = Math.min(numPlayers, Math.floor(numPlayers * 0.5) + 1);
                                 sendChatMessageToLobby(lobby.id, {
                                     bServer: true,
                                     locText: "STR_SERVER_VOTEKICK_VOTES_AGAINST_X_X_X",

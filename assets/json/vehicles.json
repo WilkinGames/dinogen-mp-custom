@@ -35,6 +35,11 @@
     "type": "helicopter"
   },
   {
+    "id": "drone",
+    "name": "STR_DRONE",
+    "type": "helicopter"
+  },
+  {
     "id": "chickencopter",
     "soundId": "cobra",
     "name": "STR_CHICKENCOPTER",

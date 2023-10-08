@@ -1,11 +1,11 @@
 {
 	"id": "emitters",
-	"author": "Wilkin Games",
 	"name": "Emitters",
 	"desc": "Example of different emitter usages.",
 	"mapId": "map_riverside",
 	"gameModeId": "scenario",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bUseDefaultMapObjects": false,
 		"bDebug": false,
 		"bAllowRespawns": true,

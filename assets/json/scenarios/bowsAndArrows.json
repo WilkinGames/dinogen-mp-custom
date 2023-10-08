@@ -1,6 +1,5 @@
 {
 	"id": "bowsAndArrows",
-	"author": "Wilkin Games",
 	"name": "STR_SCENARIO_BOWS_AND_ARROWS",
 	"desc": "STR_SCENARIO_BOWS_AND_ARROWS_DESC",
 	"mapId": "map_hexagon",

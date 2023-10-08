@@ -1,12 +1,12 @@
 {
 	"bDefault": true,
 	"id": "compoundExtraction",
-	"author": "Wilkin Games",
 	"name": "STR_SCENARIO_COMPOUND_EXTRACTION",
 	"desc": "STR_SCENARIO_COMPOUND_EXTRACTION_DESC",
 	"mapId": "map_custom",
 	"gameModeId": "scenario",
 	"settings": {
+		"bgTexture": "texture_trees",
 		"bUseDefaultMapObjects": false,
 		"bDebug": false,
 		"bFriendlyFire": true,

@@ -18798,10 +18798,10 @@
 			"type": "polygon",
 			"shape": "box",
 			"width": 280,
-			"height": 10,
+			"height": 50,
 			"bNoBody": false,
 			"position": [
-				1907,
+				1928,
 				146
 			],
 			"id": "1oik",
