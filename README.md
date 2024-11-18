@@ -1,9 +1,11 @@
 # Dinogen Online: Multiplayer Server
 © 2024 Wilkin Games
 
-Read the full guide: https://steamcommunity.com/sharedfiles/filedetails/?id=2906260771
+This repository allows you to configure and host a [Dinogen Online](https://dinogenonline.com) multiplayer server.
 
-Join the official Discord: https://discord.gg/jhdNu5kDrZ
+**Read the full guide:** https://steamcommunity.com/sharedfiles/filedetails/?id=2906260771
+
+**Join the official Discord:** https://discord.gg/jhdNu5kDrZ
 
 ## Quick Start
 Node must be installed. Download it for free: https://nodejs.org/en/download
@@ -17,9 +19,9 @@ Start the multiplayer server:
 `npm start`
 
 ## PM2
-PM2 is useful for ensuring your server remains online, even if an error occurs.
+PM2 is useful for ensuring your server remains online, even if an error/interruption occurs.
 
-Learn more about PM2: https://pm2.keymetrics.io/
+**Learn more about PM2:** https://pm2.keymetrics.io/
 
 Install PM2:
 
