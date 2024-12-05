@@ -14,7 +14,7 @@
     "@hathora/hathora-cloud-sdk": "^0.0.4",
     "chalk": "^4.1.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.21.2",
     "javascript-astar": "^0.4.1",
     "node-fetch": "^2.6.7",
     "os-utils": "^0.0.14",
