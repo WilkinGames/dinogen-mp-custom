@@ -3,7 +3,9 @@
 
 This repository allows you to configure and host a [Dinogen Online](https://dinogenonline.com) multiplayer server.
 
-**Read the full guide:** https://steamcommunity.com/sharedfiles/filedetails/?id=2906260771
+**Full guide:** https://steamcommunity.com/sharedfiles/filedetails/?id=2906260771
+
+**Server admin guide:** https://steamcommunity.com/sharedfiles/filedetails/?id=2958252553
 
 **Join the official Discord:** https://discord.gg/jhdNu5kDrZ
 
